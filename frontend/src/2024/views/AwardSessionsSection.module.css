@@ -1,0 +1,52 @@
+.jumbotron {
+  background-color: #f8f9fa;
+  margin-bottom: 0;
+  padding: 2rem 0;
+}
+
+.title {
+  margin-bottom: 0.5rem;
+  font-size: 3rem;
+}
+
+.introduction {
+  font-size: 1.2rem; 
+  margin-bottom: 2rem; 
+  line-height: 1.5;
+  max-width: 1700px;
+  margin: 0 auto;
+  text-align: center; 
+  padding: 1rem;
+}
+
+.card {
+  margin: 2rem;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0,0,0,.1);
+}
+
+.cardText {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.firstColumn {
+  flex: 0 0 45.83%;
+  max-width: 45.83%; 
+}
+
+.secondColumn {
+  flex: 0 0 54.17%; 
+  max-width: 54.17%; 
+}
+
+.card {
+  height: 90%;
+}
+

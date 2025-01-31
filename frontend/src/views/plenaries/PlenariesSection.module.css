@@ -1,0 +1,34 @@
+.plenaryJumbo {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+    url('https://ita.ucsd.edu/workshop/19/images/stadium.jpg');
+  background-size: cover;
+  background-position: center center;
+  outline-style: groove;
+  outline-color: white;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.plenarySessionCard {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+  width: calc(20% - 10px);
+  min-width: 250px;
+  max-width: 300px;
+}
+
+.plenarySessionCardHeader {
+  min-height: 10em;
+}
+
+.speakerLabel,
+.moderatorLabel {
+  color: #777;
+  font-weight: 400;
+}

@@ -1,0 +1,25 @@
+.carousel :global(.carousel-caption) {
+  text-shadow: 1px 2px black;
+}
+
+.location {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  background-image: url('./img2020/location_background.jpg') !important;
+}
+
+.carousel {
+  height: 650px;
+  width: 1000px;
+  margin: auto;
+}
+
+img {
+  /* height: 650px !important; */
+  width: 100%;
+  object-fit: cover;
+}
+
+.carousel img{
+  height: 650px !important;
+}

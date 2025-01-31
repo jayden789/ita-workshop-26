@@ -1,0 +1,50 @@
+\documentclass[11pt]{letter}
+\usepackage{epsfig}
+\usepackage[bw]{myucsd}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+%\usepackage{times}
+%\usepackage[color]{myucsd}
+%\topmargin -20mm
+\topmargin -40mm
+%\headheight 0.7in
+%\headheight 0.5in
+%\headsep 0.4in
+\textheight 8.9in
+\textwidth 6.5in
+\oddsidemargin 0in
+\evensidemargin 0in
+\thispagestyle{empty}
+
+\begin{document}
+%\signature{\vskip -.3in${}$\hspace*{.5in} ITA}
+\signature{\vskip -.3in ITA}
+\address{\quad}
+\begin{letter}{}
+\includegraphics[trim={1.5cm 23cm 0 0},clip, scale=0.9]{myucsd_2.pdf}
+\vskip-4cm
+\opening{Dear formalName,}
+Thank you very much for attending the 2024
+Information Theory and Applications Workshop.
+This receipt confirms your \textbf{\$totalFees} payment with the following breakdown.
+
+\begin{center}
+\large
+\renewcommand{\arraystretch}{1.6}
+\setlength{\tabcolsep}{15pt}
+%\setlength{\tabcolsep}{30pt}
+\begin{tabular}{|l|c|r|}
+\hline
+Registration & & registerFees\\ \hline
+Attendance days & noOfDays & noOfDaysFees \\ \hline
+Reception & receptionCnt & receptionFees\\ \hline
+Banquet & banquetCnt & banquetFees\\ \hline
+ITALT & italtCnt & italtFees\\ \hline\hline
+\textbf{Total} &   &  \textbf{\$totalFees}\\ \hline
+\end{tabular}
+\end{center}
+We greatly enjoyed hosting you and hope that you found the workshop informative
+and rewarding. We look forward to seeing you next year. \\
+\closing{Sincerely,}
+\end{letter}
+\end{document}

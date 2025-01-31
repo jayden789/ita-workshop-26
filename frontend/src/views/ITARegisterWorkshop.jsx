@@ -1,0 +1,698 @@
+import React from 'react';
+import {
+  Alert,
+  Badge,
+  Button,
+  Card,
+  Col,
+  Form,
+  FormGroup,
+  FormText,
+  Input,
+  Label,
+  Row,
+  UncontrolledTooltip,
+} from 'reactstrap';
+import classNames from 'classnames';
+
+import Select from '../Select';
+import {
+  PARTICIPATION_STATUS_OPTIONS,
+  DAY_OPTIONS,
+  RECEPTION_OPTIONS,
+  BANQUET_SELF_OPTIONS,
+  VALENTINES_EVENT_OPTIONS,
+  LUNCH_OPTIONS,
+} from '../const';
+import PaymentPageController from './PaymentPageController';
+import RegistrationInfo from './RegistrationInfo';
+
+import styles from './ITARegisterWorkshop.module.css';
+
+function dayCheck(firstDay, lastDay) {
+  var first;
+  var last;
+  var logical = true;
+  switch (firstDay) {
+    case 'Monday':
+      first = 1;
+      break;
+    case 'Tuesday':
+      first = 2;
+      break;
+    case 'Wednesday':
+      first = 3;
+      break;
+    case 'Thursday':
+      first = 4;
+      break;
+    case 'Friday':
+      first = 5;
+      break;
+    case 'Please Select':
+      first = -1;
+      break;
+    default:
+      first = -1;
+  }
+  switch (lastDay) {
+    case 'Monday':
+      last = 1;
+      break;
+    case 'Tuesday':
+      last = 2;
+      break;
+    case 'Wednesday':
+      last = 3;
+      break;
+    case 'Thursday':
+      last = 4;
+      break;
+    case 'Friday':
+      last = 5;
+      break;
+    case 'Please Select':
+      first = -1;
+      break;
+    default:
+      first = -1;
+  }
+  if (first > last) {
+    logical = false;
+  }
+
+  if (first === -1 || last === -1) {
+    logical = true;
+  }
+
+  return logical;
+}
+
+function calculateNumDays(
+  nonconsecDays,
+  firstDay,
+  lastDay,
+  mon,
+  tues,
+  wed,
+  thurs,
+  fri
+) {
+  var dayCount = 0;
+  var first = 0;
+  var last = 0;
+  if (nonconsecDays) {
+    if (mon) {
+      dayCount += 1;
+    }
+    if (tues) {
+      dayCount += 1;
+    }
+    if (wed) {
+      dayCount += 1;
+    }
+    if (thurs) {
+      dayCount += 1;
+    }
+    if (fri) {
+      dayCount += 1;
+    }
+  } else {
+    if (firstDay === 'Monday') {
+      first = 0;
+    } else if (firstDay === 'Tuesday') {
+      first = 1;
+    } else if (firstDay === 'Wednesday') {
+      first = 2;
+    } else if (firstDay === 'Thursday') {
+      first = 3;
+    } else if (firstDay === 'Friday') {
+      first = 4;
+    }
+
+    if (lastDay === 'Monday') {
+      last = 1;
+    } else if (lastDay === 'Tuesday') {
+      last = 2;
+    } else if (lastDay === 'Wednesday') {
+      last = 3;
+    } else if (lastDay === 'Thursday') {
+      last = 4;
+    } else if (lastDay === 'Friday') {
+      last = 5;
+    }
+    if (firstDay !== '' && lastDay !== '') {
+      dayCount = last - first;
+    }
+  }
+  if (dayCount > 0) {
+    return dayCount;
+  } else {
+    return 0;
+  }
+}
+
+function calculatePrice(Price, Count) {
+  if (Count >= 0) {
+    return Count * Price;
+  } else {
+    return 0;
+  }
+}
+
+function calculateSun(option) {
+  if (option === 'Please Select') {
+    return 0;
+  } else if (option === 'ita19_sundayReception_notAttending') {
+    return 0;
+  } else if (option === 'ita19_sundayReception_selfOnly') {
+    return 1;
+  } else if (option === 'ita19_sundayReception_selfPlus1') {
+    return 2;
+  } else if (option === 'ita19_sundayReception_selfPlus2') {
+    return 3;
+  }
+}
+
+function calculateWed(option) {
+  return {
+    'Please Select': 0,
+    ita19_banquetSelf_notAttending: 0,
+    ita19_banquetSelf_selfOnly: 1,
+    ita19_banquetSelf_selfPlus1: 2,
+    ita19_banquetSelf_selfPlus2: 3,
+  }[option];
+}
+
+function calculateValentines(option) {
+  return {
+    'Please Select': 0,
+    ita19_valentinesEvent_notAttending: 0,
+    ita19_valentinesEvent_selfOnly: 1,
+    ita19_valentinesEvent_selfPlus1: 2,
+    ita19_valentinesEvent_selfPlus2: 3,
+  }[option];
+}
+
+// function calculateEvent(boolean) {
+//   if (boolean) {
+//     return 1;
+//   } else {
+//     return 0;
+//   }
+// }
+
+function checkRequired({
+  firstName,
+  lastName,
+  affiliation,
+  nonconsecDays,
+  firstDay,
+  lastDay,
+  mon,
+  tues,
+  wed,
+  thurs,
+  fri,
+  sundayRecep,
+  wedBanq,
+  valentinesEvent,
+  shirtType,
+  shirtSize,
+}) {
+  const mustNotBeBlank = [
+    firstName,
+    lastName,
+    affiliation,
+    sundayRecep,
+    wedBanq,
+    valentinesEvent,
+    shirtType,
+    shirtSize,
+  ];
+  const nonBlankOk = !mustNotBeBlank.includes('');
+  const consecOk = nonconsecDays || ![firstDay, lastDay].includes('');
+  const nonconsecOk =
+    !nonconsecDays || [mon, tues, wed, thurs, fri].includes(true);
+
+  return nonBlankOk && consecOk && nonconsecOk;
+}
+
+// this is hacky. TODO replace with something more robust
+const hackyTitleCaseWord = word => {
+  return word.slice(0, 1) + word.slice(1).toLowerCase();
+};
+
+export default class ITARegisterWorkshop extends React.Component {
+  render() {
+    const daysOk = dayCheck(this.props.firstDay, this.props.lastDay);
+    const requiredFieldsOk = checkRequired({
+      firstName: this.props.firstName,
+      lastName: this.props.lastName,
+      affiliation: this.props.affiliation,
+      nonconsecDays: this.props.nonConsecutiveDays,
+      firstDay: this.props.firstDay,
+      lastDay: this.props.lastDay,
+      mon: this.props.nonConsecMon,
+      tues: this.props.nonConsecTue,
+      wed: this.props.nonConsecWed,
+      thurs: this.props.nonConsecThu,
+      fri: this.props.nonConsecFri,
+      sundayRecep: this.props.SundayReceptionOption,
+      wedBanq: this.props.WednesdayBanquetOption,
+      valentinesEvent: this.props.ValentinesEventOption,
+      shirtType: this.props.shirtType,
+      shirtSize: this.props.shirtSize,
+    });
+    const numDays = calculateNumDays(
+      this.props.nonConsecutiveDays,
+      this.props.firstDay,
+      this.props.lastDay,
+      this.props.nonConsecMon,
+      this.props.nonConsecTue,
+      this.props.nonConsecWed,
+      this.props.nonConsecThu,
+      this.props.nonConsecFri
+    );
+    const dayPrice = calculatePrice(this.props.dayPrice, numDays);
+    const numSunGuests = calculateSun(this.props.SundayReceptionOption);
+    const sunPrice = calculatePrice(this.props.sunReceptionPrice, numSunGuests);
+    const numWedGuests = calculateWed(this.props.WednesdayBanquetOption);
+    const wedPrice = calculatePrice(this.props.wedBanquetPrice, numWedGuests);
+    const valentinesPrice = calculatePrice(
+      this.props.valentinesEventPrice,
+      calculateValentines(this.props.ValentinesEventOption)
+    );
+
+    const likelyToParticipate = ['ALMOST_CERTAINLY', 'PROBABLY'].includes(
+      this.props.likelihood
+    );
+
+    const effectiveFeeTypeText = this.props.effectiveFeeType
+      ? hackyTitleCaseWord(this.props.effectiveFeeType)
+      : '';
+
+    const paymentAllowed =
+      requiredFieldsOk && daysOk && !this.props.paid && this.props.formReady;
+
+    const payRelatedFieldsDisabled = this.props.paymentRequired && this.props.paid;
+
+    return (
+      <Card body>
+        {this.props.paymentAlert}
+        <h2>Your workshop information</h2>
+        <RegistrationInfo />
+        <Form>
+          <FormGroup row>
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Registration type*</Label>
+            </Col>
+            <Col lg={10} className="mt-2">
+              <FormGroup check inline>
+                <Label check className="mr-4">
+                  <Input
+                    type="radio"
+                    value="true"
+                    name="studentOption"
+                    checked={this.props.studentOption === true}
+                    onChange={e => this.props.handleBinaryOptionChange(e)}
+                    className="mb-0"
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                  Student
+                </Label>
+              </FormGroup>
+              <FormGroup check inline className="mb-0">
+                <Label check className="mb-0 mr-4">
+                  <Input
+                    type="radio"
+                    value="false"
+                    name="studentOption"
+                    checked={this.props.studentOption === false}
+                    onChange={e => this.props.handleBinaryOptionChange(e)}
+                    className="mb-0"
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                  Non-student
+                </Label>
+              </FormGroup>
+            </Col>
+          </FormGroup>
+          <FormGroup row className="mb-0">
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Participation*</Label>
+            </Col>
+            <Col lg={8}>
+              <Row>
+                <Col lg={3}>
+                  <Select
+                    name="likelihood"
+                    options={PARTICIPATION_STATUS_OPTIONS}
+                    value={this.props.likelihood}
+                    onChange={this.props.handleChange}
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                </Col>
+                <Col lg={9}>
+                  <FormText>
+                    Please indicate your participation likelihood so we can plan
+                    and others can see if you are coming.
+                  </FormText>
+                </Col>
+              </Row>
+            </Col>
+            <Label
+              className={classNames('ml-auto', 'mt-2', 'mr-2', {
+                [styles.grayText]: !likelyToParticipate,
+              })}
+            >
+              {this.props.effectiveFeeType === 'FULL' ? null : (
+                <span>({effectiveFeeTypeText}) </span>
+              )}
+              <strong>${this.props.basePrice}</strong>
+            </Label>
+          </FormGroup>
+
+          <FormGroup row className="mb-2 mt-4">
+            <Col lg={2}>
+              <Label className="text-danger">Days attending*</Label>
+            </Col>
+            <Col lg={10}>
+              <FormText color="muted" className="mt-0 mb-0">
+                Days you will attend. We budget the workshop to break even, so
+                please select the days accurately.
+              </FormText>
+              <FormGroup check inline>
+                <Label check className="mr-4">
+                  <Input
+                    type="radio"
+                    value="false"
+                    name="nonConsecutiveDays"
+                    checked={this.props.nonConsecutiveDays === false}
+                    onChange={e => this.props.handleBinaryOptionChange(e)}
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                  Consecutive
+                </Label>
+              </FormGroup>
+              <FormGroup check inline>
+                <Label check>
+                  <Input
+                    type="radio"
+                    value="true"
+                    name="nonConsecutiveDays"
+                    checked={this.props.nonConsecutiveDays === true}
+                    onChange={e => this.props.handleBinaryOptionChange(e)}
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                  Non-consecutive
+                </Label>
+              </FormGroup>
+            </Col>
+          </FormGroup>
+
+          {!this.props.nonConsecutiveDays ? (
+            <FormGroup row>
+              <Col lg={2}>
+                <Label for="firstDay" className="text-danger mt-2">
+                  First day*
+                </Label>
+              </Col>
+              <Col lg={2}>
+                <Select
+                  name="firstDay"
+                  options={DAY_OPTIONS}
+                  value={this.props.firstDay}
+                  onChange={this.props.handleChange}
+                  disabled={payRelatedFieldsDisabled}
+                />
+              </Col>
+              <Col lg={{ size: 2, offset: 1 }} className="rightAlign">
+                <Label for="lastDay" className="text-danger mt-2">
+                  Last day*
+                </Label>
+              </Col>
+              <Col lg={2}>
+                <Select
+                  name="lastDay"
+                  options={DAY_OPTIONS}
+                  value={this.props.lastDay}
+                  onChange={this.props.handleChange}
+                  disabled={payRelatedFieldsDisabled}
+                />
+              </Col>
+              <Label className="ml-auto mt-2 mr-2">
+                (${this.props.dayPrice}/day) <strong>${dayPrice}</strong>
+              </Label>
+            </FormGroup>
+          ) : (
+            <FormGroup row>
+              <Col lg={{ size: 10, offset: 2 }}>
+                <FormGroup check inline>
+                  <Label check className="mr-4">
+                    <Input
+                      type="checkbox"
+                      name="nonConsecMon"
+                      checked={this.props.nonConsecMon}
+                      onChange={e => this.props.handleCheckboxChange(e)}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                    Monday
+                  </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                  <Label check className="mr-4">
+                    <Input
+                      type="checkbox"
+                      name="nonConsecTue"
+                      checked={this.props.nonConsecTue}
+                      onChange={e => this.props.handleCheckboxChange(e)}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                    Tuesday
+                  </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                  <Label check className="mr-4">
+                    <Input
+                      type="checkbox"
+                      name="nonConsecWed"
+                      checked={this.props.nonConsecWed}
+                      onChange={e => this.props.handleCheckboxChange(e)}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                    Wednesday
+                  </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                  <Label check className="mr-4">
+                    <Input
+                      type="checkbox"
+                      name="nonConsecThu"
+                      checked={this.props.nonConsecThu}
+                      onChange={e => this.props.handleCheckboxChange(e)}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                    Thursday
+                  </Label>
+                </FormGroup>
+                <FormGroup check inline>
+                  <Label check className="mr-4">
+                    <Input
+                      type="checkbox"
+                      name="nonConsecFri"
+                      checked={this.props.nonConsecFri}
+                      onChange={e => this.props.handleCheckboxChange(e)}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                    Friday
+                  </Label>
+                </FormGroup>
+              </Col>
+              <Label className="ml-auto mt-2 mr-2">
+                (${this.props.dayPrice}/day) <strong>${dayPrice}</strong>
+              </Label>
+            </FormGroup>
+          )}
+
+          {!daysOk && !this.props.nonConsecutiveDays ? (
+            <Alert color="danger">
+              The first day you have selected occurs after the last day you have
+              selected. Please select a valid date range.
+            </Alert>
+          ) : null}
+
+          <FormGroup row>
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Sunday Reception*</Label>
+            </Col>
+            <Col lg="auto">
+              <Select
+                name="SundayReceptionOption"
+                options={RECEPTION_OPTIONS}
+                value={this.props.SundayReceptionOption}
+                onChange={this.props.handleChange}
+                disabled={payRelatedFieldsDisabled}
+              />
+            </Col>
+            <Col lg="auto">
+              <FormText color="muted">
+                Reception with entertainment and heavy hors d'oeuvres.
+              </FormText>
+            </Col>
+            <Label className="ml-auto mt-2 mr-2">
+              (${this.props.sunReceptionPrice}/guest){' '}
+              <strong>${sunPrice}</strong>
+            </Label>
+          </FormGroup>
+
+          <FormGroup row>
+            <Col lg={2}>
+              <Label className="mt-2">Monday Lunch</Label>
+            </Col>
+            <Col lg="auto">
+              <Select
+                name="monReceptionOption"
+                options={LUNCH_OPTIONS}
+                value={this.props.monReceptionOption}
+                onChange={this.props.handleChange}
+              />
+            </Col>
+            <Col lg="auto">
+              <FormText color="muted">
+                Light lunch for the IT-Society session participants (free, but
+                requires this registration)
+              </FormText>
+            </Col>
+          </FormGroup>
+
+          <FormGroup row>
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Wednesday Banquet*</Label>
+            </Col>
+            <Col lg="auto">
+              <Select
+                name="WednesdayBanquetOption"
+                options={BANQUET_SELF_OPTIONS}
+                value={this.props.WednesdayBanquetOption}
+                onChange={this.props.handleChange}
+                disabled={payRelatedFieldsDisabled}
+              />
+            </Col>
+            <Col lg="auto">
+              <FormText color="muted">
+                Polynesian luau with buffet dinner, live entertainment, and
+                audience-participation.
+              </FormText>
+            </Col>
+            <Label className="ml-auto mt-2 mr-2">
+              (${this.props.wedBanquetPrice}/guest) <strong>${wedPrice}</strong>
+            </Label>
+          </FormGroup>
+
+          <FormGroup row>
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Thursday Dinner*</Label>
+            </Col>
+            <Col lg="auto">
+              <Select
+                name="ValentinesEventOption"
+                options={VALENTINES_EVENT_OPTIONS}
+                value={this.props.ValentinesEventOption}
+                onChange={this.props.handleChange}
+                disabled={payRelatedFieldsDisabled}
+              />
+            </Col>
+            <Col lg="auto">
+              <FormText color="muted">
+                Viva Valentine, dinner, social program, and prizes, to promote
+                collegiality and collaboration.
+              </FormText>
+            </Col>
+            <Label className="ml-auto mt-2 mr-2">
+              (${this.props.valentinesEventPrice}/guest){' '}
+              <strong>${valentinesPrice}</strong>
+            </Label>
+          </FormGroup>
+
+          <FormGroup row>
+            <Label className="ml-auto mt-0 mr-2 mb-0">
+              <h3>
+                <strong>
+                  Total: $
+                  {this.props.basePrice +
+                    dayPrice +
+                    sunPrice +
+                    wedPrice +
+                    valentinesPrice}
+                </strong>
+              </h3>
+            </Label>
+          </FormGroup>
+
+          <FormGroup check row>
+            <Col>
+              <div className="text-center">
+                <Button
+                  onClick={this.props.saveChanges}
+                  disabled={!this.props.nonConsecutiveDays && !daysOk}
+                >
+                  Save all tabs
+                </Button>
+                &nbsp;&nbsp; {/* TODO this is crappy, remove this */}
+                <Button
+                  onClick={this.props.onChangeTriggerOpen}
+                  disabled={!paymentAllowed}
+                  id="registerButton"
+                >
+                  Register (aka Pay)
+                </Button>
+                {paymentAllowed ? null : (
+                  <UncontrolledTooltip
+                    placement="right"
+                    target="registerButton"
+                  >
+                    You must complete all required fields in both Profile and
+                    Workshop tabs.
+                  </UncontrolledTooltip>
+                )}
+              </div>
+            </Col>
+          </FormGroup>
+
+          <p className="text-center mt-4 mb-0">
+            Registration is for attendance only. Talk presentation requires a
+            separate invitation.&nbsp;
+            <Badge color="info" pill id="registrationInfo">
+              i
+            </Badge>
+            <UncontrolledTooltip
+              placement="right"
+              target="registrationInfo"
+              autohide={false}
+            >
+              If you are interested in presenting a talk, please{' '}
+              <a href="mailto:ita@ucsd.edu">contact us</a>.
+            </UncontrolledTooltip>
+          </p>
+
+          <p className="text-center mt-0">
+            To change or cancel your registration, please{' '}
+            <a href="mailto:ita@ucsd.edu">contact us</a>. Until January 19th we
+            will provide full refund, from January 20th to the 31st 50% refund,
+            and starting February 1st, no refund can be offered as we will have
+            committed to our vendors.
+          </p>
+        </Form>
+
+        <PaymentPageController
+          token={this.props.token}
+          formUrl={this.props.formUrl}
+          triggerOpen={this.props.triggerOpen}
+          onComplete={this.props.onPaymentComplete}
+          onCanceled={this.props.onPaymentCanceled}
+        />
+      </Card>
+    );
+  }
+}

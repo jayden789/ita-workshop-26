@@ -1,0 +1,151 @@
+/* what is going on */
+
+html {
+  scroll-behavior: smooth;
+  height:100%;
+}
+
+body {
+  height:100%;
+}
+
+#root {
+  height:100%;
+}
+
+.maxheight{
+  height:100%
+}
+
+.scrolling{
+  overflow: scroll;
+}
+
+.backwhite{
+  background-color: white !important;
+}
+
+.icmlImg {
+  src: url();
+}
+
+.LocationBackground {
+  background-image: url('../src/2020/views/img2020/icml.png');
+}
+
+.ParticipantsBackground {
+  background-image: url('../src/2020/views/img2020/participants_background.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.EATABackground {
+  background-image: url('../src/2020/views/img2020/eata_background.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.SpecialBackground {
+  background-image: url('../src/2020/views/img2020/special_background.jpg');
+  outline-style: groove;
+  outline-color: white;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.DailyScheduleBackground {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://ita.ucsd.edu/workshop/18/images/boat.jpg');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.dailywords {
+  color: white;
+  text-shadow: 1px 2px black;
+}
+
+.italic {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.profileCard {
+  width: 208px !important;
+  /* height : 320px !important; */
+  margin: 10px;
+}
+
+#fixedbutton {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 2;
+  width: 10% !important;
+}
+
+.customProfileWidth {
+  width: 90px;
+}
+
+.customWorkshopWidth {
+  width: 90px;
+}
+
+.rightAlign {
+  text-align: right;
+}
+
+table {
+  width: auto !important;
+  margin: auto;
+}
+
+#navbar {
+  width: 100% !important;
+}
+
+#passwordRequirements {
+  width: 500px !important;
+  margin: auto;
+}
+
+.registrationLabelWidth {
+  width: 240px;
+}
+
+.registrationLabelWidth2 {
+  width: 120px;
+}
+
+.paperLabelWidth {
+  width: 100px;
+}
+.loginContainer.container {
+  max-width: 600px;
+}
+
+.createAccountContainer.container {
+  max-width: 600px;
+}
+
+.profileCardImg {
+  height: 320px !important;
+  /* object-fit: cover; */
+}
+
+.big {
+    width: 100% !important;
+}
+
+.clicky {
+  cursor: pointer;
+}

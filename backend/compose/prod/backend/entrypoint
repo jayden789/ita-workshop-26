@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Adapted from <https://github.com/pydanny/cookiecutter-django/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/compose/production/django/entrypoint>
+
+set -o errexit
+set -o nounset
+
+postgres_ready() {
+python << END
+import sys
+
+import environ
+import psycopg2
+
+env = environ.Env()
+db_config = env.db()
+
+try:
+    psycopg2.connect(
+        dbname=db_config["NAME"],
+        user=db_config["USER"],
+        password=db_config["PASSWORD"],
+        host=db_config["HOST"],
+        port=db_config["PORT"],
+    )
+except psycopg2.OperationalError:
+    sys.exit(-1)
+sys.exit(0)
+END
+}
+until postgres_ready; do
+  >&2 echo 'Waiting for PostgreSQL to become available...'
+  sleep 1
+done
+>&2 echo 'PostgreSQL is available'
+
+exec "$@"

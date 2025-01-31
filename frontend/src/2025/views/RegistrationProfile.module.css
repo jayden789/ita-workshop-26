@@ -1,0 +1,10 @@
+.shirtHelpText {
+  font-size: 12.8px;
+  font-weight: normal;
+}
+
+.profilePicMedia {
+  width: 300px;
+  height: 450px !important;
+  object-fit: contain;
+}

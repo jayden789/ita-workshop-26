@@ -1,0 +1,19 @@
+[tool.black]
+line-length = 79
+exclude = '''
+/(
+# From example in black documentation
+    \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+
+# Don't format Django migrations
+  | api/migrations
+)/
+'''

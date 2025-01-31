@@ -1,0 +1,7 @@
+:global(.jumbotron).othersRegnJumbotron {
+  background-color: rgba(221, 195, 248, 0.7);
+}
+
+:global(.jumbotron).regnJumbotron {
+  transition: background-color 0.5s ease-out;
+}

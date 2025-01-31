@@ -1,0 +1,8 @@
+export const EVENT_TYPE = 'event';
+export const PLENARY_TYPE = 'plenary_talk';
+export const SESSION_TYPE = 'session_header';
+export const ROOM_TYPE = 'room_header';
+export const TALK_TYPE = 'talks_row';
+export const TRACK_TYPE = 'track_header';
+export const MAX_TRACKS = 6;
+export const MAX_EVENT = 2;

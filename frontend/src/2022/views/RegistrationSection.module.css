@@ -1,0 +1,15 @@
+.title {
+  margin-bottom: 2rem;
+}
+
+.regnInfoText {
+  margin-top: 2rem;
+}
+
+.jumbo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    /* url('https://ita.ucsd.edu/workshop/18/images/registration.jpg'); */
+    url('./img2020/register_background.jpg');
+  background-size: cover;
+  background-color: blanchedalmond;
+}

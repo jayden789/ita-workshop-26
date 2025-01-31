@@ -1,0 +1,19 @@
+.img {
+  width: auto;
+  height: 25%;
+  max-width: 200px;
+  max-height: 125px;
+  margin: 10px 20px;
+  align-items: center;
+  object-fit: scale-down;
+}
+
+.qualcommimg {
+  width: auto;
+  height: 25%;
+  max-width: 250px;
+  max-height: 125px;
+  margin: 10px 20px;
+  align-items: center;
+  object-fit: scale-down;
+}

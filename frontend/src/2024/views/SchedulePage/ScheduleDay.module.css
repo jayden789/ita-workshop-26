@@ -1,0 +1,25 @@
+.yellow {
+  color: #dd5;
+}
+
+.blue {
+  color: #3eb0f7;
+}
+
+.dayTable td {
+  background-color: #34495e;
+}
+
+.grey {
+  color: #b3b3b3;
+}
+
+.light_blue {
+  color: #ADD8E6;
+}
+
+.talkTableCell:hover {
+  cursor: pointer;
+}
+
+

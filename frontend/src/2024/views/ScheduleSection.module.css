@@ -1,0 +1,20 @@
+.outlineTable td {
+  background-color: #fff;
+}
+
+.linkbutton {
+  color: #007bff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+.linkbutton:hover,
+.linkbutton:focus {
+text-decoration: underline;
+color: #0056b3;
+}

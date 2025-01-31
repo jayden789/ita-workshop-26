@@ -1,0 +1,13 @@
+http://localhost:8080 {
+  root /app
+
+  proxy / backend:8000 {
+    transparent
+    except /static
+  }
+
+  log stdout
+  errors stdout
+  gzip
+  
+}

@@ -1,0 +1,13 @@
+.carousel :global(.carousel-caption) {
+  text-shadow: 1px 2px black;
+}
+
+.nav {
+  font-size: 14px;
+  font-family: "Lucida Console", Monaco, monospace;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+

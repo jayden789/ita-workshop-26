@@ -1,0 +1,34 @@
+#!/bin/sh
+
+set -o errexit
+set -o nounset
+
+# Prepare static assets
+python manage.py collectstatic --no-input
+
+# Run migrations locally
+python manage.py migrate
+
+# Load global config data (idempotent)
+python manage.py load_config_data
+
+# Run data setup commands (must be idempotent and preserve data integrity)
+python manage.py makemigrations
+python manage.py migrate
+python manage.py setup_workshop_ita19
+python manage.py setup_workshop_ita20
+python manage.py setup_workshop_ita22
+python manage.py setup_workshop_ita23
+python manage.py setup_workshop_ita24
+
+# Run server
+# shellcheck disable=SC2086
+/usr/local/bin/gunicorn \
+  --bind 0.0.0.0:8000 \
+  --chdir=/app \
+  --config gunicorn_config.py \
+  --workers=2 \
+  --worker-class gevent \
+  --reload \
+  ${GUNICORN_EXTRA_FLAGS:-} \
+  backend.wsgi

@@ -1,0 +1,11 @@
+.specialEventsCardImg{
+    height: 50% !important;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.specialEventsCardImgScaleddown{
+height: 50% !important;
+width: 100%;
+object-fit: scale-down; 
+}

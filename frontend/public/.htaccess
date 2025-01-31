@@ -1,0 +1,9 @@
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . /workshop/index.html [QSA]
+
+RewriteCond %{HTTPS} =off
+RewriteRule ^ https://%{HTTP_HOST}/workshops [QSA,L]

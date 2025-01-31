@@ -1,0 +1,10 @@
+.card {
+  height: 175px;
+  width: 130px;
+  text-align: center;
+  background: whitesmoke;
+  padding: 0px;
+  cursor: pointer;
+  font-size: 13px;
+  vertical-align: middle;
+}

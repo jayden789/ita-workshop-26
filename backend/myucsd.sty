@@ -1,0 +1,35 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{myucsd}[1996/02/12 v1.1]
+\DeclareOption{bw}{%
+  \def\ucsdlogo{%
+        \smash{\epsfig{file=myucsd.eps,height=22mm}}}}
+\DeclareOption{color}{%
+  \def\ucsdlogo{%
+        \smash{\epsfig{file=myucsd.eps,height=22mm}}}}
+\ExecuteOptions{bw}
+\ProcessOptions
+\RequirePackage{epsfig}
+\newlength{\logoskip}\logoskip 0pt\relax
+\def\ninep@int{\@setfontsize\ninep@int\@ixpt\@xipt}
+\def\fromtitle{}
+\def\title#1{\gdef\fromtitle{#1}}
+\def\@texttop{\relax}
+\def\opening#1{\vspace*{-\topmargin}\vspace*{-23mm}\vspace*{\logoskip}%
+        \hfuzz=\paperwidth\noindent\hspace*{-\oddsidemargin}%
+        \newlength{\aux}\aux\paperwidth\advance\aux by -1in\advance\aux by -11mm%
+        \makebox[\aux][r]{\ucsdlogo}\\[-9pt]%
+        \aux\paperwidth\advance\aux by -1in\advance\aux by -\oddsidemargin%
+        %%%%\hspace*{-\oddsidemargin}%%%%\hspace*{-.5in}\\
+  \ifx\@empty\fromaddress
+  \thispagestyle{firstpage}%
+    {\raggedleft\@date\par}%
+  \else
+    \thispagestyle{empty}%
+    {
+                \vskip \z@ plus.00006fil\relax
+                \hfill\reset@font\normalsize\@date\par}%
+  \fi\hfuzz=.1pt
+  \vspace{2\parskip}%
+  {\raggedright \toname \\ \toaddress \par}%
+  \vspace{2\parskip}%
+  #1\par\nobreak}

@@ -1,0 +1,48 @@
+.titleSection {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  color: white;
+  text-shadow: 1px 2px black;
+}
+
+.titleText {
+  margin-bottom: 3rem;
+
+  font-weight: bold;
+}
+
+.dateText {
+  margin-bottom: 1rem;
+}
+
+.locationText {
+  margin-bottom: 1rem;
+}
+
+.taglineText {
+  margin-top: 4rem;
+}
+
+/*
+ * We use a non-breaking space here by default.
+ */
+.breakSpaceWhenSmall::after {
+  content: '\00a0';
+}
+
+@media (max-width: 700px) {
+  /*
+   * When the viewport is too small to accomodate a pair of words on a single
+   * line, use a regular space between them instead.
+   */
+  .breakSpaceWhenSmall::after {
+    content: ' ';
+  }
+}
+
+.titleJumbo {
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)),
+    url('https://ita.ucsd.edu/workshop/19/images/aerial2.jpg');
+  background-size: cover;
+}
