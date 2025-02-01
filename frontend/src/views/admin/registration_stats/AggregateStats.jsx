@@ -20,12 +20,12 @@ export default class AggregateStats extends React.Component {
 
   renderAttendingDatesSection = () => {
     const {
-      '2024-02-18': sun,
-      '2024-02-19': mon,
-      '2024-02-20': tue,
-      '2024-02-21': wed,
-      '2024-02-22': thu,
-      '2024-02-23': fri,
+      '2025-02-09': sun,
+      '2025-02-10': mon,
+      '2025-02-11': tue,
+      '2025-02-12': wed,
+      '2025-02-13': thu,
+      '2025-02-14': fri,
     } = this.props.stats.attending_date_counts;
 
     return (
@@ -203,6 +203,7 @@ export default class AggregateStats extends React.Component {
           {this.renderWednesdayBanquetList()}
           {this.renderItaltList()}
           {this.renderBanquetOptions()}
+
           {/* {this.renderValentinesEventList()} */}
         </ul>
       </Card>

@@ -105,10 +105,10 @@ const sortAffiliationsInPlace = (affiliations) => {
 function calculateWed(option) {
   return {
     'Please Select': 0,
-    ita24_banquetSelf_notAttending: 0,
-    ita24_banquetSelf_selfOnly: 1,
-    ita24_banquetSelf_selfPlus1: 2,
-    ita24_banquetSelf_selfPlus2: 3,
+    ita25_banquetSelf_notAttending: 0,
+    ita25_banquetSelf_selfOnly: 1,
+    ita25_banquetSelf_selfPlus1: 2,
+    ita25_banquetSelf_selfPlus2: 3,
   }[option];
 }
 
@@ -579,94 +579,94 @@ export default class RegistrationTabs extends React.Component {
       slugArray.push(urlSlugMap.get(data['options'][i]));
     }
 
-    if (slugArray.includes('ita24_sundayReception_selfOnly')) {
+    if (slugArray.includes('ita25_sundayReception_selfOnly')) {
       this.setState({
-        SundayReceptionOption: 'ita24_sundayReception_selfOnly',
+        SundayReceptionOption: 'ita25_sundayReception_selfOnly',
       });
     }
-    if (slugArray.includes('ita24_sundayReception_notAttending')) {
+    if (slugArray.includes('ita25_sundayReception_notAttending')) {
       this.setState({
-        SundayReceptionOption: 'ita24_sundayReception_notAttending',
+        SundayReceptionOption: 'ita25_sundayReception_notAttending',
       });
     }
-    if (slugArray.includes('ita24_sundayReception_selfPlus1')) {
+    if (slugArray.includes('ita25_sundayReception_selfPlus1')) {
       this.setState({
-        SundayReceptionOption: 'ita24_sundayReception_selfPlus1',
+        SundayReceptionOption: 'ita25_sundayReception_selfPlus1',
       });
     }
-    if (slugArray.includes('ita24_sundayReception_selfPlus2')) {
+    if (slugArray.includes('ita25_sundayReception_selfPlus2')) {
       this.setState({
-        SundayReceptionOption: 'ita24_sundayReception_selfPlus2',
-      });
-    }
-
-    if (slugArray.includes('ita24_banquetSelf_notAttending')) {
-      this.setState({
-        WednesdayBanquetOption: 'ita24_banquetSelf_notAttending',
-      });
-    }
-    if (slugArray.includes('ita24_banquetSelf_selfOnly')) {
-      this.setState({ WednesdayBanquetOption: 'ita24_banquetSelf_selfOnly' });
-    }
-    if (slugArray.includes('ita24_banquetSelf_selfPlus1')) {
-      this.setState({ WednesdayBanquetOption: 'ita24_banquetSelf_selfPlus1' });
-    }
-    if (slugArray.includes('ita24_banquetSelf_selfPlus2')) {
-      this.setState({ WednesdayBanquetOption: 'ita24_banquetSelf_selfPlus2' });
-    }
-
-    if (slugArray.includes('ita24_italt_notAttending')) {
-      this.setState({
-        attendingITALT: 'ita24_italt_notAttending',
+        SundayReceptionOption: 'ita25_sundayReception_selfPlus2',
       });
     }
 
-    if (slugArray.includes('ita24_italt_attending')) {
+    if (slugArray.includes('ita25_banquetSelf_notAttending')) {
       this.setState({
-        attendingITALT: 'ita24_italt_attending',
+        WednesdayBanquetOption: 'ita25_banquetSelf_notAttending',
+      });
+    }
+    if (slugArray.includes('ita25_banquetSelf_selfOnly')) {
+      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfOnly' });
+    }
+    if (slugArray.includes('ita25_banquetSelf_selfPlus1')) {
+      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfPlus1' });
+    }
+    if (slugArray.includes('ita25_banquetSelf_selfPlus2')) {
+      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfPlus2' });
+    }
+
+    if (slugArray.includes('ita25_italt_notAttending')) {
+      this.setState({
+        attendingITALT: 'ita25_italt_notAttending',
       });
     }
 
-    if (slugArray.includes('ita24_valentinesEvent_notAttending')) {
+    if (slugArray.includes('ita25_italt_attending')) {
       this.setState({
-        ValentinesEventOption: 'ita24_valentinesEvent_notAttending',
-      });
-    }
-    if (slugArray.includes('ita24_valentinesEvent_selfOnly')) {
-      this.setState({
-        ValentinesEventOption: 'ita24_valentinesEvent_selfOnly',
-      });
-    }
-    if (slugArray.includes('ita24_valentinesEvent_selfPlus1')) {
-      this.setState({
-        ValentinesEventOption: 'ita24_valentinesEvent_selfPlus1',
-      });
-    }
-    if (slugArray.includes('ita24_valentinesEvent_selfPlus2')) {
-      this.setState({
-        ValentinesEventOption: 'ita24_valentinesEvent_selfPlus2',
+        attendingITALT: 'ita25_italt_attending',
       });
     }
 
-    if (slugArray.includes('ita24_mondayLunch_attending')) {
+    if (slugArray.includes('ita25_valentinesEvent_notAttending')) {
       this.setState({
-        monReceptionOption: 'ita24_mondayLunch_attending',
+        ValentinesEventOption: 'ita25_valentinesEvent_notAttending',
       });
     }
-    if (slugArray.includes('ita24_mondayLunch_notAttending')) {
+    if (slugArray.includes('ita25_valentinesEvent_selfOnly')) {
       this.setState({
-        monReceptionOption: 'ita24_mondayLunch_notAttending',
+        ValentinesEventOption: 'ita25_valentinesEvent_selfOnly',
+      });
+    }
+    if (slugArray.includes('ita25_valentinesEvent_selfPlus1')) {
+      this.setState({
+        ValentinesEventOption: 'ita25_valentinesEvent_selfPlus1',
+      });
+    }
+    if (slugArray.includes('ita25_valentinesEvent_selfPlus2')) {
+      this.setState({
+        ValentinesEventOption: 'ita25_valentinesEvent_selfPlus2',
       });
     }
 
-    if (slugArray.includes('ita24_saturdayWorkshop_attending')) {
+    if (slugArray.includes('ita25_mondayLunch_attending')) {
       this.setState({
-        saturdayWorkshopOption: 'ita24_saturdayWorkshop_attending',
+        monReceptionOption: 'ita25_mondayLunch_attending',
       });
     }
-    if (slugArray.includes('ita24_saturdayWorkshop_notAttending')) {
+    if (slugArray.includes('ita25_mondayLunch_notAttending')) {
       this.setState({
-        saturdayWorkshopOption: 'ita24_saturdayWorkshop_notAttending',
+        monReceptionOption: 'ita25_mondayLunch_notAttending',
+      });
+    }
+
+    if (slugArray.includes('ita25_saturdayWorkshop_attending')) {
+      this.setState({
+        saturdayWorkshopOption: 'ita25_saturdayWorkshop_attending',
+      });
+    }
+    if (slugArray.includes('ita25_saturdayWorkshop_notAttending')) {
+      this.setState({
+        saturdayWorkshopOption: 'ita25_saturdayWorkshop_notAttending',
       });
     }
   }
@@ -792,7 +792,7 @@ export default class RegistrationTabs extends React.Component {
       presenting: this.state.presentingThisYear,
     };
     if (
-      this.state.WednesdayBanquetOption !== 'ita24_banquetSelf_notAttending'
+      this.state.WednesdayBanquetOption !== 'ita25_banquetSelf_notAttending'
     ) {
       nonAdminFields.banquet_options = this.state.banquetOption;
     }
@@ -932,11 +932,11 @@ export default class RegistrationTabs extends React.Component {
     return {
       basePrice: regnFees['base'],
       dayPrice: regnFees['daily'],
-      sunReceptionPrice: optionFees.get('ita24_sundayReception_selfOnly'),
-      wedBanquetPrice: optionFees.get('ita24_banquetSelf_selfOnly'),
-      valentinesEventPrice: optionFees.get('ita24_valentinesEvent_selfOnly'),
-      satWorkshopPrice: optionFees.get('ita24_saturdaySelf_attending'),
-      italtPrice: optionFees.get('ita24_italt_attending'),
+      sunReceptionPrice: optionFees.get('ita25_sundayReception_selfOnly'),
+      wedBanquetPrice: optionFees.get('ita25_banquetSelf_selfOnly'),
+      valentinesEventPrice: optionFees.get('ita25_valentinesEvent_selfOnly'),
+      satWorkshopPrice: optionFees.get('ita25_saturdaySelf_attending'),
+      italtPrice: optionFees.get('ita25_italt_attending'),
     };
   };
 
@@ -1241,7 +1241,7 @@ export default class RegistrationTabs extends React.Component {
     if (paymentRequired && this.state.paid) {
       paymentAlert = (
         <Alert color="success">
-          Thank you for your registration and payment to ITA 2024. If you need
+          Thank you for your registration and payment to ITA 2025. If you need
           to modify your selections, please{' '}
           <a href="mailto:ita@ucsd.edu">contact us</a>.
         </Alert>

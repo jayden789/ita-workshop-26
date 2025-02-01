@@ -170,13 +170,13 @@ function calculatePrice(Price, Count) {
 function calculateSum(option) {
   if (option === 'Please Select') {
     return 0;
-  } else if (option === 'ita24_sundayReception_notAttending') {
+  } else if (option === 'ita25_sundayReception_notAttending') {
     return 0;
-  } else if (option === 'ita24_sundayReception_selfOnly') {
+  } else if (option === 'ita25_sundayReception_selfOnly') {
     return 1;
-  } else if (option === 'ita24_sundayReception_selfPlus1') {
+  } else if (option === 'ita25_sundayReception_selfPlus1') {
     return 2;
-  } else if (option === 'ita24_sundayReception_selfPlus2') {
+  } else if (option === 'ita25_sundayReception_selfPlus2') {
     return 3;
   }
 }
@@ -184,25 +184,25 @@ function calculateSum(option) {
 function calculateWed(option) {
   return {
     'Please Select': 0,
-    ita24_banquetSelf_notAttending: 0,
-    ita24_banquetSelf_selfOnly: 1,
-    ita24_banquetSelf_selfPlus1: 2,
-    ita24_banquetSelf_selfPlus2: 3,
+    ita25_banquetSelf_notAttending: 0,
+    ita25_banquetSelf_selfOnly: 1,
+    ita25_banquetSelf_selfPlus1: 2,
+    ita25_banquetSelf_selfPlus2: 3,
   }[option];
 }
 function calculateSat(option) {
   return {
     'Please Select': 0,
-    ita24_saturdayWorkshop_notAttending: 0,
-    ita24_saturdayWorkshop_attending: 1,
+    ita25_saturdayWorkshop_notAttending: 0,
+    ita25_saturdayWorkshop_attending: 1,
   }[option];
 }
 
 function calculateItalt(option) {
   return {
     '': 0,
-    ita24_italt_attending: 1,
-    ita24_italt_notAttending: 0,
+    ita25_italt_attending: 1,
+    ita25_italt_notAttending: 0,
   }[option];
 }
 
@@ -336,7 +336,7 @@ export default class RegistrationWorkshop extends React.Component {
       !this.props.paid &&
       this.props.formReady;
 
-    const payRelatedFieldsDisabled = this.props.paid || !this.props.isAdmin; // disabling since ITA 2024 registration is closed
+    const payRelatedFieldsDisabled = this.props.paid; // disabling since ITA 2024 registration is closed
 
     const toggle = () => {
       this.setState({
@@ -679,9 +679,9 @@ export default class RegistrationWorkshop extends React.Component {
           </Col>
           <Col lg="auto">
             <FormText color="muted" className="mt-0 mb-0">
-              Tutorials and team building activities, jointly with the{' '}
+              (Not there)Tutorials and team building activities, jointly with the{' '}
               <a
-                href="http://algorithmiclearningtheory.org/alt2024/ita-alt-italt/"
+                href="http://algorithmiclearningtheory.org/alt2025/ita-alt-italt/"
                 target="__blank"
                 ref="noreferrer"
               >
@@ -693,10 +693,10 @@ export default class RegistrationWorkshop extends React.Component {
               <Label check className="mr-4">
                 <Input
                   type="radio"
-                  value="ita24_italt_attending"
+                  value="ita25_italt_attending"
                   name="attendingITALT"
                   checked={
-                    this.props.attendingITALT === 'ita24_italt_attending'
+                    this.props.attendingITALT === 'ita25_italt_attending'
                   }
                   onChange={this.props.handleChange}
                   disabled={payRelatedFieldsDisabled}
@@ -708,10 +708,10 @@ export default class RegistrationWorkshop extends React.Component {
               <Label check>
                 <Input
                   type="radio"
-                  value="ita24_italt_notAttending"
+                  value="ita25_italt_notAttending"
                   name="attendingITALT"
                   checked={
-                    this.props.attendingITALT === 'ita24_italt_notAttending'
+                    this.props.attendingITALT === 'ita25_italt_notAttending'
                   }
                   onChange={this.props.handleChange}
                   disabled={payRelatedFieldsDisabled}
@@ -777,7 +777,7 @@ export default class RegistrationWorkshop extends React.Component {
             <div className="text-center">
               <Button
                 onClick={this.props.saveChanges}
-                disabled={!this.props.isAdmin}
+                disabled={false}
                 className="mr-3"
               >
                 {this.props.loading ? (
