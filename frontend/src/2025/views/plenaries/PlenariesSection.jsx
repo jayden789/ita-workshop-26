@@ -135,11 +135,12 @@ export default class PlenariesSection extends React.Component {
             Five plenary sessions, each with several prominent researchers
             providing a rounded view of an important and timely topic.
           </h5>
-          <h2>Coming Soon...</h2>
         </div>
-        {/*<Container fluid>
-          <div className={styles.cardsContainer}>{plenarySessionCards}</div>
-        </Container>*/}
+        {
+          <Container fluid>
+            <div className={styles.cardsContainer}>{plenarySessionCards}</div>
+          </Container>
+        }
         <PlenaryPresenterDetailModal
           talk={this.state.presenterDetailModalTalk}
           isOpen={this.state.presenterDetailModalOpen}

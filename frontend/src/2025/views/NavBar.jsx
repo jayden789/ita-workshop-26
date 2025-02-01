@@ -46,11 +46,11 @@ export default class NavBar2025 extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
+              {/*<NavItem>
                 <NavLink tag={Link} to="/schedule" onClick={this.toggle}>
                   Preliminary schedule <Badge color="primary">New</Badge>
                 </NavLink>
-              </NavItem>
+              </NavItem>*/}
               {this.props.showAdmin && (
                 <NavItem>
                   <NavLink tag={Link} to="/admin" onClick={this.toggle}>

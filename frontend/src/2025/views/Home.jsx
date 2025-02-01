@@ -30,23 +30,23 @@ export default class Home2025 extends React.Component {
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
         />
-        <PlenariesSection />
-        <AwardSessions />
-        <InvitedSessionsSection />
-        <ScheduleSection
+        {/*<PlenariesSection />*/}
+        {/*<AwardSessions />*/}
+        {/*<InvitedSessionsSection />*/}
+        {/*<ScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />
-        <DailyScheduleSection
+        />*/}
+        {/*<DailyScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />
+        />*/}
         <LocationSection />
-        <SpecialEventsSection />
-        <TutorialSection />
-        <EataSection />
+        {/*<SpecialEventsSection />*/}
+        {/*<TutorialSection />*/}
+        {/*<EataSection />*/}
         {/* DISABLED TEMPORARILY */}
-        <TrackVisibility once>
+        {/*<TrackVisibility once>
           {({ isVisible }) =>
             isVisible && (
               <Suspense
@@ -60,16 +60,9 @@ export default class Home2025 extends React.Component {
               </Suspense>
             )
           }
-        </TrackVisibility>
+        </TrackVisibility>*/}
         <SponsorsSection />
         <CodeOfConductSection />
-        {/* <Container>
-          <FontAwesomeIcon icon={faRegistered} size="4x"
-            onClick={() => window.location = 'register'}
-            style={{ cursor: 'pointer' }}
-            color="navy"
-            alt="Click to Register!" />
-        </Container> */}
       </div>
     );
   }

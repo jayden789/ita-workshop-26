@@ -72,15 +72,26 @@ const AwardSessionsSection = () => {
     <Jumbotron fluid className={styles.jumbotron}>
       <div className="text-center">
         <h1 className={styles.title}>Award Sessions</h1>
-        <h2>Coming Soon...</h2>
-        {/*<p className={styles.introduction}>
-        The year’s award winning papers at major journals and conferences<br /> <br />
-        Didn’t get to attend all technical conferences last year? Were too busy to read every technical magazine cover to cover? Not to worry. ITA has got you covered! Join our “Award Sessions” for a 1-hour up close and personal view of the “best research of the year”. At Monday’s last session, we will cover best journal papers from EE disciplines, and at Thursday’s last session, best conference papers in the CS and ML areas. At the end of each session, you will see that we really kept “The Best of The Best for Last”.
-
+        <p className={styles.introduction}>
+          The year’s award winning papers at major journals and conferences
+          <br /> <br />
+          Didn’t get to attend all technical conferences last year? Were too
+          busy to read every technical magazine cover to cover? Not to worry.
+          ITA has got you covered! Join our “Award Sessions” for a 1-hour up
+          close and personal view of the “best research of the year”. At
+          Monday’s last session, we will cover best journal papers from EE
+          disciplines, and at Thursday’s last session, best conference papers in
+          the CS and ML areas. At the end of each session, you will see that we
+          really kept “The Best of The Best for Last”.
         </p>
         <Row>
           {awardSessions.map((session, index) => (
-            <Col key={index} className={index % 2 === 0 ? styles.firstColumn : styles.secondColumn}>
+            <Col
+              key={index}
+              className={
+                index % 2 === 0 ? styles.firstColumn : styles.secondColumn
+              }
+            >
               <Card className={styles.card}>
                 <CardBody>
                   <CardTitle tag="h5">{session.day}</CardTitle>
@@ -88,8 +99,16 @@ const AwardSessionsSection = () => {
                     <React.Fragment key={awardIndex}>
                       {awardIndex > 0 && <hr className={styles.divider} />}
                       <CardText className={styles.cardText}>
-                        <strong>{award.category}</strong><br />
-                        <a href={award.url} className={styles.paperTitle} target="_blank" rel="noopener noreferrer">{award.title}</a>
+                        <strong>{award.category}</strong>
+                        <br />
+                        <a
+                          href={award.url}
+                          className={styles.paperTitle}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {award.title}
+                        </a>
                         <div className={styles.authors}>{award.authors}</div>
                       </CardText>
                     </React.Fragment>
@@ -98,7 +117,7 @@ const AwardSessionsSection = () => {
               </Card>
             </Col>
           ))}
-        </Row>*/}
+        </Row>
       </div>
     </Jumbotron>
   );
