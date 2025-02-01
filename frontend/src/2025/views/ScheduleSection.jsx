@@ -50,13 +50,6 @@ const dayData = {
 };
 
 export default class ScheduleSection extends React.Component {
-  parseData = () => {
-    console.log('as');
-    console.log(this.props.schedule);
-    console.log(this.props.loadSchedule);
-    return null;
-  };
-
   constructor(props) {
     super(props);
 
@@ -284,11 +277,8 @@ export default class ScheduleSection extends React.Component {
       trackData,
       sessionData
     );*/
-    const link = 'https://ita.ucsd.edu/schedule2023/';
-    const eventStyle = { backgroundColor: 'white' };
     return (
       <div>
-        <this.parseData />
         <Jumbotron
           fluid
           id="outline"

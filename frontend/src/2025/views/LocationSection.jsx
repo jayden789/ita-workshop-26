@@ -116,8 +116,9 @@ export default class ITAJumboLocation extends React.Component {
                 The Bahia was recently renovated and boasts modern amply-sized
                 rooms, many with balconies, patios, and striking water views.
                 Our room rates are significantly discounted, with standard rooms
-                featuring varying views at $165, larger studios at $199, and
-                suites at $350, all inclusive of resort fees.
+                featuring varying views at $169, larger studios at $209, and
+                suites at $369, all inclusive of resort fees.
+                <br />
                 <a
                   href="https://be.synxis.com/?adult=1&arrive=2025-02-07&chain=17551&child=0&clearcache=all&config=GPNORF&currency=USD&depart=2025-02-17&group=ITA2025&hotel=64070&level=hotel&locale=en-US&productcurrency=USD&rooms=1&theme=Group2"
                   target="_blank"

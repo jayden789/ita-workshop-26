@@ -118,7 +118,6 @@ class App extends Component {
       this.setState({ schedule: json }, () =>
         this.setState({ loadSchedule: false })
       );
-      console.log(json);
     });
   };
 
@@ -131,7 +130,7 @@ class App extends Component {
           loading: false,
         })
       )
-      .catch((error) =>
+      .catch(() =>
         this.setState({
           loggedIn: false,
           user: {},
