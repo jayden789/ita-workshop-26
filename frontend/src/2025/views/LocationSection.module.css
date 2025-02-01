@@ -3,23 +3,21 @@
 }
 
 .location {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  padding-left: 160px;
+  padding-right: 160px;
   background-image: url('./img2020/location_background.jpg') !important;
 }
 
 .carousel {
   height: 650px;
-  width: 1000px;
   margin: auto;
 }
 
 img {
-  /* height: 650px !important; */
   width: 100%;
   object-fit: cover;
 }
 
-.carousel img{
+.carousel img {
   height: 650px !important;
 }

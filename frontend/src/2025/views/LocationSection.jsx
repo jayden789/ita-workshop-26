@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron, Container, UncontrolledCarousel } from 'reactstrap';
+import { Jumbotron, Button, UncontrolledCarousel } from 'reactstrap';
 
 import styles from './LocationSection.module.css';
 import entranceImage from './img2025/bahia-background.jpg';
@@ -96,52 +96,50 @@ export default class ITAJumboLocation extends React.Component {
     return (
       <div>
         <Jumbotron fluid id="location" className={styles.location}>
-          <Container>
-            <div className="text-center">
-              <p className="display-4">Location Location Location</p>
-              <h3>Bahia Resort, San Diego</h3>
-              <p className="p">
-                TripAdvisor's consistently favorite San Diego Hotel, the Bahia
-                Resort is nestled on a serene private peninsula jutting into the
-                San Diego Bay. It features an expansive private white-sand,
-                cabana dotted, beachfront, a boat dock, lush tropical gardens,
-                exotic waterfowls, tennis courts, swimming pool, and fitness
-                center, all providing an idyllic setup for our meeting,
-                collaboration, and recreation. The Pacific Ocean, oceanfront
-                boardwalk, Belmont Amusement Park, and many restaurants are just
-                a few minutes walk away, and the bustling neighborhoods of
-                Mission- and Pacific-Beach a short distance beyond.
-                <br />
-                <br />
-                The Bahia was recently renovated and boasts modern amply-sized
-                rooms, many with balconies, patios, and striking water views.
-                Our room rates are significantly discounted, with standard rooms
-                featuring varying views at $169, larger studios at $209, and
-                suites at $369, all inclusive of resort fees.
-                <br />
-                <a
-                  href="https://be.synxis.com/?adult=1&arrive=2025-02-07&chain=17551&child=0&clearcache=all&config=GPNORF&currency=USD&depart=2025-02-17&group=ITA2025&hotel=64070&level=hotel&locale=en-US&productcurrency=USD&rooms=1&theme=Group2"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Book here
-                </a>
-              </p>
-              <img
-                src={bahiaMap}
-                alt="Map of the rooms in Bahia"
-                className="mt-4 mb-4"
-              />
-              <UncontrolledCarousel items={items} className={styles.carousel} />
-            </div>
-            <div className="text-center" style={{ marginTop: '20px' }}>
-              <h3>Nearby Attractions</h3>
-              <UncontrolledCarousel
-                items={attraction_items}
-                className={styles.carousel}
-              />
-            </div>
-          </Container>
+          <div className="text-center">
+            <p className="display-4">Location Location Location</p>
+            <h3>Bahia Resort, San Diego</h3>
+            <p className="p">
+              TripAdvisor's consistently favorite San Diego Hotel, the Bahia
+              Resort is nestled on a serene private peninsula jutting into the
+              San Diego Bay. It features an expansive private white-sand, cabana
+              dotted, beachfront, a boat dock, lush tropical gardens, exotic
+              waterfowls, tennis courts, swimming pool, and fitness center, all
+              providing an idyllic setup for our meeting, collaboration, and
+              recreation. The Pacific Ocean, oceanfront boardwalk, Belmont
+              Amusement Park, and many restaurants are just a few minutes walk
+              away, and the bustling neighborhoods of Mission- and Pacific-Beach
+              a short distance beyond.
+            </p>
+            <p className="p">
+              The Bahia was recently renovated and boasts modern amply-sized
+              rooms, many with balconies, patios, and striking water views. Our
+              room rates are significantly discounted, with standard rooms
+              featuring varying views at $169, larger studios at $209, and
+              suites at $369, all inclusive of resort fees.
+            </p>
+            <Button
+              href="https://be.synxis.com/?adult=1&arrive=2025-02-07&chain=17551&child=0&clearcache=all&config=GPNORF&currency=USD&depart=2025-02-17&group=ITA2025&hotel=64070&level=hotel&locale=en-US&productcurrency=USD&rooms=1&theme=Group2"
+              target="_blank"
+              rel="noopener noreferrer"
+              color="primary"
+            >
+              Book here
+            </Button>
+            <img
+              src={bahiaMap}
+              alt="Map of the rooms in Bahia"
+              className="mt-4 mb-4"
+            />
+            <UncontrolledCarousel items={items} className={styles.carousel} />
+          </div>
+          <div className="text-center" style={{ marginTop: '72px' }}>
+            <h3>Nearby Attractions</h3>
+            <UncontrolledCarousel
+              items={attraction_items}
+              className={styles.carousel}
+            />
+          </div>
         </Jumbotron>
       </div>
     );
