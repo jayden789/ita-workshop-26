@@ -1,0 +1,84 @@
+<VirtualHost *:80>
+
+    ServerName  ita.ucsd.edu
+    ServerAdmin support@eng.ucsd.edu
+
+    Redirect / https://ita.ucsd.edu/
+
+    DocumentRoot /var/www/itaweb/htdocs
+
+</VirtualHost>
+
+<VirtualHost *:443>
+
+    ServerName  ita.ucsd.edu
+    ServerAdmin support@eng.ucsd.edu
+
+   # LogFormat   "ita %v %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+#    TransferLog ${APACHE_LOG_DIR}/access.log
+#    TransferLog "|| /usr/bin/logger -d -u debian-bug-705215 -t apache2 -n weblog.eng.ucsd.edu -p local4.notice"
+    #LogLevel debug
+
+    DocumentRoot /var/www/itaweb/htdocs
+   <Directory />
+        Options FollowSymLinks
+        AllowOverride None
+    </Directory>
+
+    # Running a server with this config and mod_rewrite or mod_fcgid disabled
+    # is meaningless so <IfModule> tags are left out.
+
+    RewriteEngine on
+    RewriteOptions Inherit
+
+    RewriteRule   ^/our_awstats/(.*)$   /var/www/itaweb/stats/html/$1  [L]
+    RewriteRule   ^/(awstats-icon/.*)$  /var/nfs/$1 [L]
+    RewriteRule   ^/server-status/.*    - [L]
+
+    # everything else
+    RewriteRule   ^/(.*)$  /var/www/itaweb/htdocs/$1  [L]
+
+    SuexecUserGroup nobody nogroup
+
+    # The following should be equal to or less than PHP_FCGI_CHILDREN set in the wrapper script
+    # See "Special PHP considerations" on http://httpd.apache.org/mod_fcgid/mod/mod_fcgid.html#examples
+    FcgidMaxRequestsPerProcess 5000
+    FcgidMaxRequestLen 16777216
+    # The default timeout is 40 seconds, which leads to some scripts sending out bulk emails
+    # to time out (ex. http://ita.ucsd.edu/inviters2/index.php). Bumping this up to 5 minutes,
+    # but it may need to be revisited if used for DOS attacks.
+    IPCCommTimeout 300
+
+    <Directory /var/www/itaweb/htdocs>
+        Options +ExecCGI -Indexes
+        AllowOverride All
+
+        AddHandler fcgid-script .php
+        FCGIWrapper /var/www/fcgid-scripts/php-starter .php
+
+        AddHandler cgi-script .cgi .pl .py
+
+        AddType text/css .css
+        AddType text/javascript .js
+    </Directory>
+    <Directory /var/www/itaweb/stats/html>
+        AllowOverride AuthConfig
+    </Directory>
+    <Directory /var/nfs/awstats-icon>
+         Require all granted
+    </Directory>
+
+    SSLEngine on
+    SSLProtocol -ALL +TLSv1.2
+    SSLCipherSuite      ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+    SSLHonorCipherOrder on
+#    SSLCertificateFile       /var/nfs/conf/certs/ita_ucsd_edu_cert.cer
+#    SSLCertificateKeyFile    /var/nfs/conf/private/ita_ucsd_edu.key
+    SSLCertificateFile       /etc/ssl/certs/ita_ucsd_edu_cert.cer
+    SSLCertificateKeyFile    /etc/ssl/private/ita_ucsd_edu.key
+#    SSLCertificateChainFile  /etc/ssl/certs/incommon_interm.cer
+    SSLCertificateChainFile  /etc/ssl/certs/ita_ucsd_edu_interm.cer
+
+</VirtualHost>

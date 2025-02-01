@@ -46,7 +46,12 @@ export default class InvitedSessionsSection extends React.Component {
         title: 'Graph Signal Processing',
         chair: 'Antonio Marques',
         day: 'Monday',
-        speakers: ['Yanning Shen', 'Geert Leus', 'Antonio Marques', 'Florian Meyer'],
+        speakers: [
+          'Yanning Shen',
+          'Geert Leus',
+          'Antonio Marques',
+          'Florian Meyer',
+        ],
       },
       {
         title: 'Array Sensing',
@@ -58,7 +63,12 @@ export default class InvitedSessionsSection extends React.Component {
         title: 'Machine Learning Approaches to Information Theory',
         chair: 'Haim Permuter',
         day: 'Monday',
-        speakers: ['Shirin Bidokhti', 'Hesam Mahdavifar', 'Krishna Narayanan', 'Haim Permuter'],
+        speakers: [
+          'Shirin Bidokhti',
+          'Hesam Mahdavifar',
+          'Krishna Narayanan',
+          'Haim Permuter',
+        ],
       },
       {
         title: 'Coding and Security',
@@ -73,7 +83,8 @@ export default class InvitedSessionsSection extends React.Component {
         speakers: ['Ashish Khisti', 'Jun Chen'],
       },
       {
-        title: 'Statistical learning for analysis and design of control systems',
+        title:
+          'Statistical learning for analysis and design of control systems',
         chair: 'Stephen Tu',
         day: 'Monday',
         speakers: ['Ingvar Ziemann', 'Sylvia Herbert', 'Sicun Gao', 'Lin Yang'],
@@ -82,7 +93,12 @@ export default class InvitedSessionsSection extends React.Component {
         title: 'Adaptive and stochastic optimization',
         chair: 'Mladen Kolar',
         day: 'Monday',
-        speakers: ['Mladen Kolar', 'Michael Mahoney', 'Krishnakumar Balasubramanian', 'Chaoyue Liu'],
+        speakers: [
+          'Mladen Kolar',
+          'Michael Mahoney',
+          'Krishnakumar Balasubramanian',
+          'Chaoyue Liu',
+        ],
       },
       {
         title: 'Individualized Decision-Making',
@@ -94,7 +110,12 @@ export default class InvitedSessionsSection extends React.Component {
         title: 'Reed-Muller and Polar Codes',
         chair: 'Henry Pfister',
         day: 'Monday',
-        speakers: ['Navin Kashyap', 'Namyoon Lee', 'Hsin-Po Wang', 'Henry Pfister'],
+        speakers: [
+          'Navin Kashyap',
+          'Namyoon Lee',
+          'Hsin-Po Wang',
+          'Henry Pfister',
+        ],
       },
       {
         title: 'Distributed and federated learning',
@@ -106,67 +127,100 @@ export default class InvitedSessionsSection extends React.Component {
         title: 'Optimization, Sampling, and Games from Classical Mechanics',
         chair: 'Jun-Kun Wang',
         day: 'Monday',
-        speakers: ['Andre Wibisono','Jun-Kun Wang', ' Qijia Jiang', 'Ashia Wilson'],
+        speakers: [
+          'Andre Wibisono',
+          'Jun-Kun Wang',
+          ' Qijia Jiang',
+          'Ashia Wilson',
+        ],
       },
       {
         title: 'Private Optimization with Correlated Noise',
         chair: 'Christopher Choquette',
         day: 'Monday',
-        speakers: ['Abhradeep Thakurta','Krishnamurthy Dvijotham', 'Arun Ganesh', 'Zheng Xu'],
+        speakers: [
+          'Abhradeep Thakurta',
+          'Krishnamurthy Dvijotham',
+          'Arun Ganesh',
+          'Zheng Xu',
+        ],
       },
       {
         title: 'Large language models',
         chair: 'Ziteng Sun',
         day: 'Monday',
-        speakers: ['Ahmad Beirami','Yu-Xiang Wang', 'Samet Oymak', 'Ziteng Sun'],
+        speakers: [
+          'Ahmad Beirami',
+          'Yu-Xiang Wang',
+          'Samet Oymak',
+          'Ziteng Sun',
+        ],
       },
       {
         title: 'Quantum LDPC Codes for Fault-Tolerant Computation',
         chair: 'Nithin Raveendran',
         day: 'Monday',
-        speakers: ['Nithin Raveendran','Hanwen Yao', 'Siyi Yang', 'Narayanan Rengaswamy'],
+        speakers: [
+          'Nithin Raveendran',
+          'Hanwen Yao',
+          'Siyi Yang',
+          'Narayanan Rengaswamy',
+        ],
       },
       {
         title: 'Learning/Optimization/Control in Smart Grids',
         chair: 'Yuanyuan Shi',
         day: 'Monday',
-        speakers: ['Yuanyuan Shi','Deepjyoti Deka'],
+        speakers: ['Yuanyuan Shi', 'Deepjyoti Deka'],
       },
       {
         title: 'Topics and advances in sequential decision making',
         chair: 'Yian Ma',
         day: 'Tuesday',
-        speakers: ['Aldo Pacchiano', 'Stephen Tu' , 'Quanquan Gu', 'Nikki Kuang'],
+        speakers: [
+          'Aldo Pacchiano',
+          'Stephen Tu',
+          'Quanquan Gu',
+          'Nikki Kuang',
+        ],
       },
       {
         title: 'People-Centric ITA',
         chair: 'Nihar Shah',
         day: 'Monday',
-        speakers: ['Jingyan Wang', 'Irene Lo' , 'Madeleine Udell', 'Praveen Venkatesh'],
+        speakers: [
+          'Jingyan Wang',
+          'Irene Lo',
+          'Madeleine Udell',
+          'Praveen Venkatesh',
+        ],
       },
     ];
     // Sort the sessions by the first letter of the title
     invitedSessions.sort((a, b) => a.title.localeCompare(b.title));
 
     // Sort the speakers within each session by the first letter of their name
-    invitedSessions.forEach(session => {
-      let chairSpeaker = session.speakers.filter(speaker => speaker === session.chair);
-      let otherSpeakers = session.speakers.filter(speaker => speaker !== session.chair);
-    
+    invitedSessions.forEach((session) => {
+      let chairSpeaker = session.speakers.filter(
+        (speaker) => speaker === session.chair
+      );
+      let otherSpeakers = session.speakers.filter(
+        (speaker) => speaker !== session.chair
+      );
+
       otherSpeakers.sort((a, b) => {
-        let lastNameA = a.split(" ").pop(); 
-        let lastNameB = b.split(" ").pop(); 
-        return lastNameA.localeCompare(lastNameB); 
+        let lastNameA = a.split(' ').pop();
+        let lastNameB = b.split(' ').pop();
+        return lastNameA.localeCompare(lastNameB);
       });
-    
+
       if (chairSpeaker.length > 0) {
         otherSpeakers.push(chairSpeaker[0]);
       }
-    
+
       session.speakers = otherSpeakers;
     });
 
-    
     return (
       <div>
         <Jumbotron
@@ -182,33 +236,34 @@ export default class InvitedSessionsSection extends React.Component {
             <p style={{ color: 'white' }}>Scroll or Swipe to view all</p>
             <div className={styles.scroll}>
               <Row style={{ flexWrap: 'inherit' }}>
-                {invitedSessions.map((session) => {
-                  return (
-                    <Col>
-                      <Card className={styles.card}>
-                        <CardBody className={styles.cardBody}>
-                          <CardTitle className={styles.cardHeader}>
-                            {session.title}
-                            <CardSubtitle className={styles.cardSub}>
-                              {session.chair}
-                            </CardSubtitle>
-                          </CardTitle>
-                          <CardText className={styles.cardText}>
-                            {session.speakers.map((speaker) => {
-                              return <p>{speaker}</p>;
-                            })}
+                {invitedSessions.map((session, sessionIdx) => (
+                  <Col key={sessionIdx}>
+                    <Card className={styles.card}>
+                      <CardBody className={styles.cardBody}>
+                        <CardTitle className={styles.cardHeader}>
+                          {session.title}
+                          <CardSubtitle className={styles.cardSub}>
+                            {session.chair}
+                          </CardSubtitle>
+                        </CardTitle>
+                        {session.speakers.map((speaker, speakerIdx) => (
+                          <CardText
+                            key={speakerIdx}
+                            className={styles.cardText}
+                          >
+                            {speaker}
                           </CardText>
-                        </CardBody>
-                        {/* <CardFooter
+                        ))}
+                      </CardBody>
+                      {/* <CardFooter
                           className="mt-auto"
                           style={{ fontSize: '12px' }}
                         >
                           {session.day}
                         </CardFooter> */}
-                      </Card>
-                    </Col>
-                  );
-                })}
+                    </Card>
+                  </Col>
+                ))}
               </Row>
             </div>
             <FontAwesomeIcon icon={faArrowsAltH} color="white" size="2x" />
