@@ -9,23 +9,27 @@ const Link = ({ url, title = '', children }) => (
 
 const ieeeCocLink = (
   <Link url="https://www.ieee.org/content/dam/ieee-org/ieee/web/org/conferences/Event%20Conduct%20and%20Safety%20Statement.pdf">
-    IEEE
+    <strong>IEEE</strong>
   </Link>
 );
 
 const acmCocLink = (
   <Link url="https://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment">
-    ACM
+    <strong>ACM</strong>
   </Link>
 );
 
 const itaCocLink = (
   <Link url="https://www.itsoc.org/about/conduct-and-ethics">
-    Information Theory Society
+    <strong>Information Theory Society</strong>
   </Link>
 );
 
-const emailLink = <a href="mailto:ita@ucsd.edu">ita@ucsd.edu</a>;
+const emailLink = (
+  <a href="mailto:ita@ucsd.edu">
+    <strong>ita@ucsd.edu</strong>
+  </a>
+);
 
 export default class CodeOfConductSection extends React.Component {
   render() {
@@ -37,8 +41,8 @@ export default class CodeOfConductSection extends React.Component {
             <p>
               The ITA workshop and community are built upon the core values of
               collegiality, support, and dignity for all, and we endorse the
-              conference codes of conduct adopted by the {acmCocLink}, {ieeeCocLink}, and the{' '}
-              {itaCocLink}. Disrespectful, offensive, and
+              conference codes of conduct adopted by the {acmCocLink},{' '}
+              {ieeeCocLink}, and the {itaCocLink}. Disrespectful, offensive, and
               inappropriate behavior is not welcome at our events. If you
               observe such behavior, please inform one of our staff or email us
               at {emailLink}.

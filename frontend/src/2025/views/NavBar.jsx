@@ -11,7 +11,6 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  Badge,
 } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
@@ -80,17 +79,17 @@ export default class NavBar2025 extends React.Component {
               <NavItem>
                 <NavLink tag={Link} to="/#eata" onClick={this.toggle}>EATA</NavLink>
               </NavItem> */}
-              <NavItem>
+              {/*<NavItem>
                 <NavLink tag={Link} to="#socialevents" onClick={this.toggle}>
                   Social Events
                 </NavLink>
-              </NavItem>
+              </NavItem>*/}
 
-              <NavItem>
+              {/*<NavItem>
                 <NavLink tag={Link} to="/#participants" onClick={this.toggle}>
                   Participants
                 </NavLink>
-              </NavItem>
+              </NavItem>*/}
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Other Years

@@ -85,7 +85,12 @@ export default class RegistrationSection extends React.Component {
               </div>
             )}
             <div className="text-center">
-              <Button tag={Link} to="/register" color="primary">
+              <Button
+                href="https://forms.gle/SiefKRum2kFYJmHd9"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="primary"
+              >
                 Register
               </Button>
               <div className={classNames('text-light', styles.regnInfoText)}>
@@ -94,7 +99,10 @@ export default class RegistrationSection extends React.Component {
                   Registration is for attendance only. Talk presentation
                   requires a separate invitation. If you are interested in
                   presenting a talk, please{' '}
-                  <a href="mailto:ita@ucsd.edu">contact us</a>.
+                  <a href="mailto:ita@ucsd.edu">
+                    <strong>contact us</strong>
+                  </a>
+                  .
                 </p>
               </div>
             </div>
