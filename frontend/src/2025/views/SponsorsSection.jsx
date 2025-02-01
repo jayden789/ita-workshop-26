@@ -26,6 +26,18 @@ export default class SponsorsSection extends React.Component {
           >
             <h1 className="display-8 mb-2">Sponsors</h1>
             <img
+              src={require('./img2025/ctgt-logo.png')}
+              className={styles.img}
+              alt="CTGT"
+            />
+            <img
+              src={
+                'https://ita.ucsd.edu/workshop/23/images/SpecialEvents_IEEE_ITS_2_23.jpg'
+              }
+              className={styles.img}
+              alt="IEEE ITS"
+            />
+            <img
               src={require('./img2020/qualcomm.jpg')}
               className={styles.qualcommimg}
               alt="Qualcomm"
@@ -42,13 +54,6 @@ export default class SponsorsSection extends React.Component {
             />
             <img
               src={require('./img2020/hdsi.jpg')}
-              className={styles.img}
-              alt="UCSD HDSI"
-            />
-            <img
-              src={
-                'https://ita.ucsd.edu/workshop/23/images/SpecialEvents_IEEE_ITS_2_23.jpg'
-              }
               className={styles.img}
               alt="UCSD HDSI"
             />
