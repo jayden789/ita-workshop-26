@@ -97,7 +97,7 @@ class App extends Component {
   };
 
   loadWorkshop2024 = () => {
-    api('api/v0/workshops/ita24/').then((workshop) =>
+    api('api/v0/workshops/ita25/').then((workshop) =>
       this.setState({
         participantsUrl24: workshop['participants_url'],
         workshop,
