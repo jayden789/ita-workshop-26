@@ -1,28 +1,24 @@
 <VirtualHost *:80>
-
     ServerName  ita.ucsd.edu
     ServerAdmin support@eng.ucsd.edu
-
     Redirect / https://ita.ucsd.edu/
-
     DocumentRoot /var/www/itaweb/htdocs
-
 </VirtualHost>
 
 <VirtualHost *:443>
-
     ServerName  ita.ucsd.edu
     ServerAdmin support@eng.ucsd.edu
 
-   # LogFormat   "ita %v %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""
+    # LogFormat "ita %v %h %l %u %t \"%r\" %>s %O \"%{Referer}i\" \"%{User-Agent}i\""
     ErrorLog ${APACHE_LOG_DIR}/error.log
     CustomLog ${APACHE_LOG_DIR}/access.log combined
-#    TransferLog ${APACHE_LOG_DIR}/access.log
-#    TransferLog "|| /usr/bin/logger -d -u debian-bug-705215 -t apache2 -n weblog.eng.ucsd.edu -p local4.notice"
+    # TransferLog ${APACHE_LOG_DIR}/access.log
+    # TransferLog "|| /usr/bin/logger -d -u debian-bug-705215 -t apache2 -n weblog.eng.ucsd.edu -p local4.notice"
     #LogLevel debug
 
     DocumentRoot /var/www/itaweb/htdocs
-   <Directory />
+    
+    <Directory />
         Options FollowSymLinks
         AllowOverride None
     </Directory>
@@ -33,12 +29,12 @@
     RewriteEngine on
     RewriteOptions Inherit
 
-    RewriteRule   ^/our_awstats/(.*)$   /var/www/itaweb/stats/html/$1  [L]
-    RewriteRule   ^/(awstats-icon/.*)$  /var/nfs/$1 [L]
-    RewriteRule   ^/server-status/.*    - [L]
+    RewriteRule ^/our_awstats/(.*)$ /var/www/itaweb/stats/html/$1  [L]
+    RewriteRule ^/(awstats-icon/.*)$ /var/nfs/$1 [L]
+    RewriteRule ^/server-status/.* - [L]
 
     # everything else
-    RewriteRule   ^/(.*)$  /var/www/itaweb/htdocs/$1  [L]
+    RewriteRule ^/(.*)$ /var/www/itaweb/htdocs/$1 [L]
 
     SuexecUserGroup nobody nogroup
 
@@ -63,22 +59,24 @@
         AddType text/css .css
         AddType text/javascript .js
     </Directory>
+
     <Directory /var/www/itaweb/stats/html>
         AllowOverride AuthConfig
     </Directory>
+
     <Directory /var/nfs/awstats-icon>
          Require all granted
     </Directory>
 
     SSLEngine on
     SSLProtocol -ALL +TLSv1.2
-    SSLCipherSuite      ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+    SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
     SSLHonorCipherOrder on
-#    SSLCertificateFile       /var/nfs/conf/certs/ita_ucsd_edu_cert.cer
-#    SSLCertificateKeyFile    /var/nfs/conf/private/ita_ucsd_edu.key
-    SSLCertificateFile       /etc/ssl/certs/ita_ucsd_edu_cert.cer
-    SSLCertificateKeyFile    /etc/ssl/private/ita_ucsd_edu.key
-#    SSLCertificateChainFile  /etc/ssl/certs/incommon_interm.cer
-    SSLCertificateChainFile  /etc/ssl/certs/ita_ucsd_edu_interm.cer
+    # SSLCertificateFile /var/nfs/conf/certs/ita_ucsd_edu_cert.cer
+    # SSLCertificateKeyFile /var/nfs/conf/private/ita_ucsd_edu.key
+    SSLCertificateFile /etc/ssl/certs/ita_ucsd_edu_cert.cer
+    SSLCertificateKeyFile /etc/ssl/private/ita_ucsd_edu.key
+    # SSLCertificateChainFile /etc/ssl/certs/incommon_interm.cer
+    SSLCertificateChainFile /etc/ssl/certs/ita_ucsd_edu_interm.cer
 
 </VirtualHost>
