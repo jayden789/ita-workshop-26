@@ -33,12 +33,12 @@ export default class RegistrationSection extends React.Component {
             </div>
             {this.props.loadFees ? undefined : (
               <div className="text-center">
-                <Table dark hover bordered>
+                <Table dark hover bordered style={{ marginBottom: '0px' }}>
                   <tbody>
                     <tr>
-                      <th />
-                      <th>Standard</th>
-                      <th>Student</th>
+                      <th style={{ width: '33.3%' }} />
+                      <th style={{ width: '33.3%' }}>Standard</th>
+                      <th style={{ width: '33.3%' }}>Student</th>
                     </tr>
                     <tr>
                       <td>Base</td>
@@ -90,8 +90,9 @@ export default class RegistrationSection extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 color="primary"
+                style={{ width: '50%', marginTop: '32px', marginBottom: '0px' }}
               >
-                Register
+                Register Now
               </Button>
               <div className={classNames('text-light', styles.regnInfoText)}>
                 <RegistrationInfo />

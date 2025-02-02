@@ -5,12 +5,12 @@ export default class GeneralInfoSection extends React.Component {
   render() {
     return (
       <div>
-        <Jumbotron fluid style={{ backgroundColor: 'white' }}>
+        <Jumbotron fluid style={{ backgroundColor: 'white', margin: 0 }}>
           <div className="text-center">
             <h1 className="display-4 mb-4"> A bit ab't ITA</h1>
             <Container>
               <p>
-                The <strong>Information Theory and Applications (ITA)</strong>{' '}
+                <strong>The Information Theory and Applications (ITA)</strong>{' '}
                 workshop is a multidisciplinary meeting of academic and
                 industrial researchers applying theory to diverse scientific and
                 technological disciplines. Unlike most workshops and

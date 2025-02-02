@@ -1,0 +1,46 @@
+<VirtualHost *:80>
+    ServerName  ita.ucsd.edu
+    ServerAdmin support@eng.ucsd.edu
+    Redirect / https://ita.ucsd.edu/
+</VirtualHost>
+
+<VirtualHost *:443>
+    ServerName  ita.ucsd.edu
+    ServerAdmin support@eng.ucsd.edu
+
+    DocumentRoot /var/www/itaweb-react
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+    # React directory configuration
+    <Directory /var/www/itaweb-react>
+        Options -Indexes
+        AllowOverride All
+        Require all granted
+
+        RedirectMatch ^/$ /workshop/
+
+        RewriteEngine On
+        # Change RewriteBase to match homepage
+        RewriteBase /workshop/
+        
+        # If the request is not for an actual file or directory
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        # Send to React's index.html with the correct path
+        RewriteRule . /workshop/index.html [L]
+
+        AddType text/css .css
+        AddType text/javascript .js
+    </Directory>
+
+    # SSL Configuration
+    SSLEngine on
+    SSLProtocol -ALL +TLSv1.2
+    SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+    SSLHonorCipherOrder on
+    SSLCertificateFile    /etc/ssl/certs/ita_ucsd_edu_cert.cer
+    SSLCertificateKeyFile /etc/ssl/private/ita_ucsd_edu.key
+    SSLCertificateChainFile /etc/ssl/certs/ita_ucsd_edu_interm.cer
+</VirtualHost>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Jumbotron } from 'reactstrap';
+import { Jumbotron, Button } from 'reactstrap';
 import classNames from 'classnames';
 
 import styles from './HeroSection.module.css';
@@ -8,10 +8,7 @@ export default class ITAJumboMain extends React.Component {
   render() {
     return (
       <div>
-        <Jumbotron
-          fluid
-          className={classNames(styles.titleJumbo, 'mt-0', 'mb-0')}
-        >
+        <Jumbotron fluid className={styles.titleJumbo}>
           <video
             loop
             muted
@@ -27,9 +24,7 @@ export default class ITAJumboMain extends React.Component {
             />
           </video>
           <div className={styles.overlay} />
-          <div
-            className={classNames('text-center', 'mt-4', styles.titleSection)}
-          >
+          <div className={classNames('text-center', styles.titleSection)}>
             <h1 className={classNames('display-4', styles.titleText)}>
               2025 Information Theory and Applications
               <span className={styles.breakSpaceWhenSmall} />
@@ -43,6 +38,22 @@ export default class ITAJumboMain extends React.Component {
               A casual gathering of researchers applying theory to diverse areas
               in science and engineering
             </h3>
+            <div style={{ flex: 1 }}></div>
+            <div className={styles.registerSection}>
+              <Button
+                href="https://forms.gle/SiefKRum2kFYJmHd9"
+                target="_blank"
+                rel="noopener noreferrer"
+                color="primary"
+                className={styles.registerButton}
+              >
+                Register Now
+              </Button>
+              <div className={styles.registerGuidance}>
+                Please submit your attendance and presentation details to
+                participate in the workshop.
+              </div>
+            </div>
           </div>
         </Jumbotron>
       </div>
