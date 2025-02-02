@@ -90,7 +90,7 @@ export default class RegistrationSection extends React.Component {
                 target="_blank"
                 rel="noopener noreferrer"
                 color="primary"
-                style={{ width: '50%', marginTop: '32px', marginBottom: '0px' }}
+                style={{ marginTop: '32px', marginBottom: '0px' }}
               >
                 Register Now
               </Button>

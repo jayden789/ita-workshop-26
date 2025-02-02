@@ -123,7 +123,7 @@ export default class ITAJumboLocation extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
               color="primary"
-              style={{ width: '50%', marginTop: '32px', marginBottom: '32px' }}
+              style={{ marginTop: '32px', marginBottom: '32px' }}
             >
               Book Here
             </Button>
