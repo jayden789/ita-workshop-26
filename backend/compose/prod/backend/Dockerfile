@@ -19,6 +19,7 @@ RUN apt-get install && apt-get install -y texlive-fonts-recommended
 RUN apt-get install -y texlive-fonts-extra
 RUN pip install pipenv
 RUN pip install pandas
+RUN pip install psycogreen
 RUN pipenv lock --clear
 RUN pipenv install --system
 

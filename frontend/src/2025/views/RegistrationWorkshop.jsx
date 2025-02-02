@@ -242,6 +242,7 @@ function checkRequired({
   valentinesEvent,
   shirtType,
   shirtSize,
+  banquetOption,
 }) {
   const mustNotBeBlank = [
     firstName,
@@ -253,6 +254,7 @@ function checkRequired({
     valentinesEvent,
     shirtType,
     shirtSize,
+    banquetOption,
   ];
   const nonBlankOk = !mustNotBeBlank.includes('');
   const consecOk = nonconsecDays || ![firstDay, lastDay].includes('');
@@ -260,8 +262,9 @@ function checkRequired({
     !nonconsecDays || [mon, tues, wed, thurs, fri].includes(true);
 
   const numWedGuests = calculateWed(wedBanq);
-
-  return nonBlankOk && consecOk && nonconsecOk;
+  const banquetOptionOk = banquetOption.length === numWedGuests;
+  
+  return nonBlankOk && consecOk && nonconsecOk && banquetOptionOk;
 }
 
 // this is hacky. TODO replace with something more robust
@@ -295,6 +298,7 @@ export default class RegistrationWorkshop extends React.Component {
       sundayRecep: this.props.SundayReceptionOption,
       wedBanq: this.props.WednesdayBanquetOption,
       dinnerOptions: this.props.DinnerOptions,
+      banquetOption: this.props.banquetOption,
     });
     const numDays = calculateNumDays(
       this.props.nonConsecutiveDays,
@@ -672,8 +676,29 @@ export default class RegistrationWorkshop extends React.Component {
             (${this.props.wedBanquetPrice}/guest) <strong>${wedPrice}</strong>
           </Label>
         </FormGroup>
+        
+        {numWedGuests > 0 ? (
+            <Col lg={6}>
+              <div style={{ display: 'flex' }}>
+                <FormText color="muted">Please choose your entrée</FormText>
+                {Array.from(new Array(numWedGuests)).map((_, idx) => (
+                  <div className={styles.select}>
+                    <Select
+                      name="banquetOption"
+                      options={BANQUET_GUEST_OPTIONS}
+                      value={this.props.banquetOption[idx] ?? ''}
+                      onChange={(e) => {
+                        this.props.handleBanquetOptionChange(e, idx);
+                      }}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                  </div>
+                ))}
+              </div>
+            </Col>
+          ) : null}
 
-        <FormGroup row className="mb-1 mt-2">
+        {/* <FormGroup row className="mb-1 mt-2">
           <Col lg={2}>
             <Label className="text-danger">ITALT*</Label>
           </Col>
@@ -727,7 +752,7 @@ export default class RegistrationWorkshop extends React.Component {
           >
             (${this.props.italtPrice}/day) <strong>${italtPrice}</strong>
           </Label>
-        </FormGroup>
+        </FormGroup> */}
 
         {/* <FormGroup row>
             <Col lg={2}>
