@@ -16,6 +16,9 @@ export default class RegistrationSection extends React.Component {
     const regnOption = this.props.registrationFees[feeType][
       'registration_options'
     ].find((option) => option.slug === optionSlug);
+    if (regnOption === undefined) {
+      return '';
+    }
     return '$' + regnOption.fee.toFixed(0);
   };
 
