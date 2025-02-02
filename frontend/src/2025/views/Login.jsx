@@ -98,7 +98,7 @@ export default class Login2020 extends React.Component {
         {this.props.navbar}
         {/* <NavBar {...this.props.navbarProps} /> */}
         <Jumbotron fluid>
-          <h2 className="text-center mb-3">ITA Workshop 2024</h2>
+          <h2 className="text-center mb-3">ITA Workshop 2025</h2>
           <Container className="loginContainer">
             <div>
               <Form>

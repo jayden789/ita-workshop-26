@@ -27,32 +27,32 @@ const withoutUndefinedValues = obj =>
   objectFromEntries(Object.entries(obj).filter(([k, v]) => v !== undefined));
 
 const FROM_RAW_SUNDAY_RECEPTION = {
-  ita24_sundayReception_notAttending: 'NOT_ATTENDING',
-  ita24_sundayReception_selfOnly: 'SELF_ONLY',
-  ita24_sundayReception_selfPlus1: 'SELF_PLUS_1',
-  ita24_sundayReception_selfPlus2: 'SELF_PLUS_2',
+  ita25_sundayReception_notAttending: 'NOT_ATTENDING',
+  ita25_sundayReception_selfOnly: 'SELF_ONLY',
+  ita25_sundayReception_selfPlus1: 'SELF_PLUS_1',
+  ita25_sundayReception_selfPlus2: 'SELF_PLUS_2',
 };
 const TO_RAW_SUNDAY_RECEPTION = invertObject(FROM_RAW_SUNDAY_RECEPTION);
 
 const FROM_RAW_BANQUET_SELF = {
-  ita24_banquetSelf_notAttending: 'NOT_ATTENDING',
-  ita24_banquetSelf_selfOnly: 'SELF_ONLY',
-  ita24_banquetSelf_selfPlus1: 'SELF_PLUS_1',
-  ita24_banquetSelf_selfPlus2: 'SELF_PLUS_2',
+  ita25_banquetSelf_notAttending: 'NOT_ATTENDING',
+  ita25_banquetSelf_selfOnly: 'SELF_ONLY',
+  ita25_banquetSelf_selfPlus1: 'SELF_PLUS_1',
+  ita25_banquetSelf_selfPlus2: 'SELF_PLUS_2',
 };
 const TO_RAW_BANQUET_SELF = invertObject(FROM_RAW_BANQUET_SELF);
 
 const FROM_RAW_VALENTINES_EVENT = {
-  ita24_valentinesEvent_notAttending: 'NOT_ATTENDING',
-  ita24_valentinesEvent_selfOnly: 'SELF_ONLY',
-  ita24_valentinesEvent_selfPlus1: 'SELF_PLUS_1',
-  ita24_valentinesEvent_selfPlus2: 'SELF_PLUS_2',
+  ita25_valentinesEvent_notAttending: 'NOT_ATTENDING',
+  ita25_valentinesEvent_selfOnly: 'SELF_ONLY',
+  ita25_valentinesEvent_selfPlus1: 'SELF_PLUS_1',
+  ita25_valentinesEvent_selfPlus2: 'SELF_PLUS_2',
 };
 const TO_RAW_VALENTINES_EVENT = invertObject(FROM_RAW_VALENTINES_EVENT);
 
 const FROM_RAW_MONDAY_LUNCH = {
-  ita24_mondayLunch_notAttending: 'NOT_ATTENDING',
-  ita24_mondayLunch_attending: 'ATTENDING',
+  ita25_mondayLunch_notAttending: 'NOT_ATTENDING',
+  ita25_mondayLunch_attending: 'ATTENDING',
 };
 const TO_RAW_MONDAY_LUNCH = invertObject(FROM_RAW_MONDAY_LUNCH);
 

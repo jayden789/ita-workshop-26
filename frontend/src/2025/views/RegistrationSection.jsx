@@ -55,13 +55,13 @@ export default class RegistrationSection extends React.Component {
                       <td>
                         {this.regnOptionFeeText(
                           'FULL',
-                          'ita24_sundayReception_selfOnly'
+                          'ita25_sundayReception_selfOnly'
                         )}
                       </td>
                       <td>
                         {this.regnOptionFeeText(
                           'STUDENT',
-                          'ita24_sundayReception_selfOnly'
+                          'ita25_sundayReception_selfOnly'
                         )}
                       </td>
                     </tr>
@@ -70,13 +70,13 @@ export default class RegistrationSection extends React.Component {
                       <td>
                         {this.regnOptionFeeText(
                           'FULL',
-                          'ita24_banquetSelf_selfOnly'
+                          'ita25_banquetSelf_selfOnly'
                         )}
                       </td>
                       <td>
                         {this.regnOptionFeeText(
                           'STUDENT',
-                          'ita24_banquetSelf_selfOnly'
+                          'ita25_banquetSelf_selfOnly'
                         )}
                       </td>
                     </tr>

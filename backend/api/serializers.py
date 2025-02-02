@@ -925,7 +925,7 @@ class RegistrationAggregateStatsIta19Serializer(serializers.BaseSerializer):
             ["notAttending", "attending"], ["participating", "paid"]
         ):
             monday_lunch_counts[choice][condition] = instance.get(
-                "ita24_mondayLunch_{}_{}".format(choice, condition)
+                "ita25_mondayLunch_{}_{}".format(choice, condition)
             )
 
         wednesday_banquet_counts = collections.defaultdict(dict)
@@ -934,7 +934,7 @@ class RegistrationAggregateStatsIta19Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             wednesday_banquet_counts[choice][condition] = instance.get(
-                "ita24_banquetSelf_{}_{}".format(choice, condition)
+                "ita25_banquetSelf_{}_{}".format(choice, condition)
             )
 
         valentines_event_counts = collections.defaultdict(dict)
@@ -943,7 +943,7 @@ class RegistrationAggregateStatsIta19Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             valentines_event_counts[choice][condition] = instance.get(
-                "ita24_valentinesEvent_{}_{}".format(choice, condition)
+                "ita25_valentinesEvent_{}_{}".format(choice, condition)
             )
         
         saturday_workshop_counts = collections.defaultdict(dict)
@@ -951,7 +951,7 @@ class RegistrationAggregateStatsIta19Serializer(serializers.BaseSerializer):
             ["notAttending", "attending"], ["participating", "paid"]
         ):
             saturday_workshop_counts[choice][condition] = instance.get(
-                "ita24_saturdayWorkshop_{}_{}".format(choice, condition)
+                "ita25_saturdayWorkshop_{}_{}".format(choice, condition)
             )
 
         return {
@@ -1075,16 +1075,16 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             sunday_reception_counts[choice][condition] = instance.get(
-                "ita24_sundayReception_{}_{}".format(choice, condition)
+                "ita25_sundayReception_{}_{}".format(choice, condition)
             )
 
         date_strs = [
-            "2024-02-18",
-            "2024-02-19",
-            "2024-02-20",
-            "2024-02-21",
-            "2024-02-22",
-            "2024-02-23",
+            "2025-02-09",
+            "2025-02-10",
+            "2025-02-11",
+            "2025-02-12",
+            "2025-02-13",
+            "2025-02-14",
         ]
         attending_date_counts = dict(
             (
@@ -1106,7 +1106,7 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             ["notAttending", "attending"], ["participating", "paid"]
         ):
             monday_lunch_counts[choice][condition] = instance.get(
-                "ita24_mondayLunch_{}_{}".format(choice, condition)
+                "ita25_mondayLunch_{}_{}".format(choice, condition)
             )
 
         italt_counts = collections.defaultdict(dict)
@@ -1114,7 +1114,7 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             ["notAttending", "attending"], ["participating", "paid"]
         ):
             italt_counts[choice][condition] = instance.get(
-                "ita24_italt_{}_{}".format(choice, condition)
+                "ita25_italt_{}_{}".format(choice, condition)
             )
 
         wednesday_banquet_counts = collections.defaultdict(dict)
@@ -1123,7 +1123,7 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             wednesday_banquet_counts[choice][condition] = instance.get(
-                "ita24_banquetSelf_{}_{}".format(choice, condition)
+                "ita25_banquetSelf_{}_{}".format(choice, condition)
             )
 
         valentines_event_counts = collections.defaultdict(dict)
@@ -1132,7 +1132,7 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             valentines_event_counts[choice][condition] = instance.get(
-                "ita24_valentinesEvent_{}_{}".format(choice, condition)
+                "ita25_valentinesEvent_{}_{}".format(choice, condition)
             )
 
         return {

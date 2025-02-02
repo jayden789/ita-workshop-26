@@ -78,7 +78,7 @@ export default class GeneralInfoSection extends React.Component {
               <p>
                 This year, the{' '}
                 <a
-                  href="http://algorithmiclearningtheory.org/alt2024/"
+                  href="http://algorithmiclearningtheory.org/alt2025/"
                   target="__blank"
                 >
                   ALT Conference

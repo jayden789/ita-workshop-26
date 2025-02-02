@@ -3,11 +3,11 @@ import queryString from 'query-string';
 export const getAttendingDates = (start, end, nonConsecutiveDays, days) => {
   const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const dateStrings = [
-    '2024-02-19',
-    '2024-02-20',
-    '2024-02-21',
-    '2024-02-22',
-    '2024-02-23',
+    '2025-02-09',
+    '2025-02-10',
+    '2025-02-11',
+    '2025-02-12',
+    '2025-02-13',
   ];
 
   let attendingDates = [];
@@ -26,11 +26,11 @@ export const getAttendingDates = (start, end, nonConsecutiveDays, days) => {
 
 export const reverseAttendingDates = (dayArray) => {
   const dateStrings = [
-    '2024-02-19',
-    '2024-02-20',
-    '2024-02-21',
-    '2024-02-22',
-    '2024-02-23',
+    '2025-02-10',
+    '2025-02-11',
+    '2025-02-12',
+    '2025-02-13',
+    '2025-02-14',
   ];
 
   let attendingDays = [false, false, false, false, false];
@@ -241,7 +241,7 @@ export const fetchPaginatedRegistrations = (
   probablyParticipating = true
 ) => {
   const queryParams = {
-    workshop_slug: 'ita24',
+    workshop_slug: 'ita25',
     page,
     page_size: pageSize,
     probably_participating: probablyParticipating,

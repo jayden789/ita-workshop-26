@@ -143,7 +143,7 @@ class Schedule:
         return TIMELIST[int(session)-1]
 
     def get_time_encoded(self, day, time):
-        DATES = {'M':'2024-02-19 ', 'T': '2024-02-20 ', 'W': '2024-02-21 ', 'R': '2024-02-22 ', 'F': '2024-02-23 '}
+        DATES = {'M':'2025-02-10 ', 'T': '2025-02-11 ', 'W': '2025-02-12 ', 'R': '2025-02-13 ', 'F': '2025-02-14 '}
         start_time= time[0:4]
         end_time= time[6:]
         time_encoded= DATES[day] + start_time + ':00Z' + '#' + DATES[day] + end_time + ':00Z'

@@ -57,7 +57,7 @@ logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name
 
-year = 2024
+year = 2025
 
 class UserViewSet(
     mixins.ListModelMixin,
@@ -522,7 +522,7 @@ class RegistrationViewSet(
 
 
 class RegistrationFeesViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = models.Workshop.objects.filter(slug='ita24')
+    queryset = models.Workshop.objects.filter(slug='ita25')
     serializer_class = serializers.RegistrationFeesSerializer
     permission_classes = (permissions.AllowAny,)
 
@@ -1334,28 +1334,28 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
     def ita23_sunday_reception_counts(self):
         slugs = [
-            "ita24_sundayReception_notAttending",
-            "ita24_sundayReception_selfOnly",
-            "ita24_sundayReception_selfPlus1",
-            "ita24_sundayReception_selfPlus2",
+            "ita25_sundayReception_notAttending",
+            "ita25_sundayReception_selfOnly",
+            "ita25_sundayReception_selfPlus1",
+            "ita25_sundayReception_selfPlus2",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
             for slug in slugs
         }
-        participating_counts["ita24_sundayReception_total"] = (
-            participating_counts["ita24_sundayReception_selfOnly"]
-            + 2 * participating_counts["ita24_sundayReception_selfPlus1"]
-            + 3 * participating_counts["ita24_sundayReception_selfPlus2"]
+        participating_counts["ita25_sundayReception_total"] = (
+            participating_counts["ita25_sundayReception_selfOnly"]
+            + 2 * participating_counts["ita25_sundayReception_selfPlus1"]
+            + 3 * participating_counts["ita25_sundayReception_selfPlus2"]
         )
         paid_counts = {
             slug: count_regns_with_option(slug, REGN_PAID_FILTER)
             for slug in slugs
         }
-        paid_counts["ita24_sundayReception_total"] = (
-            paid_counts["ita24_sundayReception_selfOnly"]
-            + 2 * paid_counts["ita24_sundayReception_selfPlus1"]
-            + 3 * paid_counts["ita24_sundayReception_selfPlus2"]
+        paid_counts["ita25_sundayReception_total"] = (
+            paid_counts["ita25_sundayReception_selfOnly"]
+            + 2 * paid_counts["ita25_sundayReception_selfPlus1"]
+            + 3 * paid_counts["ita25_sundayReception_selfPlus2"]
         )
         return {
             **map_dict_keys(participating_counts, "{}_participating".format),
@@ -1364,8 +1364,8 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
     def ita23_monday_lunch_counts(self):
         slugs = [
-            "ita24_mondayLunch_notAttending",
-            "ita24_mondayLunch_attending",
+            "ita25_mondayLunch_notAttending",
+            "ita25_mondayLunch_attending",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
@@ -1382,28 +1382,28 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
     def ita23_wednesday_banquet_counts(self):
         slugs = [
-            "ita24_banquetSelf_notAttending",
-            "ita24_banquetSelf_selfOnly",
-            "ita24_banquetSelf_selfPlus1",
-            "ita24_banquetSelf_selfPlus2",
+            "ita25_banquetSelf_notAttending",
+            "ita25_banquetSelf_selfOnly",
+            "ita25_banquetSelf_selfPlus1",
+            "ita25_banquetSelf_selfPlus2",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
             for slug in slugs
         }
-        participating_counts["ita24_banquetSelf_total"] = (
-            participating_counts["ita24_banquetSelf_selfOnly"]
-            + 2 * participating_counts["ita24_banquetSelf_selfPlus1"]
-            + 3 * participating_counts["ita24_banquetSelf_selfPlus2"]
+        participating_counts["ita25_banquetSelf_total"] = (
+            participating_counts["ita25_banquetSelf_selfOnly"]
+            + 2 * participating_counts["ita25_banquetSelf_selfPlus1"]
+            + 3 * participating_counts["ita25_banquetSelf_selfPlus2"]
         )
         paid_counts = {
             slug: count_regns_with_option(slug, REGN_PAID_FILTER)
             for slug in slugs
         }
-        paid_counts["ita24_banquetSelf_total"] = (
-            paid_counts["ita24_banquetSelf_selfOnly"]
-            + 2 * paid_counts["ita24_banquetSelf_selfPlus1"]
-            + 3 * paid_counts["ita24_banquetSelf_selfPlus2"]
+        paid_counts["ita25_banquetSelf_total"] = (
+            paid_counts["ita25_banquetSelf_selfOnly"]
+            + 2 * paid_counts["ita25_banquetSelf_selfPlus1"]
+            + 3 * paid_counts["ita25_banquetSelf_selfPlus2"]
         )
         return {
             **map_dict_keys(participating_counts, "{}_participating".format),
@@ -1412,22 +1412,22 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
     
     def ita23_saturday_workshop_counts(self):
         slugs = [
-            "ita24_saturdaySelf_notAttending",
-            "ita24_saturdaySelf_attending"
+            "ita25_saturdaySelf_notAttending",
+            "ita25_saturdaySelf_attending"
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
             for slug in slugs
         }
-        participating_counts["ita24_saturdayWorkshop_total"] = (
-            participating_counts["ita24_saturdayWorkshop_attending"]
+        participating_counts["ita25_saturdayWorkshop_total"] = (
+            participating_counts["ita25_saturdayWorkshop_attending"]
         )
         paid_counts = {
             slug: count_regns_with_option(slug, REGN_PAID_FILTER)
             for slug in slugs
         }
-        paid_counts["ita24_saturdayWorkshop_total"] = (
-            paid_counts["ita24_saturdayWorkshop_attending"]
+        paid_counts["ita25_saturdayWorkshop_total"] = (
+            paid_counts["ita25_saturdayWorkshop_attending"]
         )
         return {
             **map_dict_keys(participating_counts, "{}_participating".format),
@@ -1436,28 +1436,28 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
     def ita23_valentines_event_counts(self):
         slugs = [
-            "ita24_valentinesEvent_notAttending",
-            "ita24_valentinesEvent_selfOnly",
-            "ita24_valentinesEvent_selfPlus1",
-            "ita24_valentinesEvent_selfPlus2",
+            "ita25_valentinesEvent_notAttending",
+            "ita25_valentinesEvent_selfOnly",
+            "ita25_valentinesEvent_selfPlus1",
+            "ita25_valentinesEvent_selfPlus2",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
             for slug in slugs
         }
-        participating_counts["ita24_valentinesEvent_total"] = (
-            participating_counts["ita24_valentinesEvent_selfOnly"]
-            + 2 * participating_counts["ita24_valentinesEvent_selfPlus1"]
-            + 3 * participating_counts["ita24_valentinesEvent_selfPlus2"]
+        participating_counts["ita25_valentinesEvent_total"] = (
+            participating_counts["ita25_valentinesEvent_selfOnly"]
+            + 2 * participating_counts["ita25_valentinesEvent_selfPlus1"]
+            + 3 * participating_counts["ita25_valentinesEvent_selfPlus2"]
         )
         paid_counts = {
             slug: count_regns_with_option(slug, REGN_PAID_FILTER)
             for slug in slugs
         }
-        paid_counts["ita24_valentinesEvent_total"] = (
-            paid_counts["ita24_valentinesEvent_selfOnly"]
-            + 2 * paid_counts["ita24_valentinesEvent_selfPlus1"]
-            + 3 * paid_counts["ita24_valentinesEvent_selfPlus2"]
+        paid_counts["ita25_valentinesEvent_total"] = (
+            paid_counts["ita25_valentinesEvent_selfOnly"]
+            + 2 * paid_counts["ita25_valentinesEvent_selfPlus1"]
+            + 3 * paid_counts["ita25_valentinesEvent_selfPlus2"]
         )
         return {
             **map_dict_keys(participating_counts, "{}_participating".format),
@@ -1465,7 +1465,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
         }
 
     def ita23_attending_dates(self):
-        dates = [datetime.date(year, 2, day) for day in range(18, 24)]
+        dates = [datetime.date(year, 2, day) for day in range(9, 14)]
         items = itertools.chain.from_iterable(
             attending_date_counts(date) for date in dates
         )
@@ -1474,8 +1474,8 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
     
     def ita24_italt_counts(self):
         slugs = [
-            "ita24_italt_attending",
-            "ita24_italt_notAttending",
+            "ita25_italt_attending",
+            "ita25_italt_notAttending",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
@@ -1493,7 +1493,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
     @decorators.action(detail=False)
     def ita24(self, request):
-        workshop = models.Workshop.objects.get(slug="ita24")
+        workshop = models.Workshop.objects.get(slug="ita25")
         regns = models.Registration.objects.filter(workshop=workshop)
         nonEmptyBanquet = regns.filter(banquet_options__isnull=False)
         banquet_options = {

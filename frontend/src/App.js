@@ -28,7 +28,9 @@ import Home2023 from './2023/views/Home';
 import Home2024 from './2024/views/Home';
 import Home2025 from './2025/views/Home';
 import Login2024 from './2024/views/Login';
+import Login2025 from './2025/views/Login';
 import Registration2024 from './2024/views/Registration';
+import Registration2025 from './2025/views/Registration';
 
 // this is a joke.
 import WorldRecord from './views/WorldRecord';
@@ -95,7 +97,7 @@ class App extends Component {
   };
 
   loadWorkshop2024 = () => {
-    api('api/v0/workshops/ita24/').then((workshop) =>
+    api('api/v0/workshops/ita25/').then((workshop) =>
       this.setState({
         participantsUrl24: workshop['participants_url'],
         workshop,
@@ -184,7 +186,7 @@ class App extends Component {
             path="/login"
             render={({ location }) => (
               <div className="App maxheight">
-                <Login2024
+                <Login2025
                   onLogin={this.onLogin}
                   location={location}
                   navbar={navbar25}
@@ -198,7 +200,7 @@ class App extends Component {
             render={({ location }) => (
               <div className="App maxheight">
                 {this.state.workshop ? (
-                  <Registration2024
+                  <Registration2025
                     location={location}
                     navbar={navbar25}
                     create={true}
