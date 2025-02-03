@@ -58,7 +58,7 @@ class App extends Component {
     this.loadWorkshop2020();
     // this.loadWorkshop2022();
     this.loadWorkshop2023();
-    this.loadWorkshop2024();
+    this.loadWorkshop2025();
     this.loadRegistrationFees();
     this.loadSchedule();
     this.onLogin();
@@ -97,9 +97,18 @@ class App extends Component {
   };
 
   loadWorkshop2024 = () => {
-    api('api/v0/workshops/ita25/').then((workshop) =>
+    api('api/v0/workshops/ita24/').then((workshop) =>
       this.setState({
         participantsUrl24: workshop['participants_url'],
+        workshop,
+      })
+    );
+  };
+
+  loadWorkshop2025 = () => {
+    api('api/v0/workshops/ita25/').then((workshop) =>
+      this.setState({
+        participantsUrl25: workshop['participants_url'],
         workshop,
       })
     );
@@ -230,7 +239,7 @@ class App extends Component {
                   navbar={navbar24}
                   registrationFees={this.state.registrationFees}
                   loadFees={this.state.loadFees}
-                  participantsUrl23={this.state.participantsUrl24}
+                  participantsUrl24={this.state.participantsUrl24}
                   schedule={this.state.schedule}
                   loadSchedule={this.state.loadSchedule}
                 />
