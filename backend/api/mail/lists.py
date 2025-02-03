@@ -134,7 +134,7 @@ class ParticipatingList(MailingList):
 
     def get_contexts(self):
         regns = models.Registration.objects.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             participation_status__in=models.PARTICIPATING_STATUSES,
         ).select_related("user", "user_profile")
         for regn in regns:
@@ -147,7 +147,7 @@ class ParticipatingStudentsList(MailingList):
 
     def get_contexts(self):
         regns = models.Registration.objects.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             participation_status__in=models.PARTICIPATING_STATUSES,
             user_profile__is_student=True,
         ).select_related("user", "user_profile")
@@ -159,7 +159,7 @@ class ParticipatingStudentsList(MailingList):
 class unpaid_participants(MailingList):
     def get_contexts(self):
         regns = models.Registration.objects.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             participation_status__in = models.PARTICIPATING_STATUSES,
             has_approved_payment = False
         ).exclude(
@@ -174,7 +174,7 @@ class ParticipatingNonStudentsList(MailingList):
 
     def get_contexts(self):
         regns = models.Registration.objects.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             participation_status__in=models.PARTICIPATING_STATUSES,
             user_profile__is_student=False,
         ).select_related("user", "user_profile")
@@ -195,7 +195,7 @@ class PresentingButMissingTalkInfoList(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=True,
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
@@ -226,7 +226,7 @@ class ProfOrDocAttentingButNotPresentingList(MailingList):
     def get_contexts(self):
         regns = models.Registration.objects
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=False,
             participation_status__in=models.PARTICIPATING_STATUSES
         )
@@ -249,7 +249,7 @@ class PresentingButMissingTalkInfoList(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=True,
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
@@ -281,7 +281,7 @@ class PresentingButMissingTalkInfoList(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=True,
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
@@ -303,7 +303,7 @@ class PresentingButMissingTalkInfoList(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=False,
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
@@ -324,8 +324,8 @@ class AttendingOnMonday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-19",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-10",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -345,8 +345,8 @@ class AttendingOnTuesday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-20",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-11",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -366,8 +366,8 @@ class AttendingOnWednesday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-21",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-12",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -387,8 +387,8 @@ class AttendingOnMonday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-22",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-13",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -408,8 +408,8 @@ class AttendingOnMonday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-23",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-14",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -429,8 +429,8 @@ class AttendingOnMonday(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
-            attending_dates__contains="2024-02-24",
+            workshop__slug="ita25",
+            attending_dates__contains="2025-02-15",
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
 
@@ -452,7 +452,7 @@ class PresentingButMissingCoauthorsList(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            workshop__slug="ita24",
+            workshop__slug="ita25",
             presenting=True,
             participation_status__in=models.PARTICIPATING_STATUSES,
         )
@@ -479,7 +479,7 @@ class PbdWithoutParticipationStatusList(MailingList):
 
     def get_contexts(self):
         users_with_participation = (
-            models.Registration.objects.filter(workshop__slug="ita24")
+            models.Registration.objects.filter(workshop__slug="ita25")
             .exclude(participation_status="")
             .values_list("user__id", flat=True)
         )
@@ -499,7 +499,7 @@ class InvitedByUcsdStudentInviterList(MailingList):
     def get_contexts(self):
         regns = (
             models.Registration.objects.filter(
-                workshop__slug="ita24",
+                workshop__slug="ita25",
                 inviter__isnull=False,
                 inviter__email=models.INVITER_UCSD_STUDENT_EMAIL,
             )
@@ -515,7 +515,7 @@ class InvitedByUcsdFacultyInviterList(MailingList):
     def get_contexts(self):
         regns = (
             models.Registration.objects.filter(
-                workshop__slug="ita24",
+                workshop__slug="ita25",
                 inviter__isnull=False,
                 inviter__email=models.INVITER_UCSD_FACULTY_EMAIL,
             )
@@ -534,9 +534,9 @@ class AttendingSundayReception(MailingList):
         # We only care about registrations for the current workshop, and which
         # are presenting, and which are participating
         regns = regns.filter(
-            options__slug__startswith="ita24_sundayReception",
+            options__slug__startswith="ita25_sundayReception",
             participation_status__in=models.PARTICIPATING_STATUSES,
-        ).exclude(options__slug="ita24_sundayReception_notAttending")
+        ).exclude(options__slug="ita25_sundayReception_notAttending")
 
         regns = regns.select_related("user", "user_profile")
 
