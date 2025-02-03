@@ -999,7 +999,7 @@ export default class RegistrationTabs extends React.Component {
           }}
         >
           {['DOCTOR', 'PROFESSOR'].includes(this.state.title)
-            ? 'Presentation'
+            ? 'Talk'
             : 'Poster'}
         </NavLink>
       </NavItem>
