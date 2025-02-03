@@ -1,7 +1,7 @@
 import React from 'react';
 import { Jumbotron, Button } from 'reactstrap';
 import classNames from 'classnames';
-
+import { HashLink as Link } from 'react-router-hash-link';
 import styles from './HeroSection.module.css';
 
 export default class ITAJumboMain extends React.Component {
@@ -40,10 +40,19 @@ export default class ITAJumboMain extends React.Component {
             </h3>
             <div style={{ flex: 1 }}></div>
             <div className={styles.registerSection}>
-              <Button
+              {/*<Button
                 href="https://forms.gle/SiefKRum2kFYJmHd9"
                 target="_blank"
                 rel="noopener noreferrer"
+                color="primary"
+                className={styles.registerButton}
+              >
+                Register Now
+              </Button>*/}
+
+              <Button
+                tag={Link}
+                to="/register"
                 color="primary"
                 className={styles.registerButton}
               >

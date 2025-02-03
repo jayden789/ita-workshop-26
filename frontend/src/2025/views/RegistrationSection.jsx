@@ -1,11 +1,11 @@
 import React from 'react';
 import { Jumbotron, Container, Table, Button } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
 import RegistrationInfo from './RegistrationInfo';
 
 import styles from './RegistrationSection.module.css';
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default class RegistrationSection extends React.Component {
   feeText = (feeType, feeTitle) => {
@@ -88,10 +88,19 @@ export default class RegistrationSection extends React.Component {
               </div>
             )}
             <div className="text-center">
+              {/*<Button
+                  href="https://forms.gle/SiefKRum2kFYJmHd9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="primary"
+                  style={{ marginTop: '32px', marginBottom: '0px' }}
+                >
+                  Register Now
+                </Button>*/}
+
               <Button
-                href="https://forms.gle/SiefKRum2kFYJmHd9"
-                target="_blank"
-                rel="noopener noreferrer"
+                tag={Link}
+                to="/register"
                 color="primary"
                 style={{ marginTop: '32px', marginBottom: '0px' }}
               >
