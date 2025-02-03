@@ -263,7 +263,8 @@ function checkRequired({
 
   const numWedGuests = calculateWed(wedBanq);
   const banquetOptionOk =
-    numWedGuests === 0 || banquetOption && banquetOption.length === numWedGuests;
+    numWedGuests === 0 ||
+    (banquetOption && banquetOption.length === numWedGuests);
 
   return nonBlankOk && consecOk && nonconsecOk && banquetOptionOk;
 }
@@ -677,27 +678,27 @@ export default class RegistrationWorkshop extends React.Component {
             (${this.props.wedBanquetPrice}/guest) <strong>${wedPrice}</strong>
           </Label>
         </FormGroup>
-        
+
         {numWedGuests > 0 ? (
-            <Col lg={6}>
-              <div style={{ display: 'flex' }}>
-                <FormText color="muted">Please choose your entrée</FormText>
-                {Array.from(new Array(numWedGuests)).map((_, idx) => (
-                  <div className={styles.select}>
-                    <Select
-                      name="banquetOption"
-                      options={BANQUET_GUEST_OPTIONS}
-                      value={this.props.banquetOption?.[idx] ?? ''}
-                      onChange={(e) => {
-                        this.props.handleBanquetOptionChange(e, idx);
-                      }}
-                      disabled={payRelatedFieldsDisabled}
-                    />
-                  </div>
-                ))}
-              </div>
-            </Col>
-          ) : null}
+          <Col lg={6}>
+            <div style={{ display: 'flex' }}>
+              <FormText color="muted">Please choose your entrée</FormText>
+              {Array.from(new Array(numWedGuests)).map((_, idx) => (
+                <div key={idx} className={styles.select}>
+                  <Select
+                    name="banquetOption"
+                    options={BANQUET_GUEST_OPTIONS}
+                    value={this.props.banquetOption?.[idx] ?? ''}
+                    onChange={(e) => {
+                      this.props.handleBanquetOptionChange(e, idx);
+                    }}
+                    disabled={payRelatedFieldsDisabled}
+                  />
+                </div>
+              ))}
+            </div>
+          </Col>
+        ) : null}
 
         {/* <FormGroup row className="mb-1 mt-2">
           <Col lg={2}>

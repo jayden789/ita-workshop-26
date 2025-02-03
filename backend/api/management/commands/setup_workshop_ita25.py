@@ -54,12 +54,16 @@ class Command(BaseCommand):
             "title": "ITA Workshop 2025",
             "start_date": start_date,
             "end_date": end_date,
-             "base_fee_affiliate": Decimal("200.0"), # TODO: Check with Alon for correct price
-        "base_fee_full": Decimal("300.0"),
-        "base_fee_student": Decimal("200.0"),
-        "daily_fee_affiliate": Decimal("70.0"),  # TODO: Check with Alon for correct price
-        "daily_fee_full": Decimal("70.0"),
-        "daily_fee_student": Decimal("45.0"),
+            "base_fee_affiliate": Decimal(
+                "200.0"
+            ),  # TODO: Check with Alon for correct price
+            "base_fee_full": Decimal("300.0"),
+            "base_fee_student": Decimal("200.0"),
+            "daily_fee_affiliate": Decimal(
+                "70.0"
+            ),  # TODO: Check with Alon for correct price
+            "daily_fee_full": Decimal("70.0"),
+            "daily_fee_student": Decimal("45.0"),
         }
         workshop, _ = models.Workshop.objects.update_or_create(
             slug="ita25", defaults=update_values
@@ -177,7 +181,6 @@ class Command(BaseCommand):
         for opt in (not_attending, self_only, plus_one, plus_two):
             self.print("  - {}".format(opt.slug))
 
-
     def setup_saturday_workshop_options(self, workshop, date):
         """Set up `RegistrationOption` instances for the Saturday Workshop."""
         assert date.weekday() == 5  # Saturday
@@ -210,7 +213,6 @@ class Command(BaseCommand):
         )
         for opt in (not_attending, attending):
             self.print("  - {}".format(opt.slug))
-
 
     def setup_valentines_event(self, workshop, date):
         """
@@ -270,6 +272,7 @@ class Command(BaseCommand):
         """
         Set up regn option for the Monday lunch.
         """
+
         def full_slug(slug):
             return "{}_mondayLunch_{}".format(workshop.slug, slug)
 
@@ -323,7 +326,6 @@ class Command(BaseCommand):
         for opt in (not_attending, attending):
             self.print("  - {}".format(opt.slug))
 
-    
     def setup_banquet_food_options(self, workshop, date):
         """
         Set up banquet options.
@@ -348,7 +350,7 @@ class Command(BaseCommand):
                 "title": "Chicken",
             },
         )
-        
+
         vegetarian, _ = models.RegistrationOption.objects.update_or_create(
             workshop=workshop,
             slug=full_slug("vegetarian"),
@@ -362,15 +364,14 @@ class Command(BaseCommand):
         for opt in (fish, chicken, vegetarian):
             self.print("  - {}".format(opt.slug))
 
-
     def handle(self, *args, **options):
         with transaction.atomic():
             dates = self.setup_dates()
             sunday = dates["2025-02-09"].date_value
             monday = dates["2025-02-10"].date_value
-            wednesday = dates["2025-02-11"].date_value
-            thursday = dates["2025-02-12"].date_value
-            saturday = dates["2025-02-14"].date_value
+            wednesday = dates["2025-02-12"].date_value
+            thursday = dates["2025-02-13"].date_value
+            saturday = dates["2025-02-15"].date_value
 
             workshop = self.setup_workshop(dates)
             self.setup_sunday_reception_options(workshop, sunday)

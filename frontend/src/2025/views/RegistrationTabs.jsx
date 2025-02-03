@@ -1086,22 +1086,22 @@ export default class RegistrationTabs extends React.Component {
         <RegistrationPaper
           isPresenting={this.state.presentingThisYear}
           paperTitle={this.state.paperTitle}
-          studentOption={this.state.studentOption}
           paperAuthorsComment={this.state.paperAuthorsComment}
-          handleChange={this.handleChange}
           paperAbstract={this.state.paperAbstract}
           paperTopicComment={this.state.paperTopicComment}
           paperComment={this.state.paperComment}
           paperUrl={this.state.paperUrl}
-          addPaperUrl={this.state.addPaperUrl}
-          loggedInAsAdmin={this.props.loggedInAsAdmin}
-          adminComments={this.state.adminComments}
-          updatePaperUrl={this.updatePaperUrl}
           videoUrl={this.state.videoUrl}
+          addPaperUrl={this.state.addPaperUrl}
           addVideoUrl={this.state.addVideoUrl}
+          updatePaperUrl={this.updatePaperUrl}
           updateVideoUrl={this.updateVideoUrl}
+          adminComments={this.state.adminComments}
+          studentOption={this.state.studentOption}
+          loggedInAsAdmin={this.props.loggedInAsAdmin}
           modal={this.state.modal}
           toggleModal={this.toggleModal}
+          handleChange={this.handleChange}
           saveChanges={this.saveChanges}
           switchPresentingThisYear={this.switchPresentingThisYear}
           enablePresentationOption={this.enablePresentationOption}
@@ -1140,25 +1140,30 @@ export default class RegistrationTabs extends React.Component {
     const plenaryTabPane = (
       <TabPane tabId="5">
         <RegistrationPaper
+          isPresenting={this.state.presentingThisYear}
           paperTitle={this.state.paperTitle}
           paperAuthorsComment={this.state.paperAuthorsComment}
-          handleChange={this.handleChange}
           paperAbstract={this.state.paperAbstract}
           paperTopicComment={this.state.paperTopicComment}
           paperComment={this.state.paperComment}
           paperUrl={this.state.paperUrl}
-          addPaperUrl={this.state.addPaperUrl}
-          loggedInAsAdmin={this.props.loggedInAsAdmin}
-          adminComments={this.state.adminComments}
-          updatePaperUrl={this.updatePaperUrl}
           videoUrl={this.state.videoUrl}
+          addPaperUrl={this.state.addPaperUrl}
           addVideoUrl={this.state.addVideoUrl}
+          updatePaperUrl={this.updatePaperUrl}
           updateVideoUrl={this.updateVideoUrl}
+          adminComments={this.state.adminComments}
+          studentOption={this.state.studentOption}
+          loggedInAsAdmin={this.props.loggedInAsAdmin}
           modal={this.state.modal}
           toggleModal={this.toggleModal}
+          handleChange={this.handleChange}
           saveChanges={this.saveChanges}
+          switchPresentingThisYear={this.switchPresentingThisYear}
+          enablePresentationOption={this.enablePresentationOption}
+          disablePresentationOption={this.disablePresentationOption}
+          handleBinaryOptionChange={this.handleBinaryOptionChange}
           loading={this.state.loading}
-          plenary={this.state.plenary}
           isPlenaryTab
         />
       </TabPane>

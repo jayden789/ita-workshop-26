@@ -25,7 +25,7 @@ const HeaderRow = () => (
   </tr>
 );
 
-const onClickPayLink = payUrl => event => {
+const onClickPayLink = (payUrl) => (event) => {
   event.preventDefault();
   clipboardCopy(payUrl);
 };
@@ -37,10 +37,10 @@ const OneTimeChargeRow = ({ charge, ...rowProps }) => (
     </td>
     <td>${charge.amount}</td>
     <td>
-      <pre style={{maxWidth: '40rem'}}>{charge.message}</pre>
+      <pre style={{ maxWidth: '40rem' }}>{charge.message}</pre>
     </td>
     <td>
-      <pre style={{maxWidth: '40rem'}}>{charge.comment}</pre>
+      <pre style={{ maxWidth: '40rem' }}>{charge.comment}</pre>
     </td>
     <td>{charge.status}</td>
     <td style={{ textAlign: 'center' }}>
@@ -77,7 +77,7 @@ export default class OneTimeChargesPage extends React.Component {
 
   componentDidMount = () => {
     this.setState({ loadingCharges: true });
-    api('api/v0/one_time_charges/').then(data => {
+    api('api/v0/one_time_charges/').then((data) => {
       this.setState({ loadingCharges: false, charges: data });
     });
   };
@@ -102,11 +102,11 @@ export default class OneTimeChargesPage extends React.Component {
 
     return (
       <Card body>
-      <div class="scrolling">
-        <Container fluid style={{ paddingTop: '65px' }}>
-          {content}
-        </Container>
-      </div>
+        <div className="scrolling">
+          <Container fluid style={{ paddingTop: '65px' }}>
+            {content}
+          </Container>
+        </div>
       </Card>
     );
   };
