@@ -5,7 +5,7 @@
 .dangerText {
   padding: 2px;
   border-radius: 4px;
-  color: #B71C1C;
+  color: #b71c1c;
   font-weight: bold;
 }
 
@@ -16,6 +16,6 @@
   color: #fff;
 }
 .select {
-  margin-left: 12px;
-  width: 70px;
+  margin-left: 16px;
+  min-width: 160px;
 }

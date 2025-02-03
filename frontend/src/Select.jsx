@@ -23,7 +23,7 @@ const Select = React.memo(
     onChange,
     disabled,
     emptyDisabled = true,
-    emptyChildren = "Please Select"
+    emptyChildren = 'Please Select',
   }) => (
     <Input
       type="select"
@@ -35,7 +35,7 @@ const Select = React.memo(
       <option value="" disabled={emptyDisabled}>
         {emptyChildren}
       </option>
-      {options.map(option => (
+      {options.map((option) => (
         <option key={option.value} value={option.value}>
           {option.displayText}
         </option>

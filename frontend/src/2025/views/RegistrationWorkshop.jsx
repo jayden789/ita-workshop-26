@@ -636,28 +636,8 @@ export default class RegistrationWorkshop extends React.Component {
           </Label>
         </FormGroup>
 
-        {/* <FormGroup row>
-            <Col lg={2}>
-              <Label className="mt-2">Monday Lunch</Label>
-            </Col>
-            <Col lg="auto">
-              <Select
-                name="monReceptionOption"
-                options={LUNCH_OPTIONS}
-                value={this.props.monReceptionOption}
-                onChange={this.props.handleChange}
-              />
-            </Col>
-            <Col lg="auto">
-              <FormText color="muted">
-                Light lunch for the IT-Society session participants (free, but
-                requires this registration)
-              </FormText>
-            </Col>
-          </FormGroup> */}
-
         <FormGroup row className="mb-1 mt-2">
-          <Col lg={2}>
+          <Col lg="auto">
             <Label className="text-danger mt-2">Wednesday Banquet*</Label>
           </Col>
           <Col lg="auto">
@@ -680,8 +660,8 @@ export default class RegistrationWorkshop extends React.Component {
         </FormGroup>
 
         {numWedGuests > 0 ? (
-          <Col lg={6}>
-            <div style={{ display: 'flex' }}>
+          <Col>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
               <FormText color="muted">Please choose your entrée</FormText>
               {Array.from(new Array(numWedGuests)).map((_, idx) => (
                 <div key={idx} className={styles.select}>
@@ -700,84 +680,6 @@ export default class RegistrationWorkshop extends React.Component {
           </Col>
         ) : null}
 
-        {/* <FormGroup row className="mb-1 mt-2">
-          <Col lg={2}>
-            <Label className="text-danger">ITALT*</Label>
-          </Col>
-          <Col lg="auto">
-            <FormText color="muted" className="mt-0 mb-0">
-              (Not there)Tutorials and team building activities, jointly with the{' '}
-              <a
-                href="http://algorithmiclearningtheory.org/alt2025/ita-alt-italt/"
-                target="__blank"
-                ref="noreferrer"
-              >
-                ALT Conference
-              </a>
-              , on Saturday 2/24
-            </FormText>
-            <FormGroup check inline>
-              <Label check className="mr-4">
-                <Input
-                  type="radio"
-                  value="ita25_italt_attending"
-                  name="attendingITALT"
-                  checked={
-                    this.props.attendingITALT === 'ita25_italt_attending'
-                  }
-                  onChange={this.props.handleChange}
-                  disabled={payRelatedFieldsDisabled}
-                />
-                Attending
-              </Label>
-            </FormGroup>
-            <FormGroup check inline>
-              <Label check>
-                <Input
-                  type="radio"
-                  value="ita25_italt_notAttending"
-                  name="attendingITALT"
-                  checked={
-                    this.props.attendingITALT === 'ita25_italt_notAttending'
-                  }
-                  onChange={this.props.handleChange}
-                  disabled={payRelatedFieldsDisabled}
-                />
-                Not Attending
-              </Label>
-            </FormGroup>
-          </Col>
-          <Label
-            className={classNames('ml-auto', 'mt-2', 'mr-2', {
-              [styles.grayText]: !likelyToParticipate,
-            })}
-          >
-            (${this.props.italtPrice}/day) <strong>${italtPrice}</strong>
-          </Label>
-        </FormGroup> */}
-
-        {/* <FormGroup row>
-            <Col lg={2}>
-              <Label className="text-danger mt-2">Saturday Workshop</Label>
-            </Col>
-            <Col lg="auto">
-              <Select
-                name="saturdayWorkshopOption"
-                options={SATURDAY_SELF_OPTIONS}
-                value={this.props.saturdayWorkshopOption}
-                onChange={this.props.handleChange}
-                disabled={payRelatedFieldsDisabled}
-              />
-            </Col>
-            <Col lg="auto">
-              <FormText color="muted">
-              Tutorials and expository talks on Machine Learning
-              </FormText>
-            </Col>
-            <Label className="ml-auto mt-2 mr-2">
-              (${this.props.dayPrice}) <strong>${satdayPrice}</strong>
-            </Label>
-          </FormGroup> */}
         <FormGroup row>
           <Label
             className={classNames('ml-auto mt-0 mr-2 mb-0', {
