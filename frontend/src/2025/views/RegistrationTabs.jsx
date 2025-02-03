@@ -259,7 +259,6 @@ export default class RegistrationTabs extends React.Component {
     let currentOption = this.state.banquetOption
       ? this.state.banquetOption
       : '';
-    console.log('curroption:' + currentOption);
     let newOption =
       currentOption.slice(0, idx) +
       e.target.value +

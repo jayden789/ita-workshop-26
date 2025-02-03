@@ -419,13 +419,19 @@ export default class RegistrationWorkshop extends React.Component {
           <Col lg={8}>
             <Row>
               <Col lg={3}>
-                <Select
+                <Input
+                  type="select"
                   name="likelihood"
-                  options={PARTICIPATION_STATUS_OPTIONS}
                   value={this.props.likelihood}
                   onChange={this.props.handleChange}
                   disabled={payRelatedFieldsDisabled}
-                />
+                >
+                  <option value={''}>Please Select</option>
+                  <option value={'ALMOST_CERTAINLY'}>Almost Surely</option>
+                  <option value={'PROBABLY'}>Probably</option>
+                  <option value={'PROBABLY_NOT'}>Probably Not</option>
+                  <option value={'NEXT_TIME'}>Next Time</option>
+                </Input>
               </Col>
               <Col lg={9}>
                 <FormText>
@@ -493,13 +499,20 @@ export default class RegistrationWorkshop extends React.Component {
               </Label>
             </Col>
             <Col lg={2}>
-              <Select
+              <Input
+                type="select"
                 name="firstDay"
-                options={DAY_OPTIONS}
                 value={this.props.firstDay}
                 onChange={this.props.handleChange}
                 disabled={payRelatedFieldsDisabled}
-              />
+              >
+                <option value={''}>Please Select</option>
+                <option value={'Monday'}>Monday</option>
+                <option value={'Tuesday'}>Tuesday</option>
+                <option value={'Wednesday'}>Wednesday</option>
+                <option value={'Thursday'}>Thursday</option>
+                <option value={'Friday'}>Friday</option>
+              </Input>
             </Col>
             <Col lg={{ size: 2, offset: 1 }} className="rightAlign">
               <Label for="lastDay" className="text-danger mt-2">
@@ -507,13 +520,20 @@ export default class RegistrationWorkshop extends React.Component {
               </Label>
             </Col>
             <Col lg={2}>
-              <Select
+              <Input
+                type="select"
                 name="lastDay"
-                options={DAY_OPTIONS}
                 value={this.props.lastDay}
                 onChange={this.props.handleChange}
                 disabled={payRelatedFieldsDisabled}
-              />
+              >
+                <option value={''}>Please Select</option>
+                <option value={'Monday'}>Monday</option>
+                <option value={'Tuesday'}>Tuesday</option>
+                <option value={'Wednesday'}>Wednesday</option>
+                <option value={'Thursday'}>Thursday</option>
+                <option value={'Friday'}>Friday</option>
+              </Input>
             </Col>
             <Label
               className={classNames('ml-auto', 'mt-2', 'mr-2', {
@@ -611,13 +631,25 @@ export default class RegistrationWorkshop extends React.Component {
           <Col lg={8}>
             <Row>
               <Col lg={3}>
-                <Select
+                <Input
+                  type="select"
                   name="SundayReceptionOption"
-                  options={RECEPTION_OPTIONS}
                   value={this.props.SundayReceptionOption}
                   onChange={this.props.handleChange}
                   disabled={payRelatedFieldsDisabled}
-                />
+                >
+                  <option value={''}>Please Select</option>
+                  <option value={'ita25_sundayReception_notAttending'}>
+                    Not attending
+                  </option>
+                  <option value={'ita25_sundayReception_selfOnly'}>You</option>
+                  <option value={'ita25_sundayReception_selfPlus1'}>
+                    You + 1
+                  </option>
+                  <option value={'ita25_sundayReception_selfPlus2'}>
+                    You + 2
+                  </option>
+                </Input>
               </Col>
               <Col lg={9}>
                 <FormText color="muted">
@@ -641,13 +673,21 @@ export default class RegistrationWorkshop extends React.Component {
             <Label className="text-danger mt-2">Wednesday Banquet*</Label>
           </Col>
           <Col lg="auto">
-            <Select
+            <Input
+              type="select"
               name="WednesdayBanquetOption"
-              options={BANQUET_SELF_OPTIONS}
               value={this.props.WednesdayBanquetOption}
               onChange={this.props.handleChange}
               disabled={payRelatedFieldsDisabled}
-            />
+            >
+              <option value={''}>Please Select</option>
+              <option value={'ita25_banquetSelf_notAttending'}>
+                Not attending
+              </option>
+              <option value={'ita25_banquetSelf_selfOnly'}>You</option>
+              <option value={'ita25_banquetSelf_selfPlus1'}>You + 1</option>
+              <option value={'ita25_banquetSelf_selfPlus2'}>You + 2</option>
+            </Input>
           </Col>
 
           <Label
