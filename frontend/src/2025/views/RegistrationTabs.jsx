@@ -616,17 +616,17 @@ export default class RegistrationTabs extends React.Component {
       this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfPlus2' });
     }
 
-    if (slugArray.includes('ita25_banquetGuest_chicken')) {
-      this.setState({
-        banquetOption: 'ita25_banquetGuest_chicken',
-      });
-    }
-    if (slugArray.includes('ita25_banquetGuest_fish')) {
-      this.setState({ banquetOption: 'ita25_banquetGuest_fish' });
-    }
-    if (slugArray.includes('ita25_banquetGuest_vegetarian')) {
-      this.setState({ banquetOption: 'ita25_banquetGuest_vegetarian' });
-    }
+    // if (slugArray.includes('ita25_banquetGuest_chicken')) {
+    //   this.setState({
+    //     banquetOption: 'ita25_banquetGuest_chicken',
+    //   });
+    // }
+    // if (slugArray.includes('ita25_banquetGuest_fish')) {
+    //   this.setState({ banquetOption: 'ita25_banquetGuest_fish' });
+    // }
+    // if (slugArray.includes('ita25_banquetGuest_vegetarian')) {
+    //   this.setState({ banquetOption: 'ita25_banquetGuest_vegetarian' });
+    // }
 
     if (slugArray.includes('ita25_italt_notAttending')) {
       this.setState({
@@ -737,9 +737,9 @@ export default class RegistrationTabs extends React.Component {
     if (this.state.WednesdayBanquetOption !== '') {
       optionArray.push(slugUrlMap.get(this.state.WednesdayBanquetOption));
     }
-    if (this.state.banquetOption !== '') {
-      optionArray.push(slugUrlMap.get(this.state.banquetOption));
-    }
+    // if (this.state.banquetOption !== '') {
+    //   optionArray.push(slugUrlMap.get(this.state.banquetOption));
+    // }
     if (this.state.attendingITALT !== '') {
       optionArray.push(slugUrlMap.get(this.state.attendingITALT));
     }

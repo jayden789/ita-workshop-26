@@ -262,9 +262,9 @@ function checkRequired({
     !nonconsecDays || [mon, tues, wed, thurs, fri].includes(true);
 
   const numWedGuests = calculateWed(wedBanq);
-  const banquetOptionOk = banquetOption.length === numWedGuests;
-  
-  return nonBlankOk && consecOk && nonconsecOk && banquetOptionOk;
+  // const banquetOptionOk = banquetOption.length === numWedGuests;
+
+  return nonBlankOk && consecOk && nonconsecOk;
 }
 
 // this is hacky. TODO replace with something more robust

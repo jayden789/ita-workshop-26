@@ -3,11 +3,11 @@ import queryString from 'query-string';
 export const getAttendingDates = (start, end, nonConsecutiveDays, days) => {
   const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const dateStrings = [
-    '2025-02-09',
     '2025-02-10',
     '2025-02-11',
     '2025-02-12',
     '2025-02-13',
+    '2025-02-14',
   ];
 
   let attendingDates = [];
@@ -232,7 +232,7 @@ export const generateRegnOptionConversions = (regnOptions) => {
 };
 
 export const fetchRegnOptions = () => {
-  return api('api/v0/registration_options/?workshop_slug=ita24');
+  return api('api/v0/registration_options/?workshop_slug=ita25');
 };
 
 export const fetchPaginatedRegistrations = (
