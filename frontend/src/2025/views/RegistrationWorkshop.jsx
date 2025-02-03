@@ -262,9 +262,10 @@ function checkRequired({
     !nonconsecDays || [mon, tues, wed, thurs, fri].includes(true);
 
   const numWedGuests = calculateWed(wedBanq);
-  // const banquetOptionOk = banquetOption.length === numWedGuests;
+  const banquetOptionOk =
+    numWedGuests === 0 || banquetOption && banquetOption.length === numWedGuests;
 
-  return nonBlankOk && consecOk && nonconsecOk;
+  return nonBlankOk && consecOk && nonconsecOk && banquetOptionOk;
 }
 
 // this is hacky. TODO replace with something more robust
@@ -686,7 +687,7 @@ export default class RegistrationWorkshop extends React.Component {
                     <Select
                       name="banquetOption"
                       options={BANQUET_GUEST_OPTIONS}
-                      value={this.props.banquetOption[idx] ?? ''}
+                      value={this.props.banquetOption?.[idx] ?? ''}
                       onChange={(e) => {
                         this.props.handleBanquetOptionChange(e, idx);
                       }}
