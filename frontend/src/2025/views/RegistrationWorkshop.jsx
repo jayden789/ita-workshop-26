@@ -351,7 +351,7 @@ export default class RegistrationWorkshop extends React.Component {
     };
 
     return (
-      <Card body>
+      <Card body className="notranslate">
         {this.props.paymentAlert}
         <h2>Your workshop information</h2>
         <RegistrationInfo />
