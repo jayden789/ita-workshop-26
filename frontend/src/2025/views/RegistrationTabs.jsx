@@ -1366,6 +1366,7 @@ export default class RegistrationTabs extends React.Component {
                   addProfilePicUrl={this.state.addProfilePicUrl}
                   updateProfilePicUrl={this.updateProfilePicUrl}
                   studentOption={this.props.studentOption}
+                  switchStudentOption={this.switchStudentOption}
                   switchPresentationType={this.switchPresentationType}
                   enablePresentation={this.enablePresentation}
                   loading={this.state.loading}

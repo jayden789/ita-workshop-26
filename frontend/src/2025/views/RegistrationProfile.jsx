@@ -269,6 +269,7 @@ export default class RegistrationProfile extends React.Component {
                   onChange={(e) => {
                     this.handleCheckboxInput(e);
                     this.props.enablePresentation();
+                    this.props.switchStudentOption(false);
                   }}
                   invalid={this.state.titleError}
                 />
@@ -285,6 +286,7 @@ export default class RegistrationProfile extends React.Component {
                   onChange={(e) => {
                     this.handleCheckboxInput(e);
                     this.props.enablePresentation();
+                    this.props.switchStudentOption(false);
                   }}
                   invalid={this.state.titleError}
                 />
