@@ -791,10 +791,13 @@ export default class RegistrationWorkshop extends React.Component {
               )*/}
             </div>
           </Col>
-          <FormText className="text-center mt-4">
-            The payment is not working yet, we will let you know when you can
-            pay.
-          </FormText>
+          <div className="text-center">
+            <Button className="text-center mt-4" disabled={true} color="primary"> 
+              We are updating the payment gateway, we will let you know when you can
+              pay.
+            </Button>
+          </div>
+          
         </FormGroup>
 
         {/* <p className="text-center mt-4 mb-0">

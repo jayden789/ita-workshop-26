@@ -342,7 +342,7 @@ export default class RegistrationPaper extends React.Component {
               </p>
               <p>
                 To help us schedule your talk, please upload the following
-                information as soon as possible. Feel free to <a href="mailto:ita@ucsd.edu">email us</a> questions or comments.{' '}
+                information as soon as possible. Feel free to <a href="mailto:ita@ucsd.edu">email us</a> any questions or comments.{' '}
               </p>
               <FormGroup row>
                 <Label className="paperLabelWidth text-danger ml-3 mt-2">
