@@ -1465,7 +1465,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
         }
 
     def ita23_attending_dates(self):
-        dates = [datetime.date(year, 2, day) for day in range(9, 14)]
+        dates = [datetime.date(year, 2, day) for day in range(9, 15)]
         items = itertools.chain.from_iterable(
             attending_date_counts(date) for date in dates
         )
