@@ -669,25 +669,29 @@ export default class RegistrationWorkshop extends React.Component {
         </FormGroup>
 
         <FormGroup row className="mb-1 mt-2">
-          <Col lg="auto">
+          <Col lg={2}>
             <Label className="text-danger mt-2">Wednesday Banquet*</Label>
           </Col>
-          <Col lg="auto">
-            <Input
-              type="select"
-              name="WednesdayBanquetOption"
-              value={this.props.WednesdayBanquetOption}
-              onChange={this.props.handleChange}
-              disabled={payRelatedFieldsDisabled}
-            >
-              <option value={''}>Please Select</option>
-              <option value={'ita25_banquetSelf_notAttending'}>
-                Not attending
-              </option>
-              <option value={'ita25_banquetSelf_selfOnly'}>You</option>
-              <option value={'ita25_banquetSelf_selfPlus1'}>You + 1</option>
-              <option value={'ita25_banquetSelf_selfPlus2'}>You + 2</option>
-            </Input>
+          <Col lg={8}>
+            <Row>
+              <Col lg={3}>
+                <Input
+                  type="select"
+                  name="WednesdayBanquetOption"
+                  value={this.props.WednesdayBanquetOption}
+                  onChange={this.props.handleChange}
+                  disabled={payRelatedFieldsDisabled}
+                >
+                  <option value={''}>Please Select</option>
+                  <option value={'ita25_banquetSelf_notAttending'}>
+                    Not attending
+                  </option>
+                  <option value={'ita25_banquetSelf_selfOnly'}>You</option>
+                  <option value={'ita25_banquetSelf_selfPlus1'}>You + 1</option>
+                  <option value={'ita25_banquetSelf_selfPlus2'}>You + 2</option>
+                </Input>
+              </Col>
+            </Row>
           </Col>
 
           <Label
@@ -701,22 +705,26 @@ export default class RegistrationWorkshop extends React.Component {
 
         {numWedGuests > 0 ? (
           <FormGroup row className="mb-1 mt-2">
-              <Col lg="auto">
-                <Label className="text-danger mt-2 mr-2">Choose your entrée*</Label>
+              <Col lg={2}>
+                <Label className="text-danger mt-2">Choose your entrée*</Label>
               </Col>
-              {Array.from(new Array(numWedGuests)).map((_, idx) => (
-                <Col lg="auto">
-                  <Select
-                    name="banquetOption"
-                    options={BANQUET_GUEST_OPTIONS}
-                    value={this.props.banquetOption?.[idx] ?? ''}
-                    onChange={(e) => {
-                      this.props.handleBanquetOptionChange(e, idx);
-                    }}
-                    disabled={payRelatedFieldsDisabled}
-                  />
-                </Col>
-              ))}
+              <Col lg={8}>
+                <Row>
+                {Array.from(new Array(numWedGuests)).map((_, idx) => (
+                  <Col lg={3}>
+                    <Select
+                      name="banquetOption"
+                      options={BANQUET_GUEST_OPTIONS}
+                      value={this.props.banquetOption?.[idx] ?? ''}
+                      onChange={(e) => {
+                        this.props.handleBanquetOptionChange(e, idx);
+                      }}
+                      disabled={payRelatedFieldsDisabled}
+                    />
+                  </Col>
+                ))}
+                </Row>
+              </Col>
           </FormGroup>
         ) : null}
 
