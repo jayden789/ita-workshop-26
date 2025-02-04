@@ -201,7 +201,7 @@ export default class AggregateStats extends React.Component {
           {this.renderSundayReceptionList()}
           {this.renderMondayLunchList()}
           {this.renderWednesdayBanquetList()}
-          {this.renderItaltList()}
+          {/* {this.renderItaltList()} */}
           {this.renderBanquetOptions()}
 
           {/* {this.renderValentinesEventList()} */}
