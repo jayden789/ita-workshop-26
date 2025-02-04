@@ -700,11 +700,12 @@ export default class RegistrationWorkshop extends React.Component {
         </FormGroup>
 
         {numWedGuests > 0 ? (
-          <Col>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
-              <FormText color="muted">Please choose your entrée</FormText>
+          <FormGroup row className="mb-1 mt-2">
+              <Col lg="auto">
+                <Label className="text-danger mt-2 mr-2">Choose your entrée*</Label>
+              </Col>
               {Array.from(new Array(numWedGuests)).map((_, idx) => (
-                <div key={idx} className={styles.select}>
+                <Col lg="auto">
                   <Select
                     name="banquetOption"
                     options={BANQUET_GUEST_OPTIONS}
@@ -714,10 +715,9 @@ export default class RegistrationWorkshop extends React.Component {
                     }}
                     disabled={payRelatedFieldsDisabled}
                   />
-                </div>
+                </Col>
               ))}
-            </div>
-          </Col>
+          </FormGroup>
         ) : null}
 
         <FormGroup row>
