@@ -39,8 +39,27 @@ function flatten(data) {
   return result;
 }
 
+const dayToCompact = day =>
+  ({
+    '2025-02-09': 'S',
+    '2025-02-10': 'M',
+    '2025-02-11': 'T',
+    '2025-02-12': 'W',
+    '2025-02-13': 'R',
+    '2025-02-14': 'F',
+  }[day]);
+  
+const compactDaysAttending = days =>
+  days
+    .slice()
+    .sort()
+    .map(dayToCompact)
+    .join('');
+
 function flatten1(reg) {
-  var temp = flatten(reg);
+  var temp_reg = {... reg}
+  temp_reg.attendingDates = compactDaysAttending(temp_reg.attendingDates);
+  var temp = flatten(temp_reg);
   if (!temp instanceof Array) {
     console.log('Inside temp');
     var temp_array = [];
