@@ -705,13 +705,13 @@ export default class RegistrationWorkshop extends React.Component {
 
         {numWedGuests > 0 ? (
           <FormGroup row className="mb-1 mt-2">
-              <Col lg={2}>
-                <Label className="text-danger mt-2">Choose your entrée*</Label>
-              </Col>
-              <Col lg={8}>
-                <Row>
+            <Col lg={2}>
+              <Label className="text-danger mt-2">Choose your entrée*</Label>
+            </Col>
+            <Col lg={8}>
+              <Row>
                 {Array.from(new Array(numWedGuests)).map((_, idx) => (
-                  <Col lg={3}>
+                  <Col key={idx} lg={3}>
                     <Select
                       name="banquetOption"
                       options={BANQUET_GUEST_OPTIONS}
@@ -723,8 +723,8 @@ export default class RegistrationWorkshop extends React.Component {
                     />
                   </Col>
                 ))}
-                </Row>
-              </Col>
+              </Row>
+            </Col>
           </FormGroup>
         ) : null}
 
@@ -792,12 +792,15 @@ export default class RegistrationWorkshop extends React.Component {
             </div>
           </Col>
           <div className="text-center">
-            <Button className="text-center mt-4" disabled={true} color="primary"> 
-              We are updating the payment gateway, we will let you know when you can
-              pay.
+            <Button
+              className="text-center mt-4"
+              disabled={true}
+              color="primary"
+            >
+              We are updating the payment gateway, we will let you know when you
+              can pay.
             </Button>
           </div>
-          
         </FormGroup>
 
         {/* <p className="text-center mt-4 mb-0">

@@ -811,6 +811,8 @@ export default class RegistrationTabs extends React.Component {
       nonAdminFields.banquet_options = this.state.banquetOption;
     }
 
+    console.log(this.state.banquetOption);
+
     const adminFields = this.props.loggedInAsAdmin
       ? {
           registrant_type: this.state.registrantType,

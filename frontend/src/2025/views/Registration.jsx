@@ -3,7 +3,7 @@ import queryString from 'query-string';
 
 import RegistrationTabs from './RegistrationTabs';
 
-export default class Registration2024 extends React.Component {
+export default class Registration2025 extends React.Component {
   getEffectiveUserUrl = () => {
     const { location, loggedInUser } = this.props;
     if (location === undefined) {

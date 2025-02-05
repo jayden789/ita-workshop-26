@@ -12,6 +12,8 @@ $ docker-compose up -d                                      # build images and s
 $ docker-compose exec backend ./manage.py load_mock_data    # load mock data
 ```
 
+docker-compose exec backend ./manage.py load_ita25_registration_form_response_to_db
+
 Now the API explorer will be available at <https://localhost:8080/api/v0>. Note
 that since the local TLS certificate is self-signed, you will probably get
 a security warning in your browser indicating that this is so. It is safe to
@@ -88,9 +90,7 @@ $ docker-compose exec backend pipenv install --system
 1.  Install Postico to connect to the PostGres RDS instance. https://eggerapps.at/postico2/
 
 2.  Connect to the database with the crendentials shared here: [Google Doc](https://docs.google.com/document/d/1VfN_um7YMkbbq-sNIbUlr3LapYb-LsMuvXMc2Ak_srE)
-  
-### To be a superuser 
 
-1. Connect to the Database (as specified above). In the api-user table, change the is_superuser field to “False“. 
+### To be a superuser
 
-
+1. Connect to the Database (as specified above). In the api-user table, change the is_superuser field to “False“.
