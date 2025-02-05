@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 import csv
+import shortuuid
 import os
 from api.models import (
     UserProfile,
@@ -13,77 +14,88 @@ from api.models import (
 
 class Command(BaseCommand):
     def handle(self, *args, **options):
-        data = self.load_data()
-        self.load_existing_users()
-        for (
-            first_name,
-            last_name,
-            email,
-            student,
-            title,
-            co_authors,
-            abstract,
-            topic_comment,
-            scheduling_comment,
-            days_attending,
-            sunday_reception,
-            wednesday_banquet_preference,
-        ) in zip(
-            data["First name"],
-            data["Last name"],
-            data["Email Address"],
-            data["Student"],
-            data["Title"],
-            data["Co-authors"],
-            data["Abstract"],
-            data["Topic comment"],
-            data["Scheduling comment "],
-            data["Days attending"],
-            data["Sunday reception"],
-            data["Wednesday banquet preference"],
-        ):
-            exist, old_email = self.check_account_exist(
-                first_name, last_name, email
+        self.root_path = os.path.dirname(
+            os.path.dirname(
+                os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
             )
-
-            if not exist:
-                self.create_new_user(
-                    first_name, last_name, email, email, student == "Yes"
-                )
-
-            elif exist and old_email is not None:
-                self.update_existing_user(old_email, email, student == "Yes")
-
-            self.create_registration(email)
-
-            # Update talk info
-            self.update_talk_info(
+        )
+        user_credentials_path = os.path.join(
+            self.root_path,
+            "api",
+            "user_credentials.txt",
+        )
+        with open(user_credentials_path, "w") as f:
+            data = self.load_data()
+            self.load_existing_users()
+            for (
+                first_name,
+                last_name,
                 email,
+                student,
                 title,
                 co_authors,
                 abstract,
                 topic_comment,
                 scheduling_comment,
-            )
-
-            # Update workshop info
-            self.update_workshop_info(
-                email,
                 days_attending,
                 sunday_reception,
                 wednesday_banquet_preference,
-            )
+            ) in zip(
+                data["First name"],
+                data["Last name"],
+                data["Email Address"],
+                data["Student"],
+                data["Title"],
+                data["Co-authors"],
+                data["Abstract"],
+                data["Topic comment"],
+                data["Scheduling comment "],
+                data["Days attending"],
+                data["Sunday reception"],
+                data["Wednesday banquet preference"],
+            ):
+                exist, old_email = self.check_account_exist(
+                    first_name, last_name, email
+                )
+
+                password = None
+                if not exist:
+                    password = self.create_new_user(
+                        first_name, last_name, email, student == "Yes"
+                    )
+
+                elif exist and old_email is not None:
+                    self.update_existing_user(
+                        old_email, email, student == "Yes"
+                    )
+
+                self.create_registration(email)
+
+                # Update talk info
+                self.update_talk_info(
+                    email,
+                    title,
+                    co_authors,
+                    abstract,
+                    topic_comment,
+                    scheduling_comment,
+                )
+
+                # Update workshop info
+                self.update_workshop_info(
+                    email,
+                    days_attending,
+                    sunday_reception,
+                    wednesday_banquet_preference,
+                )
+                if password is not None:
+                    f.write(f"{first_name} {last_name}, {email}, {password}\n")
+                else:
+                    f.write(f"{first_name} {last_name}, {email}\n")
 
     def load_data(self):
-        # Get the project root directory
-        root_path = os.path.dirname(
-            os.path.dirname(
-                os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-            )
-        )
-        # Construct the full path to the CSV file
         csv_path = os.path.join(
-            root_path,
+            self.root_path,
             "api",
             "ITA_2025_Registration_Form_Response.csv",
         )
@@ -130,16 +142,15 @@ class Command(BaseCommand):
 
         return True, possible_matching_profiles[0]["email"]
 
-    def create_new_user(
-        self, first_name, last_name, email, password, is_student
-    ):
-        # User = get_user_model()
+    def create_new_user(self, first_name, last_name, email, is_student):
+        password = shortuuid.uuid()
         user = User.objects.create_user(email=email, password=password)
         user_profile = user.user_profile
         user_profile.first_name = first_name
         user_profile.last_name = last_name
         user_profile.is_student = is_student
         user_profile.save()
+        return password
 
     def update_existing_user(self, old_email, new_email, is_student):
         user = User.objects.filter(email=old_email).first()

@@ -20,6 +20,7 @@ RUN apt-get install -y texlive-fonts-extra
 RUN pip install pipenv
 RUN pip install pandas
 RUN pip install psycogreen
+RUN pip install shortuuid
 RUN pipenv lock --clear
 RUN pipenv install --system
 
