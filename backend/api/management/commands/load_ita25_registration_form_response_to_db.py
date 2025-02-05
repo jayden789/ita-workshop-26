@@ -171,7 +171,14 @@ class Command(BaseCommand):
         topic_comment,
         scheduling_comment,
     ):
-        # update talk info in registration
+        if (
+            not title
+            and not co_authors
+            and not abstract
+            and not topic_comment
+            and not scheduling_comment
+        ):
+            return
         workshop = Workshop.objects.filter(slug="ita25").first()
         user = User.objects.filter(email=email).first()
         registration, _ = Registration.objects.get_or_create(
@@ -184,6 +191,8 @@ class Command(BaseCommand):
         talk.topic_comment = topic_comment[:2000]
         talk.scheduling_comment = scheduling_comment[:2000]
         talk.save()
+        registration.presenting = True
+        registration.save()
 
     def update_workshop_info(
         self,
@@ -238,6 +247,7 @@ class Command(BaseCommand):
             workshop=workshop, user=user
         )
         registration.attending_dates.set(attending_dates)
+        registration.participation_status = "ALMOST_CERTAINLY"
         registration.options.set([sunday_reception_opt, wednesday_banquet_opt])
         registration.banquet_options = banquet_options
         registration.save()
