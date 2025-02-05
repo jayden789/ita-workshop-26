@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
 import csv
+from django.db import IntegrityError
 import shortuuid
 import os
 from api.models import (
@@ -153,14 +154,19 @@ class Command(BaseCommand):
         return password
 
     def update_existing_user(self, old_email, new_email, is_student):
-        user = User.objects.filter(email=old_email).first()
-        if user:
-            user.email = new_email
-            user.save()
-            user_profile = user.user_profile
-            user_profile.email_original = new_email
-            user_profile.is_student = is_student
-            user_profile.save()
+        try:
+            user = User.objects.filter(email=old_email).first()
+            if user:
+                user.email = new_email
+                user.save()
+                user_profile = user.user_profile
+                user_profile.email_original = new_email
+                user_profile.is_student = is_student
+                user_profile.save()
+                return True
+            return False
+        except IntegrityError:
+            return False
 
     def create_registration(self, email):
         workshop = Workshop.objects.filter(slug="ita25").first()
@@ -170,8 +176,6 @@ class Command(BaseCommand):
         )
         if created:
             print("Registration created for {}".format(email))
-        else:
-            print("Registration failed: {}".format(email))
 
     def update_talk_info(
         self,
