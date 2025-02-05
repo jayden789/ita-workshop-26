@@ -144,14 +144,17 @@ class Command(BaseCommand):
         return True, possible_matching_profiles[0]["email"]
 
     def create_new_user(self, first_name, last_name, email, is_student):
-        password = shortuuid.uuid()
-        user = User.objects.create_user(email=email, password=password)
-        user_profile = user.user_profile
-        user_profile.first_name = first_name
-        user_profile.last_name = last_name
-        user_profile.is_student = is_student
-        user_profile.save()
-        return password
+        try:
+            password = shortuuid.uuid()
+            user = User.objects.create_user(email=email, password=password)
+            user_profile = user.user_profile
+            user_profile.first_name = first_name
+            user_profile.last_name = last_name
+            user_profile.is_student = is_student
+            user_profile.save()
+            return password
+        except IntegrityError:
+            return
 
     def update_existing_user(self, old_email, new_email, is_student):
         try:
