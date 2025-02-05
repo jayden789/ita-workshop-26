@@ -66,10 +66,20 @@ class CurrentUserOnlyList(MailingList):
 
 @_named_list("staff")
 class StaffList(MailingList):
-    """Mailing list containing all admins user."""
+    """Mailing list containing admin users for ita25."""
 
+    # def get_contexts(self):
+    #     for user in User.objects.filter(is_staff=True):
+    #         yield {"user": user, "user_profile": user.user_profile}
     def get_contexts(self):
-        for user in User.objects.filter(is_staff=True):
+        alon_email = 'alon@eng.ucsd.edu'
+        eason_email = 'yic104@ucsd.edu'
+        bruce_email = 'brubru1357@gmail.com'
+        for user in User.objects.filter(email=alon_email):
+            yield {"user": user, "user_profile": user.user_profile}
+        for user in User.objects.filter(email=eason_email):
+            yield {"user": user, "user_profile": user.user_profile}
+        for user in User.objects.filter(email=bruce_email):
             yield {"user": user, "user_profile": user.user_profile}
 
 

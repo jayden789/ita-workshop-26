@@ -342,7 +342,7 @@ export default class RegistrationWorkshop extends React.Component {
       !this.props.paid &&
       this.props.formReady;
 
-    const payRelatedFieldsDisabled = this.props.paid; // disabling since ITA 2024 registration is closed
+    const payRelatedFieldsDisabled = this.props.paid;
 
     const toggle = () => {
       this.setState({
@@ -754,7 +754,10 @@ export default class RegistrationWorkshop extends React.Component {
             <div className="text-center">
               <Button
                 onClick={this.props.saveChanges}
-                disabled={false}
+                disabled={!requiredFieldsOk ||
+                          (!this.props.nonConsecutiveDays && !daysOk) ||
+                          this.props.loading
+                }
                 className="mr-3"
               >
                 {this.props.loading ? (
