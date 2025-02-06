@@ -58,7 +58,7 @@ INSTALLED_APPS = [
     "rest_auth.registration",
     "api",
     "corsheaders",
-    "pandas"
+    "pandas",
 ]
 
 # adapted from <https://lincolnloop.com/blog/django-logging-right-way/>
@@ -160,8 +160,7 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
     },
-    {
-        "NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
+    {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {
         "NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"
     },
@@ -230,10 +229,9 @@ DEFAULT_FROM_EMAIL = "ita@ucsd.edu"
 DEFAULT_BCC_EMAIL = "ita.mail.backup@gmail.com"
 
 # from <https://django-environ.readthedocs.io/en/latest/#tips>
-#EMAIL_CONFIG = env.email_url("EMAIL_URL", default="consolemail://")
+# EMAIL_CONFIG = env.email_url("EMAIL_URL", default="consolemail://")
 EMAIL_CONFIG = env.email_url(
-    "EMAIL_URL",
-    default="smtp+tls://smtp.ucsd.edu:587"
+    "EMAIL_URL", default="smtp+tls://smtp.ucsd.edu:587"
 )
 
 vars().update(EMAIL_CONFIG)
@@ -266,7 +264,7 @@ if DEBUG:
     ITAWEB_FILES_PATH = "workshop/ita_rebuild_files/local/"
 else:
     ITAWEB_FILES_PATH = "workshop/ita_rebuild_files/prod/"
-SFTP_STORAGE_ROOT = "/var/www/itaweb/htdocs/" + ITAWEB_FILES_PATH
+SFTP_STORAGE_ROOT = "/var/www/ita-react/" + ITAWEB_FILES_PATH
 SFTP_STORAGE_PARAMS = {"username": "ubuntu", "key_filename": "./frontend.pem"}
 
 DEFAULT_FILE_STORAGE = "storages.backends.sftpstorage.SFTPStorage"
