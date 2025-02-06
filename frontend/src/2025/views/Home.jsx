@@ -45,8 +45,7 @@ export default class Home2025 extends React.Component {
         <SpecialEventsSection />
         {/*<TutorialSection />*/}
         <EataSection />
-        {/* DISABLED TEMPORARILY */}
-        {/*<TrackVisibility once>
+        <TrackVisibility once>
           {({ isVisible }) =>
             isVisible && (
               <Suspense
@@ -60,7 +59,7 @@ export default class Home2025 extends React.Component {
               </Suspense>
             )
           }
-        </TrackVisibility>*/}
+        </TrackVisibility>
         <SponsorsSection />
         <CodeOfConductSection />
       </div>

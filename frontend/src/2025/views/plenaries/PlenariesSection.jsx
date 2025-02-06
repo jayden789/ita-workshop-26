@@ -61,63 +61,62 @@ export default class PlenariesSection extends React.Component {
 
   render() {
     const plenarySessionCards = plenarySessions.map((session) => (
-      <div className='text-center'>
-      <PlenarySessionCard
-        dayName={session.dayName}
-        topic={session.topic}
-        className={styles.plenarySessionCard}
-        key={session.dayName}
-      >
-        {session.talks.map((talk, talkIndex) => (
-          <PlenaryTalkCardContent
-            talk={talk}
-            onClickPresenterName={this.onClickPresenterNameForTalk(talk)}
-            onClickImage={this.onClickPresenterNameForTalk(talk)}
-            key={talkIndex}
-          />
-        ))}
-        {session.moderator.name && (
-          <CardImg
-            src={session.moderator.picUrl}
-            width="100%"
-            height="320px"
-            alt=""
-            onClick={this.onClickModeratorNameForModerator(
-              session.moderator,
-              session.moderatorTalk
-            )}
-            style={{ cursor: 'pointer' }}
-          />
-        )}
-        {session.moderator.name && (
-          <CardBody>
-            <CardTitle style={{ fontSize: 1 + 'rem' }}>
-              {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-              <span>
-                Moderator
-                <br />
-              </span>
-              {(session.topic === 'TBD' || session.topic == '') &&
-              !session.moderator.websiteUrl ? (
-                <span> {session.moderator.name} </span>
-              ) : (
-                <a
-                  href="#"
-                  onClick={this.onClickModeratorNameForModerator(
-                    session.moderator,
-                    session.moderatorTalk
-                  )}
-                >
-                  {session.moderator.name}
-                </a>
+      <div className="text-center" key={session.dayName}>
+        <PlenarySessionCard
+          dayName={session.dayName}
+          topic={session.topic}
+          className={styles.plenarySessionCard}
+        >
+          {session.talks.map((talk, talkIndex) => (
+            <PlenaryTalkCardContent
+              talk={talk}
+              onClickPresenterName={this.onClickPresenterNameForTalk(talk)}
+              onClickImage={this.onClickPresenterNameForTalk(talk)}
+              key={talkIndex}
+            />
+          ))}
+          {session.moderator.name && (
+            <CardImg
+              src={session.moderator.picUrl}
+              width="100%"
+              height="320px"
+              alt=""
+              onClick={this.onClickModeratorNameForModerator(
+                session.moderator,
+                session.moderatorTalk
               )}
-            </CardTitle>
-            <CardSubtitle className={styles.moderatorLabel}>
-              {session.moderator.affiliation}
-            </CardSubtitle>
-          </CardBody>
-        )}
-      </PlenarySessionCard>
+              style={{ cursor: 'pointer' }}
+            />
+          )}
+          {session.moderator.name && (
+            <CardBody>
+              <CardTitle style={{ fontSize: 1 + 'rem' }}>
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <span>
+                  Moderator
+                  <br />
+                </span>
+                {(session.topic === 'TBD' || session.topic == '') &&
+                !session.moderator.websiteUrl ? (
+                  <span> {session.moderator.name} </span>
+                ) : (
+                  <a
+                    href="#"
+                    onClick={this.onClickModeratorNameForModerator(
+                      session.moderator,
+                      session.moderatorTalk
+                    )}
+                  >
+                    {session.moderator.name}
+                  </a>
+                )}
+              </CardTitle>
+              <CardSubtitle className={styles.moderatorLabel}>
+                {session.moderator.affiliation}
+              </CardSubtitle>
+            </CardBody>
+          )}
+        </PlenarySessionCard>
       </div>
     ));
 

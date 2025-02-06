@@ -114,13 +114,13 @@ export default class ParticipantsSection extends React.Component {
           fluid
           className="mt-0 mb-0 ParticipantsBackground"
         >
-          {/* <Container>
+          <Container>
             <div className="text-center">
               <h1 className="display-4 mb-2" style={{ color: 'white' }}>
                 Participants
               </h1>
             </div>
-          </Container> */}
+          </Container>
           {cardsParticipantsWithPic}
           {cardsParticipantsWithoutPic}
           {cardsStudentsWithPic}
