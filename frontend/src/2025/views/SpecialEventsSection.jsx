@@ -523,7 +523,103 @@ Lunch served for event participants.
                   </CardFooter>
                 </Card>
               </Col> */}
-
+              <Col>
+                <Card
+                  className="text-center"
+                  style={{ height: '100%', cursor: 'pointer' }}
+                  onClick={this.toggle3}
+                >
+                  <CardImg
+                    top
+                    width="100%"
+                    height={imgHeight}
+                    src={bossImg}
+                    alt="Hello Boss"
+                  />
+                  <Modal
+                    isOpen={this.state.modal3}
+                    toggle={this.toggle3}
+                    centered
+                  >
+                    <ModalHeader toggle={this.toggle3}>Hello Boss</ModalHeader>
+                    <ModalBody className="text-center">
+                      The event will match students and postdocs to internship
+                      mentors, postdoc supervisors, and companies. Each will
+                      present one slide for at most a minute, and fun matching
+                      will follow. Microsoft, Qualcomm, Samsung, and others have
+                      expressed interest in participating.<br></br>
+                      Please fill your slide and upload your resume below.
+                      During the event you will use your slide to introduce
+                      yourself in a minute or less. Please upload your
+                      information below.
+                      <br></br>
+                      For workshop participants only.
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1F02syUTPL2bNVaAGZB-sqbsv5VVyO2sYLq2RqP60g4Y/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Students/ Postdoc slides 2025 - Add Your Own
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1JI5PMcW6bb1LaHdJsLtQmuwHFiZi2jVT7SxbLqvPiuY/edit#slide=id.p"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Students/ Postdoc slides 2024
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/forms/d/1NGJDS-eO01Mz1znDkQ3H3VW2XbQGn508hiRZXA93EIw/edit#settings"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Resumes
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1Z0RBMWGhBMJSY0IAPP806LH0XZrmFOMsF8WVDXXIE9s/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Mentors/Employers slides 2025 - Add Your Own
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1XKTscFbLNfHPMfNs-Ma6nHDzg9XeUzAvIzQhCkqkh3o/edit#slide=id.g7d38376bc7_385_75"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Mentors/Employers slides 2024
+                      </a>
+                      <br></br>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="secondary" onClick={this.toggle3}>
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </Modal>
+                  <CardTitle className="mt-4">
+                    <span
+                      onClick={this.toggle3}
+                      style={{ cursor: 'pointer', fontSize: '17px' }}
+                    >
+                      Hello Boss
+                    </span>
+                  </CardTitle>
+                  <CardBody>
+                    A fun event where students and postdocs,{' '}
+                      meet potential internship mentors, postdoc advisors, and
+                      employers.
+                  </CardBody>
+                  <CardFooter className="mt-auto" style={cardFooterStyle}>
+                    Thu Noon
+                  </CardFooter>
+                </Card>
+              </Col>
               <Col>
                 <Card
                   className="text-center"
@@ -535,7 +631,7 @@ Lunch served for event participants.
                     width="100%"
                     height={imgHeight}
                     src={startupImg}
-                    alt="Startup Forum"
+                    alt="Startup ITAcubator"
                     style={{ borderBottom: '1px solid lightgray' }}
                   />
                   <Modal
@@ -544,10 +640,22 @@ Lunch served for event participants.
                     centered
                   >
                     <ModalHeader toggle={this.toggle11}>
-                      Startup Forum
+                      Startup ITAcubator
                     </ModalHeader>
                     <ModalBody>
-                      {/* ADD DETAILS */}
+                    This event will consist of researchers who started companies, sharing 
+                    their experience and providing advice to aspiring entrepreneurs. You 
+                    can propose your ideas or ask questions. Our last session has resulted 
+                    in seed funding.
+                    <br></br>
+                    <a
+                      href="https://docs.google.com/presentation/d/19bXfDuhd43gRSsKNFfMUkTaFAQYPHJ0B6z8FvL3IMxg/edit#slide=id.p"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Idea and question slides
+                    </a>
+                    <br></br>
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle11}>
@@ -560,12 +668,13 @@ Lunch served for event participants.
                       onClick={this.toggle11}
                       style={{ cursor: 'pointer', fontSize: '17px' }}
                     >
-                      Startup Forum
+                      Startup ITAcubator
                     </span>
                   </CardTitle>
                   <CardBody>
                     {' '}
-                    {/* Add INTRODUCTION */}
+                    Experience and advice from community members who founded startups
+                    <br></br>
                     <br></br>
                     <br></br>
                     <p>
@@ -710,7 +819,7 @@ Lunch served for event participants.
                       </a>
                       <br></br>
                       <a
-                        href="https://docs.google.com/presentation/d/1oRA3UA0hGI8KHgCdd5Yc37Sub-2ik5ae3Azu2i2QELc/edit#slide=id.p"
+                        href="https://docs.google.com/presentation/d/1RZ28k44RAXSbQKo1yh1lczS9mKR_mBQamKphH5y2IrM/edit#slide=id.p"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -880,88 +989,6 @@ Lunch served for event participants.
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Wed 4:10pm
-                  </CardFooter>
-                </Card>
-              </Col>
-
-              <Col>
-                <Card
-                  className="text-center"
-                  style={{ height: '100%', cursor: 'pointer' }}
-                  onClick={this.toggle3}
-                >
-                  <CardImg
-                    top
-                    width="100%"
-                    height="40%"
-                    src={bossImg}
-                    alt="Hello Boss"
-                  />
-                  <Modal
-                    isOpen={this.state.modal3}
-                    toggle={this.toggle3}
-                    centered
-                  >
-                    <ModalHeader toggle={this.toggle3}>Hello Boss</ModalHeader>
-                    <ModalBody className="text-center">
-                      The event will match students and postdocs to internship
-                      mentors, postdoc supervisors, and companies. Each will
-                      present one slide for at most a minute, and fun matching
-                      will follow. Microsoft, Qualcomm, Samsung, and others have
-                      expressed interest in participating.<br></br>
-                      Please fill your slide and upload your resume below.
-                      During the event you will use your slide to introduce
-                      yourself in a minute or less. Please upload your
-                      information below.
-                      <br></br>
-                      For workshop participants only.
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1JI5PMcW6bb1LaHdJsLtQmuwHFiZi2jVT7SxbLqvPiuY/edit#slide=id.p"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Students/ Postdoc slides
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/forms/d/1NGJDS-eO01Mz1znDkQ3H3VW2XbQGn508hiRZXA93EIw/edit#settings"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Resumes
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1XKTscFbLNfHPMfNs-Ma6nHDzg9XeUzAvIzQhCkqkh3o/edit#slide=id.g7d38376bc7_385_75"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Mentors/Employers slides
-                      </a>
-                      <br></br>
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button color="secondary" onClick={this.toggle3}>
-                        Close
-                      </Button>
-                    </ModalFooter>
-                  </Modal>
-                  <CardTitle className="mt-4">
-                    <span
-                      onClick={this.toggle3}
-                      style={{ cursor: 'pointer', fontSize: '17px' }}
-                    >
-                      Hello Boss
-                    </span>
-                  </CardTitle>
-                  <CardBody>
-                    A fun event where students and postdocs,{' '}
-                      meet potential internship mentors, postdoc advisors, and
-                      employers.
-                  </CardBody>
-                  <CardFooter className="mt-auto" style={cardFooterStyle}>
-                    Thu Noon
                   </CardFooter>
                 </Card>
               </Col>

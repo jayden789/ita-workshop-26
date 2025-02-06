@@ -65,6 +65,7 @@ export default class ScheduleSection extends React.Component {
       awardSessionModal: false,
       showNeighborModal: false,
       showBossModal: false,
+      showStartupModal: false,
     };
     this.toggle1 = this.toggle1.bind(this);
     this.computeTalkSessionText = this.computeTalkSessionText.bind(this);
@@ -83,6 +84,12 @@ export default class ScheduleSection extends React.Component {
       showBossModal: !prevState.showBossModal,
     }));
   };
+
+  toggleStartupModal = () => {
+    this.setState((prevState) => ({
+      showStartupModal: !prevState.showStartupModal,
+    }))
+  }
 
   toggle1() {
     this.setState({
@@ -288,7 +295,7 @@ export default class ScheduleSection extends React.Component {
           <Container>
             <div className="text-center">
               <h1 className="display-4">
-                <strong>Schedule</strong>
+                <strong>Schedule Outline</strong>
               </h1>
               {/* <h4>
               The schedule has been finalized. We will post the student and graduation day poster and talks by Thursday 2/9.<br></br>
@@ -408,8 +415,18 @@ export default class ScheduleSection extends React.Component {
                               color: '	#0096FF',
                             }}
                           >
-                            Know thy neighbor - lightning introductions to
-                            fellow participants
+                            Know thy neighbor, lightning introductions to
+                            fellow participants,
+                          </span>
+                          <span
+                            onClick={this.toggleNeighborModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: 'rgb(255, 0, 0)',
+                            }}
+                          >
+                            {' '}please enter your information here
                           </span>
                         </li>
                         <li>
@@ -425,10 +442,42 @@ export default class ScheduleSection extends React.Component {
                               color: '	#0096FF',
                             }}
                           >
-                            Hello boss - recruitment event
+                            Hello boss, recruitment event,
+                          </span>
+                          <span
+                            onClick={this.toggleBossModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: 'rgb(255, 0, 0)',
+                            }}
+                          >
+                            {' '}please enter your information here
                           </span>
                         </li>
-                        <li>Friday: Startup Forum</li>
+                        <li>
+                          Friday: {' '}
+                          <span
+                            onClick={this.toggleStartupModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
+                          >
+                            Startup ITAcubator, experience and advice from community members who founded startups
+                          </span>
+                          <span
+                            onClick={this.toggleStartupModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: 'rgb(255, 0, 0)',
+                            }}
+                          >
+                            {' '}please enter your information here
+                          </span>
+                        </li>
                       </ul>
                     </td>
                   </tr>
@@ -535,7 +584,7 @@ export default class ScheduleSection extends React.Component {
                   </a>
                   <br></br>
                   <a
-                    href="https://docs.google.com/presentation/d/1oRA3UA0hGI8KHgCdd5Yc37Sub-2ik5ae3Azu2i2QELc/edit#slide=id.p"
+                    href="https://docs.google.com/presentation/d/1RZ28k44RAXSbQKo1yh1lczS9mKR_mBQamKphH5y2IrM/edit#slide=id.p"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -596,11 +645,19 @@ export default class ScheduleSection extends React.Component {
                   For workshop participants only.
                   <br></br>
                   <a
+                    href="https://docs.google.com/presentation/d/1F02syUTPL2bNVaAGZB-sqbsv5VVyO2sYLq2RqP60g4Y/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Students/ Postdoc slides 2025 - Add Your Own
+                  </a>
+                  <br></br>
+                  <a
                     href="https://docs.google.com/presentation/d/1JI5PMcW6bb1LaHdJsLtQmuwHFiZi2jVT7SxbLqvPiuY/edit#slide=id.p"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Students/ Postdoc slides
+                    Students/ Postdoc slides 2024
                   </a>
                   <br></br>
                   <a
@@ -612,11 +669,19 @@ export default class ScheduleSection extends React.Component {
                   </a>
                   <br></br>
                   <a
+                    href="https://docs.google.com/presentation/d/1Z0RBMWGhBMJSY0IAPP806LH0XZrmFOMsF8WVDXXIE9s/edit?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Mentors/Employers slides 2025 - Add Your Own
+                  </a>
+                  <br></br>
+                  <a
                     href="https://docs.google.com/presentation/d/1XKTscFbLNfHPMfNs-Ma6nHDzg9XeUzAvIzQhCkqkh3o/edit#slide=id.g7d38376bc7_385_75"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Mentors/Employers slides
+                    Mentors/Employers slides 2024
                   </a>
                   <br></br>
                 </ModalBody>
@@ -646,6 +711,34 @@ export default class ScheduleSection extends React.Component {
                     color="primary"
                     onClick={this.toggleAwardSessionModal}
                   >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </Modal>
+
+              <Modal
+                isOpen={this.state.showStartupModal}
+                toggle={this.toggleStartupModal}
+                centered
+              >
+                <ModalHeader toggle={this.toggleStartupModal}>
+                  Startup ITAcubator
+                </ModalHeader>
+                <ModalBody className="text-center">
+                This event will consist of researchers who started companies, sharing their experience and providing advice to aspiring entrepreneurs. You can propose your ideas or ask questions. Our last session has resulted in seed funding.
+
+                  <br></br>
+                  <a
+                    href="https://docs.google.com/presentation/d/19bXfDuhd43gRSsKNFfMUkTaFAQYPHJ0B6z8FvL3IMxg/edit#slide=id.p"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Idea and question slides
+                  </a>
+                  <br></br>
+                </ModalBody>
+                <ModalFooter>
+                  <Button color="secondary" onClick={this.toggleNeighborModal}>
                     Close
                   </Button>
                 </ModalFooter>

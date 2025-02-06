@@ -28,6 +28,7 @@ import RobImg from '../img2025/plenary-profile-pics/rob.jpg';
 import PiyaImg from '../img2025/plenary-profile-pics/piya.jpg';
 import MichaelImg from '../img2025/plenary-profile-pics/michael.jpg';
 import ChiragImg from '../img2025/plenary-profile-pics/chirag.jpg';
+import AhmadImg from '../img2025/plenary-profile-pics/ahmad.jpg';
 
 const mondayTalks = [
   {
@@ -36,15 +37,29 @@ const mondayTalks = [
       picUrl: FlavioImg,
       websiteUrl: 'https://people.seas.harvard.edu/~flavio/#',
       affiliation: 'Harvard University',
-      bio: `I am an Associate Professor of Electrical Engineering at Harvard's John A. Paulson School of Engineering 
-      and Applied Sciences. Before joining Harvard I was a social good post-doctoral fellow at IBM Research in Yorktown 
-      Heights, New York. I received my Ph.D. in Electrical Engineering and Computer Science at MIT. My main research 
-      interests are information theory, signal processing, and machine learning.
+      bio: `Flavio P. Calmon is the Thomas D. Cabot Associate Professor of 
+      Electrical Engineering at the Harvard John A. Paulson School of Engineering 
+      and Applied Sciences. Before joining Harvard, he was the inaugural Data 
+      Science for Social Good Post-Doctoral Fellow at IBM Research in Yorktown 
+      Heights, New York. He received his Ph.D. in Electrical Engineering and 
+      Computer Science at MIT. His research develops the information-theoretic 
+      foundations of trustworthy and reliable machine learning. Prof. Calmon 
+      received the 2024 James L. Massey Award from the IEEE Information Theory Society, 
+      the NSF CAREER award, faculty awards from Google, IBM, and Amazon, and the Harvard 
+      Dean of Undergraduate Studies Commendation for “Extraordinary Teaching during 
+      Extraordinary Times.” He also received the inaugural "Título de Honra ao Mérito" 
+      (Honor to the Merit Title) given to alumni from the Universidade de Brasília 
+      (Brazil).
       `,
     },
     title:
-      '',
-    abstract: ``,
+      'Multigroup Fairness and Representation',
+    abstract: `This talk overviews information-theoretic results on trustworthy 
+    machine learning and artificial intelligence. We first briefly discuss 
+    achievability and converse results for group fairness in prediction and 
+    classification tasks. We then overview recent methods for measuring and 
+    promoting multi-group proportional representation in image retrieval and 
+    generation tasks.`,
   },
   {
     presenter: {
@@ -87,17 +102,16 @@ const mondayTalks = [
 const tuesdayTalks = [
   {
     presenter: {
-      name: 'Chao Tian',
-      picUrl: ChaoImg,
-      websiteUrl: 'https://tiangroup.engr.tamu.edu/',
-      affiliation: 'Texas A&M University',
-      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and Ph.D. 
-      degrees from Cornell University, Ithaca NY. He worked at AT&T Labs-Research (previously known as the Shannon Labs) 
-      as a researcher on communication and signal processing for seven years, before returning to academia. He was with 
-      the University of Tennessee Knoxville for a few years before joining Texas A&M University.`,
+      name: 'Jona Ballé',
+      picUrl: JonaImg,
+      websiteUrl: 'https://balle.io/',
+      affiliation: 'Google',
+      bio: `My research revolves around data compression and human perception, and is built on principles of 
+      signal processing, machine learning, sensory neuroscience, and information theory. I enjoy innovating in 
+      my field, and being a lifelong student and teacher.`,
     },
     title: '',
-    abstract: '',
+    abstract: ``,
   },
   {
     presenter: {
@@ -122,20 +136,45 @@ const tuesdayTalks = [
   },
   {
     presenter: {
-      name: 'Jona Ballé',
-      picUrl: JonaImg,
-      websiteUrl: 'https://balle.io/',
-      affiliation: 'Google',
-      bio: `My research revolves around data compression and human perception, and is built on principles of 
-      signal processing, machine learning, sensory neuroscience, and information theory. I enjoy innovating in 
-      my field, and being a lifelong student and teacher.`,
+      name: 'Chao Tian',
+      picUrl: ChaoImg,
+      websiteUrl: 'https://tiangroup.engr.tamu.edu/',
+      affiliation: 'Texas A&M University',
+      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and Ph.D. 
+      degrees from Cornell University, Ithaca NY. He worked at AT&T Labs-Research (previously known as the Shannon Labs) 
+      as a researcher on communication and signal processing for seven years, before returning to academia. He was with 
+      the University of Tennessee Knoxville for a few years before joining Texas A&M University.`,
     },
     title: '',
-    abstract: ``,
+    abstract: '',
   },
 ];
 
 const wednesdayTalks = [
+  {
+    presenter: {
+      name: 'Zaid Harchaoui',
+      picUrl: ZaidImg,
+      websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
+      affiliation: 'University of Washington',
+      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department of 
+      Statistics and in the Paul G. Allen School of Computer Science and Engineering (dual appointment), 
+      and a Senior Data Science Fellow in the eScience Institute. He is an action editor at the Journal of 
+      Machine Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
+      Statistical Methodology, and a member of the editorial board of the Foundations and Trends Monograph 
+      Series. He is on the program committee of the inaugural Conference on Language Modeling, and regularly 
+      serves on the program committees of the leading machine learning and AI conferences. He is a principal 
+      investigator and a cofounder of IFML, the NSF-AI Institute on Foundations of Machine Learning, and of IFDS, 
+      the NSF-TRIPODS Institute on Foundations of Data Science. He obtained the doctoral degree from Telecom Paris - 
+      Institut Polytechnique de Paris, for his research performed at CNRS - the French National Institute for 
+      Fundamental Research. He previously held appointments at the Courant Institute of Mathematical Sciences 
+      at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
+      Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
+      has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
+    },
+    title: '',
+    abstract: ``,
+  },
   {
     presenter: {
       name: 'Mahdi Soltanolkotabi',
@@ -163,54 +202,34 @@ const wednesdayTalks = [
     title: '',
     abstract: ``,
   },
-  {
-    presenter: {
-      name: 'Zaid Harchaoui',
-      picUrl: ZaidImg,
-      websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
-      affiliation: 'University of Washington',
-      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department of 
-      Statistics and in the Paul G. Allen School of Computer Science and Engineering (dual appointment), 
-      and a Senior Data Science Fellow in the eScience Institute. He is an action editor at the Journal of 
-      Machine Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
-      Statistical Methodology, and a member of the editorial board of the Foundations and Trends Monograph 
-      Series. He is on the program committee of the inaugural Conference on Language Modeling, and regularly 
-      serves on the program committees of the leading machine learning and AI conferences. He is a principal 
-      investigator and a cofounder of IFML, the NSF-AI Institute on Foundations of Machine Learning, and of IFDS, 
-      the NSF-TRIPODS Institute on Foundations of Data Science. He obtained the doctoral degree from Telecom Paris - 
-      Institut Polytechnique de Paris, for his research performed at CNRS - the French National Institute for 
-      Fundamental Research. He previously held appointments at the Courant Institute of Mathematical Sciences 
-      at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
-      Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
-      has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
-    },
-    title: '',
-    abstract: ``,
-  },
 ];
 
 const thursdayTalks = [
   {
     presenter: {
-      name: 'Chirag Pabbaraju',
-      picUrl: ChiragImg,
-      websiteUrl: 'https://web.stanford.edu/~cpabbara/',
-      affiliation: 'Stanford University',
-      bio: `I'm a fourth year PhD student at Stanford University in the CS Theory group. I feel very 
-      lucky to be co-advised by Moses Charikar and Gregory Valiant. My primary research interests are 
-      in statistical and algorithmic aspects of learning theory. More broadly, I like thinking about 
-      various topics in theoretical computer science and machine learning.`,
+      name: 'Rob Brekelmans',
+      picUrl: RobImg,
+      websiteUrl: 'https://brekelma.github.io/',
+      affiliation: 'Vector Institute',
+      bio: `I am a Postdoctoral Fellow at the Vector Institute in Toronto, working with Alireza Makhzani and Roger 
+      Grosse. I graduated with my PhD from University of Southern California in 2022, working with Greg Ver Steeg 
+      and Aram Galstyan. I also interned with the AI Safety Analysis team at DeepMind (Blog), working with Pedro 
+      Ortega and Tim Genewein.`,
     },
-    title: 'Multiclass Learnability Does Not Imply Sample Compression',
-    abstract:`A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis 
-    from the class, it is possible to retain only a small subsample, using which the labels on the entire sample 
-    can be inferred. The size of the compression scheme is an upper bound on the size of the subsample produced. 
-    Every learnable binary hypothesis class (which must necessarily have finite VC dimension) admits a sample 
-    compression scheme of size only a finite function of its VC dimension, independent of the sample size. For 
-    multiclass hypothesis classes, the analog of VC dimension is the DS dimension. We show that the analogous 
-    statement pertaining to sample compression is not true for multiclass hypothesis classes: every learnable 
-    multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
-    compression scheme of size only a finite function of its DS dimension.
+    title: 'Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo',
+    abstract:`Numerous capability and safety techniques of Large Language Models (LLMs), including RLHF, automated 
+    red-teaming, prompt engineering, and infilling, can be cast as sampling from an unnormalized target distribution 
+    defined by a given reward or potential function over the full sequence. In this work, we leverage the rich 
+    toolkit of Sequential Monte Carlo (SMC) for these probabilistic inference problems. In particular, we use 
+    learned twist functions to estimate the expected future value of the potential at each timestep, which 
+    enables us to focus inference-time computation on promising partial sequences. We propose a novel contrastive 
+    method for learning the twist functions, and establish connections with the rich literature of soft 
+    reinforcement learning. As a complementary application of our twisted SMC framework, we present methods for 
+    evaluating the accuracy of language model inference techniques using novel bidirectional SMC bounds on the 
+    log partition function. These bounds can be used to estimate the KL divergence between the inference and 
+    target distributions in both directions. We apply our inference evaluation techniques to show that twisted 
+    SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
+    training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
     `,
   },
   {
@@ -243,29 +262,25 @@ const thursdayTalks = [
   },
   {
     presenter: {
-      name: 'Rob Brekelmans',
-      picUrl: RobImg,
-      websiteUrl: 'https://brekelma.github.io/',
-      affiliation: 'Vector Institute',
-      bio: `I am a Postdoctoral Fellow at the Vector Institute in Toronto, working with Alireza Makhzani and Roger 
-      Grosse. I graduated with my PhD from University of Southern California in 2022, working with Greg Ver Steeg 
-      and Aram Galstyan. I also interned with the AI Safety Analysis team at DeepMind (Blog), working with Pedro 
-      Ortega and Tim Genewein.`,
+      name: 'Chirag Pabbaraju',
+      picUrl: ChiragImg,
+      websiteUrl: 'https://web.stanford.edu/~cpabbara/',
+      affiliation: 'Stanford University',
+      bio: `I'm a fourth year PhD student at Stanford University in the CS Theory group. I feel very 
+      lucky to be co-advised by Moses Charikar and Gregory Valiant. My primary research interests are 
+      in statistical and algorithmic aspects of learning theory. More broadly, I like thinking about 
+      various topics in theoretical computer science and machine learning.`,
     },
-    title: 'Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo',
-    abstract:`Numerous capability and safety techniques of Large Language Models (LLMs), including RLHF, automated 
-    red-teaming, prompt engineering, and infilling, can be cast as sampling from an unnormalized target distribution 
-    defined by a given reward or potential function over the full sequence. In this work, we leverage the rich 
-    toolkit of Sequential Monte Carlo (SMC) for these probabilistic inference problems. In particular, we use 
-    learned twist functions to estimate the expected future value of the potential at each timestep, which 
-    enables us to focus inference-time computation on promising partial sequences. We propose a novel contrastive 
-    method for learning the twist functions, and establish connections with the rich literature of soft 
-    reinforcement learning. As a complementary application of our twisted SMC framework, we present methods for 
-    evaluating the accuracy of language model inference techniques using novel bidirectional SMC bounds on the 
-    log partition function. These bounds can be used to estimate the KL divergence between the inference and 
-    target distributions in both directions. We apply our inference evaluation techniques to show that twisted 
-    SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
-    training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
+    title: 'Multiclass Learnability Does Not Imply Sample Compression',
+    abstract:`A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis 
+    from the class, it is possible to retain only a small subsample, using which the labels on the entire sample 
+    can be inferred. The size of the compression scheme is an upper bound on the size of the subsample produced. 
+    Every learnable binary hypothesis class (which must necessarily have finite VC dimension) admits a sample 
+    compression scheme of size only a finite function of its VC dimension, independent of the sample size. For 
+    multiclass hypothesis classes, the analog of VC dimension is the DS dimension. We show that the analogous 
+    statement pertaining to sample compression is not true for multiclass hypothesis classes: every learnable 
+    multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
+    compression scheme of size only a finite function of its DS dimension.
     `,
   },
 ];
@@ -344,11 +359,22 @@ export const plenarySessions = [
     dayName: 'Thursday',
     topic: 'Machine Learning Paper Awards',
     moderator: {
-      name: '',
-      picUrl: '',
-      websiteUrl: '',
-      bio: '',
-      affiliation: '',
+      name: 'Ahmad Beirami ',
+      picUrl: AhmadImg,
+      websiteUrl: 'https://sites.google.com/view/beirami',
+      bio: `Ahmad Beirami is a research scientist at Google DeepMind, leading 
+      new research initiatives on post-training within Gen AI Unit. At Google 
+      Research, he led a research team on building safe, helpful, and scalable 
+      generative language models. At Meta AI, he led research to power the next 
+      generation of virtual digital assistants with AR/VR capabilities through 
+      robust generative language modeling. At Electronic Arts, he led the AI 
+      agent research program for automated playtesting of video games and 
+      cooperative reinforcement learning. Before moving to industry, he held 
+      a joint postdoctoral fellow position at Harvard & MIT, focused on problems 
+      in the intersection of core machine learning and information theory. He 
+      is the recipient of the 2015 Sigma Xi Best PhD Thesis Award from Georgia Tech.
+      `,
+      affiliation: 'Google DeepMind',
     },
     moderatorTalk: {
       title: '',
