@@ -368,13 +368,10 @@ export default class ScheduleSection extends React.Component {
                         </span>
                       </div>
                       <ul>
-                        <li>Monday: Innovation that may empower 6G</li>
-                        <li>Tuesday: Three cheers for information theory</li>
-                        <li>Thursday: Learning and reasoning</li>
-                        <li>
-                          Friday: Information, meaning, and understanding in
-                          large models
-                        </li>
+                        <li>Monday: Information Theory / Signal Processing Paper Awards</li>
+                        <li>Tuesday: Information Theory for Machine Learning</li>
+                        <li>Thursday: Machine Learning Paper Awards</li>
+                        <li>Friday: Advances in Large Language Models</li>
                       </ul>
                     </td>
                   </tr>
@@ -382,22 +379,22 @@ export default class ScheduleSection extends React.Component {
                     <th scope="row">10:15 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Break, light refreshments,{' '}
-                      <span style={{ color: 'gray' }}>Bahia Patio</span>
+                      <span style={{ color: 'gray' }}>Breakout Rooms</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">10:30 AM</th>
+                    <th scope="row">10:40 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Five parallel sessions, four talks each
+                      Three parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">11:50 PM</th>
+                    <th scope="row">12:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       <div>
                         Lunch break,{' '}
                         <span style={{ color: 'gray' }}>
-                          Nelson (5th floor ballroom) (except Friday)
+                          Nelson (5th floor ballroom)
                         </span>
                       </div>
                       <ul>
@@ -413,15 +410,13 @@ export default class ScheduleSection extends React.Component {
                           >
                             Know thy neighbor - lightning introductions to
                             fellow participants
-                          </span>{' '}
-                          , lunch for session participants
+                          </span>
                         </li>
                         <li>
-                          Tuesday: State of the Information Theory Society,
-                          Stark Draper, lunch for session participants
+                          Tuesday: Town Hall with information theory society president
                         </li>
                         <li>
-                          Thursday: (1) NSF presentation, (2){' '}
+                          Thursday: {' '}
                           <span
                             onClick={this.toggleBossModal}
                             style={{
@@ -432,47 +427,46 @@ export default class ScheduleSection extends React.Component {
                           >
                             Hello boss - recruitment event
                           </span>
-                          , light refreshments for session attendees
                         </li>
-                        <li>Friday: Fun Bahia Patio, lunch on your own</li>
+                        <li>Friday: Startup Forum</li>
                       </ul>
                     </td>
                   </tr>
 
                   <tr>
-                    <th scope="row">1:20 PM</th>
+                    <th scope="row">2:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Five parallel sessions, four talks each
+                      Three parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">2:40 PM</th>
+                    <th scope="row">3:20 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Break, refreshments,{' '}
-                      <span style={{ color: 'gray' }}>Bahia Patio</span>
+                      <span style={{ color: 'gray' }}>Breakout Rooms</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">3:00 PM</th>
+                    <th scope="row">3:40 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Five parallel sessions, four talks each
+                      Three parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">4:20 PM</th>
+                    <th scope="row">5:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>Break</td>
                   </tr>
                   <tr>
-                    <th scope="row">4:30 PM</th>
+                    <th scope="row">5:10 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       <div>
                         Special sessions:{' '}
                         <span style={{ color: 'gray' }}>
-                          Nelson (5th floor ballroom) (except Friday)
+                          Nelson (5th floor ballroom)
                         </span>
                       </div>
                       <ul>
-                        <li>
+                        {/* <li>
                           Monday: Award Sessions: Best 2023 papers from IT,
                           IT/Comm, SP societies{' '}
                           <Button
@@ -482,12 +476,10 @@ export default class ScheduleSection extends React.Component {
                           >
                             Learn More
                           </Button>
-                        </li>
-                        <li>
-                          Tuesday: The secret to your success, followed by Taco
-                          Tuesday outing
-                        </li>
-                        <li>
+                        </li> */}
+                        <li>Monday : Surviving as a researcher</li>
+                        <li> Tuesday: Taco Tuesday outing</li>
+                        {/* <li>
                           Thursday: Award Sessions: Best 2023 papers from
                           NeurIPS, ICML, ACL{' '}
                           <Button
@@ -497,12 +489,12 @@ export default class ScheduleSection extends React.Component {
                           >
                             Learn More
                           </Button>
-                        </li>
+                        </li> */}
                         <li>Friday: Farewell bash, light food</li>
                       </ul>
                     </td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <th scope="row">5:30 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Dinner on your own (except Taco Tuesday), socialize{' '}
@@ -510,7 +502,7 @@ export default class ScheduleSection extends React.Component {
                         at the Cabrillo Suite
                       </span>
                     </td>
-                  </tr>
+                  </tr> */}
                   <tr>
                     <th scope="row">7:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
@@ -539,7 +531,15 @@ export default class ScheduleSection extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Intro slides 2024 - add your own
+                    Intro slides 2025 - add your own
+                  </a>
+                  <br></br>
+                  <a
+                    href="https://docs.google.com/presentation/d/1oRA3UA0hGI8KHgCdd5Yc37Sub-2ik5ae3Azu2i2QELc/edit#slide=id.p"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Intro slides 2024
                   </a>
                   <br></br>
                   <a
@@ -747,7 +747,7 @@ export default class ScheduleSection extends React.Component {
                     <th scope="row">10:20 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Break, light refreshments,{' '}
-                      <span style={{ color: 'gray' }}>Bahia Patio</span>
+                      <span style={{ color: 'gray' }}>Breakout Rooms</span>
                     </td>
                   </tr>
                   <tr>
@@ -760,43 +760,43 @@ export default class ScheduleSection extends React.Component {
                     <th scope="row">12:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Graduation day posters and general posters, catered lunch,{' '}
-                      <span style={{ color: 'gray' }}>Bahia Patio</span>
+                      <span style={{ color: 'gray' }}>Breakout Rooms</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">1:40 PM</th>
+                    <th scope="row">2:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Plenary session: New developments in algorithmic
-                      economics, <span style={{ color: 'gray' }}>Ballroom</span>
+                      Plenary session: Foundations of Machine Learning & Artificial Intelligence
+                      <span style={{ color: 'gray' }}>{' '}Ballroom</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">2:55 PM</th>
+                    <th scope="row">3:15 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Break, refreshments
                     </td>
                   </tr>
-                  <tr>
+                  {/* <tr>
                     <th scope="row">3:10 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       ITA 2025 Challenge kickoff session: Where we formulate a
                       challenge for next year’s ITA,{' '}
                       <span style={{ color: 'gray' }}>Ballroom</span>
                     </td>
-                  </tr>
-                  <tr>
+                  </tr> */}
+                  {/* <tr>
                     <th scope="row">4:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>Break</td>
-                  </tr>
+                  </tr> */}
                   <tr>
-                    <th scope="row">3:55 PM</th>
+                    <th scope="row">3:35 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Entertainment session,{' '}
                       <span style={{ color: 'gray' }}>Ballroom</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">6:45 PM</th>
+                    <th scope="row">6:50 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Banquet, entertainment, Graduation day awards,{' '}
                       <span style={{ color: 'gray' }}>Ballroom</span>

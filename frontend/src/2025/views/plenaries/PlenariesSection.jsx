@@ -61,6 +61,7 @@ export default class PlenariesSection extends React.Component {
 
   render() {
     const plenarySessionCards = plenarySessions.map((session) => (
+      <div className='text-center'>
       <PlenarySessionCard
         dayName={session.dayName}
         topic={session.topic}
@@ -75,9 +76,7 @@ export default class PlenariesSection extends React.Component {
             key={talkIndex}
           />
         ))}
-        {!session.moderator.name ? (
-          <CardImg />
-        ) : (
+        {session.moderator.name && (
           <CardImg
             src={session.moderator.picUrl}
             width="100%"
@@ -90,9 +89,7 @@ export default class PlenariesSection extends React.Component {
             style={{ cursor: 'pointer' }}
           />
         )}
-        {!session.moderator.name ? (
-          <CardBody></CardBody>
-        ) : (
+        {session.moderator.name && (
           <CardBody>
             <CardTitle style={{ fontSize: 1 + 'rem' }}>
               {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
@@ -121,6 +118,7 @@ export default class PlenariesSection extends React.Component {
           </CardBody>
         )}
       </PlenarySessionCard>
+      </div>
     ));
 
     return (

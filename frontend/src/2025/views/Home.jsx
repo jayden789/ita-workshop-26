@@ -30,21 +30,21 @@ export default class Home2025 extends React.Component {
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
         />
-        {/*<PlenariesSection />*/}
-        {/*<AwardSessions />*/}
+        <PlenariesSection />
+        {/* <AwardSessions /> */}
         {/*<InvitedSessionsSection />*/}
-        {/*<ScheduleSection
+        <ScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />*/}
-        {/*<DailyScheduleSection
+        />
+        {/* <DailyScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />*/}
+        /> */}
         <LocationSection />
-        {/*<SpecialEventsSection />*/}
+        <SpecialEventsSection />
         {/*<TutorialSection />*/}
-        {/*<EataSection />*/}
+        <EataSection />
         {/* DISABLED TEMPORARILY */}
         {/*<TrackVisibility once>
           {({ isVisible }) =>

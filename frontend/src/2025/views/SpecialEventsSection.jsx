@@ -27,13 +27,18 @@ import finalBashImg from './img2020/final_bash.jpg';
 import icmlImg from './img2020/icml.png';
 import nsfLogoImg from './img2020/nsflogo.png';
 import superbowlImg from './img2020/superbowl.jpg';
-import awardImg from './img2024/award.avif';
+import awardImg from './img2025/award.jpg';
 import challengesImg from './img2024/challenges.jpeg';
 import successImg from './img2024/success.jpeg';
 import morning1 from './img2024/morning-1.png';
 import morning2 from './img2024/morning-2.png';
 import entertainment from './img2024/entertainment.jpeg';
 import running from './img2024/running.jpeg';
+import startupImg from './img2025/startup.jpeg'
+import townhallImg from './img2025/townhall.jpg'
+import gradImg from './img2025/grad.jpg'
+import bossImg from './img2025/boss.jpg'
+import gameImg from './img2025/game.jpg'
 
 import styles from './SpecialEventsSection.module.css';
 
@@ -213,7 +218,7 @@ export default class SpecialEventsSection extends React.Component {
                     width="100%"
                     height={imgHeight}
                     src={awardImg}
-                    alt="Graduation Day"
+                    alt="Award Sessions"
                     style={{ borderBottom: '1px solid lightgray' }}
                   />
                   <Modal
@@ -246,10 +251,10 @@ export default class SpecialEventsSection extends React.Component {
                     <br />
                     <br />
                     <br />
-                    Pia Pal and Ananda Theertha Suresh
+                    Pia Pal and Ahmad Beirami
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
-                    Mon, Thu, 4:30PM
+                    Mon, Thu 9AM
                   </CardFooter>
                 </Card>
               </Col>
@@ -265,8 +270,8 @@ export default class SpecialEventsSection extends React.Component {
                     top
                     width="100%"
                     height={imgHeight}
-                    src="https://ita.ucsd.edu/workshop/23/images/SpecialEvents_IEEE_ITS_2_23.jpg"
-                    alt="Information Theory Society"
+                    src={townhallImg}
+                    alt="Information Theory Town Hall"
                     style={{ borderBottom: '1px solid lightgray' }}
                   />
                   <Modal
@@ -274,10 +279,10 @@ export default class SpecialEventsSection extends React.Component {
                     toggle={this.toggle2}
                     centered
                   >
-                    <ModalHeader toggle={this.toggle2}>IT Society</ModalHeader>
+                    <ModalHeader toggle={this.toggle2}>IT Town Hall</ModalHeader>
                     <ModalBody>
                       President's address followed by a town hall on forward
-                      look for Information Theory and ITs Society.
+                      look for Information Theory.
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle2}>
@@ -290,7 +295,7 @@ export default class SpecialEventsSection extends React.Component {
                       onClick={this.toggle2}
                       style={{ cursor: 'pointer', fontSize: '17px' }}
                     >
-                      State of the Information Theory society
+                      State of the Information Theory Town Hall
                     </span>
                   </CardTitle>
                   <CardBody>
@@ -298,7 +303,7 @@ export default class SpecialEventsSection extends React.Component {
                     <br />
                     <br />
                     <br />
-                    Stark Draper
+                    Aaron Wagner
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Tue noon
@@ -307,13 +312,12 @@ export default class SpecialEventsSection extends React.Component {
                 </Card>
               </Col>
 
-              <Col>
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
                   onClick={this.toggleSecretSuccess}
                 >
-                  {/* Assuming you have an appropriate image, replace the 'src' with your image URL */}
                   <CardImg
                     top
                     width="100%"
@@ -364,7 +368,7 @@ export default class SpecialEventsSection extends React.Component {
                     Tue 4:30PM
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
 
               {/* <Col>
                 <Card className="text-center" style={{ height: '100%', cursor: 'pointer' }} onClick={this.toggle12}>
@@ -414,7 +418,7 @@ Lunch served for event participants.
                     top
                     width="100%"
                     height={imgHeight}
-                    src="https://ita.ucsd.edu/workshop/23/images/SpecialEvents_GraduationDay_23.jpg"
+                    src={gradImg}
                     alt="Graduation Day"
                     style={{ borderBottom: '1px solid lightgray' }}
                   />
@@ -465,7 +469,7 @@ Lunch served for event participants.
                 </Card>
               </Col>
 
-              <Col>
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -518,7 +522,7 @@ Lunch served for event participants.
                     Wed 3:20PM
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
 
               <Col>
                 <Card
@@ -530,8 +534,8 @@ Lunch served for event participants.
                     top
                     width="100%"
                     height={imgHeight}
-                    src={nsfLogoImg}
-                    alt="An Update from NSF"
+                    src={startupImg}
+                    alt="Startup Forum"
                     style={{ borderBottom: '1px solid lightgray' }}
                   />
                   <Modal
@@ -540,15 +544,10 @@ Lunch served for event participants.
                     centered
                   >
                     <ModalHeader toggle={this.toggle11}>
-                      NSF Opportunities
+                      Startup Forum
                     </ModalHeader>
                     <ModalBody>
-                      Everything you always wanted to know about NSF, but were
-                      afraid to ask.
-                      <br></br>A presentation about NSF funding opportunities
-                      followed by Q&A and (optional, non-free) lunch with
-                      program directors Alfred Hero and Phil Regalia.
-                      <br></br>
+                      DETAILS
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle11}>
@@ -561,19 +560,20 @@ Lunch served for event participants.
                       onClick={this.toggle11}
                       style={{ cursor: 'pointer', fontSize: '17px' }}
                     >
-                      NSF Opportunities
+                      Startup Forum
                     </span>
                   </CardTitle>
                   <CardBody>
                     {' '}
-                    New programs and funding opportunities. <br></br>
+                    INTRODUCTION
                     <br></br>
-                    <p style={{ display: 'flex', marginTop: '2.5em' }}>
-                      Alfred Hero & Phil Regalia
+                    <br></br>
+                    <p>
+                    Salman Avestimehr and Alex Dimakis
                     </p>
                   </CardBody>
                   <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>
-                    Thu Noon
+                    Fri Noon
                   </CardFooter>
                 </Card>
               </Col>
@@ -607,7 +607,7 @@ Lunch served for event participants.
                     top
                     width="100%"
                     height="40%"
-                    src="https://ita.ucsd.edu/workshop/23/images/SpecialEvents_games_23.png"
+                    src={gameImg}
                     alt="Fun and Games"
                   />
                   <Modal
@@ -706,7 +706,15 @@ Lunch served for event participants.
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Intro slides 2024 - add your own
+                        Intro slides 2025 - add your own
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1oRA3UA0hGI8KHgCdd5Yc37Sub-2ik5ae3Azu2i2QELc/edit#slide=id.p"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Intro slides 2024
                       </a>
                       <br></br>
                       <a
@@ -886,7 +894,7 @@ Lunch served for event participants.
                     top
                     width="100%"
                     height="40%"
-                    src="https://ita.ucsd.edu/workshop/23/images/SpecialEvents_nextboss_23.jpg"
+                    src={bossImg}
                     alt="Hello Boss"
                   />
                   <Modal
@@ -949,10 +957,8 @@ Lunch served for event participants.
                   </CardTitle>
                   <CardBody>
                     A fun event where students and postdocs,{' '}
-                    <a href="javascript:void(0)">
                       meet potential internship mentors, postdoc advisors, and
                       employers.
-                    </a>
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Thu Noon
