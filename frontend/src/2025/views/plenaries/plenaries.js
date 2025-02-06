@@ -25,49 +25,11 @@ import AaronImg from '../img2025/plenary-profile-pics/aaron.jpg';
 import ZaidImg from '../img2025/plenary-profile-pics/zaid.jpg';
 import MahdiImg from '../img2025/plenary-profile-pics/mahdi.jpg';
 import RobImg from '../img2025/plenary-profile-pics/rob.jpg';
+import PiyaImg from '../img2025/plenary-profile-pics/piya.jpg';
+import MichaelImg from '../img2025/plenary-profile-pics/michael.jpg';
+import ChiragImg from '../img2025/plenary-profile-pics/chirag.jpg';
 
 const mondayTalks = [
-  {
-    presenter: {
-      name: 'Wei Yu',
-      picUrl: YuImg,
-      affiliation: 'University of Toronto',
-      bio: `Wei Yu received the B.A.Sc. degree in Computer Engineering and Mathematics from the University of Waterloo, 
-      Waterloo, Ontario, Canada in 1997 and M.S. and Ph.D. degrees in Electrical Engineering from Stanford University, 
-      Stanford, CA, in 1998 and 2002, respectively. Since 2002, he has been with the Electrical and Computer Engineering 
-      Department at the University of Toronto, where he is currently Professor and holds a Canada Research Chair in 
-      Information Theory and Wireless Communications. His main research interests include multiuser information theory, 
-      optimization, wireless communications and broadband access networks. Prof. Wei Yu serves as the First Vice President 
-      of the IEEE Information Theory Society in 2020, and has served on its Board of Governors since 2015. He is currently 
-      an Area Editor for the IEEE Transactions on Wireless Communications, and in the past served as an Associate Editor 
-      for IEEE Transactions on Information Theory (2010-2013), as an Editor for IEEE Transactions on Communications 
-      (2009-2011), and as an Editor for IEEE Transactions on Wireless Communications (2004-2007). He served as the Chair 
-      of the Signal Processing for Communications and Networking Technical Committee of the IEEE Signal Processing Society 
-      in 2017-18. Prof. Wei Yu was an IEEE Communications Society Distinguished Lecturer in 2015-16. He received the 
-      Steacie Memorial Fellowship in 2015, the IEEE Marconi Prize Paper Award in Wireless Communications in 2019, the 
-      IEEE Communications Society Award for Advances in Communication in 2019, the IEEE Signal Processing Society Best 
-      Paper Award in 2017 and 2008, the Journal of Communications and Networks Best Paper Award in 2017, the IEEE 
-      Communications Society Best Tutorial Paper Award in 2015. Prof. Wei Yu is a Fellow of the Canadian Academy of 
-      Engineering, and a member of the College of New Scholars, Artists and Scientists of the Royal Society of Canada.
-`,
-      websiteUrl: 'https://www.itsoc.org/profile/8735',
-    },
-    title:
-      'Minimum Feedback for Collision-Free Scheduling in Massive Random Access',
-    abstract: `Consider a massive random access scenario in which a small set of k active users out of a large number 
-    of n potential users need to be scheduled in b≥k slots. What is the minimum common feedback to the users needed to 
-    ensure that scheduling is collision-free? Instead of a naive scheme of listing the indices of the k active users in 
-    the order in which they should transmit, at a cost of klog(n) bits, this paper shows that for the case of b=k , the 
-    rate of the minimum fixed-length common feedback code scales only as klog(e) bits, plus an additive term that scales 
-    in n as Θ(loglog(n)) for fixed k . If a variable-length code can be used, assuming uniform activity among the users, 
-    the minimum average common feedback rate still requires klog(e) bits, but the dependence on n can be reduced to O(1) . 
-    When b>k , the number of feedback bits needed for collision-free scheduling can be significantly further reduced. 
-    Moreover, a similar scaling on the minimum feedback rate is derived for the case of scheduling m users per slot, 
-    when k≤mb . The problem of constructing a minimum collision-free feedback scheduling code is connected to that of 
-    constructing a perfect hashing family, which allows practical feedback scheduling codes to be constructed from 
-    perfect hashing algorithms.
-    `,
-  },
   {
     presenter: {
       name: 'Flavio Calmon',
@@ -83,6 +45,42 @@ const mondayTalks = [
     title:
       '',
     abstract: ``,
+  },
+  {
+    presenter: {
+      name: 'Wei Yu',
+      picUrl: YuImg,
+      affiliation: 'University of Toronto',
+      bio: `Wei Yu received the B.A.Sc. degree in computer engineering
+            and mathematics from the University of Waterloo, Canada, and the M.S.
+            and Ph.D. degrees in electrical engineering from Stanford University. He
+            is currently a Professor and Canada Research Chair in Information Theory
+            and Wireless Communications in the Electrical and Computer Engineering
+            Department at the University of Toronto. Dr. Yu is a Fellow of IEEE and
+            a Fellow of the Canadian Academy of Engineering. He was the recipient of
+            the IEEE Marconi Prize Paper Award in Wireless Communications in 2019,
+            the IEEE Communications Society Award for Advances in Communication in
+            2019, the IEEE Signal Processing Society Best Paper Award in 2008, 2017,
+            and 2021, and the IEEE Communications Society and Information Theory
+            Society Joint Paper Award in 2024. He served as the President of the
+            IEEE Information Theory Society in 2021.`,
+      websiteUrl: 'https://www.itsoc.org/profile/8735',
+    },
+    title:
+      'Minimum Feedback for Collision-Free Scheduling in Massive Random Access',
+    abstract: `Consider a massive random access scenario in which a random
+              subset of k active users, out of a large number of n users, need to
+              be scheduled into k transmission slots.  What is the minimum number of
+              bits that need to be sent to the users to ensure collision-free
+              scheduling? Instead of a naive scheme of listing the indices of k
+              active users in the order in which they should transmit -- at a cost of
+              klog(n) bits, we show that a fixed-length coded transmission strategy
+              can be designed using only klog(e) bits, plus an additive term that
+              scales as Theta(log log(n)) bits. Further, if variable-length
+              coding is used, the dependence on n can be completely removed. This
+              coding strategy can be generalized to the problem of coded downlink
+              transmission of exchangeable sources in massive random access.
+    `,
   },
 ];
 
@@ -140,30 +138,6 @@ const tuesdayTalks = [
 const wednesdayTalks = [
   {
     presenter: {
-      name: 'Zaid Harchaoui',
-      picUrl: ZaidImg,
-      websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
-      affiliation: 'University of Washington',
-      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department of 
-      Statistics and in the Paul G. Allen School of Computer Science and Engineering (dual appointment), 
-      and a Senior Data Science Fellow in the eScience Institute. He is an action editor at the Journal of 
-      Machine Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
-      Statistical Methodology, and a member of the editorial board of the Foundations and Trends Monograph 
-      Series. He is on the program committee of the inaugural Conference on Language Modeling, and regularly 
-      serves on the program committees of the leading machine learning and AI conferences. He is a principal 
-      investigator and a cofounder of IFML, the NSF-AI Institute on Foundations of Machine Learning, and of IFDS, 
-      the NSF-TRIPODS Institute on Foundations of Data Science. He obtained the doctoral degree from Telecom Paris - 
-      Institut Polytechnique de Paris, for his research performed at CNRS - the French National Institute for 
-      Fundamental Research. He previously held appointments at the Courant Institute of Mathematical Sciences 
-      at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
-      Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
-      has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
-    },
-    title: '',
-    abstract: ``,
-  },
-  {
-    presenter: {
       name: 'Mahdi Soltanolkotabi',
       picUrl: MahdiImg,
       websiteUrl: 'https://viterbi-web.usc.edu/~soltanol/',
@@ -189,9 +163,84 @@ const wednesdayTalks = [
     title: '',
     abstract: ``,
   },
+  {
+    presenter: {
+      name: 'Zaid Harchaoui',
+      picUrl: ZaidImg,
+      websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
+      affiliation: 'University of Washington',
+      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department of 
+      Statistics and in the Paul G. Allen School of Computer Science and Engineering (dual appointment), 
+      and a Senior Data Science Fellow in the eScience Institute. He is an action editor at the Journal of 
+      Machine Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
+      Statistical Methodology, and a member of the editorial board of the Foundations and Trends Monograph 
+      Series. He is on the program committee of the inaugural Conference on Language Modeling, and regularly 
+      serves on the program committees of the leading machine learning and AI conferences. He is a principal 
+      investigator and a cofounder of IFML, the NSF-AI Institute on Foundations of Machine Learning, and of IFDS, 
+      the NSF-TRIPODS Institute on Foundations of Data Science. He obtained the doctoral degree from Telecom Paris - 
+      Institut Polytechnique de Paris, for his research performed at CNRS - the French National Institute for 
+      Fundamental Research. He previously held appointments at the Courant Institute of Mathematical Sciences 
+      at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
+      Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
+      has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
+    },
+    title: '',
+    abstract: ``,
+  },
 ];
 
 const thursdayTalks = [
+  {
+    presenter: {
+      name: 'Chirag Pabbaraju',
+      picUrl: ChiragImg,
+      websiteUrl: 'https://web.stanford.edu/~cpabbara/',
+      affiliation: 'Stanford University',
+      bio: `I'm a fourth year PhD student at Stanford University in the CS Theory group. I feel very 
+      lucky to be co-advised by Moses Charikar and Gregory Valiant. My primary research interests are 
+      in statistical and algorithmic aspects of learning theory. More broadly, I like thinking about 
+      various topics in theoretical computer science and machine learning.`,
+    },
+    title: 'Multiclass Learnability Does Not Imply Sample Compression',
+    abstract:`A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis 
+    from the class, it is possible to retain only a small subsample, using which the labels on the entire sample 
+    can be inferred. The size of the compression scheme is an upper bound on the size of the subsample produced. 
+    Every learnable binary hypothesis class (which must necessarily have finite VC dimension) admits a sample 
+    compression scheme of size only a finite function of its VC dimension, independent of the sample size. For 
+    multiclass hypothesis classes, the analog of VC dimension is the DS dimension. We show that the analogous 
+    statement pertaining to sample compression is not true for multiclass hypothesis classes: every learnable 
+    multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
+    compression scheme of size only a finite function of its DS dimension.
+    `,
+  },
+  {
+    presenter: {
+      name: 'Michael Hahn',
+      picUrl: MichaelImg,
+      websiteUrl: 'https://www.mhahn.info/',
+      affiliation: 'Saarland University',
+      bio: `I am a Tenure-Track Professor (W2) at Saarland Informatics Campus at Saarland University, 
+      where I direct the Language, Computation, and Cognition Lab (LaCoCo). I'm affiliated with the 
+      Departments of Language Science and Technology and Computer Science. I received my PhD from 
+      Stanford University in 2022, advised by Judith Degen and Dan Jurafsky.
+      `,
+    },
+    title: 'Why are Sensitive Functions Hard for Transformers?',
+    abstract:`Empirical studies have identified a range of learnability biases and limitations of 
+    transformers, such as a persistent difficulty in learning to compute simple formal languages 
+    such as PARITY, and a bias towards low-degree functions. However, theoretical understanding 
+    remains limited, with existing expressiveness theory either overpredicting or underpredicting 
+    realistic learning abilities. We prove that, under the transformer architecture, the loss 
+    landscape is constrained by the input-space sensitivity: Transformers whose output is sensitive 
+    to many parts of the input string inhabit isolated points in parameter space, leading to a 
+    low-sensitivity bias in generalization. We show theoretically and empirically that this theory 
+    unifies a broad array of empirical observations about the learning abilities and biases of 
+    transformers, such as their generalization bias towards low sensitivity and low degree, and 
+    difficulty in length generalization for PARITY. This shows that understanding transformers’ 
+    inductive biases requires studying not just their in-principle expressivity, but also their 
+    loss landscape.
+    `,
+  },
   {
     presenter: {
       name: 'Rob Brekelmans',
@@ -203,9 +252,21 @@ const thursdayTalks = [
       and Aram Galstyan. I also interned with the AI Safety Analysis team at DeepMind (Blog), working with Pedro 
       Ortega and Tim Genewein.`,
     },
-    title: '',
-    abstract:
-      '',
+    title: 'Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo',
+    abstract:`Numerous capability and safety techniques of Large Language Models (LLMs), including RLHF, automated 
+    red-teaming, prompt engineering, and infilling, can be cast as sampling from an unnormalized target distribution 
+    defined by a given reward or potential function over the full sequence. In this work, we leverage the rich 
+    toolkit of Sequential Monte Carlo (SMC) for these probabilistic inference problems. In particular, we use 
+    learned twist functions to estimate the expected future value of the potential at each timestep, which 
+    enables us to focus inference-time computation on promising partial sequences. We propose a novel contrastive 
+    method for learning the twist functions, and establish connections with the rich literature of soft 
+    reinforcement learning. As a complementary application of our twisted SMC framework, we present methods for 
+    evaluating the accuracy of language model inference techniques using novel bidirectional SMC bounds on the 
+    log partition function. These bounds can be used to estimate the KL divergence between the inference and 
+    target distributions in both directions. We apply our inference evaluation techniques to show that twisted 
+    SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
+    training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
+    `,
   },
 ];
 
@@ -217,11 +278,18 @@ export const plenarySessions = [
     dayName: 'Monday',
     topic: 'Information Theory & Signal Processing Paper Awards',
     moderator: {
-      name: '',
-      picUrl: '',
-      websiteUrl: '',
-      affiliation: '',
-      bio: ``,
+      name: 'Piya Pal',
+      picUrl: PiyaImg,
+      websiteUrl: 'https://jacobsschool.ucsd.edu/people/profile/piya-pal',
+      affiliation: 'UCSD',
+      bio: `Piya Pal received her Ph.D. in Electrical Engineering from California Institute of Technology 
+      in 2013.  Prior to her appointment at UC San Diego, she was an Assistant Professor of Electrical and 
+      Computer Engineering at the University of Maryland, College Park where she was also affiliated with 
+      the Institute for Systems Research. Her doctoral thesis titled “New directions in sparse sampling 
+      and estimation for underdetermined systems” was awarded the 2014 Charles and Ellen Wilts Prize for 
+      Outstanding Thesis in Electrical Engineering at Caltech. She received an NSF CAREER Award in 2016 
+      to pursue her research in “Smart Sampling and Correlation-Driven Inference for High Dimensional Signals."
+`,
     },
     moderatorTalk: {
       title: ``,
@@ -290,7 +358,7 @@ export const plenarySessions = [
   },
   {
     dayName: 'Friday',
-    topic: 'Advances in Large Language Models',
+    topic: 'TBA',
     moderator: {
       name: '',
       picUrl: '',
