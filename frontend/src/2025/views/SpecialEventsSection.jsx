@@ -547,7 +547,7 @@ Lunch served for event participants.
                       Startup Forum
                     </ModalHeader>
                     <ModalBody>
-                      DETAILS
+                      {/* ADD DETAILS */}
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle11}>
@@ -565,7 +565,7 @@ Lunch served for event participants.
                   </CardTitle>
                   <CardBody>
                     {' '}
-                    INTRODUCTION
+                    {/* Add INTRODUCTION */}
                     <br></br>
                     <br></br>
                     <p>
