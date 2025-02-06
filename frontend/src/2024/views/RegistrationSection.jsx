@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Jumbotron,
-  Container,
-  Table,
-  Badge,
-  UncontrolledTooltip,
-  Button,
-} from 'reactstrap';
+import { Jumbotron, Container, Table, Button } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames';
 
@@ -16,16 +9,16 @@ import styles from './RegistrationSection.module.css';
 
 export default class RegistrationSection extends React.Component {
   feeText = (feeType, feeTitle) => {
-    console.log(feeType, this.props.registrationFees, feeTitle);
     return '$' + this.props.registrationFees[feeType][feeTitle].toFixed(0);
   };
 
   regnOptionFeeText = (feeType, optionSlug) => {
-    console.log(feeType, this.props.registrationFees, optionSlug);
     const regnOption = this.props.registrationFees[feeType][
       'registration_options'
     ].find((option) => option.slug === optionSlug);
-    console.log('Here:: ' + regnOption);
+    if (regnOption === undefined) {
+      return '';
+    }
     return '$' + regnOption.fee.toFixed(0);
   };
 

@@ -62,10 +62,12 @@ export default class NavBar2025 extends React.Component {
                   Registration
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink tag={Link} to="/#plenaries" onClick={this.toggle}>Plenaries</NavLink>
-              </NavItem>
-              <NavItem>
+              {/*<NavItem>
+                <NavLink tag={Link} to="/#plenaries" onClick={this.toggle}>
+                  Plenaries
+                </NavLink>
+              </NavItem>*/}
+              {/*<NavItem>
                 <NavLink tag={Link} to="/#invited" onClick={this.toggle}>Invited Sessions</NavLink>
               </NavItem> */}
               <NavItem>
@@ -73,23 +75,27 @@ export default class NavBar2025 extends React.Component {
                   Location
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink tag={Link} to="/#specialevents" onClick={this.toggle}>Special Events</NavLink>
-              </NavItem>
               <NavItem>
-                <NavLink tag={Link} to="/#eata" onClick={this.toggle}>EATA</NavLink>
-              </NavItem> */}
+                <NavLink tag={Link} to="/#specialevents" onClick={this.toggle}>
+                  Special Events
+                </NavLink>
+              </NavItem>
               {/*<NavItem>
                 <NavLink tag={Link} to="#socialevents" onClick={this.toggle}>
                   Social Events
                 </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink tag={Link} to="/#eata" onClick={this.toggle}>
+                  EATA
+                </NavLink>
               </NavItem>*/}
 
-              {/*<NavItem>
+              <NavItem>
                 <NavLink tag={Link} to="/#participants" onClick={this.toggle}>
                   Participants
                 </NavLink>
-              </NavItem>*/}
+              </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Other Years

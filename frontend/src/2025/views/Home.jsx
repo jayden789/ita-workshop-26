@@ -1,5 +1,4 @@
 import React, { Suspense } from 'react';
-import TrackVisibility from 'react-on-screen';
 
 import NavBar from './NavBar';
 import HeroSection from './HeroSection';
@@ -45,21 +44,13 @@ export default class Home2025 extends React.Component {
         <SpecialEventsSection />
         {/*<TutorialSection />*/}
         <EataSection />
-        <TrackVisibility once>
-          {({ isVisible }) =>
-            isVisible && (
-              <Suspense
-                fallback={
-                  <p className="text-center m-1">Loading Participants...</p>
-                }
-              >
-                <ParticipantsSection
-                  participantsUrl25={this.props.participantsUrl25}
-                />
-              </Suspense>
-            )
-          }
-        </TrackVisibility>
+        <Suspense
+          fallback={<p className="text-center m-1">Loading Participants...</p>}
+        >
+          <ParticipantsSection
+            participantsUrl25={this.props.participantsUrl25}
+          />
+        </Suspense>
         <SponsorsSection />
         <CodeOfConductSection />
       </div>

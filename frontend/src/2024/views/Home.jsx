@@ -32,16 +32,19 @@ export default class Home2024 extends React.Component {
         <HeroSection />
         <GeneralInfoSection />
         {/* <TurkeyEarhquakeSection /> */}
+
         <RegistrationSection
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
         />
+
         <PlenariesSection />
         <AwardSessions />
         <InvitedSessionsSection />
-        <ScheduleSection 
+        <ScheduleSection
           schedule={this.props.schedule}
-          loadSchedule={this.props.loadSchedule}/>
+          loadSchedule={this.props.loadSchedule}
+        />
         <DailyScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
