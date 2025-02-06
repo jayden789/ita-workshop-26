@@ -264,7 +264,7 @@ if DEBUG:
     ITAWEB_FILES_PATH = "workshop/ita_rebuild_files/local/"
 else:
     ITAWEB_FILES_PATH = "workshop/ita_rebuild_files/prod/"
-SFTP_STORAGE_ROOT = "/var/www/ita-react/" + ITAWEB_FILES_PATH
+SFTP_STORAGE_ROOT = "/var/www/itaweb-react/" + ITAWEB_FILES_PATH
 SFTP_STORAGE_PARAMS = {"username": "ubuntu", "key_filename": "./frontend.pem"}
 
 DEFAULT_FILE_STORAGE = "storages.backends.sftpstorage.SFTPStorage"
