@@ -104,7 +104,7 @@ export default class RegistrationSection extends React.Component {
                 color="primary"
                 style={{ marginTop: '32px', marginBottom: '0px' }}
               >
-                Register Now
+                Register
               </Button>
               <div className={classNames('text-light', styles.regnInfoText)}>
                 <RegistrationInfo />

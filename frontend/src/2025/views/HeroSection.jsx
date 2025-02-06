@@ -56,12 +56,8 @@ export default class ITAJumboMain extends React.Component {
                 color="primary"
                 className={styles.registerButton}
               >
-                Register Now
+                Register
               </Button>
-              <div className={styles.registerGuidance}>
-                Please submit your attendance and presentation details to
-                participate in the workshop.
-              </div>
             </div>
           </div>
         </Jumbotron>
