@@ -58,11 +58,11 @@ export default class NavBar2024 extends React.Component {
                   </NavLink>
                 </NavItem>
               )}
-              <NavItem>
+              {/*<NavItem>
                 <NavLink tag={Link} to="/#registration" onClick={this.toggle}>
                   Registration
                 </NavLink>
-              </NavItem>
+              </NavItem>*/}
               {/* <NavItem>
                 <NavLink tag={Link} to="/#plenaries" onClick={this.toggle}>Plenaries</NavLink>
               </NavItem>

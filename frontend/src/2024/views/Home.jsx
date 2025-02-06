@@ -33,10 +33,10 @@ export default class Home2024 extends React.Component {
         <GeneralInfoSection />
         {/* <TurkeyEarhquakeSection /> */}
 
-        <RegistrationSection
+        {/*<RegistrationSection
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
-        />
+        />*/}
 
         <PlenariesSection />
         <AwardSessions />
