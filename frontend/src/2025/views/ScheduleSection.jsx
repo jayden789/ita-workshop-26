@@ -392,7 +392,7 @@ export default class ScheduleSection extends React.Component {
                   <tr>
                     <th scope="row">10:40 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Three parallel sessions, four talks each
+                      Three to four parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
@@ -485,7 +485,7 @@ export default class ScheduleSection extends React.Component {
                   <tr>
                     <th scope="row">2:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Three parallel sessions, four talks each
+                      Three to four parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
@@ -498,7 +498,7 @@ export default class ScheduleSection extends React.Component {
                   <tr>
                     <th scope="row">3:40 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Three parallel sessions, four talks each
+                      Three to four parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
@@ -833,7 +833,7 @@ export default class ScheduleSection extends React.Component {
                   <tr>
                     <th scope="row">9:00 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Three parallel sessions, four talks each
+                      Three to four parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
