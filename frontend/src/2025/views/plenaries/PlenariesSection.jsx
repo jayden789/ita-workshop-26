@@ -52,11 +52,12 @@ export default class PlenariesSection extends React.Component {
 
   onClickModeratorNameForModerator = (moderator, moderatorTalk) => (event) => {
     event.preventDefault();
-    this.setState({
-      moderatorDetailModalOpen: true,
-      moderatorDetailModalModerator: moderator,
-      moderatorDetailModalTalk: moderatorTalk,
-    });
+    window.open(moderator.websiteUrl);
+    // this.setState({
+    //   moderatorDetailModalOpen: true,
+    //   moderatorDetailModalModerator: moderator,
+    //   moderatorDetailModalTalk: moderatorTalk,
+    // });
   };
 
   render() {
