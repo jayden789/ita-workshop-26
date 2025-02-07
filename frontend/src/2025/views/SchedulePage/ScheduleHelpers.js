@@ -4,7 +4,7 @@ daylist
 oarams scheduleList, , trackList, sessionList
 */
 import * as constants from './constants';
-import data from './schedule-2024.json';
+import data from './schedule-2025.json';
 
 function transpose(a) {
   return (
@@ -168,7 +168,7 @@ export function convertJSONToFormat() {
   data.forEach((talk, idx) => {
     const metadata = talk.metadata;
     if (metadata.length == 0) return;
-    const flags = metadata.split('|');
+    const flags = metadata.split('-');
     if (flags.length < 3) return;
     const day = flags[0];
 
@@ -184,7 +184,7 @@ export function convertJSONToFormat() {
     const talkNumber = flags[3];
 
     sessions[sessionId].talks.push(idx + 1);
-    sessions[sessionId].title = talk.scheduled.split('-').slice(1).join('-');
+    sessions[sessionId].title = talk.scheduled;
 
     insertSessionIntoTracks(sessionId, tracks, trackId, session);
   });

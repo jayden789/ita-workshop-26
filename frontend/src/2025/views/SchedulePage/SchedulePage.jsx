@@ -57,11 +57,11 @@ const rowTimeValues = [
     // Grad day
     null,
     null,
-    ...talksTimeSequence(timeToDate(10, 30), 4),
+    ...talksTimeSequence(timeToDate(10, 40), 4),
     null,
-    ...talksTimeSequence(timeToDate(13, 20), 4),
+    ...talksTimeSequence(timeToDate(14, 0), 4),
     null,
-    ...talksTimeSequence(timeToDate(15, 0), 4),
+    ...talksTimeSequence(timeToDate(15, 40), 4),
   ], // Monday
   [
     // Room names
@@ -69,11 +69,11 @@ const rowTimeValues = [
     // Grad day
     null,
     null,
-    ...talksTimeSequence(timeToDate(10, 30), 4),
+    ...talksTimeSequence(timeToDate(10, 40), 4),
     null,
-    ...talksTimeSequence(timeToDate(13, 20), 4),
+    ...talksTimeSequence(timeToDate(14, 0), 4),
     null,
-    ...talksTimeSequence(timeToDate(15, 0), 4),
+    ...talksTimeSequence(timeToDate(15, 40), 4),
   ], // Tuesday
   [
     // Room names
@@ -95,11 +95,11 @@ const rowTimeValues = [
     // Grad day
     null,
     null,
-    ...talksTimeSequence(timeToDate(10, 30), 4),
+    ...talksTimeSequence(timeToDate(10, 40), 4),
     null,
-    ...talksTimeSequence(timeToDate(13, 20), 4),
+    ...talksTimeSequence(timeToDate(14, 0), 4),
     null,
-    ...talksTimeSequence(timeToDate(15, 0), 4),
+    ...talksTimeSequence(timeToDate(15, 40), 4),
     // // Grad day lunch and posters
     // timeToDate(12, 0),
     // ...Array(4).fill(null),
@@ -112,11 +112,11 @@ const rowTimeValues = [
     // 4 talks at 9:00
     null,
     null,
-    ...talksTimeSequence(timeToDate(10, 30), 4),
+    ...talksTimeSequence(timeToDate(10, 40), 4),
     null,
-    ...talksTimeSequence(timeToDate(13, 20), 4),
+    ...talksTimeSequence(timeToDate(14, 0), 4),
     null,
-    ...talksTimeSequence(timeToDate(15, 0), 4),
+    ...talksTimeSequence(timeToDate(15, 40), 4),
     // ...talksTimeSequence(timeToDate(16, 10), 3),
   ], // Thursday
   // Friday
@@ -134,7 +134,7 @@ const rowTimeValues = [
   ],
 ];
 
-export default class SchedulePage2023 extends React.Component {
+export default class SchedulePage2025 extends React.Component {
   constructor(props) {
     super(props);
 
@@ -302,7 +302,7 @@ export default class SchedulePage2023 extends React.Component {
         let scheduleday = this.state.formattedList[day];
 
         return (
-          <div>
+          <div key={dayIndex}>
             {/* <this.parseData/> */}
             <ScheduleDay
               rowTimeValues={rowTimeValues[dayIndex]}
@@ -311,7 +311,6 @@ export default class SchedulePage2023 extends React.Component {
               sessionList={this.state.sessionList}
               trackList={this.state.trackList}
               dayList={this.state.dayList}
-              key={dayIndex}
               isWednesday={dayIndex === 2}
               onClickTitleForTalk={this.onClickTitleForTalk}
             />
