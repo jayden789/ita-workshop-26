@@ -50,6 +50,15 @@ export default class PlenariesSection extends React.Component {
     }));
   };
 
+  onClickModeratorPicForModerator = (moderator, moderatorTalk) => (event) => {
+    event.preventDefault();
+    this.setState({
+      moderatorDetailModalOpen: true,
+      moderatorDetailModalModerator: moderator,
+      moderatorDetailModalTalk: moderatorTalk,
+    });
+  };
+
   onClickModeratorNameForModerator = (moderator, moderatorTalk) => (event) => {
     event.preventDefault();
     window.open(moderator.websiteUrl);
@@ -82,7 +91,7 @@ export default class PlenariesSection extends React.Component {
               width="100%"
               height="320px"
               alt=""
-              onClick={this.onClickModeratorNameForModerator(
+              onClick={this.onClickModeratorPicForModerator(
                 session.moderator,
                 session.moderatorTalk
               )}
