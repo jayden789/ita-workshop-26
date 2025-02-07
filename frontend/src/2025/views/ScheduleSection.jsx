@@ -378,7 +378,7 @@ export default class ScheduleSection extends React.Component {
                         <li>Monday: Information Theory / Signal Processing Paper Awards</li>
                         <li>Tuesday: Information Theory for Machine Learning</li>
                         <li>Thursday: Machine Learning Paper Awards</li>
-                        <li>Friday: TBA</li>
+                        <li>Friday: Coming Soon</li>
                       </ul>
                     </td>
                   </tr>
