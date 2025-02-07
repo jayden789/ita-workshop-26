@@ -36,10 +36,10 @@ export default class Home2025 extends React.Component {
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
         />
-        {/* <DailyScheduleSection
+        <DailyScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        /> */}
+        />
         <LocationSection />
         <SpecialEventsSection />
         {/*<TutorialSection />*/}

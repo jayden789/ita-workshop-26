@@ -10,7 +10,7 @@ import IframeCommunicator from './views/IframeCommunicator';
 import CreateAccount from './views/auth/CreateAccount';
 import CreateAccountConfirm from './views/auth/CreateAccountConfirm';
 import TestProfilePicUpload from './views/TestProfilePicUpload';
-import SchedulePage2024 from './2024/views/SchedulePage/SchedulePage';
+import SchedulePage2025 from './2025/views/SchedulePage/SchedulePage';
 import SchedulePage2023 from './2023/views/SchedulePage/SchedulePage';
 import TestCreateCharge from './views/oneTimeCharge/TestCreateCharge';
 import PayCharge from './views/oneTimeCharge/PayCharge';
@@ -401,7 +401,7 @@ class App extends Component {
           <Route
             exact={true}
             path="/schedule"
-            render={() => <SchedulePage2024 navbar={navbar25} />}
+            render={() => <SchedulePage2025 navbar={navbar25} />}
           />
           <Route
             exact={true}
