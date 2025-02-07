@@ -109,12 +109,42 @@ const tuesdayTalks = [
       picUrl: JonaImg,
       websiteUrl: 'https://balle.io/',
       affiliation: 'Google',
-      bio: `My research revolves around data compression and human perception, and is built on principles of 
-      signal processing, machine learning, sensory neuroscience, and information theory. I enjoy innovating in 
-      my field, and being a lifelong student and teacher.`,
+      bio: `Jona Ballé is an Associate Professor at New York University, studying lossy
+        image compression, information theory and models of visual perception. They
+        defended their master's and doctoral theses on signal processing and image
+        compression under the supervision of Jens-Rainer Ohm at RWTH Aachen
+        University in 2007 and 2012, respectively. This was followed by a brief
+        collaboration with Javier Portilla at CSIC in Madrid, Spain, and a
+        postdoctoral fellowship at New York University’s Center for Neural Science
+        with Eero P. Simoncelli, where Jona studied the relationship between
+        perception and image statistics. While there, they pioneered the use of
+        variational Bayesian models and deep learning techniques for end-to-end
+        optimized image compression. From 2017 to 2024, Jona deepened their ties to
+        industry as a Research Scientist at Google. Jona has served as a reviewer
+        for top-tier publications in both machine learning and image processing,
+        such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and several IEEE
+        Transactions journals. They have co-organized the annual Challenge on
+        Learned Image Compression (CLIC) since 2018, and on the program committee
+        of the Data Compression Conference (DCC) since 2022.`,
     },
-    title: '',
-    abstract: ``,
+    title: 'Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein',
+    abstract: `Inspired by the success of generative image models, recent work on learned
+      image compression increasingly focuses on better probabilistic modeling of
+      the natural image distribution, leading to excellent realism. This,
+      however, comes at the expense of a computational complexity that is several
+      orders of magnitude higher than today's commercial codecs, and thus
+      prohibitive for most practical applications. In this talk, I'll demonstrate
+      that by focusing on models of visual perception, we can achieve a very good
+      trade-off between visual quality and bit rate similar to "generative"
+      compression models, while simultaneously requiring less than 1% of the
+      multiply-accumulate operations (MACs) for decompression. We achieve this by
+      optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD),
+      a measure of spatial (texture) realism grounded in models of visual
+      perception, and evaluating the image reconstructions with a human rating
+      study. Our study also reveals that WD outperforms other perceptual quality
+      metrics such as LPIPS, DISTS, and MS-SSIM, both as an optimization
+      objective and as a predictor of human ratings, achieving over 94% Pearson
+      correlation with Elo scores.`,
     award: '',
   },
   {
@@ -123,20 +153,36 @@ const tuesdayTalks = [
       picUrl: HyejiImg,
       websiteUrl: 'https://www.ece.utexas.edu/people/faculty/hyeji-kim',
       affiliation: 'UT Austin',
-      bio: `Hyeji Kim is an Assistant Professor in the Department of Electrical and Computer Engineering and a Fellow of 
-      the Advanced Micro Devices (AMD) Chair in Computer Engineering at The University of Texas at Austin. She received 
-      her Ph.D. degree in Electrical Engineering from Stanford University in 2016. She worked as a postdoctoral researcher 
-      at the University of Illinois at Urbana-Champaign from 2016 to 2018, after which she served as a researcher at 
-      Samsung AI Research Cambridge until 2020. Her research interests lie at the intersection of information theory 
-      and machine learning. In applying information theory to machine learning, her current focus includes the information 
-      theoretic analysis and development of machine learning algorithms. In applying machine learning to information 
-      theory, her current focus includes the development of codes for communication and compression via machine learning. 
-      She is a recipient of the Stanford Graduate Fellowship and participant of the Rising Stars in EECS Workshop in 2015.
-`,
+      bio: `Hyeji Kim is an Assistant Professor in the Department of Electrical and Computer
+        Engineering at The University of Texas at Austin and a recipient of the NSF CAREER award.
+        Before joining UT Austin, she held research positions as a postdoctoral scholar at the
+        University of Illinois at Urbana-Champaign and as a researcher at Samsung AI Research Cambridge
+        in the UK. She earned her PhD in Electrical Engineering from Stanford University in 2016. Dr.
+        Kim’s research lies at the intersection of information theory and machine learning. Her work
+        leverages machine learning to tackle complex problems in information theory, focusing on
+        developing advanced codes for communication and compression in challenging scenarios, such as
+        high-dimensional channels and distributed data systems. Conversely, she applies principles of
+        information theory to machine learning by constructing theoretical frameworks that uncover
+        fundamental limits and provide insights into learning processes
+        `,
     },
-    title: '',
+    title: `Modern Compression via Information Theory, Learning, and Generative models, 
+      and its Application to Wireless Channel Compression`,
     abstract:
-      ``,
+      `In this talk, I will present our work on Channel State Information (CSI) compression,
+      leveraging tools from information theory, learning, and generative models. I will cover two
+      main topics.
+
+      First, we will discuss the estimation of the rate-distortion function for function computing
+      with decoder-only side information and how it can shed light on the value of side information
+      for CSI compression.
+
+      Next, we will shift our focus to importance sampling in the context of score-based generative
+      models. We will present a novel approach that represents the time-dependent score function of
+      the target importance sampling distribution in terms of the score function of the original
+      distribution and a desired weight function. This method enables principled importance sampling
+      in a variety of applications, including neural CSI compression. By leveraging this framework,
+      we provide new insights into the interpretability of learning-based CSI compression models.`,
     award: '',
   },
   {
@@ -145,13 +191,29 @@ const tuesdayTalks = [
       picUrl: ChaoImg,
       websiteUrl: 'https://tiangroup.engr.tamu.edu/',
       affiliation: 'Texas A&M University',
-      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and Ph.D. 
-      degrees from Cornell University, Ithaca NY. He worked at AT&T Labs-Research (previously known as the Shannon Labs) 
-      as a researcher on communication and signal processing for seven years, before returning to academia. He was with 
-      the University of Tennessee Knoxville for a few years before joining Texas A&M University.`,
+      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and
+        Ph.D. degrees from Cornell University, Ithaca NY. He was a postdoctoral researcher at EPFL
+        2005-2007, then worked at AT&T Labs-Research (previously known as the Shannon Labs) for seven
+        years before returning to academia. Dr. Tian was with the University of Tennessee Knoxville for
+        a few years before joining Texas A&M University. His coauthored papers received several awards
+        including the 2014 IEEE Data Storage Best Paper Award. He was an IEEE Information Theory
+        Society Distinguished Lecturer 2023-2024.
+        `,
     },
-    title: '',
-    abstract: '',
+    title: 'Transformers Learn Variable-order Markov Chains in-Context',
+    abstract: `We study in-context learning of variable-length Markov chains by viewing language
+      modeling as a form of data compression and focusing on variable-order Markov chain (VOMC)
+      sources, also known as context tree sources. This perspective allows us to leverage mature
+      compression algorithms, such as the context-tree weighting (CTW) algorithm as a baseline, which
+      is Bayesian optimal for a general class of priors.  The underlying structural learning
+      component makes it a considerably more difficult learning task than the fixed-order
+      counterpart. We empirically observe that the performance of transformers is not very sensitive
+      to the number of layers, and even a two-layer transformer (but not a one-layer transformer) can
+      learn in context well, tracking closely the performance of CTW. To explain this observation, we
+      construct a transformer with D+2 layers that can mimic the CTW algorithm accurately for VOMCs
+      of maximum order D. A reduced two-layer transformer is further studied with carefully
+      controlled counting information, which explains why 2-layer transformers can also perform well.
+      `,
     award: '',
   },
 ];
@@ -205,26 +267,44 @@ the Theory of Computing and Machine Learning Journal.
       picUrl: MahdiImg,
       websiteUrl: 'https://viterbi-web.usc.edu/~soltanol/',
       affiliation: 'USC',
-      bio: `I am a professor in the Ming Hsieh Department of Electrical and Computer Engineering, Computer Science, 
-      and Industrial and Systems Engeineering (ISE) at the University of Southern California. I am also the inaugural 
-      director of the USC Center on AI Foundations for Science (AIF4S). Prior to joining USC I spent a year as a postdoc 
-      in the AMPLAB at UC Berkeley mentored by Ben Recht and Martin Wainwright. I obtained my Ph.D. in Electrical 
-      Engineering from Stanford in 2014 advised by Emmanuel Candes. On the theoretical side, my research focuses 
-      on developing the mathematical foundations of modern data science spanning recent developments in generative 
-      AI to more classical deep learning, machine learning, signal processing, and computational imaging. To this 
-      aim I often draw upon and develop eclectic new tools in (non)convex optimization, high-dimensional probability, 
-      statistical estimation/inference, empirical processes, and learning theory. On the applied side, my focus is on 
-      developing reliable AI for applications in science, healthcare and medicine. In colloaboration with domain 
-      scientists and physcians we aim to develop new architectures and data curation pipelines that accelarate 
-      scientific discovery, enhance mathematical and spatial reasoning capabilities of GenAI, improve their 
-      reliability, and develop rigorous evaluation and statistical uncertainty quantification techniques that 
-      truely tests their capabilities and limitations. On the weekends, you're most likely to find me cycling on 
-      the Pacific coast ranging from Malibu/Santa Monica mountains/Palos Verdes in SoCal to the Marine district in 
-      NorthCal. I'm also an amatuer artist, dabbling in Persian calligraphy. I'm very interested in coming up with 
-      creative ways to preserve this and other ancient artforms with responsible use of generative AI.`,
+      bio: `Mahdi Soltanolkotabi is the director of the center on AI Foundations for the Sciences 
+        (AIF4S) at the University of Southern California. He is also a professor in the 
+        Departments of Electrical and Computer Engineering, Computer Science, and 
+        Industrial and Systems engineering. Prior to joining USC, he completed his 
+        PhD in electrical engineering at Stanford in 2014. He was a postdoctoral 
+        researcher in the EECS department at UC Berkeley during the 2014-2015 academic year. 
+        Mahdi is the recipient of the Information Theory Society Best Paper Award, 
+        Packard Fellowship in Science and Engineering, an NIH Director’s new innovator 
+        award, a Sloan Research Fellowship, an NSF Career award, an Airforce Office of 
+        Research Young Investigator award (AFOSR-YIP), and faculty awards from Google 
+        and Amazon. His research focuses on developing the mathematical foundations of 
+        modern data science via characterizing the behavior and pitfalls of contemporary 
+        nonconvex learning and optimization algorithms with applications in AI, deep 
+        learning, large scale distributed training, federated learning, computational 
+        imaging, and AI for scientific and medical applications. Most recently his 
+        applied research focuses on developing and deploying reliable and trustworthy 
+        AI in healthcare.
+      `,
     },
-    title: '',
-    abstract: ``,
+    title: 'Towards More Reliable Generative AI: Probing Failure Modes and Harnessing Test-Time Inference',
+    abstract: `Generative AI systems—especially Multimodal Large Language Models (MLLMs)—offer 
+      promising avenues across a wide range of tasks, from medical imaging to enhanced 
+      reasoning. In this talk, we explore strategies for making generative AI more 
+      dependable by examining its vulnerabilities and leveraging adaptive learning. 
+      First, we introduce MediConfusion, a benchmark that exposes systemic failure 
+      modes of state-of-the-art medical multimodal models in Visual Question 
+      Answering—a setting where reliability is paramount. Our findings reveal 
+      that even top models fail to distinguish visually dissimilar medical images, 
+      underscoring the challenges of deploying AI in clinical contexts. Next, 
+      we turn to test-time training (TTT), a gradient-based technique that updates 
+      model parameters using information from individual test instances. We provide 
+      a theoretical framework that explains how TTT can mitigate distribution shifts 
+      and significantly reduce the sample size needed for in-context learning. By 
+      bridging these two threads, we demonstrate how identifying and addressing 
+      vulnerabilities—through challenges like MediConfusion and adaptive strategies 
+      like TTT—can enhance the reliability and impact of generative AI in healthcare 
+      and beyond.
+    `,
     award: '',
   },
 ];
@@ -347,18 +427,20 @@ export const plenarySessions = [
       name: 'Aaron Wagner',
       picUrl: AaronImg,
       websiteUrl: 'https://www.ece.cornell.edu/faculty-directory/aaron-b-wagner',
-      bio: `Aaron Wagner joined the School of Electrical and Computer Engineering at Cornell University 
-      as an assistant professor in 2006 and was elevated to professor in July 2018. During the 2005-2006 
-      academic year, he was a Postdoctoral Research Associate in the Coordinated Science Laboratory at the 
-      University of Illinois at Urbana-Champaign and a Visiting Assistant Professor in the School of Electrical 
-      and Computer Engineering at Cornell. Wagner did his graduate work at the University of California, Berkeley 
-      and received an undergraduate degree from the University of Michigan, Ann Arbor. Wagner's research and 
-      teaching have been recognized with several awards including the IEEE Information Theory Society's James 
-      L. Massey Research & Teaching Award for Young Scholars(2017), the Douglas Whitney '61 Excellence in Teaching 
-      Award from Cornell Engineering (2015), the Cornell Michael Tien '72 College of Engineering Teaching Award 
-      (2009), the NSF CAREER award (2007), the David J. Sakrison Memorial Prize from the U.C. Berkeley EECS Dept. 
-      (2006), and the Bernard Friedman Memorial Prize in Applied Mathematics from the U.C. Berkeley Dept. of 
-      Mathematics (2005). Two of his students won the 2010 Information Theory Society Student Paper Award.`,
+      bio: `Aaron Wagner is Professor and Stephen H. Weiss Presidential Fellow in
+        the School of Electrical and Computer Engineering at Cornell University.
+        He received the B.S. degree from the University of Michigan, Ann Arbor,
+        and the M.S. and Ph.D. degrees from the University of California,
+        Berkeley, after which he was a Postdoctoral Research Associate in the
+        Coordinated Science Laboratory at the University of Illinois at
+        Urbana-Champaign. He has received the NSF CAREER award, the U.C.
+        Berkeley EECS David J. Sakrison Memorial Prize, the U.C. Berkeley
+        Bernard Friedman Memorial Prize in Applied Mathematics, the IEEE
+        Information Theory Society James L. Massey Research and Teaching Award
+        for Young Scholars, the IEEE Information Theory Society Paper Award, and
+        teaching awards at the Department, College, and University level at
+        Cornell. He is serving as President of the IEEE Information Theory
+        Society for 2025.`,
       affiliation: 'Cornell',
     },
     moderatorTalk: {
@@ -390,17 +472,14 @@ export const plenarySessions = [
       name: 'Ahmad Beirami ',
       picUrl: AhmadImg,
       websiteUrl: 'https://sites.google.com/view/beirami',
-      bio: `Ahmad Beirami is a research scientist at Google DeepMind, leading 
-      new research initiatives on post-training within Gen AI Unit. At Google 
-      Research, he led a research team on building safe, helpful, and scalable 
-      generative language models. At Meta AI, he led research to power the next 
-      generation of virtual digital assistants with AR/VR capabilities through 
-      robust generative language modeling. At Electronic Arts, he led the AI 
-      agent research program for automated playtesting of video games and 
-      cooperative reinforcement learning. Before moving to industry, he held 
-      a joint postdoctoral fellow position at Harvard & MIT, focused on problems 
-      in the intersection of core machine learning and information theory. He 
-      is the recipient of the 2015 Sigma Xi Best PhD Thesis Award from Georgia Tech.
+      bio: `Ahmad Beirami is a research scientist at Google DeepMind, leading new 
+        research initiatives on language model post-training within Generative AI Unit. 
+        Prior to Google, he worked on the next generation of virtual digital assistants 
+        using large language models at Meta, and automated playtesting of video games 
+        using reinforcement learning at Electronic Arts. Before moving to industry, 
+        he held a joint postdoctoral fellow position at Harvard & MIT, focused on 
+        problems in the intersection of core machine learning and information theory. 
+        He is the recipient of the 2015 Sigma Xi Best PhD Thesis Award from Georgia Tech.
       `,
       affiliation: 'Google DeepMind',
     },
