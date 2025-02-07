@@ -58,6 +58,9 @@ export default class ITAJumboMain extends React.Component {
               >
                 Register
               </Button>
+              <div className={styles.registerGuidance}>
+                We are still accepting new registrations and presentations. If you like to join the workshop please <a href='mailto:ita@ucsd.edu'>write us</a>.
+              </div>
             </div>
           </div>
         </Jumbotron>

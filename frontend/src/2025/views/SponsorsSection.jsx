@@ -43,11 +43,6 @@ export default class SponsorsSection extends React.Component {
               alt="Qualcomm"
             />
             <img
-              src={require('./img2020/qualcomminstitute.jpg')}
-              className={styles.img}
-              alt="Qualcomm Institute"
-            />
-            <img
               src={require('./img2023/samsunglogo.jpeg')}
               className={styles.img}
               alt="Samsung"
