@@ -27,7 +27,8 @@ export default class PlenaryTalkCardContent extends React.Component {
 
     const onClickPresenterNameWrapper = event => {
       event.preventDefault();
-      onClickPresenterName();
+      // onClickPresenterName();
+      window.open(presenter.websiteUrl);
     };
 
     return (

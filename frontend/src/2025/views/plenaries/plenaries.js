@@ -29,6 +29,7 @@ import PiyaImg from '../img2025/plenary-profile-pics/piya.jpg';
 import MichaelImg from '../img2025/plenary-profile-pics/michael.jpg';
 import ChiragImg from '../img2025/plenary-profile-pics/chirag.jpg';
 import AhmadImg from '../img2025/plenary-profile-pics/ahmad.jpg';
+import AdamImg from '../img2025/plenary-profile-pics/adam.jpg';
 
 const mondayTalks = [
   {
@@ -151,6 +152,22 @@ const tuesdayTalks = [
 ];
 
 const wednesdayTalks = [
+  {
+    presenter: {
+      name: 'Adam Klivans',
+      picUrl: AdamImg,
+      websiteUrl: 'https://www.cs.utexas.edu/~klivans/',
+      affiliation: 'UT-Austin',
+      bio: `
+Adam Klivans is a recipient of the NSF Career Award. His research interests lie in machine learning 
+nd theoretical computer science, in particular, Learning Theory, Computational Complexity, 
+Pseudorandomness, Limit Theorems, and Gaussian Space. He also serves on the editorial board for 
+the Theory of Computing and Machine Learning Journal.
+`,
+    },
+    title: '',
+    abstract: ``,
+  },
   {
     presenter: {
       name: 'Zaid Harchaoui',
@@ -384,7 +401,7 @@ export const plenarySessions = [
   },
   {
     dayName: 'Friday',
-    topic: 'TBA',
+    topic: 'Coming Soon',
     moderator: {
       name: '',
       picUrl: '',
