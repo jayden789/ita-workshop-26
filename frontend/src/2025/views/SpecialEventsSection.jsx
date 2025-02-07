@@ -39,6 +39,7 @@ import townhallImg from './img2025/townhall.jpg'
 import gradImg from './img2025/grad.jpg'
 import bossImg from './img2025/boss.jpg'
 import gameImg from './img2025/game.jpg'
+import thriveImg from './img2025/thrive.jpg'
 
 import styles from './SpecialEventsSection.module.css';
 
@@ -62,6 +63,7 @@ export default class SpecialEventsSection extends React.Component {
       modalSecretSuccess: false,
       entertainmentModal: false,
       morningModal: false,
+      modalThrive: false,
     };
 
     this.toggle1 = this.toggle1.bind(this);
@@ -79,6 +81,7 @@ export default class SpecialEventsSection extends React.Component {
     this.toggle13 = this.toggle13.bind(this);
     this.toggleEntertainment = this.toggleEntertainment.bind(this);
     this.toggleMorning = this.toggleMorning.bind(this);
+    this.toggleThrive = this.toggleThrive.bind(this);
     this.toggleSecretSuccess = this.toggleSecretSuccess.bind(this);
   }
 
@@ -121,6 +124,12 @@ export default class SpecialEventsSection extends React.Component {
   toggle7() {
     this.setState({
       modal7: !this.state.modal7,
+    });
+  }
+
+  toggleThrive() {
+    this.setState({
+      modalThrive: !this.state.modalThrive,
     });
   }
 
@@ -233,10 +242,10 @@ export default class SpecialEventsSection extends React.Component {
                       Why travel to multiple conferences, and mull through
                       numerous journals, when you can just attend ITA and hear
                       the best talks from top journals and conferences. On
-                      Monday at 4:30 we’ll hear Information Theory Society, IT
-                      and Communications Society, and Signal Processing Society
-                      Paper Awardees. On Thursday we’ll hear the winners of the
-                      NeurIPS, ICML, and ACL paper awards.
+                      Monday at 9:00 we’ll hear Joint Communications and Information 
+                      Theory Society Paper Awardee, and the James Massey Research 
+                      and Education Awardee. On Thursday we’ll hear the winners of the
+                      ICML, ACL, and ALT Paper Awards.
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle13}>
@@ -251,6 +260,7 @@ export default class SpecialEventsSection extends React.Component {
                     <br />
                     <br />
                     <br />
+                    <br />
                     Pia Pal and Ahmad Beirami
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
@@ -258,7 +268,57 @@ export default class SpecialEventsSection extends React.Component {
                   </CardFooter>
                 </Card>
               </Col>
-
+              <Col>
+                <Card
+                  className="text-center"
+                  style={{ height: '100%', cursor: 'pointer' }}
+                  onClick={this.toggleThrive}
+                >
+                  <this.HatComponent />
+                  <CardImg
+                    top
+                    width="100%"
+                    height={imgHeight}
+                    src={thriveImg}
+                    alt="How to thrive as a researcher"
+                    style={{ borderBottom: '1px solid lightgray' }}
+                  />
+                  <Modal
+                    isOpen={this.state.modalThrive}
+                    toggle={this.toggleThrive}
+                    centered
+                  >
+                    <ModalHeader toggle={this.toggleThrive}>How to thrive as a researcher</ModalHeader>
+                    <ModalBody>
+                      The panel will focus on "How to Thrive as an Outlier?" and help the ITA participants 
+                      learn more about life as a professional researcher, straddling industry and academia, 
+                      the challenges of work-life balance.
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="secondary" onClick={this.toggleThrive}>
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </Modal>
+                  <CardTitle className="mt-4">
+                    <span
+                      onClick={this.toggleThrive}
+                      style={{ cursor: 'pointer', fontSize: '17px' }}
+                    >
+                      How to thrive as a researcher
+                    </span>
+                  </CardTitle>
+                  <CardBody>
+                      Help participants learn more about life as a professional researcher and the challenges of work-life balance.
+                    <br />
+                    <br />
+                    Lalitha Sankar
+                  </CardBody>
+                  <CardFooter className="mt-auto" style={cardFooterStyle}>
+                    Mon noon
+                  </CardFooter>
+                </Card>
+              </Col>
               <Col>
                 <Card
                   className="text-center"
@@ -295,11 +355,13 @@ export default class SpecialEventsSection extends React.Component {
                       onClick={this.toggle2}
                       style={{ cursor: 'pointer', fontSize: '17px' }}
                     >
-                      State of the Information Theory Town Hall
+                      Information Theory Townhall
                     </span>
                   </CardTitle>
                   <CardBody>
                     President's address and town hall. Lunch served.
+                    <br />
+                    <br />
                     <br />
                     <br />
                     <br />
@@ -308,7 +370,6 @@ export default class SpecialEventsSection extends React.Component {
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Tue noon
                   </CardFooter>
-                  {/* <CardFooter className="mt-auto" style={cardFooterStyle}>Tue Noon</CardFooter> */}
                 </Card>
               </Col>
 
@@ -437,7 +498,7 @@ Lunch served for event participants.
                       Distinguished judges will select roughly ten presentations
                       for award.
                       <br></br>
-                      If you would like to participate in a future graduation
+                      If you would like to participate in a graduation
                       day, please contact attending faculty from your
                       institution or <a href="mailto:ita@ucsd.edu">email us</a>.
                     </ModalBody>
@@ -546,7 +607,7 @@ Lunch served for event participants.
                       The event will match students and postdocs to internship
                       mentors, postdoc supervisors, and companies. Each will
                       present one slide for at most a minute, and fun matching
-                      will follow. Microsoft, Qualcomm, Samsung, and others have
+                      will follow. Qualcomm, Samsung, and others have
                       expressed interest in participating.<br></br>
                       Please fill your slide and upload your resume below.
                       During the event you will use your slide to introduce
@@ -952,8 +1013,7 @@ Lunch served for event participants.
                       Entertainment Session
                     </ModalHeader>
                     <ModalBody className="text-center">
-                      Looking at the lighter side of research and ITA with hosts
-                      Anand Sarwate and Mary Wootters. Please{' '}
+                      Looking at the lighter side of research and ITA. Please{' '}
                       <a href="mailto:ita@ucsd.edu">email us</a> if you are
                       willing to participate.
                     </ModalBody>
@@ -984,7 +1044,7 @@ Lunch served for event participants.
                       Create your “ITA Business Card”
                     </a>
                     <p style={{ marginTop: '1em' }}>
-                      Anand Sarwate and Mary Wootters
+                      
                     </p>
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>

@@ -61,7 +61,7 @@ const mondayTalks = [
     classification tasks. We then overview recent methods for measuring and 
     promoting multi-group proportional representation in image retrieval and 
     generation tasks.`,
-    award: '',
+    award: '2024 James L. Massey Research and Teaching Award',
   },
   {
     presenter: {
@@ -98,7 +98,7 @@ const mondayTalks = [
               coding strategy can be generalized to the problem of coded downlink
               transmission of exchangeable sources in massive random access.
     `,
-    award: '',
+    award: '2024 IEEE Communication Society and Information Theory Society Joint Paper Award',
   },
 ];
 
@@ -159,23 +159,6 @@ const tuesdayTalks = [
 const wednesdayTalks = [
   {
     presenter: {
-      name: 'Adam Klivans',
-      picUrl: AdamImg,
-      websiteUrl: 'https://www.cs.utexas.edu/~klivans/',
-      affiliation: 'UT-Austin',
-      bio: `
-Adam Klivans is a recipient of the NSF Career Award. His research interests lie in machine learning 
-nd theoretical computer science, in particular, Learning Theory, Computational Complexity, 
-Pseudorandomness, Limit Theorems, and Gaussian Space. He also serves on the editorial board for 
-the Theory of Computing and Machine Learning Journal.
-`,
-    },
-    title: '',
-    abstract: ``,
-    award: '',
-  },
-  {
-    presenter: {
       name: 'Zaid Harchaoui',
       picUrl: ZaidImg,
       websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
@@ -194,6 +177,23 @@ the Theory of Computing and Machine Learning Journal.
       at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
       Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
       has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
+    },
+    title: '',
+    abstract: ``,
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Adam Klivans',
+      picUrl: AdamImg,
+      websiteUrl: 'https://www.cs.utexas.edu/~klivans/',
+      affiliation: 'UT-Austin',
+      bio: `
+Adam Klivans is a recipient of the NSF Career Award. His research interests lie in machine learning 
+nd theoretical computer science, in particular, Learning Theory, Computational Complexity, 
+Pseudorandomness, Limit Theorems, and Gaussian Space. He also serves on the editorial board for 
+the Theory of Computing and Machine Learning Journal.
+`,
     },
     title: '',
     abstract: ``,
@@ -256,7 +256,7 @@ const thursdayTalks = [
     SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
     training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
     `,
-    award: '',
+    award: 'ICML 2024 Best Paper Award',
   },
   {
     presenter: {
@@ -285,7 +285,7 @@ const thursdayTalks = [
     inductive biases requires studying not just their in-principle expressivity, but also their 
     loss landscape.
     `,
-    award: '',
+    award: 'ACL 2024 Best Paper Award',
   },
   {
     presenter: {
@@ -309,7 +309,7 @@ const thursdayTalks = [
     multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
     compression scheme of size only a finite function of its DS dimension.
     `,
-    award: '',
+    award: 'ALT 2024 Outstanding Paper Award',
   },
 ];
 
