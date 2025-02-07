@@ -12,6 +12,17 @@ const HeaderSection = ({ title, name }) => {
   return <span style={{ fontSize: 24 }}>{titleText}</span>;
 };
 
+const AwardSection = ({ award }) => {
+  return award ? (
+    <React.Fragment>
+      <h4>Award</h4>
+      <p dangerouslySetInnerHTML={{__html: award}}></p>
+    </React.Fragment>
+  ) : (
+    null
+  );
+}
+
 const AbstractSection = ({ abstract }) => {
   return abstract ? (
     <React.Fragment>
@@ -65,7 +76,7 @@ const ModeratorTalkSection = ({ title, abstract }) => {
 export class PlenaryPresenterDetailModal extends React.Component {
   render() {
     const { talk, isOpen, onToggleModal } = this.props;
-    const { presenter, title, abstract } = talk || {};
+    const { presenter, title, abstract, award } = talk || {};
     const { name, websiteUrl, bio } = presenter || {};
     const closeBtn = (
       <button className="close" onClick={onToggleModal}>
@@ -79,6 +90,7 @@ export class PlenaryPresenterDetailModal extends React.Component {
           <HeaderSection name={name} title={title} />
         </ModalHeader>
         <ModalBody>
+          <AwardSection award={award} />
           <AbstractSection abstract={abstract} />
           <BioSection bio={bio} />
           <LinksSection websiteUrl={websiteUrl} />

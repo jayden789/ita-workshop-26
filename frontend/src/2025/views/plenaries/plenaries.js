@@ -61,6 +61,7 @@ const mondayTalks = [
     classification tasks. We then overview recent methods for measuring and 
     promoting multi-group proportional representation in image retrieval and 
     generation tasks.`,
+    award: '',
   },
   {
     presenter: {
@@ -97,6 +98,7 @@ const mondayTalks = [
               coding strategy can be generalized to the problem of coded downlink
               transmission of exchangeable sources in massive random access.
     `,
+    award: '',
   },
 ];
 
@@ -113,6 +115,7 @@ const tuesdayTalks = [
     },
     title: '',
     abstract: ``,
+    award: '',
   },
   {
     presenter: {
@@ -134,6 +137,7 @@ const tuesdayTalks = [
     title: '',
     abstract:
       ``,
+    award: '',
   },
   {
     presenter: {
@@ -148,6 +152,7 @@ const tuesdayTalks = [
     },
     title: '',
     abstract: '',
+    award: '',
   },
 ];
 
@@ -167,6 +172,7 @@ the Theory of Computing and Machine Learning Journal.
     },
     title: '',
     abstract: ``,
+    award: '',
   },
   {
     presenter: {
@@ -191,6 +197,7 @@ the Theory of Computing and Machine Learning Journal.
     },
     title: '',
     abstract: ``,
+    award: '',
   },
   {
     presenter: {
@@ -218,6 +225,7 @@ the Theory of Computing and Machine Learning Journal.
     },
     title: '',
     abstract: ``,
+    award: '',
   },
 ];
 
@@ -248,6 +256,7 @@ const thursdayTalks = [
     SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
     training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
     `,
+    award: '',
   },
   {
     presenter: {
@@ -276,6 +285,7 @@ const thursdayTalks = [
     inductive biases requires studying not just their in-principle expressivity, but also their 
     loss landscape.
     `,
+    award: '',
   },
   {
     presenter: {
@@ -299,6 +309,7 @@ const thursdayTalks = [
     multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
     compression scheme of size only a finite function of its DS dimension.
     `,
+    award: '',
   },
 ];
 
