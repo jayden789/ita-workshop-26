@@ -781,7 +781,7 @@ export default class RegistrationWorkshop extends React.Component {
               {/*<Button disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
               </Button>*/}
-              {/*paymentAllowed || this.props.paid ? null : (
+              {/* {paymentAllowed || this.props.paid ? null : (
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
                     color="danger"
@@ -791,7 +791,7 @@ export default class RegistrationWorkshop extends React.Component {
                     To pay, please save changes.
                   </Alert>
                 </div>
-              )*/}
+              )} */}
             </div>
           </Col>
           <div className="text-center">

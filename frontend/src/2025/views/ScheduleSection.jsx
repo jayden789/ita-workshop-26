@@ -450,7 +450,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter information here
+                            {' '}please enter your information
                           </span>
                         </li>
                         <li>
@@ -476,7 +476,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter information here
+                            {' '}please enter your information
                           </span>
                         </li>
                         <li>
@@ -499,7 +499,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter information here
+                            {' '}please enter your information
                           </span>
                         </li>
                       </ul>
