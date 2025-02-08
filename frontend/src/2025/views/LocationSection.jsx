@@ -127,11 +127,11 @@ export default class ITAJumboLocation extends React.Component {
             >
               Book Here
             </Button>
-            <img
+            {/* <img
               src={bahiaMap}
               alt="Map of the rooms in Bahia"
               className="mt-4 mb-4"
-            />
+            /> */}
             <UncontrolledCarousel items={items} className={styles.carousel} />
           </div>
           <div className="text-center" style={{ marginTop: '72px' }}>

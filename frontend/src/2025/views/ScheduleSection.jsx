@@ -66,11 +66,17 @@ export default class ScheduleSection extends React.Component {
       showNeighborModal: false,
       showBossModal: false,
       showStartupModal: false,
+      showThriveModal: false,
+      showTacoModal: false,
+      showFarewellModal: false,
     };
     this.toggle1 = this.toggle1.bind(this);
     this.computeTalkSessionText = this.computeTalkSessionText.bind(this);
     this.toggleModal = this.toggleModal.bind(this);
     this.toggleAwardSessionModal = this.toggleAwardSessionModal.bind(this);
+    this.toggleThriveModal = this.toggleThriveModal.bind(this);
+    this.toggleTacoModal = this.toggleTacoModal.bind(this);
+    this.toggleFarewellModal = this.toggleFarewellModal.bind(this);
   }
 
   toggleNeighborModal = () => {
@@ -106,6 +112,24 @@ export default class ScheduleSection extends React.Component {
   toggleAwardSessionModal() {
     this.setState((prevState) => ({
       awardSessionModal: !prevState.awardSessionModal,
+    }));
+  }
+
+  toggleThriveModal() {
+    this.setState((prevState) => ({
+      showThriveModal: !prevState.showThriveModal,
+    }));
+  }
+
+  toggleTacoModal() {
+    this.setState((prevState) => ({
+      showTacoModal: !prevState.showTacoModal,
+    }));
+  }
+
+  toggleFarewellModal() {
+    this.setState((prevState) => ({
+      showFarewellModal: !prevState.showFarewellModal,
     }));
   }
 
@@ -426,7 +450,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter your information here
+                            {' '}please enter your information
                           </span>
                         </li>
                         <li>
@@ -452,7 +476,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter your information here
+                            {' '}please enter your information
                           </span>
                         </li>
                         <li>
@@ -475,7 +499,7 @@ export default class ScheduleSection extends React.Component {
                               color: 'rgb(255, 0, 0)',
                             }}
                           >
-                            {' '}please enter your information here
+                            {' '}please enter your information
                           </span>
                         </li>
                       </ul>
@@ -526,20 +550,45 @@ export default class ScheduleSection extends React.Component {
                             Learn More
                           </Button>
                         </li> */}
-                        <li>Monday : Surviving as a researcher</li>
-                        <li> Tuesday: Taco Tuesday outing</li>
-                        {/* <li>
-                          Thursday: Award Sessions: Best 2023 papers from
-                          NeurIPS, ICML, ACL{' '}
-                          <Button
-                            color="link"
-                            onClick={this.toggleAwardSessionModal}
-                            size="sm"
+                        <li>
+                          Monday:{' '}
+                          <span
+                            onClick={this.toggleThriveModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
                           >
-                            Learn More
-                          </Button>
-                        </li> */}
-                        <li>Friday: Farewell bash, light food</li>
+                            Thrive as a researcher
+                          </span>
+                        </li>
+                        <li>
+                          Tuesday:{' '}
+                          <span
+                            onClick={this.toggleTacoModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
+                          >
+                            Taco Tuesday outing
+                          </span>
+                        </li>
+                        <li>
+                          Friday:{' '}
+                          <span
+                            onClick={this.toggleFarewellModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
+                          >
+                            Farewell bash, light food
+                          </span>
+                        </li>
                       </ul>
                     </td>
                   </tr>
@@ -695,6 +744,7 @@ export default class ScheduleSection extends React.Component {
               <Modal
                 isOpen={this.state.awardSessionModal}
                 toggle={this.toggleAwardSessionModal}
+                centered
               >
                 <ModalHeader toggle={this.toggleAwardSessionModal}>
                   Why ITA?
@@ -739,6 +789,69 @@ export default class ScheduleSection extends React.Component {
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggleNeighborModal}>
+                    Close
+                  </Button>
+                </ModalFooter>
+              </Modal>
+              <Modal
+                isOpen={this.state.showThriveModal}
+                toggle={this.toggleThriveModal}
+                centered
+              >
+                <ModalHeader toggle={this.toggleThriveModal}>
+                  How to thrive as a researcher
+                </ModalHeader>
+                <ModalBody>
+                  The panel will focus on "How to Thrive as an Outlier?" and help the ITA participants 
+                  learn more about life as a professional researcher, straddling industry and academia, 
+                  the challenges of work-life balance.
+                </ModalBody>
+                <ModalFooter>
+                  <Button
+                    color="primary"
+                    onClick={this.toggleThriveModal}
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </Modal>
+              <Modal
+                isOpen={this.state.showTacoModal}
+                toggle={this.toggleTacoModal}
+                centered
+              >
+                <ModalHeader toggle={this.toggleTacoModal}>
+                  Taco Tuesday
+                </ModalHeader>
+                <ModalBody>
+                  Enjoy tacos, make connections, and have fun at Taco Tuesday!
+                </ModalBody>
+                <ModalFooter>
+                  <Button
+                    color="primary"
+                    onClick={this.toggleTacoModal}
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </Modal>
+              <Modal
+                isOpen={this.state.showFarewellModal}
+                toggle={this.toggleFarewellModal}
+                centered
+              >
+                <ModalHeader toggle={this.toggleFarewellModal}>
+                  Farewell Bash
+                </ModalHeader>
+                <ModalBody>
+                  Celebrate the end of the workshop with comestibles and 
+                  libations and bid farewell to old and new friends!
+                </ModalBody>
+                <ModalFooter>
+                  <Button
+                    color="primary"
+                    onClick={this.toggleFarewellModal}
+                  >
                     Close
                   </Button>
                 </ModalFooter>
