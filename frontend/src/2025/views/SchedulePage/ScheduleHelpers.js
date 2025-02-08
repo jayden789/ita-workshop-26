@@ -112,7 +112,7 @@ export const formatData = (schedule, days, tracks, sessions) => {
     formattedTalks.unshift({
       type: constants.ROOM_TYPE,
       time: '',
-      event: ['George', 'Abe', 'Jack', 'Eva', 'Cory'],
+      event: ['Pierre', 'Marie', 'Nikola', 'Pigeon', ''],
     });
 
     formattedList[id] = {
