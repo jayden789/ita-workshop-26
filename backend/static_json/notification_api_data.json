@@ -1,15 +1,24 @@
 {
-  "ita24": [{
-    "title": "Welcome to ITA Workshop.",
-    "desc": "Any updates, highlights, formal meetups etc will appear here."
-  },
-  {
-    "title": "Change in time for Feb 19th",
-    "desc": "Lunch is moved from 11:50 to 12:10 amd all afternoon talks will move up by 10 mins"
-  }
-],
-  "ita23": [{
-    "title": "Welcome to ITA Workshop.",
-    "desc": "Any updates, highlights, formal meetups etc will appear here."
-  }]
+  "ita25": [
+    {
+      "title": "Welcome to ITA Workshop.",
+      "desc": "Any updates, highlights, formal meetups etc will appear here."
+    }
+  ],
+  "ita24": [
+    {
+      "title": "Welcome to ITA Workshop.",
+      "desc": "Any updates, highlights, formal meetups etc will appear here."
+    },
+    {
+      "title": "Change in time for Feb 19th",
+      "desc": "Lunch is moved from 11:50 to 12:10 amd all afternoon talks will move up by 10 mins"
+    }
+  ],
+  "ita23": [
+    {
+      "title": "Welcome to ITA Workshop.",
+      "desc": "Any updates, highlights, formal meetups etc will appear here."
+    }
+  ]
 }
