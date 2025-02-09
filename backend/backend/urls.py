@@ -94,15 +94,16 @@ urlpatterns = [  # pylint: disable=invalid-name
         views.null_view,
         name="account_email_verification_sent",
     ),
-
-    # Mobile API's currently hard coded 
-    path("api/v0/notifications/<str:slug>",views.notifications),
-    path("api/v0/page_not_available",views.page_not_available),
-    path("api/v0/schedule/<str:slug>",views.schedule),
-    path("api/v0/participants/<str:slug>",views.participants),
-    path("api/v0/gallery/<str:slug>",views.gallery_mobile),
-    path("api/v0/trivia/<str:slug>",views.trivia),
-    
+    # Mobile API's currently hard coded
+    path("api/v0/notifications/<str:slug>", views.notifications),
+    path("api/v0/page_not_available", views.page_not_available),
+    path("api/v0/schedule/<str:slug>", views.schedule),
+    path("api/v0/participants/<str:slug>", views.participants),
+    path("api/v0/gallery/<str:slug>", views.gallery_mobile),
+    path("api/v0/trivia/<str:slug>", views.trivia),
+    path("api/v0/upload_picture", views.upload_picture),
+    path("api/v0/list_pictures", views.list_pictures),
+    path("api/v0/delete_picture/<str:filename>", views.delete_picture),
     # django-rest-auth
     path("rest-auth/", include("rest_auth.urls")),
     path("rest-auth/registration/", include("rest_auth.registration.urls")),

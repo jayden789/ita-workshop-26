@@ -9,7 +9,9 @@ import datetime
 from email.policy import default
 import itertools
 import logging
+import pathlib
 import secrets
+import uuid
 from django.conf import settings
 import traceback
 from django.shortcuts import render
@@ -1673,3 +1675,90 @@ def map_image(request, slug):
     #     return FileResponse(open(image_path, 'rb'), content_type='image/png')
     # else:
     #     return Response({"error": "Image not found"}, status=status.HTTP_404_NOT_FOUND)
+
+
+@api_view(["POST"])
+@decorators.parser_classes((parsers.MultiPartParser,))
+def upload_picture(request):
+    if "file" not in request.data:
+        return Response(
+            {"error": "No file provided"}, status=status.HTTP_400_BAD_REQUEST
+        )
+
+    pic_file = request.data["file"]
+
+    try:
+        check_valid_image(pic_file)
+    except drf_exceptions.ValidationError as exc:
+        return Response(
+            {"file": exc.detail}, status=status.HTTP_400_BAD_REQUEST
+        )
+
+    random_token = str(uuid.uuid4())
+    file_path = str(pathlib.PurePosixPath("app_pictures", random_token))
+
+    try:
+        path = default_storage.save(file_path, ContentFile(pic_file.read()))
+
+        url = default_storage.url(path)
+
+        return Response(
+            {
+                "message": "Picture uploaded successfully",
+                "path": path,
+                "url": url,
+            },
+            status=status.HTTP_201_CREATED,
+        )
+
+    except Exception as e:
+        return Response(
+            {"error": f"Failed to upload file: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        )
+
+
+@api_view(["GET"])
+def list_pictures(request):
+    try:
+        app_pictures_dir = "app_pictures"
+        files = default_storage.listdir(app_pictures_dir)[1]
+
+        pictures = []
+        for file in files:
+            file_path = str(pathlib.PurePosixPath(app_pictures_dir, file))
+            pictures.append(
+                {"path": file_path, "url": default_storage.url(file_path)}
+            )
+
+        return Response(pictures)
+
+    except Exception as e:
+        return Response(
+            {"error": f"Failed to list pictures: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        )
+
+
+@api_view(["DELETE"])
+def delete_picture(request, filename):
+    try:
+        file_path = str(pathlib.PurePosixPath("app_pictures", filename))
+
+        if not default_storage.exists(file_path):
+            return Response(
+                {"error": "File not found"}, status=status.HTTP_404_NOT_FOUND
+            )
+
+        default_storage.delete(file_path)
+
+        return Response(
+            {"message": f"Successfully deleted {file_path}"},
+            status=status.HTTP_200_OK,
+        )
+
+    except Exception as e:
+        return Response(
+            {"error": f"Failed to delete picture: {str(e)}"},
+            status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+        )
