@@ -397,7 +397,7 @@ export default class ScheduleSection extends React.Component {
                     <th scope="row">8:00 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Catered breakfast,{' '}
-                      <span style={{ color: 'gray' }}>ITA Cove (beach)</span>
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                   <tr>
@@ -951,7 +951,7 @@ export default class ScheduleSection extends React.Component {
                     <th scope="row">8:00 AM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Catered breakfast,{' '}
-                      <span style={{ color: 'gray' }}>ITA Cove (beach)</span>
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                   <tr>
