@@ -406,7 +406,7 @@ export default class ScheduleSection extends React.Component {
                       <div>
                         Plenary session,{' '}
                         <span style={{ color: 'gray' }}>
-                          Nelson (5th floor ballroom)
+                          Oscar (5th floor ballroom)
                         </span>
                       </div>
                       <ul>
@@ -436,7 +436,7 @@ export default class ScheduleSection extends React.Component {
                       <div>
                         Lunch break,{' '}
                         <span style={{ color: 'gray' }}>
-                          Nelson (5th floor ballroom)
+                          Oscar (5th floor ballroom)
                         </span>
                       </div>
                       <ul>
@@ -546,7 +546,7 @@ export default class ScheduleSection extends React.Component {
                       <div>
                         Special sessions:{' '}
                         <span style={{ color: 'gray' }}>
-                          Nelson (5th floor ballroom)
+                          Oscar (5th floor ballroom)
                         </span>
                       </div>
                       <ul>
