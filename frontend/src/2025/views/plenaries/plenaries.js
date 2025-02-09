@@ -433,8 +433,17 @@ const fridayTalks = [
         Learning at ETH Zürich. I received my Ph.D. degree in Computer and Communication 
         Sciences from EPFL.`,
     },
-    title: '',
-    abstract:`
+    title: 'Adversarial Reasoning: How Safe Are the Frontier LLMs? ',
+    abstract:`Despite efforts to align large language models (LLMs) with human intentions, 
+    frontier LLMs such as chatGPT, Claude, and Gemini are susceptible to jailbreaking attacks, 
+     wherein an adversary fools a targeted LLM into generating objectionable content. For 
+     this reason, interest has grown in improving the robustness of LLMs against such 
+     attacks. In this talk, I will review the current state of the jailbreaking literature, 
+     including discussions of (new) attacks on LLMs, defenses against jailbreaking attacks, 
+     and if time permits, applications within agentic systems. I will also introduce the 
+     concept of adversarial reasoning, a framework that has proven effective in bypassing 
+     safety mechanisms in frontier LLMs, and discuss its implications for future advancements 
+     in AI safety.
     `,
     award: '',
   },
