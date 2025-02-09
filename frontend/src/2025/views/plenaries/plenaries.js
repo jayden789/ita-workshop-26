@@ -30,6 +30,8 @@ import MichaelImg from '../img2025/plenary-profile-pics/michael.jpg';
 import ChiragImg from '../img2025/plenary-profile-pics/chirag.jpg';
 import AhmadImg from '../img2025/plenary-profile-pics/ahmad.jpg';
 import AdamImg from '../img2025/plenary-profile-pics/adam.jpg';
+import TatsImg from '../img2025/plenary-profile-pics/tats.jpg';
+import HamedImg from '../img2025/plenary-profile-pics/hamed.jpg';
 
 const mondayTalks = [
   {
@@ -344,26 +346,28 @@ const thursdayTalks = [
       picUrl: MichaelImg,
       websiteUrl: 'https://www.mhahn.info/',
       affiliation: 'Saarland University',
-      bio: `I am a Tenure-Track Professor (W2) at Saarland Informatics Campus at Saarland University, 
-      where I direct the Language, Computation, and Cognition Lab (LaCoCo). I'm affiliated with the 
-      Departments of Language Science and Technology and Computer Science. I received my PhD from 
-      Stanford University in 2022, advised by Judith Degen and Dan Jurafsky.
+      bio: `Michael Hahn received his PhD from Stanford University in 2022, advised by Dan 
+      Jurafsky and Judith Degen. He is now an Assistant Professor at Saarland University, 
+      Germany. His research focuses on the theoretical foundations and inner workings of LLMs.
       `,
     },
     title: 'Why are Sensitive Functions Hard for Transformers?',
-    abstract:`Empirical studies have identified a range of learnability biases and limitations of 
-    transformers, such as a persistent difficulty in learning to compute simple formal languages 
-    such as PARITY, and a bias towards low-degree functions. However, theoretical understanding 
-    remains limited, with existing expressiveness theory either overpredicting or underpredicting 
-    realistic learning abilities. We prove that, under the transformer architecture, the loss 
-    landscape is constrained by the input-space sensitivity: Transformers whose output is sensitive 
-    to many parts of the input string inhabit isolated points in parameter space, leading to a 
-    low-sensitivity bias in generalization. We show theoretically and empirically that this theory 
-    unifies a broad array of empirical observations about the learning abilities and biases of 
-    transformers, such as their generalization bias towards low sensitivity and low degree, and 
-    difficulty in length generalization for PARITY. This shows that understanding transformers’ 
-    inductive biases requires studying not just their in-principle expressivity, but also their 
-    loss landscape.
+    abstract:`The reasoning capabilities of LLMs have seen enormous progress in the past years, 
+      but certain reasoning tasks still are surprisingly challenging. I will argue that some of 
+      these difficulties relate to the learnability biases of the underlying Transformer 
+      architecture. Empirical studies have identified a range of such biases and limitations, 
+      such as a persistent difficulty in learning to compute simple formal languages such as 
+      PARITY, and a bias towards low-degree functions. We show that, under the transformer 
+      architecture, the loss landscape is constrained by the input-space sensitivity: 
+      Transformers whose output is sensitive to many parts of the input string inhabit isolated 
+       points in parameter space, leading to a low-sensitivity bias in generalization. We show 
+       theoretically and empirically that this theory unifies a broad array of empirical 
+       observations about the learning abilities and biases of transformers, such as their 
+       generalization bias towards low sensitivity and low degree, and difficulty in length 
+       generalization for PARITY. This shows that understanding transformers’ inductive biases 
+       requires studying not just their in-principle expressivity, but also their loss 
+       landscape. More broadly, these results provide understanding of the sources of 
+       persistent reasoning difficulties in LLMs.
     `,
     award: 'ACL 2024 Best Paper Award',
   },
@@ -373,10 +377,10 @@ const thursdayTalks = [
       picUrl: ChiragImg,
       websiteUrl: 'https://web.stanford.edu/~cpabbara/',
       affiliation: 'Stanford University',
-      bio: `I'm a fourth year PhD student at Stanford University in the CS Theory group. I feel very 
-      lucky to be co-advised by Moses Charikar and Gregory Valiant. My primary research interests are 
-      in statistical and algorithmic aspects of learning theory. More broadly, I like thinking about 
-      various topics in theoretical computer science and machine learning.`,
+      bio: `Chirag Pabbaraju is a PhD student in the Computer Science department at Stanford University. 
+      He is advised by Moses Charikar and Gregory Valiant. His primary research interests are in 
+      algorithmic and statistical learning theory, and more recently, in language generation 
+      and weak-to-strong generalization`,
     },
     title: 'Multiclass Learnability Does Not Imply Sample Compression',
     abstract:`A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis 
@@ -394,6 +398,46 @@ const thursdayTalks = [
 ];
 
 const fridayTalks = [
+  {
+    presenter: {
+      name: 'Tatsunori Hashimoto',
+      picUrl: TatsImg,
+      websiteUrl: 'https://thashim.github.io/',
+      affiliation: 'Stanford University',
+      bio: `I am currently an assistant professor at the computer science department in 
+        Stanford university. My research uses tools from statistics to make machine 
+        learning systems more robust and trustworthy — especially in complex systems 
+        such as large language models. The goal of my research is to use robustness and 
+        worst-case performance as a lens to understand and make progress on several 
+        fundamental challenges in machine learning and natural language processing. 
+        A few topics of recent interest are,`,
+    },
+    title: '',
+    abstract:`
+    `,
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Hamed Hassani',
+      picUrl: HamedImg,
+      websiteUrl: 'https://www.seas.upenn.edu/~hassani/',
+      affiliation: 'UPenn',
+      bio: `I am an associate professor in the Department of Electrical and Systems 
+        Engineering (primary) as well as the Department of Computer and Information 
+        Systems and Department of Statistics and Data Science at the Wharton Business 
+        School. I am the Penn site-lead at EnCORE: Institute for Emerging CORE Methods 
+        of Data Science. Before joining Penn, I was a research fellow at the Simons 
+        Institute, UC Berkeley (program: Foundations of Machine Learning). Prior to 
+        that, I was a post-doctoral scholar and lecturer in the Institute for Machine 
+        Learning at ETH Zürich. I received my Ph.D. degree in Computer and Communication 
+        Sciences from EPFL.`,
+    },
+    title: '',
+    abstract:`
+    `,
+    award: '',
+  },
 ];
 
 export const plenarySessions = [
@@ -491,7 +535,7 @@ export const plenarySessions = [
   },
   {
     dayName: 'Friday',
-    topic: 'Coming Soon',
+    topic: 'Large Language Models',
     moderator: {
       name: '',
       picUrl: '',
