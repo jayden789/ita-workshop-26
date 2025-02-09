@@ -362,12 +362,23 @@ export default class ScheduleSection extends React.Component {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <th scope="row">6:30 PM</th>
+                <tr>
+                    <th scope="row">3:15 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Reception,{' '}
+                      <span style={{ color: 'red' }}>
+                      Super Bowl party wth snacks and drinks, space may be limited
+                      </span>{' '}
                       <span style={{ color: 'gray' }}>
-                        Nelson (5th floor ballroom)
+                        Cabrillo Suite (next to the Pacific Room across from the lobby)
+                      </span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7:00 PM</th>
+                    <td style={{ backgroundColor: 'white' }}>
+                      Reception,{' '}<span style={{ color: 'red' }}>changed from 6:30</span> to honor Super Bowl LIX{' '}
+                      <span style={{ color: 'gray' }}>
+                        Oscar (5th floor ballroom)
                       </span>
                     </td>
                   </tr>
