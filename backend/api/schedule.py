@@ -41,7 +41,7 @@ class Schedule:
             4: "This event will consist of researchers who started companies, sharing their experience and providing advice to aspiring entrepreneurs. You can propose your ideas or ask questions. Our last session has resulted in seed funding.",
         }
         self.special_titles = {
-            0: "Surviving as a researcher",
+            0: "Thrive as a researcher",
             1: "Taco Tuesday outing",
             2: "",
             3: "",
@@ -81,13 +81,13 @@ class Schedule:
             "Wei Yu, University of Toronto": "Minimum Feedback for Collision-Free Scheduling in Massive Random Access",
             "Moderator: Piya Pal, UCSD": "",
             "": "",
-            "Jona Ballé, Google": "",
-            "Hyeji Kim, UT Austin": "",
-            "Chao Tian, Texas A&M University": "",
+            "Jona Ballé, Google": "Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein",
+            "Hyeji Kim, UT Austin": "Modern Compression via Information Theory, Learning, and Generative models, and its Application to Wireless Channel Compression",
+            "Chao Tian, Texas A&M University": "Transformers Learn Variable-order Markov Chains in-Context",
             "Moderator: Aaron Wagner, Cornell": "",
             "Adam Klivans, UT-Austin": "",
             "Zaid Harchaoui, University of Washington": "",
-            "Mahdi Soltanolkotabi, USC": "",
+            "Mahdi Soltanolkotabi, USC": "Towards More Reliable Generative AI: Probing Failure Modes and Harnessing Test-Time Inference",
             "": "",
             "Rob Brekelmans, Vector Institute": "Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo",
             "Michael Hahn, Saarland University": "Why are Sensitive Functions Hard for Transformers?",
@@ -103,13 +103,13 @@ class Schedule:
             "Flavio Calmon, Harvard University": "This talk overviews information-theoretic results on trustworthy machine learning and artificial intelligence. We first briefly discuss achievability and converse results for group fairness in prediction and classification tasks. We then overview recent methods for measuring and promoting multi-group proportional representation in image retrieval and generation tasks.",
             "Wei Yu, University of Toronto": "Consider a massive random access scenario in which a random subset of k active users, out of a large number of n users, need to be scheduled into k transmission slots. What is the minimum number of bits that need to be sent to the users to ensure collision-free scheduling? Instead of a naive scheme of listing the indices of k active users in the order in which they should transmit -- at a cost of klog(n) bits, we show that a fixed-length coded transmission strategy can be designed using only klog(e) bits, plus an additive term that scales as Theta(log log(n)) bits. Further, if variable-length coding is used, the dependence on n can be completely removed. This coding strategy can be generalized to the problem of coded downlink transmission of exchangeable sources in massive random access.",
             "Moderator: Piya Pal, UCSD": "",
-            "Jona Ballé, Google": "",
-            "Hyeji Kim, UT Austin": "",
-            "Chao Tian, Texas A&M University": "",
+            "Jona Ballé, Google": "Inspired by the success of generative image models, recent work on learned image compression increasingly focuses on better probabilistic modeling of the natural image distribution, leading to excellent realism. This, however, comes at the expense of a computational complexity that is several orders of magnitude higher than today's commercial codecs, and thus prohibitive for most practical applications. In this talk, I'll demonstrate that by focusing on models of visual perception, we can achieve a very good trade-off between visual quality and bit rate similar to \"generative\" compression models, while simultaneously requiring less than 1%% of the multiply-accumulate operations (MACs) for decompression. We achieve this by optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD), a measure of spatial (texture) realism grounded in models of visual perception, and evaluating the image reconstructions with a human rating study. Our study also reveals that WD outperforms other perceptual quality metrics such as LPIPS, DISTS, and MS-SSIM, both as an optimization objective and as a predictor of human ratings, achieving over 94% Pearson correlation with Elo scores.",
+            "Hyeji Kim, UT Austin": "In this talk, I will present our work on Channel State Information (CSI) compression, leveraging tools from information theory, learning, and generative models. I will cover two main topics. First, we will discuss the estimation of the rate-distortion function for function computing with decoder-only side information and how it can shed light on the value of side information for CSI compression. Next, we will shift our focus to importance sampling in the context of score-based generative models. We will present a novel approach that represents the time-dependent score function of the target importance sampling distribution in terms of the score function of the original distribution and a desired weight function. This method enables principled importance sampling in a variety of applications, including neural CSI compression. By leveraging this framework, we provide new insights into the interpretability of learning-based CSI compression models.",
+            "Chao Tian, Texas A&M University": "We study in-context learning of variable-length Markov chains by viewing language modeling as a form of data compression and focusing on variable-order Markov chain (VOMC) sources, also known as context tree sources. This perspective allows us to leverage mature compression algorithms, such as the context-tree weighting (CTW) algorithm as a baseline, which is Bayesian optimal for a general class of priors. The underlying structural learning component makes it a considerably more difficult learning task than the fixed-order counterpart. We empirically observe that the performance of transformers is not very sensitive to the number of layers, and even a two-layer transformer (but not a one-layer transformer) can learn in context well, tracking closely the performance of CTW. To explain this observation, we construct a transformer with D+2 layers that can mimic the CTW algorithm accurately for VOMCs of maximum order D. A reduced two-layer transformer is further studied with carefully controlled counting information, which explains why 2-layer transformers can also perform well.",
             "Moderator: Aaron Wagner, Cornell": "",
             "Adam Klivans, UT-Austin": "",
             "Zaid Harchaoui, University of Washington": "",
-            "Mahdi Soltanolkotabi, USC": "",
+            "Mahdi Soltanolkotabi, USC": "Generative AI systems—especially Multimodal Large Language Models (MLLMs)—offer promising avenues across a wide range of tasks, from medical imaging to enhanced reasoning. In this talk, we explore strategies for making generative AI more dependable by examining its vulnerabilities and leveraging adaptive learning. First, we introduce MediConfusion, a benchmark that exposes systemic failure modes of state-of-the-art medical multimodal models in Visual Question Answering—a setting where reliability is paramount. Our findings reveal that even top models fail to distinguish visually dissimilar medical images, underscoring the challenges of deploying AI in clinical contexts. Next, we turn to test-time training (TTT), a gradient-based technique that updates model parameters using information from individual test instances. We provide a theoretical framework that explains how TTT can mitigate distribution shifts and significantly reduce the sample size needed for in-context learning. By bridging these two threads, we demonstrate how identifying and addressing vulnerabilities—through challenges like MediConfusion and adaptive strategies like TTT—can enhance the reliability and impact of generative AI in healthcare and beyond.",
             "Rob Brekelmans, Vector Institute": "Numerous capability and safety techniques of Large Language Models (LLMs), including RLHF, automated red-teaming, prompt engineering, and infilling, can be cast as sampling from an unnormalized target distribution defined by a given reward or potential function over the full sequence. In this work, we leverage the rich toolkit of Sequential Monte Carlo (SMC) for these probabilistic inference problems. In particular, we use learned twist functions to estimate the expected future value of the potential at each timestep, which enables us to focus inference-time computation on promising partial sequences. We propose a novel contrastive method for learning the twist functions, and establish connections with the rich literature of soft reinforcement learning. As a complementary application of our twisted SMC framework, we present methods for evaluating the accuracy of language model inference techniques using novel bidirectional SMC bounds on the log partition function. These bounds can be used to estimate the KL divergence between the inference and target distributions in both directions. We apply our inference evaluation techniques to show that twisted SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.",
             "Michael Hahn, Saarland University": "Empirical studies have identified a range of learnability biases and limitations of transformers, such as a persistent difficulty in learning to compute simple formal languages such as PARITY, and a bias towards low-degree functions. However, theoretical understanding remains limited, with existing expressiveness theory either overpredicting or underpredicting realistic learning abilities. We prove that, under the transformer architecture, the loss landscape is constrained by the input-space sensitivity: Transformers whose output is sensitive to many parts of the input string inhabit isolated points in parameter space, leading to a low-sensitivity bias in generalization. We show theoretically and empirically that this theory unifies a broad array of empirical observations about the learning abilities and biases of transformers, such as their generalization bias towards low sensitivity and low degree, and difficulty in length generalization for PARITY. This shows that understanding transformers’ inductive biases requires studying not just their in-principle expressivity, but also their loss landscape.",
             "Chirag Pabbaraju, Stanford University": "A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis from the class, it is possible to retain only a small subsample, using which the labels on the entire sample can be inferred. The size of the compression scheme is an upper bound on the size of the subsample produced. Every learnable binary hypothesis class (which must necessarily have finite VC dimension) admits a sample compression scheme of size only a finite function of its VC dimension, independent of the sample size. For multiclass hypothesis classes, the analog of VC dimension is the DS dimension. We show that the analogous statement pertaining to sample compression is not true for multiclass hypothesis classes: every learnable multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample compression scheme of size only a finite function of its DS dimension.",
@@ -402,6 +402,17 @@ class Schedule:
                         session_list.append(extra_session)
 
                 if i == 2:
+                    t = "10:40 - 12:00"
+                    tenc = self.get_time_encoded(self.dayindices[i], t)
+                    extra_session = self.create_session(
+                        title="Graduation day talks",
+                        lunch=False,
+                        plenary=False,
+                        time=t,
+                        time_encoded=tenc,
+                    )
+                    session_list.append(extra_session)
+
                     t = "12:00 - 2:00"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
