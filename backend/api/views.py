@@ -1615,14 +1615,16 @@ def participants(request, slug):
     )
     resp = json.loads(response_API.text)
     retList = []
+    default_pic = (
+        "https://ita.ucsd.edu/workshop/23/images/images/empty_profile.png"
+    )
+
     for res in resp:
         obj = {
             "name": res["full_name"],
             "desc": res["affiliation_title"],
             "pic": (
-                res["profile_pic"]
-                if res["profile_pic"] != ""
-                else "https://ita.ucsd.edu/workshop/23/images/images/empty_profile.png"
+                res["profile_pic"] if res["profile_pic"] != "" else default_pic
             ),
             "website": (
                 res["website"]
@@ -1632,6 +1634,10 @@ def participants(request, slug):
             "email": "https://itaws.ucsd.edu/api/v0/mobile/page_not_available",
         }
         retList.append(obj)
+
+    # Sort the list - participants with profile pics will come first
+    retList.sort(key=lambda x: x["pic"] == default_pic)
+
     ret = {"participants": retList}
     return Response(ret)
 
