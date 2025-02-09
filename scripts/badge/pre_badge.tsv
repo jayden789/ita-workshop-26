@@ -1,0 +1,278 @@
+registrant_number	first_name	last_name	affiliation_title	attending_dates	sunday_reception_guests	wednesday_banquet_guests	saturday_italt_guests	paid	fee_type_override	badge_str
+1	Ushasi	Ghosh	UCSD ECE	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+2	Hessam	Mahdavifar	Northeastern University	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+3	Vincent	Tan	NUS	M T 	1	0	0	False		1 | M T 
+4	Alon	Orlitsky	UCSD	M T W Th F 	1	1	0	False		1 | M T W Th F | 🥦
+5	Yuhan	Liu	Rice University	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+6	Amirhossein	roknilamouki	Ohio State University	W Th F 	0	1	0	False		W Th F | 🐔
+7	Ananthanarayanan	Chockalingam	IISc	M T W Th F 	0	0	0	False		M T W Th F 
+8	Mahdi	Haghifam	Northeastern University	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+9	Shao-Lun	Huang	Tsinghua University	M T 	1	0	0	False		1 | M T 
+10	Chan-Byoung	Chae	Yonsei University	M T W Th F 	0	0	0	False		M T W Th F 
+11	Xiangxiang	Xu	Massachusetts Institute of Technology	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+12	Geon	Choi	Korea University	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+13	Chanho	Park	POSTECH	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+14	Kishan	Panaganti	California Institute of Technology	W Th F 	0	1	0	False		W Th F | 🥦
+15	Yizhe	Zhu	University of Southern California (USC)	T Th 	0	0	0	False		T Th 
+16	Yongwoo	Lee	Inha University	M T W Th 	0	1	0	False		M T W Th | 🐔
+17	Lalitha	Sankar	Arziona State University	M T W 	0	0	0	False		M T W 
+18	Nir	Weinberger	Technion - Israel Institute of Technology	T W Th F 	0	1	0	False		T W Th F | 🐟
+19	Jong-Seon	No	Seoul National University	M T Th 	1	1	0	False		1 | M T Th | 🐟
+20	Kwang Soon	Kim	Yonsei University	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+22	Igal	Sason	Technion - Israel Institute of Technology	M T W Th F 	1	1	0	False		1 | M T W Th F | 🥦
+23	Howon	Lee	Ajou University	M T W Th F 	1	0	0	False		1 | M T W Th F 
+24	Gianluigi	Liva	German Aerospace	M T 	0	0	0	False		M T 
+25	Girish	Nair	University of Melbourne	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+26	Busra	Tegin	Bilkent University	M T W Th F 	0	0	0	False		M T W Th F 
+27	Mehrdad	Moharrami	University of Iowa	T W Th 	0	1	0	False		T W Th | 🥦
+28	jiewei	feng	Northeastern University	M T W 	0	1	0	False		M T W 
+29	Chong	Liu	State University of New York at Albany	W Th F 	0	1	0	False		W Th F | 🐔
+30	Akshay	Kumar	University of Minnesota Twin cities	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+31	Hans-Andrea	Loeliger	ETH Zurich	M T W Th F 	0	0	0	False		M T W Th F 
+32	Ilan	Shomorony	UIUC	Th F 	0	0	0	False		Th F 
+33	Adel	Javanmard	USC	Th F 	0	2	0	False		Th F | 🥦🐔
+34	Fanghui	Liu	University of Warwick	M T W Th F 	0	0	0	False		M T W Th F | 🐟
+35	Lai	Wei	Qualcomm Inc.	M T W Th F 	0	0	0	False	EXEMPT	M T W Th F 
+36	Parthasarathi	Khirwadkar	University of California San Diego	M T Th 	0	1	0	False		M T Th | 🐔
+37	Charles	Wiame	Massachusetts Institute of Technology	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+38	Dor	Tsur	Ben Gurion University	M T W Th 	0	1	0	False		M T W Th | 🐔
+39	Rafael	D'Oliveira	Clemson University	M T W Th F 	0	0	0	False		M T W Th F 
+40	John	Lipor	Scripps Institute of Oceanography	M T W Th F 	0	0	0	False		M T W Th F 
+41	Willie	Harrison	BYU	M T 	0	0	0	False		M T 
+42	Rob	Brekelmans	Vector Institute	Th F 	0	0	0	False		Th F 
+43	Marian	Temprana Alonso	Florida International University	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+44	Jos	Weber	Delft University of Technology	M T W 	0	0	0	False		M T W 
+45	Oveys	Delafrooz	UCSB	W Th F 	0	2	0	False		W Th F | 🐔🐟
+46	Yizuo	Chen	UCLA	T W Th 	0	1	0	False		T W Th | 🐔
+47	Jona	Ballé	New York University	M T W 	0	0	0	False		M T W 
+48	Gene	Marsh	Qualcomm Technologies Inc.	W 	0	0	0	False	EXEMPT	W 
+49	Lev	Tauz	UCLA	M T W 	0	1	0	False		M T W | 🐔
+50	Yuval	Kochman	Hebrew University	M T W Th 	1	1	0	False		1 | M T W Th | 🐔
+51	Ravi	Tandon	University of Arizona	Th F 	0	0	0	False		Th F 
+52	Donya	Saless	Toyota Technological Institute at Chicago	T W Th F 	0	1	0	False		T W Th F | 🐟
+53	Viveck	Cadambe	Georgia Institute of Technology	Th F 	0	0	0	False		Th F 
+54	Narayana Prasad	Santhanam	UH Manoa	W Th 	0	2	0	False		W Th | 🥦🥦
+55	Ramya	Korlakai Vinayak	University of Wisconsin-Madison	M T W Th F 	1	1	0	False		1 | M T W Th F 
+56	JY YONG	SOHN	Yonsei University	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+57	Sang-Hyo	Kim	Sungkyunkwan University	T W Th F 	1	1	0	False		1 | T W Th F | 🐔
+58	Lav	Varshney	UIUC	W Th F 	0	1	0	False		W Th F | 🥦
+59	Meisam	Razaviyayn	USC	Th F 	0	0	0	False		Th F 
+60	Yongjune	Kim	Pohang University of Science and Technology (POSTECH)	M T W Th 	0	1	0	False		M T W Th | 🐟
+61	Seong-Joon	Park	Pohang University of Science and Technology (POSTECH)	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+62	Andre	Wibisono	Yale University	Th F 	0	0	0	False		Th F 
+63	Yuhang	Yao	University of California Irvine	M T 	0	0	0	False		M T 
+64	Apratim	Dey	Stanford University	M T W Th F 	0	0	0	False		M T W Th F 
+65	Jaswanthi	Mandalapu	Indian Institute of Technology Madras	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+66	Badih	Ghazi	Google	Th F 	0	0	0	False		Th F 
+67	Serge	Kas Hanna	CNRS	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+68	Viet Hoang	Tran	National University of Singapore	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+69	Tan	Nguyen	NUS	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+70	Yongjune	Kim	Carnegie Mellon Univ	M T W 	1	1	0	False		1 | M T W | 🐟
+71	Neilabh	Banzal	University of Califronia, San Diego	M T W Th F 	1	1	0	False		1 | M T W Th F | 🥦
+72	Yingcong	Li	University of Michigan, Ann Arbor	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+73	Jian	Li	Stony Brook University	T Th 	0	0	0	False		T Th 
+74	Bane	Vasic	University of Arizona	M T 	1	0	0	False		1 | M T 
+75	Mahdi	Morafah	UCSD	W Th F 	0	1	0	False		W Th F | 🐔
+76	Tomas	Ortega	UC Irvine	T W 	0	0	0	False		T W 
+77	Namyoon	Lee	POSTECH	M T W 	0	1	0	False		M T W | 🐔
+78	Mohamed	Hamdy	University of Califronia, San Diego	M T W Th 	0	0	0	False		M T W Th | 🐟
+79	Grigorios	Chrysos	UW - Madison	W Th F 	0	0	0	False		W Th F 
+80	Sebin	Gracy	SDSMT	Th F 	0	0	0	False		Th F 
+81	Amirali	Aghazadeh	Stanford	Th F 	0	1	0	False		Th F | 🐟
+82	Vishal	Shenoy	UC San Diego	M W 	0	0	0	False		M W 
+83	Yingying	Li	UIUC	M T W Th 	0	1	0	False		M T W Th | 🐟
+84	Stephen	Tu	USC	M T W 	0	1	0	False		M T W | 🐔
+86	Jia (Kevin)	Liu	Ohio State	W Th F 	0	1	0	False		W Th F | 🐟
+87	Sanghamitra	Dutta	UC San Diego	T W Th 	0	1	0	False		T W Th | 🐔
+88	Fariba	Abbasi	University of Michigan- Ann Arbor	W 	0	1	0	False		W | 🐔
+89	Jason	Lee	USC	M T W Th F 	0	0	0	False		M T W Th F 
+90	Anton	Monk	Cohere Technologies	M T 	0	0	0	False		M T 
+91	Ian	Roberts	UCLA	M T 	1	0	0	False		1 | M T 
+92	Zhi	Wang	University of Wisconsin-Madison	T W Th F 	0	0	0	False		T W Th F 
+93	Hanwen	Yao	Duke University	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+94	Marco	Mondelli	Stanford	W Th F 	0	1	0	False		W Th F | 🐔
+95	Sajani	Vithana	Harvard	W Th F 	0	1	0	False		W Th F | 🐟
+96	Rick	Wesel	UCLA	M 	1	0	0	False		1 | M 
+97	Yinyan	Bu	UCSD, ECE	M T W Th F 	0	0	0	False		M T W Th F | 🐔
+98	Heeyoul	Kwak	university of ulsan	M 	0	0	0	False		M 
+99	Stefanie	Roesslein	Qualcomm	W Th 	1	1	0	False	EXEMPT	1 | W Th | 🐟
+100	Adrian	Nunez-Rocha	Qualcomm	W Th 	1	1	0	False	EXEMPT	1 | W Th | 🐟
+101	Dongwoon	Bai	Samsung Mobile Solutions Lab	T W Th 	0	1	0	False		T W Th | 🐟
+102	Stratis	Ioannidis	Northeastern	Th F 	0	0	0	False		Th F 
+103	Emre	Koksal	Ohio State	M 	1	0	0	False		1 | M 
+104	Wei	Wang	UC Berkeley	T Th 	0	0	0	False		T Th 
+105	Roger	Bohn	UC San Diego	M T W 	0	0	0	False		M T W 
+106	Jun-Kun	Wang	UC San Diego	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+107	Luca	Hartmann	UC San Diego	M T 	0	0	0	False		M T | 🐟
+108	Mahdi	Soltanolkotabi	USC	M T W Th F 	1	1	0	False	EXEMPT	1 | M T W Th F | 🐟
+109	Hyeji	Kim	University of Illinois at Urbana Champaign	M T W 	0	1	0	False		M T W | 🐔
+110	Asif	Shakeel	Researcher	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+111	Oron	Sabag	BGU	M T W 	0	1	0	False		M T W | 🥦
+112	Zaid	Harchaoui	University of Washington	M T W Th 	0	1	0	False	EXEMPT	M T W Th | 🐔
+113	Nithin	Raveendran	The University of Arizona	M T 	1	0	0	False		1 | M T 
+114	Alon	Kipnis	Stanford University	M T W Th 	0	1	0	False		M T W Th | 🐟
+115	Mladen	Kolar	University of Chicago	Th F 	0	0	0	False		Th F 
+116	Haiyun	He	Cornell	M T 	0	0	0	False		M T 
+117	Sedat	Ozer	University of Virginia	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+118	Philip	Brown	University of Colorado at Colorado Springs	W Th F 	0	1	0	False		W Th F | 🐔
+119	Lydia	Zakynthinou	UC Berkeley	W Th F 	0	0	0	False		W Th F 
+120	Jiajie	Yu	UCSD ECE	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+121	Hong-Yeop	Song	Yonsei University	M T Th 	1	1	0	False		1 | M T Th | 🐟
+122	Maciej	Skorski	IST Austria	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+123	Anxiao	Jiang	Texas A&M	M T 	1	0	0	False		1 | M T 
+124	Cong	Shen	University of Virginia	M T 	0	0	0	False		M T 
+125	Wei	Yu	University of Toronto	M T W 	1	0	0	False	EXEMPT	1 | M T W 
+126	Nambi	Seshadri	UC San Diego	M T W Th F 	0	1	0	False		M T W Th F | 🥦
+127	Bruce	Hajek	UIUC	M T 	1	0	0	False		1 | M T 
+128	Syed	Jafar	UC Irvine	M T 	0	0	0	False		M T 
+129	Lin	Yang	UCLA	Th F 	0	1	0	False		Th F | 🐟
+130	Daniel	Costello	University of Notre Dame	M T W 	2	2	0	False		2 | M T W | 🐔🐟
+131				T W Th 	0	1	0	False		T W Th | 🐔
+132	Siddharth	Vishwanath	UC San Diego	M T W Th F 	1	0	0	False		1 | M T W Th F 
+133	Ender	Ayanoglu	UC Irvine	Th F 	0	0	0	False		Th F 
+134	Jong-Seon	No	Seoul National	M T Th 	1	1	0	False		1 | M T Th | 🐟
+135	Jiewei	Feng	NEU	M T 	0	0	0	False		M T 
+136	Rishav	Rej	Qualcomm	M T W Th F 	1	1	0	False	EXEMPT	1 | M T W Th F | 🐟
+137	Mahdi	Cheraghchi	Imperial College	T W Th F 	0	1	0	False		T W Th F | 🐔
+138	Somnath	Basu Roy Chowdhury	UNC	W Th F 	1	1	0	False		1 | W Th F | 🐟
+139	Gauri	Joshi	CMU	T W Th F 	0	1	0	False		T W Th F | 🥦
+140	Mingyan	Liu	University of Michigan	W Th 	0	1	0	False		W Th | 🐟
+141	Shaddin	Dughmi	University of Southern California	Th F 	0	0	0	False		Th F 
+142	Po-Ling	Loh	University of Pennsylvania	T W Th 	0	0	0	False		T W Th 
+143	David	Scheinker	Stanford	T W 	0	0	0	False		T W 
+144	Michelle	Thompson	Open Research Institute	M T W Th F 	1	1	0	False		1 | M T W Th F | 🥦
+145	Saswati	Sarkar	University of Pennsylvania	Th 	0	0	0	False		Th 
+146	Fang	Han	University of Washington	T 	0	0	0	False		T 
+147	Brian	Kurkoski	Japan Advanced Institute of Science and Technology	M T W Th 	1	1	0	False		1 | M T W Th | 🐔
+148	Brian	Marcus	University of British Columbia	M T 	1	0	0	False		1 | M T 
+149	Bohan	Wu	Columbia University	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+150	David	Miloschewsky	Stony Brook University	M T W 	1	0	0	False		1 | M T W 
+151	Deog-Kyoon	Jeong	Seoul National	M T Th 	0	1	0	False		M T Th | 🐔
+152	Manish	Purohit	Google	M T 	0	0	0	False		M T 
+153	Vitaly	Feldman	Apple	W Th 	0	1	0	False		W Th | 🐟
+154	Yuhei	Takahashi	Doshisha University	M T 	1	0	0	False		1 | M T 
+155	Athina	Petropulu	Rutgers	M T W 	0	0	0	False		M T W 
+156	Chris	Rose	Brown	Th F 	0	0	0	False		Th F 
+157	Dirk	Slock	EURECOM	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+158	Amin	Rahimian	University of Pittsburgh	M 	1	0	0	False		1 | M 
+159	Sudeep	Salgia	Carnegie Mellon University	M T W Th F 	0	1	0	False		M T W Th F | 🥦
+160	Pengfei	Li	UC Riverside	T W Th 	0	0	0	False		T W Th 
+161	Anson	Kahng	University of Rochester	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+162	Hossein	Taheri	UC Santa Barbara	M T W Th F 	0	0	0	False		M T W Th F 
+163	Parastoo	Sadeghi	Australian National University	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+164	Gautam	Goel	University of California, Berkeley	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+165	Gilad	Lerman	University of Minnesota	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+166	Ziv	Aharoni	Duke	M T W Th 	1	1	0	False		1 | M T W Th | 🐔
+167	Chao	Tian	Texas A&M University	M T W 	0	0	0	False		M T W | 🐟
+168	Kabir	Verchand	Georgia Tech	M T W 	0	1	0	False		M T W | 🐔
+169	Sloan	Nietert	Cornell University	M T W 	0	1	0	False		M T W | 🐔
+170	Hamid	Jafarkhani	UC Irvine	M 	0	0	0	False		M 
+171	Igor	Kadota	Northwestern	W Th F 	0	1	0	False		W Th F | 🐔
+172	Sonali	Madisetti	UC Los Angeles (UCLA)	M T W 	1	1	0	False		1 | M T W | 🐟
+173	Haim	Permuter	BGU	M T W Th 	0	1	0	False		M T W Th | 🐔
+174	Christos	Thrampoulidis	UC Santa Barbara	Th 	0	0	0	False		Th 
+175	Jody	O'Sullivan	Washington University in St. Louis	M T W Th 	0	1	0	False		M T W Th | 🐟
+176	Rose	Yu	UC San Diego	W Th 	0	1	0	False		W Th | 🐟
+177	Ram	Zamir	Tel Aviv University	M T W 	1	1	0	False		1 | M T W | 🐔
+178	Randall	Berry	Northwestern	Th F 	0	0	0	False		Th F 
+179	Aria	Nosratinia	UT Dallas	M T W 	0	0	0	False		M T W 
+180	Ness	Shroff	Ohio State	T W Th F 	0	1	0	False		T W Th F | 🐟
+181	Jingyan	Wang	TTIC	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+182	Stark	Draper	University of Toronto	M 	1	0	0	False		1 | M 
+183	Matthieu	Bloch	Georgia Tech	M 	0	0	0	False		M 
+184	Cheuk Ting	Li	Chinese University of Hong Kong	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+185	SEONYONG	LEE	SNU	M T W Th 	0	1	0	False		M T W Th | 🐔
+186	Yingbin	Liang	Ohio State	W Th F 	0	1	0	False		W Th F | 🐟
+187	Mesrob	Ohannessian	University of Illinois at Chicago	W Th F 	0	1	0	False		W Th F | 🐟
+188	Neha	Sangwan	UCSD, HDSI	M T W Th 	0	2	0	False		M T W Th | 🥦🥦
+189	Risi	Kondor	University of Chicago	W Th F 	0	0	0	False		W Th F 
+190	Litian	Liu	Qualcomm	M T W Th F 	0	0	0	False	EXEMPT	M T W Th F 
+191	Yu-Xiang	Wang	UC San Diego	M W F 	0	1	0	False		M W F | 🐟
+192	Paul	Valiant	Purdue	Th F 	0	0	0	False		Th F 
+193	Cyrus	Rashtchian	University of Washington	M T W 	0	0	0	False		M T W 
+194	Mohamed	Nafea	Missouri University of Science and Technology	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+195	Fred	Sala	UW - Madison	W Th F 	0	1	0	False		W Th F | 🐔
+196	Alireza	Goldar	Colorado School of Mines	M T W 	1	1	0	False		1 | M T W | 🐔
+197	Mohammed E	Eltayeb	California State University, Sacramento	M Th F 	0	0	0	False		M Th F 
+198	Oliver	Kosut	Arizona State	M T W 	0	0	0	False		M T W 
+199	Zhichao	Wang	UC San Diego	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+200	Yin	Sun	Auburn University	Th F 	0	0	0	False		Th F 
+201	Michele	Zorzi	University of Padova	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+202	Yilan	Chen	UC San Diego	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐔
+203	Shaolei	Ren	UC Riverside	W 	0	1	0	False		W | 🐟
+204	Yi-Sheng	Chang	UC San Diego	M T W Th F 	0	1	0	False	EXEMPT	M T W Th F | 🐔
+205	Gautam	Dasarathy	Arizona State University	Th F 	0	0	0	False		Th F 
+206	Fariba	Abbasi	University of Michigan- Ann Arbor	W 	0	0	0	False		W 
+207	Henry	Pfister	Duke University	M T W 	1	1	0	False		1 | M T W | 🐟
+208	Anirudh	Rayas	Arizona State University	M T W Th F 	1	1	0	False		1 | M T W Th F | 🥦
+209	Joni	Shaska	USC	W Th 	0	1	0	False		W Th | 🐔
+210	Ananya	Uppal	Purdue University	M T W 	1	1	0	False		1 | M T W | 🥦
+211	Amrit Singh	Bedi	UCF	W Th F 	0	1	0	False		W Th F | 🥦
+212	YI	HU	CMU	T W 	0	0	0	False		T W 
+213	Salimeh	Sekeh	San Diego State University	M F 	1	0	0	False		1 | M F 
+214	Nikolay	Atanasov	UCSD	M 	0	0	0	False		M 
+215	Tara	Javidi	UCSD	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+216	Hitesh	Khunti	UCSD	M T 	0	0	0	False		M T 
+218	Ness	Shroff	The Ohio State University	W Th 	0	1	0	False		W Th | 🐟
+219	Zahra	Nili Ahmadabadi	San Diego State University	M 	0	0	0	False		M 
+220	Sebin Jose	Gracy	SDSMT	Th F 	0	0	0	False		Th F 
+221	Junfei	Xie	San Diego State University	M 	0	0	0	False		M 
+222	Fatemeh	Nourzad	Ohio State University	W Th F 	0	1	0	False		W Th F | 🐔
+223	Harsh	Vardhan	University of California, San Diego	T Th F 	0	0	0	False		T Th F 
+224	Anand	Sarwate	Rutgers	M 	1	0	0	False		1 | M 
+225	Justus	Will	UC Irvine	Th F 	0	0	0	False		Th F 
+226	Jia	Liu	Ohio State University	W Th F 	1	1	0	False		1 | W Th F | 🐟
+227	Namrata	Vaswani	Iowa State University	Th 	0	0	0	False		Th 
+228	Justin	Kang	University of California, Berkeley	W Th F 	0	1	0	False		W Th F 
+230	Robin	Rajamäki	Aalto University	M T Th 	0	1	0	False		M T Th | 🐟
+231	Yao	Xie	Georgia Tech	F 	0	0	0	False		F 
+232	Navid	Azizan	MIT	W Th F 	0	1	0	False		W Th F | 🐔
+233	Ziv	Aharoni	Duke University	M T W 	0	1	0	False		M T W | 🐔
+234	Vatsal	Sharan	University of Souhern California	Th 	0	0	0	False		Th 
+235	Martin	Haardt	Ilmenau University of Technology	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+236	Parinaz	Naghizadeh	University of California San Diego	M T W Th F 	0	1	0	False		M T W Th F | 🐟
+237	Narayanan	Rengaswamy	University of Arizona	M 	1	0	0	False		1 | M 
+238	Thang	Duong	University of Arizona	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+240	Al	Hales	Center for Communications Research	M W 	0	0	0	False		M W 
+241	Jeremy	Bernstein	MIT	Th F 	0	0	0	False		Th F 
+242	Tiantian	Chen	UC San Diego	W Th 	0	1	0	False	EXEMPT	W Th | 🐟
+243	Jeonghun	Park	YONSEI University	M T W Th F 	0	3	0	False		M T W Th F | 🐔🐔🐟
+244	Mahdi	Morafah	UC San Diego	W 	2	0	0	False		2 | W 
+245	Che-Yu	Ho	UC San Diego	M T W Th F 	0	1	0	False	EXEMPT	M T W Th F | 🐔
+246	Meir	Feder	Tel Aviv University	M T 	1	0	0	False		1 | M T 
+247	Diptangshu	Sen	Georgia Institute of Technology	W Th 	0	0	0	False		W Th 
+248	Honghao	Wei	Washington State University	T W 	0	1	0	False		T W | 🐟
+249	Jelena	Diakonikolas	UW-Madison	M 	2	0	0	False		2 | M 
+250	Shirin	Saeedi Bidokhti	UPenn	W Th F 	0	1	0	False		W Th F | 🐟
+251	Varun	Jog	UW Madison	T W Th 	0	1	0	False		T W Th | 🐔
+252	Ian	Roberts	UCLA	M T 	1	0	0	False		1 | M T 
+253	Ben	Lengerich	University of Wisconsin-Madison		0	0	0	False		
+254	Konstantinos	Polyzos	University of California, San Diego	M 	0	0	0	False		M 
+255	Taylan	Kargin	California institute of technology	W 	0	0	0	False		W 
+256	Yonghee	Han	Qualcomm	T W Th 	0	0	0	False	EXEMPT	T W Th 
+257	Ruochuan	Zhou	University of California, San Diego	M T W Th F 	0	2	0	False	EXEMPT	M T W Th F | 🐟🐔
+258	Pengfei	Li	UC Riverside	T W Th 	0	0	0	False		T W Th 
+259	Zhifeng	Wu	UCR	T W Th 	0	0	0	False		T W Th 
+260	Yuelin	Han	UC Riverside	T W Th 	0	0	0	False		T W Th 
+261	Jessy	Su	Fair Isaac	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+262	David	Mitchell	New Mexico State	M T 	1	0	0	False		1 | M T 
+263	Adityanarayanan	Radhakrishnan	Broad Institute of MIT and Harvard	M T W Th 	0	0	0	False		M T W Th 
+264	Ayfer	Ozgur	Stanford	F 	0	0	0	False		F 
+265	Yifan	Cao	University of Southern California (USC)	W 	0	0	0	False		W 
+266	Anderson	Lee	UC San Diego	M T W Th F 	0	1	0	False	EXEMPT	M T W Th F | 🐔
+267	Haewon	Jeong	UCSB	M T 	0	0	0	False		M T 
+268	Mohamed	Nafea	Missouri University of Science and Technology	M T W Th 	1	1	0	False		1 | M T W Th | 🐟
+269	James	Melbourne	CIMAT	M 	1	0	0	False		1 | M 
+270	Kenta	Kasai	Science Tokyo	T 	0	0	0	False		T 
+271	Nathan	Srebro	TTIC	Th F 	0	0	0	False		Th F 
+272	Andrew	Tan	UCSD	M T W 	0	1	0	False		M T W | 🐟
+273	Vishnu Teja	Kunde	Texas A&M University	M T W Th F 	0	0	0	False		M T W Th F 
+274	C. Emre	Koksal	Ohio State	M 	1	0	0	False		1 | M 
+275	Cyril	Gorlla	CTGT	Th F 	0	0	0	False	EXEMPT	Th F 
+276	Debarnab	Mitra	Qualcomm	T W 	0	0	0	False	EXEMPT	T W 
+277	Yoav	Freund	UC San Diego	T W 	0	0	0	False		T W 
+278	Donya	Saless	TTIC	M T W Th F 	1	1	0	False		1 | M T W Th F | 🐟
+279	Ahmad	Beirami	Google DeepMind	Th F 	0	1	0	False		Th F | 🐟
+280	Parastoo	Sadeghi	University of New South Wales	M T W Th F 	0	1	0	False		M T W Th F | 🐔
+281	Deog Kyoon	Jeong	Seoul National University	M T Th 	1	1	0	False		1 | M T Th | 🥦
+282	Haolun	Ni	University of California, Los Angeles	M T W 	0	1	0	False		M T W | 🐔
