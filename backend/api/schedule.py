@@ -495,7 +495,7 @@ class Schedule:
                     )
                     session_list.append(extra_session)
 
-                    t = "5:10 - 7:00"
+                    t = "5:10 - 6:10"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
                         title=self.special_titles[i],
@@ -506,7 +506,7 @@ class Schedule:
                     )
                     session_list.append(extra_session)
 
-                    t = "7:00 - 8:00"
+                    t = "6:10 - 8:00"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
                         title="Friends, TV, Games",

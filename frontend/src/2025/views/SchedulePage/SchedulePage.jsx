@@ -21,34 +21,8 @@ const talksTimeSequence = (start, numTalks) => {
   return sequence;
 };
 
-const talksTimeSequenceGradTalks = (start, numTalks) => {
-  const sequence = [start];
-  for (let i = 0; i < numTalks - 1; i++) {
-    sequence.push(dateFns.addMinutes(sequence[i], 10));
-  }
-  return sequence;
-};
-
 /** Constructs a Date object with the given hour and minute. */
 const timeToDate = (hour, minute) => new Date(1970, 0, 1, hour, minute, 0);
-
-// Row time values, which are the same for Mon/Tue/Thu
-const rowTimeValuesMTTh = [
-  // Room names
-  // null,
-  // 4 talks at 9:00
-  null,
-  ...talksTimeSequence(timeToDate(9, 0), 4),
-  // 4 talks at 10:40
-  null,
-  ...talksTimeSequence(timeToDate(10, 30), 4),
-  // 3 talks at 15:10
-  null,
-  ...talksTimeSequence(timeToDate(15, 0), 3),
-  // 3 talks at 16:30
-  null,
-  ...talksTimeSequence(timeToDate(16, 30), 3),
-];
 
 const rowTimeValues = [
   [
