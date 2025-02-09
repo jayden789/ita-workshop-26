@@ -59,6 +59,7 @@ User = get_user_model()  # pylint: disable=invalid-name
 
 year = 2025
 
+
 class UserViewSet(
     mixins.ListModelMixin,
     mixins.RetrieveModelMixin,
@@ -117,7 +118,7 @@ class UserViewSet(
     pagination_class = pagination.LimitOffsetPagination
 
 
-MAX_IMAGE_SIZE = 2 * (2 ** 20)
+MAX_IMAGE_SIZE = 2 * (2**20)
 MAX_IMAGE_SIZE_TEXT = "2 MiB"
 
 
@@ -430,27 +431,37 @@ class RegistrationViewSet(
         registration, created = models.Registration.objects.get_or_create(
             workshop=registration_stub.workshop, user=registration_stub.user
         )
-        
+
         # Enable presentation tab for every professor or doctor
         # registration.enable_presentation()
         # Enable poster tabs for every student
         # registration.enable_poster()
-        
+
         # Get all previous user profiles, and then fill profile_pic with existing profile_pic
         # This is a temporary fix for profile picture issue
         if registration.user_profile.profile_pic == "":
-            registration.user_profile.new_profile_pic = registration.user.user_profile.new_profile_pic
-            registration.user_profile.old_profile_pic = registration.user.user_profile.old_profile_pic
-            registrations = models.Registration.objects.filter( user=registration_stub.user ).order_by('-created_on')
+            registration.user_profile.new_profile_pic = (
+                registration.user.user_profile.new_profile_pic
+            )
+            registration.user_profile.old_profile_pic = (
+                registration.user.user_profile.old_profile_pic
+            )
+            registrations = models.Registration.objects.filter(
+                user=registration_stub.user
+            ).order_by("-created_on")
             for r in registrations:
                 if r.user_profile.new_profile_pic is not None:
-                    registration.user_profile.new_profile_pic = r.user_profile.new_profile_pic
+                    registration.user_profile.new_profile_pic = (
+                        r.user_profile.new_profile_pic
+                    )
                     break
                 if r.user_profile.old_profile_pic != "":
-                    registration.user_profile.old_profile_pic = r.user_profile.old_profile_pic
+                    registration.user_profile.old_profile_pic = (
+                        r.user_profile.old_profile_pic
+                    )
                     break
             registration.user_profile.save()
-        
+
         serialized_registration = self.get_serializer(registration).data
         response_status = (
             status.HTTP_201_CREATED if created else status.HTTP_200_OK
@@ -483,15 +494,17 @@ class RegistrationViewSet(
 
         # Authorize.net supports invoiceNumber up to 20 chars, and 10 bytes is
         # 20 hex chars
-        print("INVOICE NUMBER IS:::",request.data.get("invoice_number", None))
-        if(request.data.get("invoice_number", None) is None):
+        print("INVOICE NUMBER IS:::", request.data.get("invoice_number", None))
+        if request.data.get("invoice_number", None) is None:
             invoice_number = secrets.token_hex(10)
         else:
             invoice_number = request.data.get("invoice_number", None)
-        regn_payment, created = models.RegistrationPayment.objects.get_or_create(
-            registration=registration,
-            amount=amount,
-            invoice_number=invoice_number,
+        regn_payment, created = (
+            models.RegistrationPayment.objects.get_or_create(
+                registration=registration,
+                amount=amount,
+                invoice_number=invoice_number,
+            )
         )
 
         # Get token
@@ -516,13 +529,13 @@ class RegistrationViewSet(
             "token": token,
             "form_url": payment.get_hosted_payment_page_url(),
             "check_status_url": check_status_url,
-            "invoice_number": invoice_number
+            "invoice_number": invoice_number,
         }
         return response.Response(response_data, status=status.HTTP_201_CREATED)
 
 
 class RegistrationFeesViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = models.Workshop.objects.filter(slug='ita25')
+    queryset = models.Workshop.objects.filter(slug="ita25")
     serializer_class = serializers.RegistrationFeesSerializer
     permission_classes = (permissions.AllowAny,)
 
@@ -584,9 +597,17 @@ class RegistrationPaymentViewSet(
 
         # transaction_details = payment.get_transaction_details(transaction_id)
         # assert transaction_details.transaction_id == transaction_id
-        
-        transaction_match = str(regn_payment.continue_uuid) == transaction_id and transaction_id!=''
-        print("IN CHECK STATUS:::",transaction_match,transaction_id,regn_payment.continue_uuid)
+
+        transaction_match = (
+            str(regn_payment.continue_uuid) == transaction_id
+            and transaction_id != ""
+        )
+        print(
+            "IN CHECK STATUS:::",
+            transaction_match,
+            transaction_id,
+            regn_payment.continue_uuid,
+        )
         # payment.validate_transaction_matches_payment(
         #     transaction_details, regn_payment
         # )
@@ -755,8 +776,10 @@ class OneTimeChargePaymentViewSet(
             "Checking status of charge_payment pk=%s", charge_payment.pk
         )
 
-        request_serializer = serializers.OneTimeChargePaymentCheckStatusSerializer(
-            data=request.data
+        request_serializer = (
+            serializers.OneTimeChargePaymentCheckStatusSerializer(
+                data=request.data
+            )
         )
         request_serializer.is_valid(raise_exception=True)
         valid_request_data = request_serializer.validated_data
@@ -796,8 +819,10 @@ class OneTimeChargePaymentViewSet(
         transaction_details = payment.get_transaction_details(transaction_id)
         assert transaction_details.transaction_id == transaction_id
 
-        transaction_match = payment.validate_transaction_matches_one_time_charge_payment(
-            transaction_details, charge_payment
+        transaction_match = (
+            payment.validate_transaction_matches_one_time_charge_payment(
+                transaction_details, charge_payment
+            )
         )
         if not transaction_match:
             logger.warning(
@@ -876,8 +901,8 @@ class AffiliationViewSet(
     permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
-MAX_PDF_SIZE = 5 * (2 ** 20)
-MAX_VIDEO_SIZE = 100 * (2 ** 20)
+MAX_PDF_SIZE = 5 * (2**20)
+MAX_VIDEO_SIZE = 100 * (2**20)
 MAX_PDF_SIZE_TEXT = "5 MiB"
 MAX_VIDEO_SIZE_TEXT = "100 MiB"
 
@@ -907,6 +932,7 @@ def check_valid_pdf(pdf_file):
         logger.error(
             "Unknown error when reading PDF file:\n%s", traceback.format_exc()
         )
+
 
 # def check_valid_video(video_file):
 #     file_field = FileFormField()
@@ -952,14 +978,14 @@ class TalkViewSet(
             "update",
             "partial_update",
             "add_paper",
-            "add_video"
+            "add_video",
         ]
         ALLOWED_ACTIONS_MATCHING_USER = [
             "retrieve",
             "update",
             "partial_update",
             "add_paper",
-            "add_video"
+            "add_video",
         ]
 
         def has_permission(self, request, view):
@@ -1004,7 +1030,7 @@ class TalkViewSet(
             talk.save()
         serializer = self.get_serializer(talk, context={"request": request})
         return response.Response(serializer.data)
-    
+
     @decorators.action(detail=True, methods=["post"])
     @decorators.parser_classes((parsers.MultiPartParser,))
     # pylint: disable=invalid-name
@@ -1409,11 +1435,11 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
             **map_dict_keys(participating_counts, "{}_participating".format),
             **map_dict_keys(paid_counts, "{}_paid".format),
         }
-    
+
     def ita23_saturday_workshop_counts(self):
         slugs = [
             "ita25_saturdaySelf_notAttending",
-            "ita25_saturdaySelf_attending"
+            "ita25_saturdaySelf_attending",
         ]
         participating_counts = {
             slug: count_regns_with_option(slug, REGN_PARTICIPATING_FILTER)
@@ -1426,9 +1452,9 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
             slug: count_regns_with_option(slug, REGN_PAID_FILTER)
             for slug in slugs
         }
-        paid_counts["ita25_saturdayWorkshop_total"] = (
-            paid_counts["ita25_saturdayWorkshop_attending"]
-        )
+        paid_counts["ita25_saturdayWorkshop_total"] = paid_counts[
+            "ita25_saturdayWorkshop_attending"
+        ]
         return {
             **map_dict_keys(participating_counts, "{}_participating".format),
             **map_dict_keys(paid_counts, "{}_paid".format),
@@ -1471,7 +1497,6 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
         )
         return dict(items)
 
-    
     def ita24_italt_counts(self):
         slugs = [
             "ita25_italt_attending",
@@ -1490,27 +1515,22 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
             **map_dict_keys(paid_counts, "{}_paid".format),
         }
 
-
     @decorators.action(detail=False)
     def ita24(self, request):
         workshop = models.Workshop.objects.get(slug="ita25")
         regns = models.Registration.objects.filter(workshop=workshop)
         nonEmptyBanquet = regns.filter(banquet_options__isnull=False)
-        banquet_options = {
-            "Vegetarian": 0,
-            "Chicken": 0,
-            "Fish": 0
-        }
+        banquet_options = {"Vegetarian": 0, "Chicken": 0, "Fish": 0}
         for reg in nonEmptyBanquet.all():
             opt = reg.banquet_options
             for ch in opt:
-                if (ch == 'V'):
+                if ch == "V":
                     banquet_options["Vegetarian"] += 1
-                elif (ch == 'F'):
+                elif ch == "F":
                     banquet_options["Fish"] += 1
-                elif (ch == 'C'):
+                elif ch == "C":
                     banquet_options["Chicken"] += 1
-        
+
         participation_counts = dict(
             participation_status_count(status)
             for status in models.ParticipationStatus
@@ -1518,7 +1538,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
         participation_counts["participating"] = django_models.Count(
             "pk",
             filter=django_models.Q(**REGN_PARTICIPATING_FILTER),
-            default = 0,
+            default=0,
             distinct=True,
         )
         participation_counts["participating_and_paid"] = django_models.Count(
@@ -1566,6 +1586,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
 
         return response.Response(serializer.data)
 
+
 @api_view()
 def notifications(request, slug):
     with open("./static_json/notification_api_data.json") as file:
@@ -1575,34 +1596,45 @@ def notifications(request, slug):
                 filtered_data = value
     return Response(filtered_data)
 
+
 @api_view()
 def page_not_available(request):
-    return render(request,'404_mobile.html')
+    return render(request, "404_mobile.html")
+
 
 @api_view()
 def schedule(request, slug):
-    file= Schedule().get_schedule()
-    print(file)
+    file = Schedule().get_schedule()
     return Response(file)
+
 
 @api_view()
 def participants(request, slug):
-    response_API = requests.get(f'https://itaws.ucsd.edu/api/v0/workshops/{slug}/participants/')
+    response_API = requests.get(
+        f"https://itaws.ucsd.edu/api/v0/workshops/{slug}/participants/"
+    )
     resp = json.loads(response_API.text)
-    retList = [] 
+    retList = []
     for res in resp:
         obj = {
-        "name" : res['full_name'],
-        "desc" : res['affiliation_title'],
-        "pic" : res['profile_pic'] if res['profile_pic']!= ""  else  "https://ita.ucsd.edu/workshop/23/images/images/empty_profile.png" ,
-        "website" : res['website'] if res['website']!= ""  else  "https://itaws.ucsd.edu/api/v0/mobile/page_not_available" ,
-        "email" : "https://itaws.ucsd.edu/api/v0/mobile/page_not_available"
+            "name": res["full_name"],
+            "desc": res["affiliation_title"],
+            "pic": (
+                res["profile_pic"]
+                if res["profile_pic"] != ""
+                else "https://ita.ucsd.edu/workshop/23/images/images/empty_profile.png"
+            ),
+            "website": (
+                res["website"]
+                if res["website"] != ""
+                else "https://itaws.ucsd.edu/api/v0/mobile/page_not_available"
+            ),
+            "email": "https://itaws.ucsd.edu/api/v0/mobile/page_not_available",
         }
         retList.append(obj)
-    ret ={
-        "participants" : retList 
-        }
+    ret = {"participants": retList}
     return Response(ret)
+
 
 @api_view()
 def gallery_mobile(request, slug):
@@ -1616,19 +1648,21 @@ def gallery_mobile(request, slug):
 
 @api_view()
 def trivia(request, slug):
-    filtered_data= {}
+    filtered_data = {}
     with open("./static_json/trivia_api_data.json") as file:
         json_object = json.load(file)
         for key, value in json_object.items():
-            print("Anish is here", key, slug)
             if key == slug:
                 filtered_data = {"trivia": value}
     return Response(filtered_data)
 
+
 @api_view()
 def map_image(request, slug):
-    image_path = "./static/assets/ita_24_landscape.png"  # Path to the image file
-    return FileResponse(open(image_path, 'rb'), content_type='image/png')
+    image_path = (
+        "./static/assets/ita_24_landscape.png"  # Path to the image file
+    )
+    return FileResponse(open(image_path, "rb"), content_type="image/png")
     # if os.path.exists(image_path):
     #     return FileResponse(open(image_path, 'rb'), content_type='image/png')
     # else:

@@ -1,15 +1,13 @@
 {
-    "ita24": ["https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/ita_24_landscape.png?alt=media&token=89e61c83-e281-40c3-a28e-80d2eab81722",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1822.jpg?alt=media&token=14506789-ce17-4e03-b717-592df5d5926e", 
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1813.jpg?alt=media&token=5f753ad1-d955-46d8-bf9b-6934cce55e60",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1491.jpg?alt=media&token=db1dc487-5e29-41f9-9c91-03f7387695a2v",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6352.jpg?alt=media&token=96ec7402-16ab-4512-99cd-5aa98431f484",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6415.jpg?alt=media&token=eb30f22e-0742-4620-8a87-272104792436",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6432.jpg?alt=media&token=3bb29574-70db-46c2-8697-0ca25d0574ea",
-  "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_2394.jpg?alt=media&token=2cdcbb93-5eac-40e6-9c27-a37142c95c84"
-]
-  }
-  
-
-
-  
+  "ita24": [
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/ita_24_landscape.png?alt=media&token=89e61c83-e281-40c3-a28e-80d2eab81722",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1822.jpg?alt=media&token=14506789-ce17-4e03-b717-592df5d5926e",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1813.jpg?alt=media&token=5f753ad1-d955-46d8-bf9b-6934cce55e60",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_1491.jpg?alt=media&token=db1dc487-5e29-41f9-9c91-03f7387695a2v",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6352.jpg?alt=media&token=96ec7402-16ab-4512-99cd-5aa98431f484",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6415.jpg?alt=media&token=eb30f22e-0742-4620-8a87-272104792436",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DS2_6432.jpg?alt=media&token=3bb29574-70db-46c2-8697-0ca25d0574ea",
+    "https://firebasestorage.googleapis.com/v0/b/ita-workshop-app.appspot.com/o/DSC_2394.jpg?alt=media&token=2cdcbb93-5eac-40e6-9c27-a37142c95c84"
+  ],
+  "ita25": []
+}
