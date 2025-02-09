@@ -1,0 +1,277 @@
+first_name,last_name,affiliation,days,sunday,wed,sun_wed
+Fariba,Abbasi,UMich,W,,C,C
+Fariba,Abbasi,UMich,W,,,
+Amirali,Aghazadeh,Stanford,R F,,F,F
+Ziv,Aharoni,Duke,M-R,1,C,1C
+Ziv,Aharoni,Duke University,M-W,,C,C
+Nikolay,Atanasov,UCSD,M,,,
+Ender,Ayanoglu,UC Irvine,R F,,,
+Navid,Azizan,MIT,W-F,,C,C
+Dongwoon,Bai,Samsung Mobile Solutions Lab,T-R,,F,F
+Jona,Ballé,New York University,M-W,,,
+Neilabh,Banzal,UC San Diego,M-F,1,V,1V
+Somnath,Basu Roy Chowdhury,UNC,W-F,1,F,1F
+Amrit Singh,Bedi,UCF,W-F,,V,V
+Ahmad,Beirami,Google DeepMind,R F,,F,F
+Jeremy,Bernstein,MIT,R F,,,
+Randall,Berry,Northwestern,R F,,,
+Matthieu,Bloch,Georgia Tech,M,,,
+Roger,Bohn,UC San Diego,M-W,,,
+Rob,Brekelmans,Vector Institute,R F,,,
+Philip,Brown,UCCS,W-F,,C,C
+Yinyan,Bu,"UCSD, ECE",M-F,,C,C
+Viveck,Cadambe,GaTech,R F,,,
+Yifan,Cao,USC,W,,,
+Chan-Byoung,Chae,Yonsei University,M-F,,,
+Yi-Sheng,Chang,UC San Diego,M-F,,C,C
+Tiantian,Chen,UC San Diego,W R,,F,F
+Yilan,Chen,UC San Diego,M-F,1,C,1C
+Yizuo,Chen,UCLA,T-R,,C,C
+Mahdi,Cheraghchi,Imperial College,T-F,,C,C
+Ananthanarayanan,Chockalingam,IISc,M-F,,,
+Geon,Choi,Korea University,M-F,,C,C
+Grigorios,Chrysos,UW - Madison,W-F,,,
+Daniel,Costello,University of Notre Dame,M-W,2,CF,2CF
+Rafael,D'Oliveira,Clemson University,M-F,,,
+Gautam,Dasarathy,ASU,R F,,,
+Oveys,Delafrooz,UCSB,W-F,,CF,CF
+Apratim,Dey,Stanford University,M-F,,,
+Jelena,Diakonikolas,UW-Madison,M,2,,2
+Stark,Draper,University of Toronto,M,1,,1
+Shaddin,Dughmi,USC,R F,,,
+Thang,Duong,University of Arizona,M-R,1,F,1F
+Sanghamitra,Dutta,UC San Diego,T-R,,C,C
+Mohammed E,Eltayeb,CSUS,M R F,,,
+Meir,Feder,Tel Aviv University,M T,1,,1
+Vitaly,Feldman,Apple,W R,,F,F
+Jiewei,Feng,NEU,M T,,,
+Yoav,Freund,UC San Diego,T W,,,
+Badih,Ghazi,Google,R F,,,
+Ushasi,Ghosh,UCSD ECE,M-F,,C,C
+Gautam,Goel,UC Berkeley,M-F,1,F,1F
+Alireza,Goldar,Colorado School of Mines,M-W,1,C,1C
+Cyril,Gorlla,CTGT,R F,,,
+Sebin Jose,Gracy,SDSMT,R F,,,
+Sebin,Gracy,SDSMT,R F,,,
+YI,HU,CMU,T W,,,
+Martin,Haardt,TU Ilmenau,M-F,1,F,1F
+Mahdi,Haghifam,Northeastern University,M-F,,C,C
+Bruce,Hajek,UIUC,M T,1,,1
+Al,Hales,CCRL,M W,,,
+Mohamed,Hamdy,UC San Diego,M-R,,F,F
+Yonghee,Han,Qualcomm,T-R,,,
+Fang,Han,University of Washington,T,,,
+Yuelin,Han,UC Riverside,T-R,,,
+Zaid,Harchaoui,University of Washington,M-R,,C,C
+Willie,Harrison,BYU,M T,,,
+Luca,Hartmann,UC San Diego,M T,,F,F
+Haiyun,He,Cornell,M T,,,
+Che-Yu,Ho,UC San Diego,M-F,,C,C
+Shao-Lun,Huang,Tsinghua University,M T,1,,1
+Stratis,Ioannidis,Northeastern,R F,,,
+Syed,Jafar,UC Irvine,M T,,,
+Hamid,Jafarkhani,UC Irvine,M,,,
+Adel,Javanmard,USC,R F,,VC,VC
+Tara,Javidi,UCSD,M-F,1,F,1F
+Deog Kyoon,Jeong,Seoul National University,M T R,1,V,1V
+Haewon,Jeong,UCSB,M T,,,
+Deog-Kyoon,Jeong,Seoul National,M T R,,C,C
+Anxiao,Jiang,Texas A&M,M T,1,,1
+Varun,Jog,UW Madison,T-R,,C,C
+Gauri,Joshi,CMU,T-F,,V,V
+Igor,Kadota,Northwestern,W-F,,C,C
+Anson,Kahng,University of Rochester,M-F,,F,F
+Justin,Kang,UC Berkeley,W-F,,,
+Taylan,Kargin,CalTech,W,,,
+Serge,Kas Hanna,CNRS,M-R,1,F,1F
+Kenta,Kasai,Science Tokyo,T,,,
+Parthasarathi,Khirwadkar,UC San Diego,M T R,,C,C
+Hitesh,Khunti,UCSD,M T,,,
+Kwang Soon,Kim,Yonsei University,M-F,1,F,1F
+Yongjune,Kim,Carnegie Mellon Univ,M-W,1,F,1F
+Sang-Hyo,Kim,Sungkyunkwan University,T-F,1,C,1C
+Hyeji,Kim,UIUC,M-W,,C,C
+Yongjune,Kim,POSTECH,M-R,,F,F
+Alon,Kipnis,Stanford University,M-R,,F,F
+Yuval,Kochman,Hebrew University,M-R,1,C,1C
+C. Emre,Koksal,Ohio State,M,1,,1
+Emre,Koksal,Ohio State,M,1,,1
+Mladen,Kolar,University of Chicago,R F,,,
+Risi,Kondor,University of Chicago,W-F,,,
+Ramya,Korlakai Vinayak,UW-Madison,M-F,1,,1
+Oliver,Kosut,Arizona State,M-W,,,
+Akshay,Kumar,UMN - Twin Cities,M-F,1,C,1C
+Vishnu Teja,Kunde,Texas A&M University,M-F,,,
+Brian,Kurkoski,JAIST,M-R,1,C,1C
+Heeyoul,Kwak,university of ulsan,M,,,
+SEONYONG,LEE,SNU,M-R,,C,C
+Yongwoo,Lee,Inha University,M-R,,C,C
+Namyoon,Lee,POSTECH,M-W,,C,C
+Anderson,Lee,UC San Diego,M-F,,C,C
+Howon,Lee,Ajou University,M-F,1,,1
+Jason,Lee,USC,M-F,,,
+Ben,Lengerich,UW-Madison,M T,1,,1
+Gilad,Lerman,University of Minnesota,M-R,1,F,1F
+Jian,Li,Stony Brook University,T R,,,
+Yingying,Li,UIUC,M-R,,F,F
+Yingcong,Li,UMich,M-F,1,F,1F
+Cheuk Ting,Li,CUHK,M-F,1,C,1C
+Pengfei,Li,UC Riverside,T-R,,,
+Pengfei,Li,UC Riverside,T-R,,,
+Yingbin,Liang,Ohio State,W-F,,F,F
+John,Lipor,SIO,M-F,,,
+Chong,Liu,SUNY Albany,W-F,,C,C
+Mingyan,Liu,University of Michigan,W R,,F,F
+Yuhan,Liu,Rice University,M-F,,F,F
+Jia,Liu,Ohio State University,W-F,1,F,1F
+Litian,Liu,Qualcomm,M-F,,,
+Fanghui,Liu,University of Warwick,M-F,,F,F
+Jia (Kevin),Liu,Ohio State,W-F,,F,F
+Gianluigi,Liva,German Aerospace,M T,,,
+Hans-Andrea,Loeliger,ETH Zurich,M-F,,,
+Po-Ling,Loh,UPenn,T-R,,,
+Sonali,Madisetti,UC Los Angeles,M-W,1,F,1F
+Hessam,Mahdavifar,Northeastern University,M-F,,F,F
+Jaswanthi,Mandalapu,IIT Madras,M-F,1,C,1C
+Brian,Marcus,UBC,M T,1,,1
+Gene,Marsh,Qualcomm,W,,,
+James,Melbourne,CIMAT,M,1,,1
+David,Miloschewsky,Stony Brook University,M-W,1,,1
+David,Mitchell,New Mexico State,M T,1,,1
+Debarnab,Mitra,Qualcomm,T W,,,
+Mehrdad,Moharrami,University of Iowa,T-R,,V,V
+Marco,Mondelli,Stanford,W-F,,C,C
+Anton,Monk,Cohere Technologies,M T,,,
+Mahdi,Morafah,UC San Diego,W,2,,2
+Mahdi,Morafah,UCSD,W-F,,C,C
+Mohamed,Nafea,Missouri S&T,M-R,1,F,1F
+Mohamed,Nafea,Missouri S&T,M-R,1,F,1F
+Parinaz,Naghizadeh,UC San Diego,M-F,,F,F
+Girish,Nair,University of Melbourne,M-F,,F,F
+Tan,Nguyen,NUS,M-F,1,C,1C
+Haolun,Ni,"University of California, Los Angeles",M-W,,C,C
+Sloan,Nietert,Cornell University,M-W,,C,C
+Zahra,Nili Ahmadabadi,SDSU,M,,,
+Jong-Seon,No,Seoul National,M T R,1,F,1F
+Jong-Seon,No,Seoul National University,M T R,1,F,1F
+Aria,Nosratinia,UT Dallas,M-W,,,
+Fatemeh,Nourzad,Ohio State University,W-F,,C,C
+Adrian,Nunez-Rocha,Qualcomm,W R,1,F,1F
+Jody,O'Sullivan,WashU,M-R,,F,F
+Mesrob,Ohannessian,UIC,W-F,,F,F
+Alon,Orlitsky,UCSD,M-F,1,V,1V
+Tomas,Ortega,UC Irvine,T W,,,
+Sedat,Ozer,University of Virginia,M-F,1,C,1C
+Ayfer,Ozgur,Stanford,F,,,
+Kishan,Panaganti,CalTech,W-F,,V,V
+Seong-Joon,Park,POSTECH,M-F,,F,F
+Chanho,Park,POSTECH,M-F,,C,C
+Jeonghun,Park,YONSEI University,M-F,,CCF,CCF
+Haim,Permuter,BGU,M-R,,C,C
+Athina,Petropulu,Rutgers,M-W,,,
+Henry,Pfister,Duke University,M-W,1,F,1F
+Konstantinos,Polyzos,UC San Diego,M,,,
+Manish,Purohit,Google,M T,,,
+Adityanarayanan,Radhakrishnan,Broad Institute,M-R,,,
+Amin,Rahimian,University of Pittsburgh,M,1,,1
+Robin,Rajamäki,Aalto University,M T R,,F,F
+Cyrus,Rashtchian,University of Washington,M-W,,,
+Nithin,Raveendran,The University of Arizona,M T,1,,1
+Anirudh,Rayas,ASU,M-F,1,V,1V
+Meisam,Razaviyayn,USC,R F,,,
+Rishav,Rej,Qualcomm,M-F,1,F,1F
+Shaolei,Ren,UC Riverside,W,,F,F
+Narayanan,Rengaswamy,University of Arizona,M,1,,1
+Ian,Roberts,UCLA,M T,1,,1
+Ian,Roberts,UCLA,M T,1,,1
+Stefanie,Roesslein,Qualcomm,W R,1,F,1F
+Chris,Rose,Brown,R F,,,
+JY YONG,SOHN,Yonsei University,M-R,1,F,1F
+Oron,Sabag,BGU,M-W,,V,V
+Parastoo,Sadeghi,UNSW,M-F,,C,C
+Parastoo,Sadeghi,ANU,M-F,1,C,1C
+Shirin,Saeedi Bidokhti,UPenn,W-F,,F,F
+Fred,Sala,UW - Madison,W-F,,C,C
+Donya,Saless,TTIC,M-F,1,F,1F
+Donya,Saless,TTIC,T-F,,F,F
+Sudeep,Salgia,Carnegie Mellon University,M-F,,V,V
+Neha,Sangwan,"UCSD, HDSI",M-R,,VV,VV
+Lalitha,Sankar,Arziona State University,M-W,,,
+Narayana Prasad,Santhanam,UH Manoa,W R,,VV,VV
+Saswati,Sarkar,UPenn,R,,,
+Anand,Sarwate,Rutgers,M,1,,1
+Igal,Sason,Technion - IIT,M-F,1,V,1V
+David,Scheinker,Stanford,T W,,,
+Salimeh,Sekeh,SDSU,M F,1,,1
+Diptangshu,Sen,GaTech,W R,,,
+Nambi,Seshadri,UC San Diego,M-F,,V,V
+Asif,Shakeel,Researcher,M-F,,F,F
+Vatsal,Sharan,USC,R,,,
+Joni,Shaska,USC,W R,,C,C
+Cong,Shen,University of Virginia,M T,,,
+Vishal,Shenoy,UC San Diego,M W,,,
+Ilan,Shomorony,UIUC,R F,,,
+Ness,Shroff,Ohio State,T-F,,F,F
+Ness,Shroff,Ohio State,W R,,F,F
+Maciej,Skorski,IST Austria,M-F,,F,F
+Dirk,Slock,EURECOM,M-F,,C,C
+Mahdi,Soltanolkotabi,USC,M-F,1,F,1F
+Hong-Yeop,Song,Yonsei University,M T R,1,F,1F
+Nathan,Srebro,TTIC,R F,,,
+Jessy,Su,Fair Isaac,M-F,1,F,1F
+Yin,Sun,Auburn University,R F,,,
+Hossein,Taheri,UC Santa Barbara,M-F,,,
+Yuhei,Takahashi,Doshisha University,M T,1,,1
+Vincent,Tan,NUS,M T,1,,1
+Andrew,Tan,UCSD,M-W,,F,F
+Ravi,Tandon,University of Arizona,R F,,,
+Lev,Tauz,UCLA,M-W,,C,C
+Busra,Tegin,Bilkent University,M-F,,,
+Marian,Temprana Alonso,FIU,M-F,,C,C
+Michelle,Thompson,Open Research Institute,M-F,1,V,1V
+Christos,Thrampoulidis,UC Santa Barbara,R,,,
+Chao,Tian,Texas A&M University,M-W,,F,F
+Viet Hoang,Tran,NUS,M-F,,F,F
+Dor,Tsur,Ben Gurion University,M-R,,C,C
+Stephen,Tu,USC,M-W,,C,C
+Ananya,Uppal,Purdue University,M-W,1,V,1V
+Paul,Valiant,Purdue,R F,,,
+Harsh,Vardhan,UC San Diego,T R F,,,
+Lav,Varshney,UIUC,W-F,,V,V
+Bane,Vasic,University of Arizona,M T,1,,1
+Namrata,Vaswani,Iowa State University,R,,,
+Kabir,Verchand,Georgia Tech,M-W,,C,C
+Siddharth,Vishwanath,UC San Diego,M-F,1,,1
+Sajani,Vithana,Harvard,W-F,,F,F
+Zhichao,Wang,UC San Diego,M-F,1,F,1F
+Jingyan,Wang,TTIC,M-R,1,F,1F
+Zhi,Wang,UW-Madison,T-F,,,
+Yu-Xiang,Wang,UC San Diego,M W F,,F,F
+Wei,Wang,UC Berkeley,T R,,,
+Jun-Kun,Wang,UC San Diego,M-F,,F,F
+Jos,Weber,TU Delft,M-W,,,
+Honghao,Wei,WSU,T W,,F,F
+Lai,Wei,Qualcomm Inc.,M-F,,,
+Nir,Weinberger,Technion - IIT,T-F,,F,F
+Rick,Wesel,UCLA,M,1,,1
+Charles,Wiame,MIT,M-F,1,F,1F
+Andre,Wibisono,Yale University,R F,,,
+Justus,Will,UC Irvine,R F,,,
+Bohan,Wu,Columbia University,M-R,1,F,1F
+Zhifeng,Wu,UCR,T-R,,,
+Yao,Xie,Georgia Tech,F,,,
+Junfei,Xie,SDSU,M,,,
+Xiangxiang,Xu,MIT,M-F,,F,F
+Lin,Yang,UCLA,R F,,F,F
+Hanwen,Yao,Duke University,M-F,1,F,1F
+Yuhang,Yao,UC Irvine,M T,,,
+Jiajie,Yu,UCSD ECE,M-F,,F,F
+Rose,Yu,UC San Diego,W R,,F,F
+Wei,Yu,University of Toronto,M-W,1,,1
+Lydia,Zakynthinou,UC Berkeley,W-F,,,
+Ram,Zamir,Tel Aviv University,M-W,1,C,1C
+Ruochuan,Zhou,UC San Diego,M-F,,FC,FC
+Yizhe,Zhu,USC,T R,,,
+Michele,Zorzi,University of Padova,M-F,,F,F
+jiewei,feng,Northeastern University,M-W,,,
+Amirhossein,roknilamouki,Ohio State University,W-F,,C,C
