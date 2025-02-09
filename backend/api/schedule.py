@@ -16,9 +16,9 @@ class Schedule:
         self.df = self.df.fillna("")
 
         self.days = {"M": 0, "T": 1, "W": 2, "R": 3, "F": 4}
-        self.rooms = {"1": 0, "2": 1, "3": 2, "4": 3, "5": 4}
+        self.rooms = {"1": 0, "2": 1, "3": 2, "4": 3}
         self.daynames = ["Mon", "Tue", "Wed", "Thu", "Fri"]
-        self.roomnames = ["George", "Abe", "Jack", "Eva", "Cory"]
+        self.roomnames = ["Nikola", "Pigeon", "Marie", "Pierre"]
         self.dayindices = {0: "M", 1: "T", 2: "W", 3: "R", 4: "F"}
 
         self.plenary_titles = {
