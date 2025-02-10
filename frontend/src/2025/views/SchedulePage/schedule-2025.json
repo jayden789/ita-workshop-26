@@ -26,9 +26,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Cheraghchi",
@@ -57,9 +55,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Shroff",
@@ -88,9 +84,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Chrysos",
@@ -119,9 +113,7 @@
         "roughTopic":"MoE, ML",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-1-1"
     },
     {
         "lastName":"Ohannessian",
@@ -150,9 +142,7 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-1-2"
     },
     {
         "lastName":"Sala",
@@ -181,9 +171,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-1-3"
     },
     {
         "lastName":"Korlakai Vinayak",
@@ -212,9 +200,7 @@
         "roughTopic":"ML,data-efficient",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-1-4"
     },
     {
         "lastName":"Goel",
@@ -243,9 +229,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-2-1"
     },
     {
         "lastName":"Ozer",
@@ -274,9 +258,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-2-2"
     },
     {
         "lastName":"Bernstein",
@@ -305,40 +287,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-3",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Su ",
-        "firstName":"Jessy",
-        "title":"",
-        "student":"False",
-        "Affiliation":"",
-        "Email":"",
-        "Inviter":"",
-        "inviteType":"",
-        "status":"",
-        "registration":"",
-        "days":"MTWRF",
-        "Sunday reception":"",
-        "Monday lunch":"",
-        "Banquet":"",
-        "PTY":"",
-        "PBD":"",
-        "paperTitle":"AttnMod: Attention-based New Art Style",
-        "abstract":"In this work, we quantify and modify the transformer attention within the text-to-image Stable Diffusion model to create new art styles and qualitatively verify their consistence. The artistic difference of the generated images according to attention modifications is further explored. We then examine this method over multiple attention blocks, different checkpoints, and different models. Altogether, we provide art-style creation insights of AttnMod which works on frozen checkpoints and can be applied to the UNet of any diffusion models. It is useful when the art concept is hard to be prompted by using image or words.",
-        "schedulingComments":"11am-2pm on Monday, Tuesday, Thursday and Friday",
-        "topicComments":"On text-to-image new art style generation. Content here https:\/\/attnmod.github.io\/ ",
-        "Fee type override":"11am-2pm on Monday, Tuesday, Thursday and Friday",
-        "Paid?":"",
-        "Paid amount":"",
-        "roughTopic":"",
-        "Invited":"",
-        "scheduled":"Machine Learning",
-        "metadata":"F-1-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-1-2-3"
     },
     {
         "lastName":"Srebro",
@@ -367,9 +316,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-1-1"
     },
     {
         "lastName":"Azizan",
@@ -398,9 +345,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-1-2"
     },
     {
         "lastName":"Xu",
@@ -429,9 +374,36 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-1-3"
+    },
+    {
+        "lastName":"Su ",
+        "firstName":"Jessy",
+        "title":"",
+        "student":"False",
+        "Affiliation":"",
+        "Email":"",
+        "Inviter":"",
+        "inviteType":"",
+        "status":"",
+        "registration":"",
+        "days":"MTWRF",
+        "Sunday reception":"",
+        "Monday lunch":"",
+        "Banquet":"",
+        "PTY":"",
+        "PBD":"",
+        "paperTitle":"AttnMod: Attention-based New Art Style",
+        "abstract":"In this work, we quantify and modify the transformer attention within the text-to-image Stable Diffusion model to create new art styles and qualitatively verify their consistence. The artistic difference of the generated images according to attention modifications is further explored. We then examine this method over multiple attention blocks, different checkpoints, and different models. Altogether, we provide art-style creation insights of AttnMod which works on frozen checkpoints and can be applied to the UNet of any diffusion models. It is useful when the art concept is hard to be prompted by using image or words.",
+        "schedulingComments":"11am-2pm on Monday, Tuesday, Thursday and Friday",
+        "topicComments":"On text-to-image new art style generation. Content here https:\/\/attnmod.github.io\/ ",
+        "Fee type override":"11am-2pm on Monday, Tuesday, Thursday and Friday",
+        "Paid?":"",
+        "Paid amount":"",
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Neural Networks",
+        "metadata":"F-2-1-4"
     },
     {
         "lastName":"Ozgur",
@@ -460,9 +432,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-2-1"
     },
     {
         "lastName":"Valiant",
@@ -491,9 +461,7 @@
         "roughTopic":"robustness, MLT",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-2-2"
     },
     {
         "lastName":"Nguyen",
@@ -522,9 +490,7 @@
         "roughTopic":"R, MoE",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-2-3"
     },
     {
         "lastName":"Sharan",
@@ -553,9 +519,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-2-2-4"
     },
     {
         "lastName":"Ghazi",
@@ -584,9 +548,7 @@
         "roughTopic":"P, ml",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-1-1"
     },
     {
         "lastName":"Razaviyayn",
@@ -615,9 +577,7 @@
         "roughTopic":"DP, O",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-1-2"
     },
     {
         "lastName":"Mondelli",
@@ -646,9 +606,7 @@
         "roughTopic":"P, ML",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-1-3"
     },
     {
         "lastName":"Zakynthinou",
@@ -677,9 +635,7 @@
         "roughTopic":"DP,P",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-1-4"
     },
     {
         "lastName":"Wibisono",
@@ -708,9 +664,7 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-2-1"
     },
     {
         "lastName":"Skorski",
@@ -739,9 +693,7 @@
         "roughTopic":"RNG",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-2-2"
     },
     {
         "lastName":"Shomorony",
@@ -770,9 +722,7 @@
         "roughTopic":"C, storage",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-2-3"
     },
     {
         "lastName":"Cadambe",
@@ -801,9 +751,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-3-2-4"
     },
     {
         "lastName":"Ayanoglu",
@@ -832,9 +780,7 @@
         "roughTopic":"W, ?",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-1-1"
     },
     {
         "lastName":"Eltayeb",
@@ -863,9 +809,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-1-2"
     },
     {
         "lastName":"Kadota",
@@ -894,9 +838,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-1-3"
     },
     {
         "lastName":"Sun",
@@ -925,9 +867,7 @@
         "roughTopic":"age of information",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-1-4"
     },
     {
         "lastName":"Gorlla",
@@ -956,9 +896,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-2-1"
     },
     {
         "lastName":"Kumar ",
@@ -987,9 +925,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-2-2"
     },
     {
         "lastName":"Chisum ",
@@ -1018,9 +954,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"F-4-2-3"
     },
     {
         "lastName":"Rajam\u00e4ki",
@@ -1049,9 +983,7 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-1-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-1-1"
     },
     {
         "lastName":"Rengaswamy",
@@ -1080,9 +1012,7 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-1-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-1-2"
     },
     {
         "lastName":"Bloch",
@@ -1111,9 +1041,7 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing - Piya",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-1-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-1-3"
     },
     {
         "lastName":"Lu",
@@ -1142,9 +1070,7 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing - Piya",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-1-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-1-4"
     },
     {
         "lastName":"Sekeh",
@@ -1173,9 +1099,7 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-2-1"
     },
     {
         "lastName":"Nili Ahmadabadi",
@@ -1204,9 +1128,7 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-2-2"
     },
     {
         "lastName":"Zou",
@@ -1235,9 +1157,7 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-2-3"
     },
     {
         "lastName":"Polyzos",
@@ -1266,9 +1186,7 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-2-4"
     },
     {
         "lastName":"Lee",
@@ -1297,9 +1215,7 @@
         "roughTopic":"MLT, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-3-1"
     },
     {
         "lastName":"Kipnis",
@@ -1328,9 +1244,7 @@
         "roughTopic":"ML, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-3-2"
     },
     {
         "lastName":"He",
@@ -1359,9 +1273,7 @@
         "roughTopic":"ML, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-3-3"
     },
     {
         "lastName":"Rashtchian",
@@ -1390,9 +1302,7 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-1-3-4"
     },
     {
         "lastName":"",
@@ -1421,9 +1331,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-2-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-1-1"
     },
     {
         "lastName":"Jeong",
@@ -1452,9 +1360,7 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-2-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-1-2"
     },
     {
         "lastName":"Melbourne",
@@ -1483,9 +1389,7 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-2-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-1-3"
     },
     {
         "lastName":"Sankar",
@@ -1514,9 +1418,7 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-2-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-1-4"
     },
     {
         "lastName":"Liva",
@@ -1545,9 +1447,7 @@
         "roughTopic":"C, short block",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-2-1"
     },
     {
         "lastName":"Mahdavifar",
@@ -1576,9 +1476,7 @@
         "roughTopic":"C,LDPC",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-2-2"
     },
     {
         "lastName":"Wesel",
@@ -1607,9 +1505,7 @@
         "roughTopic":"C, short block",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-2-3"
     },
     {
         "lastName":"Song",
@@ -1638,9 +1534,7 @@
         "roughTopic":"C, sequences",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-2-4"
     },
     {
         "lastName":"Wiame",
@@ -1669,9 +1563,7 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-3-1"
     },
     {
         "lastName":"Costello",
@@ -1700,9 +1592,7 @@
         "roughTopic":"C,LDPC",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-3-2"
     },
     {
         "lastName":"Feng",
@@ -1731,9 +1621,7 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-3-3"
     },
     {
         "lastName":"Draper",
@@ -1762,9 +1650,7 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-2-3-4"
     },
     {
         "lastName":"Wang",
@@ -1793,9 +1679,7 @@
         "roughTopic":"high dim stats",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-3-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-1-1"
     },
     {
         "lastName":"Tu",
@@ -1824,9 +1708,7 @@
         "roughTopic":"ML, diffusion",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-3-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-1-2"
     },
     {
         "lastName":"Sangwan",
@@ -1855,9 +1737,7 @@
         "roughTopic":"MLT, compressed sensing",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-3-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-1-3"
     },
     {
         "lastName":"Wang",
@@ -1886,9 +1766,7 @@
         "roughTopic":"MLT, preference learning",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-3-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-1-4"
     },
     {
         "lastName":"Kairouz",
@@ -1917,9 +1795,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-2-1"
     },
     {
         "lastName":"Asoodeh",
@@ -1948,9 +1824,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-2-2"
     },
     {
         "lastName":"Sarwate",
@@ -1979,9 +1853,7 @@
         "roughTopic":"",
         "Invited":"Mario",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-2-3"
     },
     {
         "lastName":"Kosut",
@@ -2010,9 +1882,7 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-4",
-        "Unnamed: 27":"Mario Diaz Memorial 2 (INV)",
-        "":"M-3-2-2"
+        "metadata":"M-3-2-4"
     },
     {
         "lastName":"D'Oliveira",
@@ -2041,9 +1911,7 @@
         "roughTopic":"secret sharing",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-3-1"
     },
     {
         "lastName":"Rahimian",
@@ -2072,9 +1940,7 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-3-2"
     },
     {
         "lastName":"Sadeghi",
@@ -2103,9 +1969,7 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-3-3"
     },
     {
         "lastName":"Li",
@@ -2134,9 +1998,7 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-3-3-4"
     },
     {
         "lastName":"Roberts",
@@ -2165,9 +2027,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-1-1"
     },
     {
         "lastName":"Jafarkhani",
@@ -2196,9 +2056,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-1-2"
     },
     {
         "lastName":"Chockalingam",
@@ -2227,9 +2085,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-1-3"
     },
     {
         "lastName":"Purohit",
@@ -2258,9 +2114,7 @@
         "roughTopic":"online caching",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-2-1"
     },
     {
         "lastName":"Sabag",
@@ -2289,9 +2143,7 @@
         "roughTopic":"IT, online",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-2-2"
     },
     {
         "lastName":"Feder",
@@ -2320,9 +2172,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-2-3"
     },
     {
         "lastName":"Koksal",
@@ -2351,9 +2201,7 @@
         "roughTopic":"RL, security",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"M-4-2-4"
     },
     {
         "lastName":"Koushanfar",
@@ -2382,9 +2230,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-1-1"
     },
     {
         "lastName":"Saeedi Bidokhti",
@@ -2413,9 +2259,7 @@
         "roughTopic":"",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-1-2"
     },
     {
         "lastName":"Joshi",
@@ -2444,9 +2288,7 @@
         "roughTopic":"ML, dist",
         "Invited":"",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-1-3"
     },
     {
         "lastName":"Liu",
@@ -2475,9 +2317,7 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-1-4"
     },
     {
         "lastName":"Liang",
@@ -2506,9 +2346,7 @@
         "roughTopic":"MLT",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 2 (INV)",
-        "metadata":"R-1-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-2-1"
     },
     {
         "lastName":"Liu",
@@ -2537,9 +2375,7 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"AI Institutes 2 (INV)",
-        "metadata":"R-1-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-2-2"
     },
     {
         "lastName":"Javidi",
@@ -2568,9 +2404,7 @@
         "roughTopic":"",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 2 (INV)",
-        "metadata":"R-1-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-2-3"
     },
     {
         "lastName":"Harchaoui",
@@ -2599,9 +2433,7 @@
         "roughTopic":"IT, ML",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-3-1"
     },
     {
         "lastName":"Varshney",
@@ -2630,9 +2462,7 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-3-2"
     },
     {
         "lastName":"Basu Roy Chowdhury",
@@ -2661,9 +2491,7 @@
         "roughTopic":"IT,ML",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-3-3"
     },
     {
         "lastName":"Nafea",
@@ -2692,9 +2520,7 @@
         "roughTopic":"ML, fairness, IT",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-1-3-4"
     },
     {
         "lastName":"Liu",
@@ -2723,9 +2549,7 @@
         "roughTopic":"ML,LLM, safety",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-1-1"
     },
     {
         "lastName":"Aghazadeh",
@@ -2754,9 +2578,7 @@
         "roughTopic":"ML, explainability",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-1-2"
     },
     {
         "lastName":"Dutta",
@@ -2785,9 +2607,7 @@
         "roughTopic":"MLT, interpretability",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-1-3"
     },
     {
         "lastName":"Thrampoulidis",
@@ -2816,9 +2636,7 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-1-4"
     },
     {
         "lastName":"Slock",
@@ -2847,9 +2665,7 @@
         "roughTopic":"statistics",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-2-1"
     },
     {
         "lastName":"Wu",
@@ -2878,9 +2694,7 @@
         "roughTopic":"statistics",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-2-2"
     },
     {
         "lastName":"Dughmi",
@@ -2909,9 +2723,7 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-2-3"
     },
     {
         "lastName":"Kolar",
@@ -2940,9 +2752,7 @@
         "roughTopic":"MLT, high dim",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-2-4"
     },
     {
         "lastName":"Javanmard",
@@ -2971,9 +2781,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-3-1"
     },
     {
         "lastName":"Tandon",
@@ -3002,9 +2810,7 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-3-2"
     },
     {
         "lastName":"Bedi",
@@ -3033,9 +2839,7 @@
         "roughTopic":"ML,LLM, efficiency",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-3-3"
     },
     {
         "lastName":"Beirami",
@@ -3064,9 +2868,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-2-3-4"
     },
     {
         "lastName":"Liu",
@@ -3095,9 +2897,7 @@
         "roughTopic":"O,B",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-1-1"
     },
     {
         "lastName":"Salgia",
@@ -3126,9 +2926,7 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-1-2"
     },
     {
         "lastName":"Ortega",
@@ -3157,9 +2955,7 @@
         "roughTopic":"Distributed Learning",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-1-3"
     },
     {
         "lastName":"Vaswani",
@@ -3188,9 +2984,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-1-4"
     },
     {
         "lastName":"Mitra",
@@ -3219,40 +3013,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-1",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Panaganti",
-        "firstName":"Kishan",
-        "title":"DOCTOR",
-        "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/150\/",
-        "Email":"kpb@caltech.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":14,
-        "days":"WRF",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Model-Free Robust \u03d5-Divergence Reinforcement Learning Using Both Offline and Online Data",
-        "abstract":"The robust \u03d5-regularized Markov Decision Process (RRMDP) framework focuses on designing control policies that are robust against parameter uncertainties due to mismatches between the simulator (nominal) model and real-world settings. This work makes two important contributions. First, we propose a model-free algorithm called Robust \u03d5-regularized fitted Q-iteration (RPQ) for learning an \u03f5-optimal robust policy that uses only the historical data collected by rolling out a behavior policy (with robust exploratory requirement) on the nominal model. To the best of our knowledge, we provide the first unified analysis for a class of \u03d5-divergences achieving robust optimal policies in high-dimensional systems with general function approximation. Second, we introduce the hybrid robust \u03d5-regularized reinforcement learning framework to learn an optimal robust policy using both historical data and online sampling. Towards this framework, we propose a model-free algorithm called Hybrid robust Total-variation-regularized Q-iteration (HyTQ: pronounced height-Q). To the best of our knowledge, we provide the first improved out-of-data-distribution assumption in large-scale problems with general function approximation under the hybrid robust \u03d5-regularized reinforcement learning framework. Finally, we provide theoretical guarantees on the performance of the learned policies of our algorithms on systems with arbitrary large state space.",
-        "schedulingComments":"Wednesday, Thursday, Friday",
-        "topicComments":"This work is primarily focusing on Reinforcement Learning (RL) setting. Other sub-topics that this talk will fit in are: Simulation-to-Reality RL, Transfer RL, Distributionally Robust RL",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"RL",
-        "Invited":"",
-        "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-2-1"
     },
     {
         "lastName":"Wang",
@@ -3281,9 +3042,7 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-2-2"
     },
     {
         "lastName":"Yang",
@@ -3312,9 +3071,7 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-3-2-3"
     },
     {
         "lastName":"Nair",
@@ -3343,9 +3100,7 @@
         "roughTopic":"Control",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-1-1"
     },
     {
         "lastName":"Li",
@@ -3374,9 +3129,7 @@
         "roughTopic":"Control, Learning",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-1-2"
     },
     {
         "lastName":"Sarkar",
@@ -3405,9 +3158,7 @@
         "roughTopic":"control",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-1-3"
     },
     {
         "lastName":"Brown",
@@ -3436,9 +3187,7 @@
         "roughTopic":"GT,Control",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-2-1"
     },
     {
         "lastName":"Kahng",
@@ -3467,9 +3216,7 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-2-2"
     },
     {
         "lastName":"Berry",
@@ -3498,9 +3245,7 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-2-3"
     },
     {
         "lastName":"Dasarathy",
@@ -3529,9 +3274,7 @@
         "roughTopic":"MLT,high-dim stats",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-3-1"
     },
     {
         "lastName":"Gracy",
@@ -3560,9 +3303,7 @@
         "roughTopic":"networks",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-3-2"
     },
     {
         "lastName":"Moharrami",
@@ -3591,9 +3332,7 @@
         "roughTopic":"random graphs",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-3-3"
     },
     {
         "lastName":"Sason",
@@ -3622,9 +3361,7 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"R-4-3-4"
     },
     {
         "lastName":"Wang",
@@ -3653,9 +3390,7 @@
         "roughTopic":"Sequential hypothesis",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-1-1"
     },
     {
         "lastName":"Tan",
@@ -3684,9 +3419,7 @@
         "roughTopic":"B, online, RL",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-1-2"
     },
     {
         "lastName":"Li",
@@ -3715,9 +3448,7 @@
         "roughTopic":"B,RL",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-1-3"
     },
     {
         "lastName":"Wei",
@@ -3746,9 +3477,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-1-4"
     },
     {
         "lastName":"Hajek",
@@ -3777,9 +3506,7 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-2-1"
     },
     {
         "lastName":"Verchand",
@@ -3808,9 +3535,7 @@
         "roughTopic":"statistics, optimization",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-2-2"
     },
     {
         "lastName":"Zhu",
@@ -3839,9 +3564,7 @@
         "roughTopic":"O, high dim stats",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-2-3"
     },
     {
         "lastName":"Han",
@@ -3870,9 +3593,7 @@
         "roughTopic":"Mixture Models",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-2-4"
     },
     {
         "lastName":"Haardt",
@@ -3901,9 +3622,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-3-1"
     },
     {
         "lastName":"Weinberger",
@@ -3932,9 +3651,7 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-3-2"
     },
     {
         "lastName":"Jog",
@@ -3963,9 +3680,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-3-3"
     },
     {
         "lastName":"Huang",
@@ -3994,9 +3709,7 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-1-3-4"
     },
     {
         "lastName":"O'Sullivan",
@@ -4025,9 +3738,7 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-1-1"
     },
     {
         "lastName":"Kochman",
@@ -4056,9 +3767,7 @@
         "roughTopic":"IT, network",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-1-2"
     },
     {
         "lastName":"Jafar",
@@ -4087,9 +3796,7 @@
         "roughTopic":"C,QC",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-1-3"
     },
     {
         "lastName":"Liu",
@@ -4118,9 +3825,7 @@
         "roughTopic":"quantum computing",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-1-4"
     },
     {
         "lastName":"Bai",
@@ -4149,9 +3854,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-2-1"
     },
     {
         "lastName":"Zorzi",
@@ -4180,9 +3883,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-2-2"
     },
     {
         "lastName":"Kim",
@@ -4211,9 +3912,7 @@
         "roughTopic":"ML,C",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-2-3"
     },
     {
         "lastName":"Shen",
@@ -4242,9 +3941,7 @@
         "roughTopic":"W, ML, LLM",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-2-4"
     },
     {
         "lastName":"Petropulu",
@@ -4273,9 +3970,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-3-1"
     },
     {
         "lastName":"Wang",
@@ -4304,9 +3999,7 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-3-2"
     },
     {
         "lastName":"Nosratinia",
@@ -4335,9 +4028,7 @@
         "roughTopic":"W, security ",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-2-3-3"
     },
     {
         "lastName":"Vasic",
@@ -4366,9 +4057,7 @@
         "roughTopic":"C,QC,LDPC",
         "Invited":"henry pfister",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-1-1"
     },
     {
         "lastName":"Pfister",
@@ -4397,9 +4086,7 @@
         "roughTopic":"",
         "Invited":"henry pfister",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-1-2"
     },
     {
         "lastName":"Yao",
@@ -4428,9 +4115,7 @@
         "roughTopic":"C,QLDPC",
         "Invited":"",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-1-3"
     },
     {
         "lastName":"Raveendran",
@@ -4459,9 +4144,7 @@
         "roughTopic":"C,QC",
         "Invited":"",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-1-4"
     },
     {
         "lastName":"Kurkoski",
@@ -4490,9 +4173,7 @@
         "roughTopic":"C, polar",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-2-1"
     },
     {
         "lastName":"Permuter",
@@ -4521,9 +4202,7 @@
         "roughTopic":"C, polar",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-2-2"
     },
     {
         "lastName":"Aharoni",
@@ -4552,40 +4231,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-3",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Tegin",
-        "firstName":"Busra",
-        "title":"DOCTOR",
-        "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/139\/",
-        "Email":"busrategin@gmail.com",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":26,
-        "days":"MTWRF",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Capacity Approximations for Insertion Channels with Small Insertion Probabilities",
-        "abstract":"Channels with synchronization errors, exhibiting deletion and insertion errors, find practical applications in DNA storage, data reconstruction, and various other domains. Presence of insertions and deletions render the channel with memory, complicating capacity analysis. For instance, despite the formulation of an independent and identically distributed (i.i.d.) deletion channel more than fifty years ago, and proof that the channel is information stable, hence its Shannon capacity exists, calculation of the capacity remained elusive. However, a relatively recent result establishes the capacity of the deletion channel in the asymptotic regime of small deletion probabilities by computing the dominant terms of the capacity expansion. This paper extends that result to binary insertion channels, determining the dominant terms of the channel capacity for small insertion probabilities and establishing capacity in this asymptotic regime. Specifically, we consider two i.i.d. insertion channel models: insertion channel with possible random bit insertions after every transmitted bit and the Gallager insertion model, for which a bit is replaced by two random bits with a certain probability. To prove our results, we build on methods used for the deletion channel, employing Bernoulli$(1\/2)$ inputs for achievability and coupling this with a converse using stationary and ergodic processes as inputs, and show that the channel capacity differs only in the higher order terms from the achievable rates with i.i.d. inputs. The results, for instance, show that the capacity of the random insertion channel is higher than that of the Gallager insertion channel, and quantifies the difference in the asymptotic regime.",
-        "schedulingComments":"Monday to Friday",
-        "topicComments":"insertion channel, channel capacity, channels with synchronization errors",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"IT",
-        "Invited":"",
-        "scheduled":"Coding Applications",
-        "metadata":"T-3-3-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-2-3"
     },
     {
         "lastName":"Kas Hanna",
@@ -4614,9 +4260,7 @@
         "roughTopic":"C, storage",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-3-1"
     },
     {
         "lastName":"Jiang",
@@ -4645,9 +4289,7 @@
         "roughTopic":"W,ML, C",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-3-2"
     },
     {
         "lastName":"Mitchell",
@@ -4676,9 +4318,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"T-3-3-3"
     },
     {
         "lastName":"Vithana",
@@ -4707,9 +4347,7 @@
         "roughTopic":"P,ML, dist",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-1-1-1"
     },
     {
         "lastName":"Feldman",
@@ -4738,9 +4376,7 @@
         "roughTopic":"P,MLT",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-1-1-2"
     },
     {
         "lastName":"Haghifam",
@@ -4769,9 +4405,7 @@
         "roughTopic":"MLT,P",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-1-1-3"
     },
     {
         "lastName":"Loh",
@@ -4800,9 +4434,123 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-1-1-4"
+    },
+    {
+        "lastName":"Tsur",
+        "firstName":"Dor",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/24\/",
+        "Email":"dortz@post.bgu.ac.il",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":38,
+        "days":"MTWR",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Optimized Couplings for Watermarking Large Language Models",
+        "abstract":"Large-language models (LLMs) are now able to produce text that is indistinguishable from human-generated content. This has fueled the development of watermarks that imprint a ``signal'' in LLM-generated text with minimal perturbation of an LLM's output. This paper provides an analysis of text watermarking in a one-shot setting. Through the lens of hypothesis testing with side information, we formulate and analyze the fundamental trade-off between watermark detection power and distortion in generated textual quality. We argue that a key component in watermark design is  generating a coupling between the side information shared with the watermark detector and a random partition of the LLM vocabulary. Our analysis identifies the optimal coupling and randomization strategy under the worst-case LLM next-token distribution that satisfies a min-entropy constraint.  We provide a closed-form expression of the resulting detection rate under the proposed scheme and quantify the cost in a max-min sense. Finally, we numerically compare the proposed scheme with the theoretical optimum.",
+        "schedulingComments":"Wednesday, Graduation day.",
+        "topicComments":"Trustworthy LLMs",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"GD",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 1",
+        "metadata":"W-1-2-1"
+    },
+    {
+        "lastName":"Li",
+        "firstName":"Yingcong",
+        "title":"",
+        "student":"True",
+        "Affiliation":"",
+        "Email":"yingcong@umich.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":72,
+        "days":"MTWRF",
+        "Sunday reception":"SELF_ONLY",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Understanding Language Models: Optimization, Architecture and Emergent Abilities",
+        "abstract":"The remarkable success of large language models (LLMs) has drawn significant interest, but their underlying mechanisms remain underexplored. This is largely due to the complexity of their architectures and how their predictions depend heavily on the data. My research focuses on uncovering the fundamental reasons behind the effectiveness of LLMs. One key insight comes from analyzing attention mechanisms, and our work shows that optimized attention acts like a support vector machine, highlighting relevant elements in the input sequence while suppressing irrelevant ones. Additionally, we explore the emergent abilities of LLMs, focusing on in-context learning (ICL), where models learn from examples within their input. By studying different architectures, such as attention-based and state-space models, we investigate how they handle in-context data and uncover their optimization landscapes. Overall, our work contributes to a better understanding of what makes LLMs successful.",
+        "schedulingComments":"Monday-Friday, Graduation Day would be perfect",
+        "topicComments":"attention mechanism, optimization, in-context learning",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"P,GD",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 1",
+        "metadata":"W-1-2-2"
+    },
+    {
+        "lastName":"Kumar",
+        "firstName":"Akshay",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/968\/",
+        "Email":"kumar511@umn.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":30,
+        "days":"MTWRF",
+        "Sunday reception":"SELF_ONLY",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Early Directional Convergence in Homogeneous Neural Networks",
+        "abstract":"Understanding the training dynamics of neural networks is crucial for explaining their generalization properties. This work studies the gradient flow dynamics that arise when training homogeneous neural networks. It is shown here that for sufficiently small initializations, during the early stages of training, the weights of the neural network remain small in (Euclidean) norm and approximately converge in direction to the Karush-Kuhn-Tucker (KKT) points of a neural correlation function. Additionally, this work also studies the KKT points of the neural correlation function for feed-forward networks with (Leaky) ReLU and polynomial (Leaky) ReLU activations, deriving necessary and sufficient conditions for rank-one KKT points.",
+        "schedulingComments":"Monday, Tuesday, Wednesday, Thursday, Friday",
+        "topicComments":"Our work attempts to understand the training dynamics of neural networks. It is suitable for sessions on Deep Learning Theory, Optimization in Neural Networks, or Theoretical Foundations of Machine Learning.",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"P,GD",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 1",
+        "metadata":"W-1-2-3"
+    },
+    {
+        "lastName":"Panaganti",
+        "firstName":"Kishan",
+        "title":"DOCTOR",
+        "student":"False",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/150\/",
+        "Email":"kpb@caltech.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":14,
+        "days":"WRF",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Model-Free Robust \u03d5-Divergence Reinforcement Learning Using Both Offline and Online Data",
+        "abstract":"The robust \u03d5-regularized Markov Decision Process (RRMDP) framework focuses on designing control policies that are robust against parameter uncertainties due to mismatches between the simulator (nominal) model and real-world settings. This work makes two important contributions. First, we propose a model-free algorithm called Robust \u03d5-regularized fitted Q-iteration (RPQ) for learning an \u03f5-optimal robust policy that uses only the historical data collected by rolling out a behavior policy (with robust exploratory requirement) on the nominal model. To the best of our knowledge, we provide the first unified analysis for a class of \u03d5-divergences achieving robust optimal policies in high-dimensional systems with general function approximation. Second, we introduce the hybrid robust \u03d5-regularized reinforcement learning framework to learn an optimal robust policy using both historical data and online sampling. Towards this framework, we propose a model-free algorithm called Hybrid robust Total-variation-regularized Q-iteration (HyTQ: pronounced height-Q). To the best of our knowledge, we provide the first improved out-of-data-distribution assumption in large-scale problems with general function approximation under the hybrid robust \u03d5-regularized reinforcement learning framework. Finally, we provide theoretical guarantees on the performance of the learned policies of our algorithms on systems with arbitrary large state space.",
+        "schedulingComments":"Wednesday, Thursday, Friday",
+        "topicComments":"This work is primarily focusing on Reinforcement Learning (RL) setting. Other sub-topics that this talk will fit in are: Simulation-to-Reality RL, Transfer RL, Distributionally Robust RL",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"RL",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 1",
+        "metadata":"W-1-2-4"
     },
     {
         "lastName":"Santhanam",
@@ -4831,9 +4579,7 @@
         "roughTopic":"IT, MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-2-1-1"
     },
     {
         "lastName":"Zamir",
@@ -4862,9 +4608,7 @@
         "roughTopic":"ML, IT, RL",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-2-1-2"
     },
     {
         "lastName":"Liu",
@@ -4893,9 +4637,7 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-2-1-3"
     },
     {
         "lastName":"Wang",
@@ -4924,9 +4666,123 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-2-1-4"
+    },
+    {
+        "lastName":"Shaska",
+        "firstName":"Joni",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/15\/",
+        "Email":"shaska@usc.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":209,
+        "days":"WR",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Data-Driven Causal Discovery with Asymmetric Error Control",
+        "abstract":"We consider the problem of causal structure discovery. For edge detection, we show that Bayesian methods are optimal in the Neyman-Pearson sense. For structure identification, we show that the posterior over causal structures concentrates on the true underlying graph exponentially fast (with probability one) in the number of samples for binary weighted graphs. This rate is independent of the true graph structure. Numerical results are presented, illustrating these theoretical findings and demonstrating the performance gains of Bayesian methods over other causal discovery algorithms.",
+        "schedulingComments":"Wednesday, Thursday",
+        "topicComments":"Hypothesis Testing, Causal inference, Posterior Concentration",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 2",
+        "metadata":"W-2-2-1"
+    },
+    {
+        "lastName":"Fields",
+        "firstName":"Greg",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/132\/",
+        "Email":"grfields@ucsd.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":302,
+        "days":"W",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Active sampling for Markov hypothesis testing",
+        "abstract":"We consider an active, one-sided hypothesis test for Markov chains in which an investigator actively samples from a given stochastic process to efficiently collect evidence against a given null hypothesis.  We find that, by strategically choosing when to sample, the investigator can allow the chain to evolve until it is likely in a state which effectively discriminates against the null hypothesis.  Using this intuition, along with recent work on one-sided testing for Markov chains, we design a data-driven strategy that ensures bounded type-1 error and improved sample efficiency.",
+        "schedulingComments":"",
+        "topicComments":"Active, sequential hypothesis testing for Markov chains",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 2",
+        "metadata":"W-2-2-2"
+    },
+    {
+        "lastName":"Chen",
+        "firstName":"Yizuo",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/2\/",
+        "Email":"yizuo.chen99@gmail.com",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":46,
+        "days":"TWR",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Identifying Causal Effects Under Functional Dependencies",
+        "abstract":"We study the identification of causal effects, motivated by two improvements to identifiability that can be attained if one knows that some variables in a causal graph are functionally determined by their parents (without needing to know the specific functions). First, an unidentifiable causal effect may become identifiable when certain variables are functional. Secondly, certain functional variables can be excluded from being observed without affecting the identifiability of a causal effect, which may significantly reduce the number of needed variables in observational data. Our results are largely based on an elimination procedure that removes functional variables from a causal graph while preserving key properties in the resulting causal graph, including the identifiability of causal effects. Our treatment of functional dependencies in this context mandates a formal, systematic, and general treatment of positivity assumptions, which are prevalent in the literature on causal effect identifiability and which interact with functional dependencies, leading to another contribution of the presented work.",
+        "schedulingComments":"Tuesday, Wednesday, Thursday",
+        "topicComments":"Causality, Identifiability, Causal Effects, Functional Dependencies",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"P,GD",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 2",
+        "metadata":"W-2-2-3"
+    },
+    {
+        "lastName":"Nietert",
+        "firstName":"Sloan",
+        "title":"",
+        "student":"True",
+        "Affiliation":"",
+        "Email":"sloan.nietert@gmail.com",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":169,
+        "days":"MTW",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"SELF_ONLY",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Optimal Transport and Robust Statistics",
+        "abstract":"Optimal transport (OT) is a powerful mathematical framework for comparing and transforming high-dimensional data distributions. In this talk, I will explore the interplay between OT and robust statistics, which seeks to provide useful estimation guarantees when typical modeling assumptions fail. As a first example, we consider the Wasserstein generative adversarial network (WGAN), a generative modeling approach rooted in OT projection. Here, I introduce a natural robust estimator which, under a standard model of data corruption, admits minimax optimal guarantees and effective neural approximations. As a second example, I use OT as a modeling tool for robust statistics, focusing on a new type of data contamination. By viewing existing robust statistics algorithms through the lens of OT projection, I adapt them naturally to the new model. Finally, I apply robust statistics methods to the fundamental problem of OT map estimation. Here, I provide new guarantees supporting the use of OT maps as a proxy for order statistics in high dimensions.",
+        "schedulingComments":"I can present Monday-Wednesday. I am a graduating PhD student, if the graduation day event is relevant",
+        "topicComments":"optimal transport, robust statistics, generative modeling",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 2",
+        "metadata":"W-2-2-4"
     },
     {
         "lastName":"Yu",
@@ -4955,9 +4811,7 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-1",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-3-1-1"
     },
     {
         "lastName":"Scheinker",
@@ -4986,9 +4840,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-2",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-3-1-2"
     },
     {
         "lastName":"Lengerich",
@@ -5017,9 +4869,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-3",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-3-1-3"
     },
     {
         "lastName":"Radhakrishnan",
@@ -5048,9 +4898,123 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-4",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":"W-3-1-4"
+    },
+    {
+        "lastName":"Rayas",
+        "firstName":"Anirudh",
+        "title":"",
+        "student":"",
+        "Affiliation":"",
+        "Email":"",
+        "Inviter":"",
+        "inviteType":"",
+        "status":"",
+        "registration":"",
+        "days":"",
+        "Sunday reception":"",
+        "Monday lunch":"",
+        "Banquet":"",
+        "PTY":"",
+        "PBD":"",
+        "paperTitle":"Learning the Structure of Networked Systems that Obey Conservation Laws",
+        "abstract":"",
+        "schedulingComments":"",
+        "topicComments":"",
+        "Fee type override":"",
+        "Paid?":"",
+        "Paid amount":"",
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 3",
+        "metadata":"W-3-2-1"
+    },
+    {
+        "lastName":"Tegin",
+        "firstName":"Busra",
+        "title":"DOCTOR",
+        "student":"False",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/139\/",
+        "Email":"busrategin@gmail.com",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":26,
+        "days":"MTWRF",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Capacity Approximations for Insertion Channels with Small Insertion Probabilities",
+        "abstract":"Channels with synchronization errors, exhibiting deletion and insertion errors, find practical applications in DNA storage, data reconstruction, and various other domains. Presence of insertions and deletions render the channel with memory, complicating capacity analysis. For instance, despite the formulation of an independent and identically distributed (i.i.d.) deletion channel more than fifty years ago, and proof that the channel is information stable, hence its Shannon capacity exists, calculation of the capacity remained elusive. However, a relatively recent result establishes the capacity of the deletion channel in the asymptotic regime of small deletion probabilities by computing the dominant terms of the capacity expansion. This paper extends that result to binary insertion channels, determining the dominant terms of the channel capacity for small insertion probabilities and establishing capacity in this asymptotic regime. Specifically, we consider two i.i.d. insertion channel models: insertion channel with possible random bit insertions after every transmitted bit and the Gallager insertion model, for which a bit is replaced by two random bits with a certain probability. To prove our results, we build on methods used for the deletion channel, employing Bernoulli$(1\/2)$ inputs for achievability and coupling this with a converse using stationary and ergodic processes as inputs, and show that the channel capacity differs only in the higher order terms from the achievable rates with i.i.d. inputs. The results, for instance, show that the capacity of the random insertion channel is higher than that of the Gallager insertion channel, and quantifies the difference in the asymptotic regime.",
+        "schedulingComments":"Monday to Friday",
+        "topicComments":"insertion channel, channel capacity, channels with synchronization errors",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"IT",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 3",
+        "metadata":"W-3-2-2"
+    },
+    {
+        "lastName":"Hu",
+        "firstName":"Yi",
+        "title":"MISS",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/573\/",
+        "Email":"yihu@andrew.cmu.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"PROBABLY",
+        "registration":212,
+        "days":"TW",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Intelligent Communication Planning for Constrained Environmental IoT Sensing with Reinforcement Learning",
+        "abstract":"Internet of Things (IoT) technologies have enabled numerous data-driven mobile applications and have the potential to significantly improve environmental monitoring and hazard warnings through the deployment of a network of IoT sensors. However, these IoT devices are often power-constrained and utilize wireless communication schemes with limited bandwidth. Such power constraints limit the amount of information each device can share across the network, while bandwidth limitations hinder sensors' coordination of their transmissions. In this work, we formulate the communication planning problem of IoT sensors that track the state of the environment. We seek to optimize sensors' decisions in collecting environmental data under stringent resource constraints. We propose a multi-agent reinforcement learning (MARL) method to find the optimal communication policies for each sensor that maximize the tracking accuracy subject to the power and bandwidth limitations. MARL learns and exploits the spatial-temporal correlation of the environmental data at each sensor's location to reduce the redundant reports from the sensors. Experiments on wildfire spread with LoRA wireless network simulators show that our MARL method can learn to balance the need to collect enough data to predict wildfire spread with unknown bandwidth limitations.",
+        "schedulingComments":"Tuesday, Wednesday",
+        "topicComments":"IoT, multi-agent RL, wireless communication planning",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 3",
+        "metadata":"W-3-2-3"
+    },
+    {
+        "lastName":"Morafah",
+        "firstName":"Mahdi",
+        "title":"MISTER",
+        "student":"True",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/132\/",
+        "Email":"mmorafah@eng.ucsd.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":244,
+        "days":"W",
+        "Sunday reception":"SELF_PLUS_1",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Towards Diverse Device Heterogeneous Federated Learning via Task Arithmetic Knowledge Integration",
+        "abstract":"Federated Learning (FL) has emerged as a promising paradigm for collaborative machine learning, while preserving user data privacy. Despite its potential, standard FL algorithms lack support for diverse heterogeneous device prototypes, which vary significantly in model and dataset sizes---from small IoT devices to large workstations. This limitation is only partially addressed by existing knowledge distillation (KD) techniques, which often fail to transfer knowledge effectively across a broad spectrum of device prototypes with varied capabilities. This failure primarily stems from two issues: the dilution of informative logits from more capable devices by those from less capable ones, and the use of a single integrated logits as the distillation target across all devices, which neglects their individual learning capacities and and the unique contributions of each device. To address these challenges, we introduce TAKFL, a novel KD-based framework that treats the knowledge transfer from each device prototype's ensemble as a separate task, independently distilling each to preserve its unique contributions and avoid dilution. TAKFL also incorporates a KD-based self-regularization technique to mitigate the issues related to the noisy and unsupervised ensemble distillation process. To integrate the separately distilled knowledge, we introduce an adaptive task arithmetic knowledge integration process, allowing each student model to customize the knowledge integration for optimal performance. Additionally, we present theoretical results demonstrating the effectiveness of task arithmetic in transferring knowledge across heterogeneous device prototypes with varying capacities. Comprehensive evaluations of our method across both computer vision (CV) and natural language processing (NLP) tasks demonstrate that TAKFL achieves state-of-the-art results in a variety of datasets and settings, significantly outperforming existing KD-based methods.",
+        "schedulingComments":"",
+        "topicComments":"Federated Learning, Device Heterogeneity, Data and Model Heterogeneity, Knowledge Distillation, Task Arithmetic",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"P,GD",
+        "Invited":"",
+        "scheduled":"Graduation Day Talks 3",
+        "metadata":"W-3-2-4"
     },
     {
         "lastName":"Orlitsky",
@@ -5079,9 +5043,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Ball\u00e9",
@@ -5110,9 +5072,7 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Soltanolkotabi",
@@ -5141,9 +5101,7 @@
         "roughTopic":"ML,LLM,multimodal",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Brekelmans",
@@ -5172,9 +5130,7 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Yu",
@@ -5203,40 +5159,7 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Shaska",
-        "firstName":"Joni",
-        "title":"MISTER",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/15\/",
-        "Email":"shaska@usc.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":209,
-        "days":"WR",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Data-Driven Causal Discovery with Asymmetric Error Control",
-        "abstract":"We consider the problem of causal structure discovery. For edge detection, we show that Bayesian methods are optimal in the Neyman-Pearson sense. For structure identification, we show that the posterior over causal structures concentrates on the true underlying graph exponentially fast (with probability one) in the number of samples for binary weighted graphs. This rate is independent of the true graph structure. Numerical results are presented, illustrating these theoretical findings and demonstrating the performance gains of Bayesian methods over other causal discovery algorithms.",
-        "schedulingComments":"Wednesday, Thursday",
-        "topicComments":"Hypothesis Testing, Causal inference, Posterior Concentration",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Temprana Alonso",
@@ -5265,40 +5188,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Hu",
-        "firstName":"Yi",
-        "title":"MISS",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/573\/",
-        "Email":"yihu@andrew.cmu.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"PROBABLY",
-        "registration":212,
-        "days":"TW",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Intelligent Communication Planning for Constrained Environmental IoT Sensing with Reinforcement Learning",
-        "abstract":"Internet of Things (IoT) technologies have enabled numerous data-driven mobile applications and have the potential to significantly improve environmental monitoring and hazard warnings through the deployment of a network of IoT sensors. However, these IoT devices are often power-constrained and utilize wireless communication schemes with limited bandwidth. Such power constraints limit the amount of information each device can share across the network, while bandwidth limitations hinder sensors' coordination of their transmissions. In this work, we formulate the communication planning problem of IoT sensors that track the state of the environment. We seek to optimize sensors' decisions in collecting environmental data under stringent resource constraints. We propose a multi-agent reinforcement learning (MARL) method to find the optimal communication policies for each sensor that maximize the tracking accuracy subject to the power and bandwidth limitations. MARL learns and exploits the spatial-temporal correlation of the environmental data at each sensor's location to reduce the redundant reports from the sensors. Experiments on wildfire spread with LoRA wireless network simulators show that our MARL method can learn to balance the need to collect enough data to predict wildfire spread with unknown bandwidth limitations.",
-        "schedulingComments":"Tuesday, Wednesday",
-        "topicComments":"IoT, multi-agent RL, wireless communication planning",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Chen",
@@ -5327,71 +5217,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Morafah",
-        "firstName":"Mahdi",
-        "title":"MISTER",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/132\/",
-        "Email":"mmorafah@eng.ucsd.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":244,
-        "days":"W",
-        "Sunday reception":"SELF_PLUS_1",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Towards Diverse Device Heterogeneous Federated Learning via Task Arithmetic Knowledge Integration",
-        "abstract":"Federated Learning (FL) has emerged as a promising paradigm for collaborative machine learning, while preserving user data privacy. Despite its potential, standard FL algorithms lack support for diverse heterogeneous device prototypes, which vary significantly in model and dataset sizes---from small IoT devices to large workstations. This limitation is only partially addressed by existing knowledge distillation (KD) techniques, which often fail to transfer knowledge effectively across a broad spectrum of device prototypes with varied capabilities. This failure primarily stems from two issues: the dilution of informative logits from more capable devices by those from less capable ones, and the use of a single integrated logits as the distillation target across all devices, which neglects their individual learning capacities and and the unique contributions of each device. To address these challenges, we introduce TAKFL, a novel KD-based framework that treats the knowledge transfer from each device prototype's ensemble as a separate task, independently distilling each to preserve its unique contributions and avoid dilution. TAKFL also incorporates a KD-based self-regularization technique to mitigate the issues related to the noisy and unsupervised ensemble distillation process. To integrate the separately distilled knowledge, we introduce an adaptive task arithmetic knowledge integration process, allowing each student model to customize the knowledge integration for optimal performance. Additionally, we present theoretical results demonstrating the effectiveness of task arithmetic in transferring knowledge across heterogeneous device prototypes with varying capacities. Comprehensive evaluations of our method across both computer vision (CV) and natural language processing (NLP) tasks demonstrate that TAKFL achieves state-of-the-art results in a variety of datasets and settings, significantly outperforming existing KD-based methods.",
-        "schedulingComments":"",
-        "topicComments":"Federated Learning, Device Heterogeneity, Data and Model Heterogeneity, Knowledge Distillation, Task Arithmetic",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"P,GD",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Kumar",
-        "firstName":"Akshay",
-        "title":"MISTER",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/968\/",
-        "Email":"kumar511@umn.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":30,
-        "days":"MTWRF",
-        "Sunday reception":"SELF_ONLY",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Early Directional Convergence in Homogeneous Neural Networks",
-        "abstract":"Understanding the training dynamics of neural networks is crucial for explaining their generalization properties. This work studies the gradient flow dynamics that arise when training homogeneous neural networks. It is shown here that for sufficiently small initializations, during the early stages of training, the weights of the neural network remain small in (Euclidean) norm and approximately converge in direction to the Karush-Kuhn-Tucker (KKT) points of a neural correlation function. Additionally, this work also studies the KKT points of the neural correlation function for feed-forward networks with (Leaky) ReLU and polynomial (Leaky) ReLU activations, deriving necessary and sufficient conditions for rank-one KKT points.",
-        "schedulingComments":"Monday, Tuesday, Wednesday, Thursday, Friday",
-        "topicComments":"Our work attempts to understand the training dynamics of neural networks. It is suitable for sessions on Deep Learning Theory, Optimization in Neural Networks, or Theoretical Foundations of Machine Learning.",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"P,GD",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Park",
@@ -5420,9 +5246,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Miloschewsky",
@@ -5451,9 +5275,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Sen",
@@ -5482,9 +5304,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Saless",
@@ -5513,40 +5333,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Tsur",
-        "firstName":"Dor",
-        "title":"MISTER",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/24\/",
-        "Email":"dortz@post.bgu.ac.il",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":38,
-        "days":"MTWR",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Optimized Couplings for Watermarking Large Language Models",
-        "abstract":"Large-language models (LLMs) are now able to produce text that is indistinguishable from human-generated content. This has fueled the development of watermarks that imprint a ``signal'' in LLM-generated text with minimal perturbation of an LLM's output. This paper provides an analysis of text watermarking in a one-shot setting. Through the lens of hypothesis testing with side information, we formulate and analyze the fundamental trade-off between watermark detection power and distortion in generated textual quality. We argue that a key component in watermark design is  generating a coupling between the side information shared with the watermark detector and a random partition of the LLM vocabulary. Our analysis identifies the optimal coupling and randomization strategy under the worst-case LLM next-token distribution that satisfies a min-entropy constraint.  We provide a closed-form expression of the resulting detection rate under the proposed scheme and quantify the cost in a max-min sense. Finally, we numerically compare the proposed scheme with the theoretical optimum.",
-        "schedulingComments":"Wednesday, Graduation day.",
-        "topicComments":"Trustworthy LLMs",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"GD",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Choi",
@@ -5575,9 +5362,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Mandalapu",
@@ -5606,9 +5391,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Kang",
@@ -5637,9 +5420,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Crespo",
@@ -5668,9 +5449,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Li",
@@ -5699,9 +5478,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Vishwanath",
@@ -5730,40 +5507,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Nietert",
-        "firstName":"Sloan",
-        "title":"",
-        "student":"True",
-        "Affiliation":"",
-        "Email":"sloan.nietert@gmail.com",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":169,
-        "days":"MTW",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Optimal Transport and Robust Statistics",
-        "abstract":"Optimal transport (OT) is a powerful mathematical framework for comparing and transforming high-dimensional data distributions. In this talk, I will explore the interplay between OT and robust statistics, which seeks to provide useful estimation guarantees when typical modeling assumptions fail. As a first example, we consider the Wasserstein generative adversarial network (WGAN), a generative modeling approach rooted in OT projection. Here, I introduce a natural robust estimator which, under a standard model of data corruption, admits minimax optimal guarantees and effective neural approximations. As a second example, I use OT as a modeling tool for robust statistics, focusing on a new type of data contamination. By viewing existing robust statistics algorithms through the lens of OT projection, I adapt them naturally to the new model. Finally, I apply robust statistics methods to the fundamental problem of OT map estimation. Here, I provide new guarantees supporting the use of OT maps as a proxy for order statistics in high dimensions.",
-        "schedulingComments":"I can present Monday-Wednesday. I am a graduating PhD student, if the graduation day event is relevant",
-        "topicComments":"optimal transport, robust statistics, generative modeling",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Kargin",
@@ -5792,9 +5536,7 @@
         "roughTopic":"GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Duong",
@@ -5823,71 +5565,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Li",
-        "firstName":"Yingcong",
-        "title":"",
-        "student":"True",
-        "Affiliation":"",
-        "Email":"yingcong@umich.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":72,
-        "days":"MTWRF",
-        "Sunday reception":"SELF_ONLY",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Understanding Language Models: Optimization, Architecture and Emergent Abilities",
-        "abstract":"The remarkable success of large language models (LLMs) has drawn significant interest, but their underlying mechanisms remain underexplored. This is largely due to the complexity of their architectures and how their predictions depend heavily on the data. My research focuses on uncovering the fundamental reasons behind the effectiveness of LLMs. One key insight comes from analyzing attention mechanisms, and our work shows that optimized attention acts like a support vector machine, highlighting relevant elements in the input sequence while suppressing irrelevant ones. Additionally, we explore the emergent abilities of LLMs, focusing on in-context learning (ICL), where models learn from examples within their input. By studying different architectures, such as attention-based and state-space models, we investigate how they handle in-context data and uncover their optimization landscapes. Overall, our work contributes to a better understanding of what makes LLMs successful.",
-        "schedulingComments":"Monday-Friday, Graduation Day would be perfect",
-        "topicComments":"attention mechanism, optimization, in-context learning",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"P,GD",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
-    },
-    {
-        "lastName":"Chen",
-        "firstName":"Yizuo",
-        "title":"MISTER",
-        "student":"True",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/2\/",
-        "Email":"yizuo.chen99@gmail.com",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":46,
-        "days":"TWR",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"SELF_ONLY",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Identifying Causal Effects Under Functional Dependencies",
-        "abstract":"We study the identification of causal effects, motivated by two improvements to identifiability that can be attained if one knows that some variables in a causal graph are functionally determined by their parents (without needing to know the specific functions). First, an unidentifiable causal effect may become identifiable when certain variables are functional. Secondly, certain functional variables can be excluded from being observed without affecting the identifiability of a causal effect, which may significantly reduce the number of needed variables in observational data. Our results are largely based on an elimination procedure that removes functional variables from a causal graph while preserving key properties in the resulting causal graph, including the identifiability of causal effects. Our treatment of functional dependencies in this context mandates a formal, systematic, and general treatment of positivity assumptions, which are prevalent in the literature on causal effect identifiability and which interact with functional dependencies, leading to another contribution of the presented work.",
-        "schedulingComments":"Tuesday, Wednesday, Thursday",
-        "topicComments":"Causality, Identifiability, Causal Effects, Functional Dependencies",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"P,GD",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Takahashi",
@@ -5916,9 +5594,7 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Saless",
@@ -5947,9 +5623,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Tan",
@@ -5978,9 +5652,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Cao",
@@ -6009,9 +5681,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     },
     {
         "lastName":"Han",
@@ -6040,8 +5710,6 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":"",
-        "Unnamed: 27":"",
-        "":""
+        "metadata":""
     }
 ]
