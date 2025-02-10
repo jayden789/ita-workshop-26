@@ -72,13 +72,13 @@ export default class ITAJumboMain extends React.Component {
               <ModalBody>
                 Thank you for coming to ITA! We apologize for the suspense-building invitations, and will do our best to make up for it with a jam-packed week of information, action, and well-under-control chaos. But not to worry, this guide will help you survive.
                 <br></br><br></br>
-                <b>Today</b>
+                <b>Sunday</b>
                 <br></br>
                 Super Bowl LIX kicks off at 3:30. Football enthusiasts, commercial connoisseurs, and snack opportunists are invited to the Cabrillo Suite (next to the Pacific Room, across from the lobby) for light refreshments. Space is limited, so we may play yet another game - musical chairs.
                 <br></br>
                 At 7:00 PM, we’ll mosey on over to the Oscar Eatatorium (5th floor) for registration, reception, light alimentation, and smooth conversation
                 <br></br><br></br>
-                <b>Starting tomorrow, the workshop will unfold in two main arenas:</b>
+                <b>Starting Monday, the workshop will unfold in two main arenas:</b>
                 <br></br>
                 The Oscar Eatatorium, aka Plenary Central
                 <br></br>
@@ -153,7 +153,9 @@ export default class ITAJumboMain extends React.Component {
               >
                 Register Now
               </Button>*/}
-
+              <Link to="https://ita-workshop-app.web.app/" style={{ fontSize: '20px', padding: '10px 20px' }}>
+                Workshop Web App (please open on your phone)
+              </Link>
               <Button
                 tag={Link}
                 to="/register"

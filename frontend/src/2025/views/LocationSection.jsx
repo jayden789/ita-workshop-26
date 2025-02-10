@@ -17,6 +17,7 @@ import belmontAerialImage from './img2025/attraction-belmont-aerial.jpg';
 import belmontRideImage from './img2025/attraction-belmont-ride.jpg';
 import pacificBeachImage from './img2025/attraction-pacific-beach.jpg';
 import bahiaMap from './img2025/bahia-map.png';
+import bahiaMap25 from './img2025/Bahia Resort - 2025.png';
 
 const images = [
   {
@@ -127,11 +128,11 @@ export default class ITAJumboLocation extends React.Component {
             >
               Book Here
             </Button>
-            {/* <img
-              src={bahiaMap}
+            <img
+              src={bahiaMap25}
               alt="Map of the rooms in Bahia"
               className="mt-4 mb-4"
-            /> */}
+            />
             <UncontrolledCarousel items={items} className={styles.carousel} />
           </div>
           <div className="text-center" style={{ marginTop: '72px' }}>
