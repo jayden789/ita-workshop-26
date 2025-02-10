@@ -26,7 +26,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Cheraghchi",
@@ -55,7 +57,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Shroff",
@@ -84,7 +88,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Chrysos",
@@ -113,7 +119,9 @@
         "roughTopic":"MoE, ML",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-1"
+        "metadata":"F-1-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ohannessian",
@@ -142,7 +150,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-2"
+        "metadata":"F-1-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sala",
@@ -171,7 +181,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-3"
+        "metadata":"F-1-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Korlakai Vinayak",
@@ -200,7 +212,9 @@
         "roughTopic":"ML,data-efficient",
         "Invited":"",
         "scheduled":"Machine Learning and Efficiency",
-        "metadata":"F-1-1-4"
+        "metadata":"F-1-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Goel",
@@ -229,7 +243,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-1"
+        "metadata":"F-1-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Xie",
@@ -258,7 +274,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-2"
+        "metadata":"F-1-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ozer",
@@ -287,7 +305,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-3"
+        "metadata":"F-1-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Bernstein",
@@ -316,7 +336,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-4"
+        "metadata":"F-1-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Srebro",
@@ -345,7 +367,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-1"
+        "metadata":"F-2-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Azizan",
@@ -374,7 +398,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-2"
+        "metadata":"F-2-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Xu",
@@ -403,7 +429,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Neural Networks",
-        "metadata":"F-2-1-3"
+        "metadata":"F-2-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ozgur",
@@ -432,7 +460,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-1"
+        "metadata":"F-2-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Valiant",
@@ -461,7 +491,9 @@
         "roughTopic":"robustness, MLT",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-2"
+        "metadata":"F-2-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nguyen",
@@ -490,7 +522,9 @@
         "roughTopic":"R, MoE",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-3"
+        "metadata":"F-2-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sharan",
@@ -519,7 +553,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Estimation and Clustering",
-        "metadata":"F-2-2-4"
+        "metadata":"F-2-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ghazi",
@@ -548,7 +584,9 @@
         "roughTopic":"P, ml",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-1"
+        "metadata":"F-3-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Razaviyayn",
@@ -577,7 +615,9 @@
         "roughTopic":"DP, O",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-2"
+        "metadata":"F-3-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Mondelli",
@@ -606,7 +646,9 @@
         "roughTopic":"P, ML",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-3"
+        "metadata":"F-3-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Zakynthinou",
@@ -635,7 +677,9 @@
         "roughTopic":"DP,P",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-4"
+        "metadata":"F-3-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wibisono",
@@ -664,7 +708,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-1"
+        "metadata":"F-3-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Skorski",
@@ -693,7 +739,9 @@
         "roughTopic":"RNG",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-2"
+        "metadata":"F-3-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Shomorony",
@@ -722,7 +770,9 @@
         "roughTopic":"C, storage",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-3"
+        "metadata":"F-3-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Cadambe",
@@ -751,7 +801,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Random Processes and Coding ",
-        "metadata":"F-3-2-4"
+        "metadata":"F-3-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ayanoglu",
@@ -780,7 +832,9 @@
         "roughTopic":"W, ?",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-1"
+        "metadata":"F-4-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Eltayeb",
@@ -809,7 +863,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-2"
+        "metadata":"F-4-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kadota",
@@ -838,7 +894,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-3"
+        "metadata":"F-4-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sun",
@@ -867,7 +925,9 @@
         "roughTopic":"age of information",
         "Invited":"",
         "scheduled":"Wireless and Age of Information",
-        "metadata":"F-4-1-4"
+        "metadata":"F-4-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Gorlla",
@@ -896,7 +956,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-1"
+        "metadata":"F-4-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kumar ",
@@ -925,7 +987,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-2"
+        "metadata":"F-4-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Chisum ",
@@ -954,7 +1018,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
-        "metadata":"F-4-2-3"
+        "metadata":"F-4-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -983,7 +1049,9 @@
         "roughTopic":"high dim stats",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-1-1-1"
+        "metadata":"M-1-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tu",
@@ -1012,7 +1080,9 @@
         "roughTopic":"ML, diffusion",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-1-1-2"
+        "metadata":"M-1-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sangwan",
@@ -1041,7 +1111,9 @@
         "roughTopic":"MLT, compressed sensing",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-1-1-3"
+        "metadata":"M-1-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -1070,7 +1142,9 @@
         "roughTopic":"MLT, preference learning",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"M-1-1-4"
+        "metadata":"M-1-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sekeh",
@@ -1099,7 +1173,9 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-1"
+        "metadata":"M-1-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nili Ahmadabadi",
@@ -1128,7 +1204,9 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-2"
+        "metadata":"M-1-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Zou",
@@ -1147,8 +1225,8 @@
         "Banquet":"",
         "PTY":"",
         "PBD":"",
-        "paperTitle":"TBD",
-        "abstract":"",
+        "paperTitle":"Foundation Model to Intelligence Embodiment",
+        "abstract":"The evolution of neural networks has followed a trajectory from basic linear regression to advanced Generative Pre-trained Transformers (GPTs), demonstrating a consistent pattern of space alignment. Foundation models have emerged as a generalized framework that bridges human and machine intelligence. These models show remarkable potential when combined with embodied robotics, enabling direct interaction between machine intelligence and the physical world. The field has progressed from aligning human intelligence to machine intelligence, and now extends to embodiment. This talk will focus on a series of works developing multimodal foundation models and explore recent attempts to connect foundation models with robotics.",
         "schedulingComments":"",
         "topicComments":"",
         "Fee type override":"",
@@ -1157,7 +1235,9 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-3"
+        "metadata":"M-1-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Polyzos",
@@ -1186,7 +1266,9 @@
         "roughTopic":"",
         "Invited":"ML and Robotics - Nikolay",
         "scheduled":"AI for Autonomous Robot Systems (INV)",
-        "metadata":"M-1-2-4"
+        "metadata":"M-1-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Lee",
@@ -1215,7 +1297,9 @@
         "roughTopic":"MLT, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-1"
+        "metadata":"M-1-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kipnis",
@@ -1244,7 +1328,9 @@
         "roughTopic":"ML, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-2"
+        "metadata":"M-1-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"He",
@@ -1273,7 +1359,9 @@
         "roughTopic":"ML, LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-3"
+        "metadata":"M-1-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Rashtchian",
@@ -1302,7 +1390,9 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"LLMs",
-        "metadata":"M-1-3-4"
+        "metadata":"M-1-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Rajam\u00e4ki",
@@ -1331,7 +1421,9 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-2-1-1"
+        "metadata":"M-2-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Rengaswamy",
@@ -1360,7 +1452,9 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-2-1-2"
+        "metadata":"M-2-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Bloch",
@@ -1389,7 +1483,9 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing - Piya",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-2-1-3"
+        "metadata":"M-2-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Lu",
@@ -1418,7 +1514,9 @@
         "roughTopic":"",
         "Invited":"Coding and Sensing - Piya",
         "scheduled":"Coding and Sensing (INV)",
-        "metadata":"M-2-1-4"
+        "metadata":"M-2-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liva",
@@ -1447,7 +1545,9 @@
         "roughTopic":"C, short block",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-1"
+        "metadata":"M-2-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Mahdavifar",
@@ -1476,7 +1576,9 @@
         "roughTopic":"C,LDPC",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-2"
+        "metadata":"M-2-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wesel",
@@ -1505,7 +1607,9 @@
         "roughTopic":"C, short block",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-3"
+        "metadata":"M-2-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Song",
@@ -1534,7 +1638,9 @@
         "roughTopic":"C, sequences",
         "Invited":"",
         "scheduled":"Coding Theory",
-        "metadata":"M-2-2-4"
+        "metadata":"M-2-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wiame",
@@ -1563,7 +1669,9 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-1"
+        "metadata":"M-2-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Costello",
@@ -1592,7 +1700,9 @@
         "roughTopic":"C,LDPC",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-2"
+        "metadata":"M-2-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Feng",
@@ -1621,7 +1731,9 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-3"
+        "metadata":"M-2-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Draper",
@@ -1650,26 +1762,59 @@
         "roughTopic":"C",
         "Invited":"",
         "scheduled":"Error Correcting Codes",
-        "metadata":"M-2-3-4"
+        "metadata":"M-2-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
-        "lastName":"Sarwate",
-        "firstName":"Anand",
+        "lastName":"",
+        "firstName":"",
+        "title":"",
+        "student":"",
+        "Affiliation":"",
+        "Email":"",
+        "Inviter":"",
+        "inviteType":"",
+        "status":"",
+        "registration":"",
+        "days":"",
+        "Sunday reception":"",
+        "Monday lunch":"",
+        "Banquet":"",
+        "PTY":"",
+        "PBD":"",
+        "paperTitle":"Remembering Mario",
+        "abstract":"",
+        "schedulingComments":"",
+        "topicComments":"",
+        "Fee type override":"",
+        "Paid?":"",
+        "Paid amount":"",
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Mario Diaz Memorial 1 (INV)",
+        "metadata":"M-3-1-1",
+        "Unnamed: 27":"",
+        "":""
+    },
+    {
+        "lastName":"Jeong",
+        "firstName":"Haewon",
         "title":"PROFESSOR",
         "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/175\/",
-        "Email":"anand.sarwate@rutgers.edu",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/181\/",
+        "Email":"haewon@ucsb.edu",
         "Inviter":"",
         "inviteType":"SELF_REGISTERED",
         "status":"ALMOST_CERTAINLY",
-        "registration":224,
-        "days":"M",
-        "Sunday reception":"SELF_ONLY",
+        "registration":267,
+        "days":"MT",
+        "Sunday reception":"NOT_ATTENDING",
         "Monday lunch":"",
         "Banquet":"NOT_ATTENDING",
         "PTY":true,
         "PBD":false,
-        "paperTitle":"",
+        "paperTitle":"Can we catch two birds of privacy and fairness?",
         "abstract":"",
         "schedulingComments":"",
         "topicComments":"",
@@ -1677,38 +1822,11 @@
         "Paid?":"FALSE",
         "Paid amount":0,
         "roughTopic":"",
-        "Invited":"Mario",
-        "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-3-1-1"
-    },
-    {
-        "lastName":"Sankar",
-        "firstName":"Lalitha",
-        "title":"PROFESSOR",
-        "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/682\/",
-        "Email":"lsankar@asu.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":17,
-        "days":"MTW",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Auditing Privacy of Additive Noise Mechanisms Using Linear Predictive Models",
-        "abstract":"We propose a computationally feasible privacy auditing framework using minimum mean-squared error (MMSE) estimation and linear auditing models. Our approach provides theoretical lower bounds on the true MMSE of inferring sensitive features from noisy observations of other correlated features. The bounds are in terms of the empirical MMSE under a restricted hypothesis class and a decomposable error term capturing finite sample and approximation effects. For linear auditing models, we derive closed-form bounds for classes of relationships between the private and non-private features, including linear mappings, binary symmetric channels, and class-conditional Gaussian models. Through empirical evaluation, we demonstrate that our linear model-based auditing framework serves as a powerful yet tractable tool for MMSE-based privacy auditing that balances theoretical guarantees with practical efficiency.",
-        "schedulingComments":"Monday, AM or PM session. The total set of speakers over the 2 sessions are: (1) Lalitha Sankar ASU (aka moi), (2) Peter Kairouz (Google), (3) Oliver Kosut (ASU) (4) Anand Sarwate (Rutgers) (5) Hao Wang (IBM) (6) Haewon Jeong (UCSB) (7) James Melbourne, CIMAT, MExico. One of the 20 minute slots will be used to have many people talk about Mario, his life, his work, and his passion for mathematics.",
-        "topicComments":"This talk fits best in one of the two-part Commemmorative Session for Mario Diaz that I (Lalitha Sankar), Flavio Calmon and Shahab Asoodeh are organizing at ITA on MONDAY FEB 10th :).",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-3-1-2"
+        "metadata":"M-3-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Melbourne",
@@ -1737,26 +1855,121 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 1 (INV)",
-        "metadata":"M-3-1-3"
+        "metadata":"M-3-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
-        "lastName":"Jeong",
-        "firstName":"Haewon",
+        "lastName":"Sankar",
+        "firstName":"Lalitha",
         "title":"PROFESSOR",
         "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/181\/",
-        "Email":"haewon@ucsb.edu",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/682\/",
+        "Email":"lsankar@asu.edu",
         "Inviter":"",
         "inviteType":"SELF_REGISTERED",
         "status":"ALMOST_CERTAINLY",
-        "registration":267,
-        "days":"MT",
+        "registration":17,
+        "days":"MTW",
         "Sunday reception":"NOT_ATTENDING",
         "Monday lunch":"",
         "Banquet":"NOT_ATTENDING",
         "PTY":true,
         "PBD":false,
-        "paperTitle":"Can we catch two birds of privacy and fairness?",
+        "paperTitle":"Auditing Privacy of Additive Noise Mechanisms Using Linear Predictive Models",
+        "abstract":"We propose a computationally feasible privacy auditing framework using minimum mean-squared error (MMSE) estimation and linear auditing models. Our approach provides theoretical lower bounds on the true MMSE of inferring sensitive features from noisy observations of other correlated features. The bounds are in terms of the empirical MMSE under a restricted hypothesis class and a decomposable error term capturing finite sample and approximation effects. For linear auditing models, we derive closed-form bounds for classes of relationships between the private and non-private features, including linear mappings, binary symmetric channels, and class-conditional Gaussian models. Through empirical evaluation, we demonstrate that our linear model-based auditing framework serves as a powerful yet tractable tool for MMSE-based privacy auditing that balances theoretical guarantees with practical efficiency.",
+        "schedulingComments":"Monday, AM or PM session. The total set of speakers over the 2 sessions are: (1) Lalitha Sankar ASU (aka moi), (2) Peter Kairouz (Google), (3) Oliver Kosut (ASU) (4) Anand Sarwate (Rutgers) (5) Hao Wang (IBM) (6) Haewon Jeong (UCSB) (7) James Melbourne, CIMAT, MExico. One of the 20 minute slots will be used to have many people talk about Mario, his life, his work, and his passion for mathematics.",
+        "topicComments":"This talk fits best in one of the two-part Commemmorative Session for Mario Diaz that I (Lalitha Sankar), Flavio Calmon and Shahab Asoodeh are organizing at ITA on MONDAY FEB 10th :).",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"Mario - Lalitha",
+        "scheduled":"Mario Diaz Memorial 1 (INV)",
+        "metadata":"M-3-1-4",
+        "Unnamed: 27":"",
+        "":""
+    },
+    {
+        "lastName":"Kairouz",
+        "firstName":"Peter",
+        "title":"",
+        "student":"",
+        "Affiliation":"",
+        "Email":"",
+        "Inviter":"",
+        "inviteType":"",
+        "status":"",
+        "registration":"",
+        "days":"",
+        "Sunday reception":"",
+        "Monday lunch":"",
+        "Banquet":"",
+        "PTY":"",
+        "PBD":"",
+        "paperTitle":"",
+        "abstract":"",
+        "schedulingComments":"",
+        "topicComments":"",
+        "Fee type override":"",
+        "Paid?":"",
+        "Paid amount":"",
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Mario Diaz Memorial 2 (INV)",
+        "metadata":"M-3-2-1",
+        "Unnamed: 27":"",
+        "":""
+    },
+    {
+        "lastName":"Asoodeh",
+        "firstName":"Shahab",
+        "title":"",
+        "student":"",
+        "Affiliation":"",
+        "Email":"",
+        "Inviter":"",
+        "inviteType":"",
+        "status":"",
+        "registration":"",
+        "days":"",
+        "Sunday reception":"",
+        "Monday lunch":"",
+        "Banquet":"",
+        "PTY":"",
+        "PBD":"",
+        "paperTitle":"",
+        "abstract":"",
+        "schedulingComments":"",
+        "topicComments":"",
+        "Fee type override":"",
+        "Paid?":"",
+        "Paid amount":"",
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"Mario Diaz Memorial 2 (INV)",
+        "metadata":"M-3-2-2",
+        "Unnamed: 27":"",
+        "":""
+    },
+    {
+        "lastName":"Sarwate",
+        "firstName":"Anand",
+        "title":"PROFESSOR",
+        "student":"False",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/175\/",
+        "Email":"anand.sarwate@rutgers.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":224,
+        "days":"M",
+        "Sunday reception":"SELF_ONLY",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"",
         "abstract":"",
         "schedulingComments":"",
         "topicComments":"",
@@ -1764,9 +1977,11 @@
         "Paid?":"FALSE",
         "Paid amount":0,
         "roughTopic":"",
-        "Invited":"Mario - Lalitha",
+        "Invited":"Mario",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-1"
+        "metadata":"M-3-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kosut",
@@ -1795,7 +2010,9 @@
         "roughTopic":"",
         "Invited":"Mario - Lalitha",
         "scheduled":"Mario Diaz Memorial 2 (INV)",
-        "metadata":"M-3-2-2"
+        "metadata":"M-3-2-4",
+        "Unnamed: 27":"Mario Diaz Memorial 2 (INV)",
+        "":"M-3-2-2"
     },
     {
         "lastName":"D'Oliveira",
@@ -1824,7 +2041,9 @@
         "roughTopic":"secret sharing",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-1"
+        "metadata":"M-3-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Rahimian",
@@ -1853,7 +2072,9 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-2"
+        "metadata":"M-3-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sadeghi",
@@ -1882,7 +2103,9 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-3"
+        "metadata":"M-3-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Li",
@@ -1911,7 +2134,9 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy and Secret Sharing",
-        "metadata":"M-3-3-4"
+        "metadata":"M-3-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Roberts",
@@ -1940,7 +2165,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-1"
+        "metadata":"M-4-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Jafarkhani",
@@ -1969,7 +2196,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-2"
+        "metadata":"M-4-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Chockalingam",
@@ -1998,7 +2227,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications",
-        "metadata":"M-4-1-3"
+        "metadata":"M-4-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Purohit",
@@ -2027,7 +2258,9 @@
         "roughTopic":"online caching",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-1"
+        "metadata":"M-4-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sabag",
@@ -2056,7 +2289,9 @@
         "roughTopic":"IT, online",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-2"
+        "metadata":"M-4-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Feder",
@@ -2085,7 +2320,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-3"
+        "metadata":"M-4-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Koksal",
@@ -2114,7 +2351,9 @@
         "roughTopic":"RL, security",
         "Invited":"",
         "scheduled":"Online Algorithms and Security ",
-        "metadata":"M-4-2-4"
+        "metadata":"M-4-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Javidi",
@@ -2143,7 +2382,9 @@
         "roughTopic":"",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-1"
+        "metadata":"R-1-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Saeedi Bidokhti",
@@ -2172,7 +2413,9 @@
         "roughTopic":"",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-2"
+        "metadata":"R-1-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Joshi",
@@ -2201,7 +2444,9 @@
         "roughTopic":"ML, dist",
         "Invited":"",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-3"
+        "metadata":"R-1-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -2230,7 +2475,9 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"AI Institutes 1 (INV)",
-        "metadata":"R-1-1-4"
+        "metadata":"R-1-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liang",
@@ -2249,8 +2496,8 @@
         "Banquet":"SELF_ONLY",
         "PTY":true,
         "PBD":false,
-        "paperTitle":"A Theoretical Framework for Demystifying Forgetting and Generalization in Continual Learning",
-        "abstract":"Continual Learning (CL), also known as lifelong learning, is a fundamental paradigm that enables AI agents to acquire and refine knowledge continuously, mirroring the human ability to learn throughout life. A major challenge in CL is catastrophic forgetting, where an AI model loses information from prior tasks while adapting to new ones. This issue has become particularly critical in the era of ChatGPT and large-scale AI systems, where models must continually integrate new skills while preserving previously learned capabilities. While numerous CL approaches have shown empirical success, the theoretical understanding of their underlying mechanisms remains limited. In this talk, I will introduce an analytical framework that we establish for CL based on overparameterized linear regression, which provides closed-form expressions for two key performance metrics\u2014forgetting and generalization error\u2014enabling precise theoretical performance analysis. This framework allows us to rigorously examine the impact of key system parameters and provides new insights into how mixture-of-experts and rehearsal strategies mitigate forgetting and enhance learning efficiency. Finally, I will demonstrate how these theoretical findings inspire our development of novel CL algorithms that further improve empirical performance.",
+        "paperTitle":"Theory on Vision Transformers in Self-Supervised Learning",
+        "abstract":"Self-supervised learning is pivotal for capturing essential feature representations in modern machine learning applications. Transformers, in particular, have demonstrated exceptional capabilities in this area, especially in computer vision. Self-supervised methods are broadly categorized into reconstruction-based approaches, such as masked autoencoders (MAE), and discriminative approaches, like contrastive learning (CL). Recent empirical studies reveal that these two methods extract fundamentally different types of representations: CL tends to emphasize global patterns, whereas MAE effectively captures both global structures and nuanced local details. Despite numerous empirical investigations into these differences, a rigorous theoretical understanding\u2014especially concerning the prevalent vision transformer (ViT) architecture\u2014remains limited.\n \nIn this talk, I will present our recent theoretical study that provides a comprehensive explanation of the distinct roles that transformers play in MAE and CL. Our analysis shows that vision transformers trained with the MAE objective proficiently learn both global and local features to achieve near-optimal reconstruction, while those trained with the CL objective predominantly focus on global features. These findings offer a theoretical foundation for the contrasting behaviors observed in empirical studies and pave the way for future advancements in self-supervised learning strategies.",
         "schedulingComments":"Thursday, Friday (in joint AI Institutes Workshop)",
         "topicComments":"continual learning, learning theory",
         "Fee type override":"",
@@ -2259,7 +2506,9 @@
         "roughTopic":"MLT",
         "Invited":"AI Institutes ",
         "scheduled":"AI Institutes 2 (INV)",
-        "metadata":"R-1-2-1"
+        "metadata":"R-1-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Harchaoui",
@@ -2288,7 +2537,9 @@
         "roughTopic":"IT, ML",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-1"
+        "metadata":"R-1-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Varshney",
@@ -2317,7 +2568,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-2"
+        "metadata":"R-1-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Basu Roy Chowdhury",
@@ -2346,7 +2599,9 @@
         "roughTopic":"IT,ML",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-3"
+        "metadata":"R-1-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nafea",
@@ -2375,7 +2630,9 @@
         "roughTopic":"ML, fairness, IT",
         "Invited":"",
         "scheduled":"Information Theory and ML",
-        "metadata":"R-1-3-4"
+        "metadata":"R-1-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -2404,7 +2661,9 @@
         "roughTopic":"ML,LLM, safety",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-1"
+        "metadata":"R-2-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Aghazadeh",
@@ -2433,7 +2692,9 @@
         "roughTopic":"ML, explainability",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-2"
+        "metadata":"R-2-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Dutta",
@@ -2462,7 +2723,9 @@
         "roughTopic":"MLT, interpretability",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-3"
+        "metadata":"R-2-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Thrampoulidis",
@@ -2491,7 +2754,9 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"Interpretability and Safety",
-        "metadata":"R-2-1-4"
+        "metadata":"R-2-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Slock",
@@ -2520,7 +2785,9 @@
         "roughTopic":"statistics",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-1"
+        "metadata":"R-2-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wu",
@@ -2549,7 +2816,9 @@
         "roughTopic":"statistics",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-2"
+        "metadata":"R-2-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Dughmi",
@@ -2578,7 +2847,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-3"
+        "metadata":"R-2-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kolar",
@@ -2607,7 +2878,9 @@
         "roughTopic":"MLT, high dim",
         "Invited":"",
         "scheduled":"Learning and Statistics",
-        "metadata":"R-2-2-4"
+        "metadata":"R-2-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Javanmard",
@@ -2636,7 +2909,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-1"
+        "metadata":"R-2-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tandon",
@@ -2665,7 +2940,9 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-2"
+        "metadata":"R-2-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Bedi",
@@ -2694,7 +2971,9 @@
         "roughTopic":"ML,LLM, efficiency",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-3"
+        "metadata":"R-2-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Beirami",
@@ -2723,7 +3002,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Efficient LLMs and Alignment",
-        "metadata":"R-2-3-4"
+        "metadata":"R-2-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -2752,7 +3033,9 @@
         "roughTopic":"O,B",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-1"
+        "metadata":"R-3-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Salgia",
@@ -2781,7 +3064,9 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-2"
+        "metadata":"R-3-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ortega",
@@ -2810,7 +3095,9 @@
         "roughTopic":"Distributed Learning",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-3"
+        "metadata":"R-3-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Vaswani",
@@ -2839,7 +3126,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Reinforcement and Distributed Learning",
-        "metadata":"R-3-1-4"
+        "metadata":"R-3-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Mitra",
@@ -2868,7 +3157,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-1"
+        "metadata":"R-3-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Panaganti",
@@ -2897,7 +3188,9 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-2"
+        "metadata":"R-3-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -2926,7 +3219,9 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-3"
+        "metadata":"R-3-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Yang",
@@ -2955,36 +3250,9 @@
         "roughTopic":"RL",
         "Invited":"",
         "scheduled":"Reinforcement Learning ",
-        "metadata":"R-3-2-4"
-    },
-    {
-        "lastName":"Gracy",
-        "firstName":"Sebin",
-        "title":"",
-        "student":"False",
-        "Affiliation":"",
-        "Email":"sebinj88@gmail.com",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":80,
-        "days":"RF",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Competitive Networked Bivirus SIS spread over Hypergraphs",
-        "abstract":"The talk deals with the spread of two competing viruses over a network of population nodes, accounting for pairwise interactions and higher-order interactions (HOI) within and between the population nodes. We study the competitive networked bivirus susceptible-infected-susceptible (SIS) model on a hypergraph introduced in Cui et al. [1]. It turns out that the system has, in a generic sense, a finite number of equilibria, and the Jacobian associated with each equilibrium point is nonsingular; the key tool is the Parametric Transversality Theorem of differential topology. Since the system is also monotone, it turns out that the typical behavior of the system is convergence to some equilibrium point. Thereafter, we show that the system admits a tri-stable domain with three locally exponentially stable equilibria. For different parameter regimes, we establish conditions for the existence of a coexistence equilibrium (both viruses infect separate fractions of each population node).",
-        "schedulingComments":"Thursday, Friday",
-        "topicComments":"Slight preference for the talk being scheduled with other talks in control on Thursday\/Friday",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"Control",
-        "Invited":"",
-        "scheduled":"Control",
-        "metadata":"R-4-1-1"
+        "metadata":"R-3-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nair",
@@ -3013,7 +3281,9 @@
         "roughTopic":"Control",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-2"
+        "metadata":"R-4-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Li",
@@ -3042,7 +3312,9 @@
         "roughTopic":"Control, Learning",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-3"
+        "metadata":"R-4-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sarkar",
@@ -3071,7 +3343,9 @@
         "roughTopic":"control",
         "Invited":"",
         "scheduled":"Control",
-        "metadata":"R-4-1-4"
+        "metadata":"R-4-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Brown",
@@ -3100,7 +3374,9 @@
         "roughTopic":"GT,Control",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-1"
+        "metadata":"R-4-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kahng",
@@ -3129,7 +3405,9 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-2"
+        "metadata":"R-4-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -3158,7 +3436,9 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-3"
+        "metadata":"R-4-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Berry",
@@ -3187,7 +3467,9 @@
         "roughTopic":"GT",
         "Invited":"",
         "scheduled":"Game Theory",
-        "metadata":"R-4-2-4"
+        "metadata":"R-4-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Dasarathy",
@@ -3216,7 +3498,9 @@
         "roughTopic":"MLT,high-dim stats",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-1"
+        "metadata":"R-4-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Gracy",
@@ -3245,7 +3529,9 @@
         "roughTopic":"networks",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-2"
+        "metadata":"R-4-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Moharrami",
@@ -3274,7 +3560,9 @@
         "roughTopic":"random graphs",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-3"
+        "metadata":"R-4-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sason",
@@ -3303,7 +3591,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Graphs",
-        "metadata":"R-4-3-4"
+        "metadata":"R-4-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -3332,7 +3622,9 @@
         "roughTopic":"Sequential hypothesis",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-1"
+        "metadata":"T-1-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tan",
@@ -3361,7 +3653,9 @@
         "roughTopic":"B, online, RL",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-2"
+        "metadata":"T-1-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Li",
@@ -3390,7 +3684,9 @@
         "roughTopic":"B,RL",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-3"
+        "metadata":"T-1-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wei",
@@ -3419,7 +3715,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Sequential and Reinforcement Learning",
-        "metadata":"T-1-1-4"
+        "metadata":"T-1-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Hajek",
@@ -3448,7 +3746,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-1"
+        "metadata":"T-1-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Verchand",
@@ -3477,7 +3777,9 @@
         "roughTopic":"statistics, optimization",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-2"
+        "metadata":"T-1-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Zhu",
@@ -3506,7 +3808,9 @@
         "roughTopic":"O, high dim stats",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-3"
+        "metadata":"T-1-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Han",
@@ -3535,7 +3839,9 @@
         "roughTopic":"Mixture Models",
         "Invited":"",
         "scheduled":"Statistics",
-        "metadata":"T-1-2-4"
+        "metadata":"T-1-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Haardt",
@@ -3564,7 +3870,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-1"
+        "metadata":"T-1-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Weinberger",
@@ -3593,7 +3901,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-2"
+        "metadata":"T-1-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Jog",
@@ -3622,7 +3932,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-3"
+        "metadata":"T-1-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Huang",
@@ -3651,7 +3963,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"Statistical Learning",
-        "metadata":"T-1-3-4"
+        "metadata":"T-1-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"O'Sullivan",
@@ -3680,7 +3994,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-1"
+        "metadata":"T-2-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kochman",
@@ -3709,7 +4025,9 @@
         "roughTopic":"IT, network",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-2"
+        "metadata":"T-2-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Jafar",
@@ -3738,7 +4056,9 @@
         "roughTopic":"C,QC",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-3"
+        "metadata":"T-2-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -3767,7 +4087,9 @@
         "roughTopic":"quantum computing",
         "Invited":"",
         "scheduled":"Quantum Computing and IT",
-        "metadata":"T-2-1-4"
+        "metadata":"T-2-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Bai",
@@ -3796,7 +4118,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-1"
+        "metadata":"T-2-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Zorzi",
@@ -3825,7 +4149,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-2"
+        "metadata":"T-2-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kim",
@@ -3854,7 +4180,9 @@
         "roughTopic":"ML,C",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-3"
+        "metadata":"T-2-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Shen",
@@ -3883,7 +4211,9 @@
         "roughTopic":"W, ML, LLM",
         "Invited":"",
         "scheduled":"Wireless Communications 1",
-        "metadata":"T-2-2-4"
+        "metadata":"T-2-2-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Petropulu",
@@ -3912,7 +4242,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-1"
+        "metadata":"T-2-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -3941,7 +4273,9 @@
         "roughTopic":"W",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-2"
+        "metadata":"T-2-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nosratinia",
@@ -3970,7 +4304,9 @@
         "roughTopic":"W, security ",
         "Invited":"",
         "scheduled":"Wireless Communications 2",
-        "metadata":"T-2-3-3"
+        "metadata":"T-2-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Vasic",
@@ -3999,7 +4335,9 @@
         "roughTopic":"C,QC,LDPC",
         "Invited":"henry pfister",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-1"
+        "metadata":"T-3-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Pfister",
@@ -4028,7 +4366,9 @@
         "roughTopic":"",
         "Invited":"henry pfister",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-2"
+        "metadata":"T-3-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Yao",
@@ -4057,7 +4397,9 @@
         "roughTopic":"C,QLDPC",
         "Invited":"",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-3"
+        "metadata":"T-3-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Raveendran",
@@ -4086,7 +4428,9 @@
         "roughTopic":"C,QC",
         "Invited":"",
         "scheduled":"Quantum Error Correction (INV)",
-        "metadata":"T-3-1-4"
+        "metadata":"T-3-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kurkoski",
@@ -4115,7 +4459,9 @@
         "roughTopic":"C, polar",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-1"
+        "metadata":"T-3-2-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Aharoni",
@@ -4144,7 +4490,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-2"
+        "metadata":"T-3-2-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Permuter",
@@ -4173,7 +4521,9 @@
         "roughTopic":"C, polar",
         "Invited":"",
         "scheduled":"Polar Codes",
-        "metadata":"T-3-2-3"
+        "metadata":"T-3-2-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tegin",
@@ -4202,7 +4552,9 @@
         "roughTopic":"IT",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-1"
+        "metadata":"T-3-3-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kas Hanna",
@@ -4231,7 +4583,9 @@
         "roughTopic":"C, storage",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-2"
+        "metadata":"T-3-3-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Jiang",
@@ -4260,7 +4614,9 @@
         "roughTopic":"W,ML, C",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-3"
+        "metadata":"T-3-3-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Mitchell",
@@ -4289,7 +4645,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Coding Applications",
-        "metadata":"T-3-3-4"
+        "metadata":"T-3-3-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Radhakrishnan",
@@ -4318,7 +4676,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"T-4-1-3"
+        "metadata":"T-4-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Su ",
@@ -4347,7 +4707,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"T-4-1-4"
+        "metadata":"T-4-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Vithana",
@@ -4376,7 +4738,9 @@
         "roughTopic":"P,ML, dist",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-1"
+        "metadata":"W-1-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Feldman",
@@ -4405,7 +4769,9 @@
         "roughTopic":"P,MLT",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-2"
+        "metadata":"W-1-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Haghifam",
@@ -4434,7 +4800,9 @@
         "roughTopic":"MLT,P",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-3"
+        "metadata":"W-1-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Loh",
@@ -4463,7 +4831,9 @@
         "roughTopic":"DP",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"W-1-1-4"
+        "metadata":"W-1-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Santhanam",
@@ -4492,7 +4862,9 @@
         "roughTopic":"IT, MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-1"
+        "metadata":"W-2-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Zamir",
@@ -4521,7 +4893,9 @@
         "roughTopic":"ML, IT, RL",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-2"
+        "metadata":"W-2-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Liu",
@@ -4550,7 +4924,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-3"
+        "metadata":"W-2-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Wang",
@@ -4579,7 +4955,9 @@
         "roughTopic":"MLT",
         "Invited":"",
         "scheduled":"ML Theory",
-        "metadata":"W-2-1-4"
+        "metadata":"W-2-1-4",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Yu",
@@ -4608,7 +4986,9 @@
         "roughTopic":"ML,LLM",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-1"
+        "metadata":"W-3-1-1",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Scheinker",
@@ -4637,7 +5017,9 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-2"
+        "metadata":"W-3-1-2",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Lengerich",
@@ -4666,7 +5048,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"ML Applications",
-        "metadata":"W-3-1-3"
+        "metadata":"W-3-1-3",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Orlitsky",
@@ -4695,7 +5079,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Ball\u00e9",
@@ -4724,7 +5110,9 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Soltanolkotabi",
@@ -4753,7 +5141,9 @@
         "roughTopic":"ML,LLM,multimodal",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Brekelmans",
@@ -4782,7 +5172,9 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Yu",
@@ -4811,7 +5203,9 @@
         "roughTopic":"",
         "Invited":"Plenary",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Shaska",
@@ -4840,7 +5234,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Temprana Alonso",
@@ -4869,7 +5265,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Hu",
@@ -4898,7 +5296,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Chen",
@@ -4927,7 +5327,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Morafah",
@@ -4956,7 +5358,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kumar",
@@ -4985,7 +5389,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Park",
@@ -5014,7 +5420,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Miloschewsky",
@@ -5043,7 +5451,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Sen",
@@ -5072,7 +5482,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Saless",
@@ -5101,7 +5513,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tsur",
@@ -5130,7 +5544,9 @@
         "roughTopic":"GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Choi",
@@ -5159,7 +5575,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Mandalapu",
@@ -5188,7 +5606,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kang",
@@ -5217,7 +5637,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Crespo",
@@ -5246,7 +5668,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Li",
@@ -5275,7 +5699,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Vishwanath",
@@ -5304,7 +5730,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Nietert",
@@ -5333,7 +5761,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Kargin",
@@ -5362,7 +5792,9 @@
         "roughTopic":"GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Duong",
@@ -5391,7 +5823,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Li",
@@ -5420,7 +5854,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Chen",
@@ -5449,7 +5885,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Takahashi",
@@ -5478,7 +5916,9 @@
         "roughTopic":"P,GD",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Saless",
@@ -5507,7 +5947,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Tan",
@@ -5536,7 +5978,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Cao",
@@ -5565,7 +6009,9 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     },
     {
         "lastName":"Han",
@@ -5594,6 +6040,8 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"",
-        "metadata":""
+        "metadata":"",
+        "Unnamed: 27":"",
+        "":""
     }
 ]
