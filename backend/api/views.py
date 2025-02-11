@@ -1520,7 +1520,9 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
     @decorators.action(detail=False)
     def ita24(self, request):
         workshop = models.Workshop.objects.get(slug="ita25")
-        regns = models.Registration.objects.filter(workshop=workshop)
+        
+        regns = models.Registration.objects.filter(workshop=workshop, participation_status='ALMOST_CERTAINLY') | \
+                models.Registration.objects.filter(workshop=workshop, participation_status='PROBABLY')
         nonEmptyBanquet = regns.filter(banquet_options__isnull=False)
         banquet_options = {"Vegetarian": 0, "Chicken": 0, "Fish": 0}
         for reg in nonEmptyBanquet.all():
