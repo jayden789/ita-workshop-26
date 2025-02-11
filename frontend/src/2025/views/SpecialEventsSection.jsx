@@ -35,6 +35,7 @@ import morning2 from './img2024/morning-2.png';
 import entertainment from './img2024/entertainment.jpeg';
 import running from './img2024/running.jpeg';
 import startupImg from './img2025/startup.jpeg'
+import startup2Img from './img2025/startup2.jpg'
 import townhallImg from './img2025/townhall.jpg'
 import gradImg from './img2025/grad.jpg'
 import bossImg from './img2025/boss.jpg'
@@ -64,6 +65,7 @@ export default class SpecialEventsSection extends React.Component {
       entertainmentModal: false,
       morningModal: false,
       modalThrive: false,
+      modalCTGT: false,
     };
 
     this.toggle1 = this.toggle1.bind(this);
@@ -83,6 +85,7 @@ export default class SpecialEventsSection extends React.Component {
     this.toggleMorning = this.toggleMorning.bind(this);
     this.toggleThrive = this.toggleThrive.bind(this);
     this.toggleSecretSuccess = this.toggleSecretSuccess.bind(this);
+    this.toggleCTGT = this.toggleCTGT.bind(this);
   }
 
   toggle1() {
@@ -181,6 +184,12 @@ export default class SpecialEventsSection extends React.Component {
     this.setState((prevState) => ({
       modalSecretSuccess: !prevState.modalSecretSuccess,
     }));
+  }
+
+  toggleCTGT() {
+    this.setState((prevState) => ({
+      modalCTGT: !prevState.modalCTGT,
+    }))
   }
 
   HatComponent() {
@@ -1049,6 +1058,70 @@ Lunch served for event participants.
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Wed 4:10pm
+                  </CardFooter>
+                </Card>
+              </Col>
+
+              <Col>
+                <Card
+                  className="text-center"
+                  style={{ height: '100%', cursor: 'pointer' }}
+                  onClick={this.toggleCTGT}
+                >
+                  <this.HatComponent />
+                  <CardImg
+                    top
+                    width="100%"
+                    height="40%"
+                    src={startup2Img}
+                    alt="Startup Crash Course"
+                  />
+                  <Modal
+                    isOpen={this.state.modalCTGT}
+                    toggle={this.toggleCTGT}
+                    centered
+                  >
+                    <ModalHeader toggle={this.toggleCTGT}>
+                      Startup Crash Course
+                    </ModalHeader>
+                    <ModalBody>
+                    A brief (20 minutes, more if desired) introduction to how to start your own startup.
+                    <br></br>
+                    <br></br>
+                    Cyril Gorlla is the co-founder and CEO of CTGT, which is creating an entirely new AI 
+                    stack that is 500x more efficient than deep learning, enabling enterpises to deploy 
+                    AI that dynamically changes with their needs. CTGT is backed by Google's Gradient 
+                    Ventures and Y Combinator, along with luminaries like Francois Chollet (creator of 
+                    Keras), Peter Wang (co-founder, Anaconda) and Paul Graham (co-founder, Y Combinator). 
+                    Prior to leaving to found CTGT, he was the recipient of the Endowed Chair's Fellowship 
+                    at UCSD, where his work on efficient AI training was invited for presentation at ICLR 
+                    in his first year of grad school. In his undergraduate work, he collaborated with 
+                    Intel on ML telemetry deployed on 8M+ CPUs. He was named one of 12 “2022 Shining Stars” 
+                    at UCSD and is an Ivory Bridges Fellow and Nordson Leadership Scholar. He was advised by 
+                    ACM and Amazon Fellow Mikhail Belkin.
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="secondary" onClick={this.toggleCTGT}>
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </Modal>
+                  <CardTitle className="mt-4">
+                    <span
+                      onClick={this.toggleCTGT}
+                      style={{ cursor: 'pointer', fontSize: '17px' }}
+                    >
+                      Startup Crash Course
+                    </span>
+                  </CardTitle>
+                  <CardBody>
+                    A brief (20 minutes, more if desired) introduction to how to start your own startup.
+                    <br></br>
+                    <br></br>
+                    Cyrill Gorlla
+                  </CardBody>
+                  <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>
+                    Thu 5:10PM
                   </CardFooter>
                 </Card>
               </Col>

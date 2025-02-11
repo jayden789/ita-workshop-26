@@ -69,6 +69,7 @@ export default class ScheduleSection extends React.Component {
       showThriveModal: false,
       showTacoModal: false,
       showFarewellModal: false,
+      showCTGTModal: false,
     };
     this.toggle1 = this.toggle1.bind(this);
     this.computeTalkSessionText = this.computeTalkSessionText.bind(this);
@@ -77,6 +78,7 @@ export default class ScheduleSection extends React.Component {
     this.toggleThriveModal = this.toggleThriveModal.bind(this);
     this.toggleTacoModal = this.toggleTacoModal.bind(this);
     this.toggleFarewellModal = this.toggleFarewellModal.bind(this);
+    this.toggleCTGTModal = this.toggleCTGTModal.bind(this);
   }
 
   toggleNeighborModal = () => {
@@ -131,6 +133,12 @@ export default class ScheduleSection extends React.Component {
     this.setState((prevState) => ({
       showFarewellModal: !prevState.showFarewellModal,
     }));
+  }
+
+  toggleCTGTModal() {
+    this.setState((prevState) => ({
+      showCTGTModal: !prevState.showCTGTModal,
+    }))
   }
 
   computeTalkSessionText(day, sessionIndex, daylist, tracklist, sessionlist) {
@@ -545,9 +553,6 @@ export default class ScheduleSection extends React.Component {
                     <td style={{ backgroundColor: 'white' }}>
                       <div>
                         Special sessions:{' '}
-                        <span style={{ color: 'gray' }}>
-                          Oscar (5th floor ballroom)
-                        </span>
                       </div>
                       <ul>
                         {/* <li>
@@ -571,8 +576,9 @@ export default class ScheduleSection extends React.Component {
                               color: '	#0096FF',
                             }}
                           >
-                            Thrive as a researcher
+                            Thrive as a researcher, {' '}
                           </span>
+                          <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                         </li>
                         <li>
                           Tuesday:{' '}
@@ -584,8 +590,23 @@ export default class ScheduleSection extends React.Component {
                               color: '	#0096FF',
                             }}
                           >
-                            Taco Tuesday outing
+                            Taco Tuesday outing,{' '}
                           </span>
+                          <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
+                        </li>
+                        <li>
+                          Thursday:{' '}
+                          <span
+                            onClick={this.toggleCTGTModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
+                          >
+                            Startup crash course, {' '}
+                          </span>
+                          <span style={{ color: 'gray' }}>Nicola</span>
                         </li>
                         <li>
                           Friday:{' '}
@@ -597,8 +618,9 @@ export default class ScheduleSection extends React.Component {
                               color: '	#0096FF',
                             }}
                           >
-                            Farewell bash, light food
+                            Farewell bash, light food, {' '}
                           </span>
+                          <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                         </li>
                       </ul>
                     </td>
@@ -862,6 +884,39 @@ export default class ScheduleSection extends React.Component {
                   <Button
                     color="primary"
                     onClick={this.toggleFarewellModal}
+                  >
+                    Close
+                  </Button>
+                </ModalFooter>
+              </Modal>
+              <Modal
+                isOpen={this.state.showCTGTModal}
+                toggle={this.toggleCTGTModal}
+                centered
+              >
+                <ModalHeader toggle={this.toggleCTGTModal}>
+                  Startup Crash Course by Cyrill Gorlla
+                </ModalHeader>
+                <ModalBody>
+                  A brief (20 minutes, more if desired) introduction to how to start your own startup.
+                  <br></br>
+                  <br></br>
+                  Cyril Gorlla is the co-founder and CEO of CTGT, which is creating an entirely new AI 
+                  stack that is 500x more efficient than deep learning, enabling enterpises to deploy 
+                  AI that dynamically changes with their needs. CTGT is backed by Google's Gradient 
+                  Ventures and Y Combinator, along with luminaries like Francois Chollet (creator of 
+                  Keras), Peter Wang (co-founder, Anaconda) and Paul Graham (co-founder, Y Combinator). 
+                  Prior to leaving to found CTGT, he was the recipient of the Endowed Chair's Fellowship 
+                  at UCSD, where his work on efficient AI training was invited for presentation at ICLR 
+                  in his first year of grad school. In his undergraduate work, he collaborated with 
+                  Intel on ML telemetry deployed on 8M+ CPUs. He was named one of 12 “2022 Shining Stars” 
+                  at UCSD and is an Ivory Bridges Fellow and Nordson Leadership Scholar. He was advised by 
+                  ACM and Amazon Fellow Mikhail Belkin.
+                </ModalBody>
+                <ModalFooter>
+                  <Button
+                    color="primary"
+                    onClick={this.toggleCTGTModal}
                   >
                     Close
                   </Button>
