@@ -227,23 +227,27 @@ const wednesdayTalks = [
       picUrl: ZaidImg,
       websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
       affiliation: 'University of Washington',
-      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department of 
-      Statistics and in the Paul G. Allen School of Computer Science and Engineering (dual appointment), 
-      and a Senior Data Science Fellow in the eScience Institute. He is an action editor at the Journal of 
-      Machine Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
-      Statistical Methodology, and a member of the editorial board of the Foundations and Trends Monograph 
-      Series. He is on the program committee of the inaugural Conference on Language Modeling, and regularly 
-      serves on the program committees of the leading machine learning and AI conferences. He is a principal 
-      investigator and a cofounder of IFML, the NSF-AI Institute on Foundations of Machine Learning, and of IFDS, 
-      the NSF-TRIPODS Institute on Foundations of Data Science. He obtained the doctoral degree from Telecom Paris - 
-      Institut Polytechnique de Paris, for his research performed at CNRS - the French National Institute for 
-      Fundamental Research. He previously held appointments at the Courant Institute of Mathematical Sciences 
-      at New York University, and at INRIA - the French National Institute for Research in Digital Science and 
-      Technology. His research has been recognized by several paper awards (Neurips, IEEE, ASA). His research 
-      has been supported by several fellowships and honors (CIFAR, CNRS, Criteo, Google, INRIA, ISI, Simons Institute).`,
+      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department 
+        of Statistics and in the Paul G. Allen School of Computer Science and Engineering, and a Senior 
+        Data Science Fellow in the eScience Institute. He is an action editor at the Journal of Machine 
+        Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
+        Statistical Methodology. He is a principal investigator and a cofounder of IFML, the NSF-AI 
+        Institute on Foundations of Machine Learning, and of IFDS, the NSF-TRIPODS institute on foundations 
+        of data science. He obtained the doctoral degree from Telecom Paris - Institut Polytechnique de 
+        Paris, for his research performed at CNRS - the French National Institute for Fundamental Research. 
+        He previously held appointments at the Courant Institute of Mathematical Sciences at New York 
+        University, and at INRIA - the French National Institute for Research in Digital Science and Technology.`,
     },
-    title: '',
-    abstract: ``,
+    title: 'Alternating Information Projections Apparitions in AI Foundation Models',
+    abstract: `Foundation models such as e.g. CLIP or DINO have established new standards for visual features based on 
+      contrastive learning and self-supervised learning, respectively. The learning recipes behind these models 
+      share a common ingredient, originally motivated by the need to avoid representation collapse. We describe 
+      this ingredient as an alternating information projection algorithm, going back to (Deming and Stephan, 1940)
+      and (Ireland and Kullback, 1968). This viewpoint leads us to show that this powerful ingredient has an 
+      unexpected benefit: reducing variance when estimating statistical functionals across different data sources. 
+      This variance reduction effect can be quantified using non-asymptotic statistical bounds involving the 
+      singular value decays of appropriate Markov operators. The effect is tangible not only during training 
+      but also at prediction in downstream tasks.`,
     award: '',
   },
   {
@@ -259,8 +263,20 @@ Pseudorandomness, Limit Theorems, and Gaussian Space. He also serves on the edit
 the Theory of Computing and Machine Learning Journal.
 `,
     },
-    title: '',
-    abstract: ``,
+    title: 'A New Paradigm for Learning with Distribution Shift',
+    abstract: `We revisit the fundamental problem of learning with distribution shift, where a learner 
+      is given labeled samples from training distribution D, unlabeled samples from test distribution D′ 
+      and is asked to output a classifier with low test error. The standard approach in this setting is 
+      to prove a generalization bound in terms of some notion of distance between D and D′. These 
+      distances, however, are difficult to compute, and this has been the main stumbling block for 
+      efficient algorithm design. We sidestep this issue and define a new model called TDS learning, 
+      where a learner runs a test on the training set and is allowed to reject if this test detects 
+      distribution shift relative to a fixed output classifier.  Moreover, when the test accepts, 
+      the output classifier is guaranteed to have low test error.  We describe how this approach 
+      leads to the first set of efficient algorithms for learning with distribution shift that do 
+      not take any assumptions on the test distribution.  Our techniques touch on a wide array of 
+      topics including pseudorandomness, property testing, and sum of squares proofs. Joint work 
+      with Konstantinos Stavropoulos and Arsen Vasilyan`,
     award: '',
   },
   {
@@ -404,16 +420,25 @@ const fridayTalks = [
       picUrl: TatsImg,
       websiteUrl: 'https://thashim.github.io/',
       affiliation: 'Stanford University',
-      bio: `I am currently an assistant professor at the computer science department in 
-        Stanford university. My research uses tools from statistics to make machine 
-        learning systems more robust and trustworthy — especially in complex systems 
-        such as large language models. The goal of my research is to use robustness and 
-        worst-case performance as a lens to understand and make progress on several 
-        fundamental challenges in machine learning and natural language processing. 
-        A few topics of recent interest are,`,
+      bio: `Tatsunori Hashimoto is an Assistant Professor in the Computer Science Department 
+      at Stanford University. Work from his group spans many areas within statistical 
+      machine learning and language models including, language model post-training, 
+      uncertainty quantification, and data selection. He received his Ph.D. at MIT 
+      under the supervision of Tommi Jaakkola and David Gifford and is the recipient 
+      of the NSF CAREER, Samsung AI researcher of the year award, a Kavli fellowship 
+      as well as best paper awards at ICML, ICLR, and CHI.`,
     },
-    title: '',
-    abstract:`
+    title: 'On identifying and updating knowledge in language models',
+    abstract:`Language models are remarkable systems - capable of encoding and synthesizing 
+      vast amounts of information into its parameters. However, the black-box nature of 
+      this encoding process makes it difficult to answer even basic questions about how 
+      to evaluate and improve these LLMs — how do we know whether a good benchmark score 
+      is due to robust storage of knowledge and not train-test contamination? and how can 
+      we robustly incorporate new pieces of knowledge without pretraining? In this talk, 
+      we show that simple classic statistical techniques allow us to make progress on each 
+      question, including the first guarantees for identifying benchmark contamination and 
+      one of the first demonstrations of scalable, post-training parametric knowledge 
+      acquisition for language models.
     `,
     award: '',
   },
