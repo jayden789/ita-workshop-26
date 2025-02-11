@@ -107,46 +107,33 @@ const mondayTalks = [
 const tuesdayTalks = [
   {
     presenter: {
-      name: 'Jona Ballé',
-      picUrl: JonaImg,
-      websiteUrl: 'https://balle.io/',
-      affiliation: 'Google',
-      bio: `Jona Ballé is an Associate Professor at New York University, studying lossy
-        image compression, information theory and models of visual perception. They
-        defended their master's and doctoral theses on signal processing and image
-        compression under the supervision of Jens-Rainer Ohm at RWTH Aachen
-        University in 2007 and 2012, respectively. This was followed by a brief
-        collaboration with Javier Portilla at CSIC in Madrid, Spain, and a
-        postdoctoral fellowship at New York University’s Center for Neural Science
-        with Eero P. Simoncelli, where Jona studied the relationship between
-        perception and image statistics. While there, they pioneered the use of
-        variational Bayesian models and deep learning techniques for end-to-end
-        optimized image compression. From 2017 to 2024, Jona deepened their ties to
-        industry as a Research Scientist at Google. Jona has served as a reviewer
-        for top-tier publications in both machine learning and image processing,
-        such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and several IEEE
-        Transactions journals. They have co-organized the annual Challenge on
-        Learned Image Compression (CLIC) since 2018, and on the program committee
-        of the Data Compression Conference (DCC) since 2022.`,
+      name: 'Chao Tian',
+      picUrl: ChaoImg,
+      websiteUrl: 'https://tiangroup.engr.tamu.edu/',
+      affiliation: 'Texas A&M University',
+      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and
+        Ph.D. degrees from Cornell University, Ithaca NY. He was a postdoctoral researcher at EPFL
+        2005-2007, then worked at AT&T Labs-Research (previously known as the Shannon Labs) for seven
+        years before returning to academia. Dr. Tian was with the University of Tennessee Knoxville for
+        a few years before joining Texas A&M University. His coauthored papers received several awards
+        including the 2014 IEEE Data Storage Best Paper Award. He was an IEEE Information Theory
+        Society Distinguished Lecturer 2023-2024.
+        `,
     },
-    title: 'Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein',
-    abstract: `Inspired by the success of generative image models, recent work on learned
-      image compression increasingly focuses on better probabilistic modeling of
-      the natural image distribution, leading to excellent realism. This,
-      however, comes at the expense of a computational complexity that is several
-      orders of magnitude higher than today's commercial codecs, and thus
-      prohibitive for most practical applications. In this talk, I'll demonstrate
-      that by focusing on models of visual perception, we can achieve a very good
-      trade-off between visual quality and bit rate similar to "generative"
-      compression models, while simultaneously requiring less than 1% of the
-      multiply-accumulate operations (MACs) for decompression. We achieve this by
-      optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD),
-      a measure of spatial (texture) realism grounded in models of visual
-      perception, and evaluating the image reconstructions with a human rating
-      study. Our study also reveals that WD outperforms other perceptual quality
-      metrics such as LPIPS, DISTS, and MS-SSIM, both as an optimization
-      objective and as a predictor of human ratings, achieving over 94% Pearson
-      correlation with Elo scores.`,
+    title: 'Transformers Learn Variable-order Markov Chains in-Context',
+    abstract: `We study in-context learning of variable-length Markov chains by viewing language
+      modeling as a form of data compression and focusing on variable-order Markov chain (VOMC)
+      sources, also known as context tree sources. This perspective allows us to leverage mature
+      compression algorithms, such as the context-tree weighting (CTW) algorithm as a baseline, which
+      is Bayesian optimal for a general class of priors.  The underlying structural learning
+      component makes it a considerably more difficult learning task than the fixed-order
+      counterpart. We empirically observe that the performance of transformers is not very sensitive
+      to the number of layers, and even a two-layer transformer (but not a one-layer transformer) can
+      learn in context well, tracking closely the performance of CTW. To explain this observation, we
+      construct a transformer with D+2 layers that can mimic the CTW algorithm accurately for VOMCs
+      of maximum order D. A reduced two-layer transformer is further studied with carefully
+      controlled counting information, which explains why 2-layer transformers can also perform well.
+      `,
     award: '',
   },
   {
@@ -189,33 +176,46 @@ const tuesdayTalks = [
   },
   {
     presenter: {
-      name: 'Chao Tian',
-      picUrl: ChaoImg,
-      websiteUrl: 'https://tiangroup.engr.tamu.edu/',
-      affiliation: 'Texas A&M University',
-      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and
-        Ph.D. degrees from Cornell University, Ithaca NY. He was a postdoctoral researcher at EPFL
-        2005-2007, then worked at AT&T Labs-Research (previously known as the Shannon Labs) for seven
-        years before returning to academia. Dr. Tian was with the University of Tennessee Knoxville for
-        a few years before joining Texas A&M University. His coauthored papers received several awards
-        including the 2014 IEEE Data Storage Best Paper Award. He was an IEEE Information Theory
-        Society Distinguished Lecturer 2023-2024.
-        `,
+      name: 'Jona Ballé',
+      picUrl: JonaImg,
+      websiteUrl: 'https://balle.io/',
+      affiliation: 'Google',
+      bio: `Jona Ballé is an Associate Professor at New York University, studying lossy
+        image compression, information theory and models of visual perception. They
+        defended their master's and doctoral theses on signal processing and image
+        compression under the supervision of Jens-Rainer Ohm at RWTH Aachen
+        University in 2007 and 2012, respectively. This was followed by a brief
+        collaboration with Javier Portilla at CSIC in Madrid, Spain, and a
+        postdoctoral fellowship at New York University’s Center for Neural Science
+        with Eero P. Simoncelli, where Jona studied the relationship between
+        perception and image statistics. While there, they pioneered the use of
+        variational Bayesian models and deep learning techniques for end-to-end
+        optimized image compression. From 2017 to 2024, Jona deepened their ties to
+        industry as a Research Scientist at Google. Jona has served as a reviewer
+        for top-tier publications in both machine learning and image processing,
+        such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and several IEEE
+        Transactions journals. They have co-organized the annual Challenge on
+        Learned Image Compression (CLIC) since 2018, and on the program committee
+        of the Data Compression Conference (DCC) since 2022.`,
     },
-    title: 'Transformers Learn Variable-order Markov Chains in-Context',
-    abstract: `We study in-context learning of variable-length Markov chains by viewing language
-      modeling as a form of data compression and focusing on variable-order Markov chain (VOMC)
-      sources, also known as context tree sources. This perspective allows us to leverage mature
-      compression algorithms, such as the context-tree weighting (CTW) algorithm as a baseline, which
-      is Bayesian optimal for a general class of priors.  The underlying structural learning
-      component makes it a considerably more difficult learning task than the fixed-order
-      counterpart. We empirically observe that the performance of transformers is not very sensitive
-      to the number of layers, and even a two-layer transformer (but not a one-layer transformer) can
-      learn in context well, tracking closely the performance of CTW. To explain this observation, we
-      construct a transformer with D+2 layers that can mimic the CTW algorithm accurately for VOMCs
-      of maximum order D. A reduced two-layer transformer is further studied with carefully
-      controlled counting information, which explains why 2-layer transformers can also perform well.
-      `,
+    title: 'Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein',
+    abstract: `Inspired by the success of generative image models, recent work on learned
+      image compression increasingly focuses on better probabilistic modeling of
+      the natural image distribution, leading to excellent realism. This,
+      however, comes at the expense of a computational complexity that is several
+      orders of magnitude higher than today's commercial codecs, and thus
+      prohibitive for most practical applications. In this talk, I'll demonstrate
+      that by focusing on models of visual perception, we can achieve a very good
+      trade-off between visual quality and bit rate similar to "generative"
+      compression models, while simultaneously requiring less than 1% of the
+      multiply-accumulate operations (MACs) for decompression. We achieve this by
+      optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD),
+      a measure of spatial (texture) realism grounded in models of visual
+      perception, and evaluating the image reconstructions with a human rating
+      study. Our study also reveals that WD outperforms other perceptual quality
+      metrics such as LPIPS, DISTS, and MS-SSIM, both as an optimization
+      objective and as a predictor of human ratings, achieving over 94% Pearson
+      correlation with Elo scores.`,
     award: '',
   },
 ];
