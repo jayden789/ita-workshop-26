@@ -31,12 +31,14 @@ class Schedule:
         self.lunch_titles = {
             0: "Know My Neighbor",
             1: "Town Hall with information theory society president",
+            2: "Lunch Break",
             3: "Hello Boss",
             4: "Startup ITAcubator",
         }
         self.lunch_abstract = {
             0: "Lunch and lightning introductions to fellow participants.",
             1: "",
+            2: "",
             3: "The event will match students and postdocs to internship mentors, postdoc supervisors, and companies. Each will present one slide for at most a minute, and fun matching will follow. Microsoft, Qualcomm, Samsung, and others have expressed interest in participating.",
             4: "This event will consist of researchers who started companies, sharing their experience and providing advice to aspiring entrepreneurs. You can propose your ideas or ask questions. Our last session has resulted in seed funding.",
         }
@@ -375,6 +377,18 @@ class Schedule:
                                 abstract="Light Refreshments",
                             )
                             session_list.append(extra_session)
+
+                            t = "12:40 - 2:00"
+                            tenc = self.get_time_encoded(self.dayindices[i], t)
+                            extra_session = self.create_session(
+                                title=self.lunch_titles[i],
+                                lunch=True,
+                                time=t,
+                                time_encoded=tenc,
+                                venue="Oscar (5th floor ballroom)",
+                                abstract=self.lunch_abstract[i],
+                            )
+                            session_list.append(extra_session)
                         else:
                             t = "12:00 - 2:00"
                             tenc = self.get_time_encoded(self.dayindices[i], t)
@@ -413,15 +427,15 @@ class Schedule:
                     )
                     session_list.append(extra_session)
 
-                    t = "12:00 - 2:00"
+                    t = "12:00 - 12:40"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
                         title="Graduation day posters and general posters",
-                        lunch=True,
+                        lunch=False,
+                        plenary=False,
                         time=t,
                         time_encoded=tenc,
                         venue="Oscar (5th floor ballroom)",
-                        abstract="catered lunch",
                     )
                     session_list.append(extra_session)
 
@@ -437,7 +451,7 @@ class Schedule:
                     )
                     session_list.append(extra_session)
 
-                    t = "3:15 - 3:35"
+                    t = "3:15 - 3:30"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
                         title="Break",
@@ -449,7 +463,7 @@ class Schedule:
                     )
                     session_list.append(extra_session)
 
-                    t = "3:35 - 6:50"
+                    t = "3:30 - 4:30"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     dummy_talk = {
                         "time": t,
@@ -471,7 +485,30 @@ class Schedule:
                         "talks": [dummy_talk],
                     }
                     session_list.append(extra_session_2)
-                    t = "6:50 - 7:50"
+
+                    t = "4:30 - 6:30"
+                    tenc = self.get_time_encoded(self.dayindices[i], t)
+                    extra_session = self.create_session(
+                        title="Break",
+                        lunch=True,
+                        time=t,
+                        time_encoded=tenc,
+                        venue="Oscar (5th floor ballroom)",
+                    )
+                    session_list.append(extra_session)
+
+                    t = "6:30 - 7:00"
+                    tenc = self.get_time_encoded(self.dayindices[i], t)
+                    extra_session = self.create_session(
+                        title="Reception",
+                        lunch=True,
+                        time=t,
+                        time_encoded=tenc,
+                        venue="Oscar (5th floor ballroom)",
+                    )
+                    session_list.append(extra_session)
+
+                    t = "7:00 - 8:00"
                     tenc = self.get_time_encoded(self.dayindices[i], t)
                     extra_session = self.create_session(
                         title="Banquet, Entertainment, Graduation Day Awards",
