@@ -976,15 +976,22 @@ export default class ScheduleSection extends React.Component {
                   <tr>
                     <th scope="row">12:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Graduation day posters and general posters, catered lunch,{' '}
-                      <span style={{ color: 'gray' }}>Breakout Rooms</span>
+                      Graduation day posters and general posters,{' '}
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">12:40 PM</th>
+                    <td style={{ backgroundColor: 'white' }}>
+                      Lunch break,{' '}
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                   <tr>
                     <th scope="row">2:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Plenary session: Foundations of Machine Learning & Artificial Intelligence
-                      <span style={{ color: 'gray' }}>{' '}Ballroom</span>
+                      <span style={{ color: 'gray' }}>{' '}Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                   <tr>
@@ -1006,17 +1013,30 @@ export default class ScheduleSection extends React.Component {
                     <td style={{ backgroundColor: 'white' }}>Break</td>
                   </tr> */}
                   <tr>
-                    <th scope="row">3:35 PM</th>
+                    <th scope="row">3:30 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Entertainment session,{' '}
-                      <span style={{ color: 'gray' }}>Ballroom</span>
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                   <tr>
-                    <th scope="row">6:50 PM</th>
+                    <th scope="row">4:30 PM</th>
+                    <td style={{ backgroundColor: 'white' }}>
+                      Break, refreshments
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6:30 PM</th>
+                    <td style={{ backgroundColor: 'white' }}>
+                    Reception,{' '}
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">7:00 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
                       Banquet, entertainment, Graduation day awards,{' '}
-                      <span style={{ color: 'gray' }}>Ballroom</span>
+                      <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                     </td>
                   </tr>
                 </tbody>
