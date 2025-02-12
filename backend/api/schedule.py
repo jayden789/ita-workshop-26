@@ -324,7 +324,7 @@ class Schedule:
                         time=t,
                         plenary=True,
                         time_encoded=tenc,
-                        venue="Nelson (5th floor ballroom)",
+                        venue="Oscar (5th floor ballroom)",
                         speakers=self.speaker_list[i],
                     )
                     session_list.append(extra_session)
@@ -383,7 +383,7 @@ class Schedule:
                                 lunch=True,
                                 time=t,
                                 time_encoded=tenc,
-                                venue="Nelson (5th floor ballroom)",
+                                venue="Oscar (5th floor ballroom)",
                                 abstract=self.lunch_abstract[i],
                             )
                             session_list.append(extra_session)
@@ -420,7 +420,7 @@ class Schedule:
                         lunch=True,
                         time=t,
                         time_encoded=tenc,
-                        venue="Breakout Rooms",
+                        venue="Oscar (5th floor ballroom)",
                         abstract="catered lunch",
                     )
                     session_list.append(extra_session)
@@ -433,7 +433,7 @@ class Schedule:
                         time=t,
                         time_encoded=tenc,
                         speakers=self.speaker_list[i],
-                        venue="Ballroom",
+                        venue="Oscar (5th floor ballroom)",
                     )
                     session_list.append(extra_session)
 
@@ -444,7 +444,7 @@ class Schedule:
                         lunch=True,
                         time=t,
                         time_encoded=tenc,
-                        venue="Breakout Rooms",
+                        venue="Oscar (5th floor ballroom)",
                         abstract="Refreshments",
                     )
                     session_list.append(extra_session)
@@ -465,7 +465,7 @@ class Schedule:
                         "time_encoded": tenc,
                         "chair": "",
                         "chair_email": "",
-                        "venue": "Ballroom",
+                        "venue": "Oscar (5th floor ballroom)",
                         "plenary": True,
                         "lunch": False,
                         "talks": [dummy_talk],
@@ -478,7 +478,7 @@ class Schedule:
                         lunch=True,
                         time=t,
                         time_encoded=tenc,
-                        venue="Ballroom",
+                        venue="Oscar (5th floor ballroom)",
                         abstract="",
                     )
                     session_list.append(extra_session)
@@ -502,7 +502,7 @@ class Schedule:
                         plenary=True,
                         time=t,
                         time_encoded=tenc,
-                        venue="Nelson (5th floor ballroom)",
+                        venue="Oscar (5th floor ballroom)",
                     )
                     session_list.append(extra_session)
 
