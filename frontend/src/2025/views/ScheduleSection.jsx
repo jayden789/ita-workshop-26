@@ -539,19 +539,21 @@ export default class ScheduleSection extends React.Component {
                     </td>
                   </tr>
                   <tr>
-                  <th scope="row">3:30 PM</th>
-                  Friday:{' '}
-                          <span
-                            onClick={this.toggleFarewellModal}
-                            style={{
-                              cursor: 'pointer',
-                              textDecoration: 'underline',
-                              color: '	#0096FF',
-                            }}
-                          >
-                            Farewell bash, light food, {' '}
-                          </span>
-                          <span style={{ color: 'gray' }}>Location TBD</span>
+                    <th scope="row">3:30 PM</th>
+                    <td style={{ backgroundColor: 'white' }}>
+                    Friday:{' '}
+                      <span
+                        onClick={this.toggleFarewellModal}
+                        style={{
+                          cursor: 'pointer',
+                          textDecoration: 'underline',
+                          color: '	#0096FF',
+                        }}
+                      >
+                        Farewell bash, light food, {' '}
+                      </span>
+                      <span style={{ color: 'gray' }}>Location TBD</span>
+                    </td>
                   </tr>
                   <tr>
                     <th scope="row">3:40 PM</th>
