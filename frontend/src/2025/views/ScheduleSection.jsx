@@ -539,9 +539,24 @@ export default class ScheduleSection extends React.Component {
                     </td>
                   </tr>
                   <tr>
+                  <th scope="row">3:30 PM</th>
+                  Friday:{' '}
+                          <span
+                            onClick={this.toggleFarewellModal}
+                            style={{
+                              cursor: 'pointer',
+                              textDecoration: 'underline',
+                              color: '	#0096FF',
+                            }}
+                          >
+                            Farewell bash, light food, {' '}
+                          </span>
+                          <span style={{ color: 'gray' }}>Location TBD</span>
+                  </tr>
+                  <tr>
                     <th scope="row">3:40 PM</th>
                     <td style={{ backgroundColor: 'white' }}>
-                      Three to four parallel sessions, four talks each
+                      Mon-Thu: Three to four parallel sessions, four talks each
                     </td>
                   </tr>
                   <tr>
@@ -607,20 +622,6 @@ export default class ScheduleSection extends React.Component {
                             Startup crash course, {' '}
                           </span>
                           <span style={{ color: 'gray' }}>Nicola</span>
-                        </li>
-                        <li>
-                          Friday:{' '}
-                          <span
-                            onClick={this.toggleFarewellModal}
-                            style={{
-                              cursor: 'pointer',
-                              textDecoration: 'underline',
-                              color: '	#0096FF',
-                            }}
-                          >
-                            Farewell bash, light food, {' '}
-                          </span>
-                          <span style={{ color: 'gray' }}>Oscar (5th floor ballroom)</span>
                         </li>
                       </ul>
                     </td>
@@ -810,7 +811,9 @@ export default class ScheduleSection extends React.Component {
                   Startup ITAcubator
                 </ModalHeader>
                 <ModalBody className="text-center">
-                This event will consist of researchers who started companies, sharing their experience and providing advice to aspiring entrepreneurs. You can propose your ideas or ask questions. Our last session has resulted in seed funding.
+                This event will consist of researchers who started companies, sharing their experience 
+                and providing advice to aspiring entrepreneurs. You can propose your ideas or ask 
+                questions. Our last session has resulted in seed funding.
 
                   <br></br>
                   <a
@@ -821,7 +824,14 @@ export default class ScheduleSection extends React.Component {
                     Idea and question slides
                   </a>
                   <br></br>
-                  Moderated by Salman Avestimehr, Alex Dimakis, and Sharon Zhang
+                  <br></br>
+                  Schedule:
+                  <br></br>
+                  a. Salman Avestimehr, Co-founder of TensorOpera AI, Generative AI Platform 
+                  <br></br>
+                  b. Alex Dimakis, Co-founder of Bespoke Labs, OSS Data Curation 
+                  <br></br>
+                  c. Sharon Zhang, Co-founder of Personal AI, AI Teams for Enterprise
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggleStartupModal}>

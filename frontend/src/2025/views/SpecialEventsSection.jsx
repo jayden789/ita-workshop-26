@@ -729,6 +729,14 @@ Lunch served for event participants.
                       Idea and question slides
                     </a>
                     <br></br>
+                    <br></br>
+                    Schedule:
+                    <br></br>
+                    a. Salman Avestimehr, Co-founder of TensorOpera AI, Generative AI Platform 
+                    <br></br>
+                    b. Alex Dimakis, Co-founder of Bespoke Labs, OSS Data Curation 
+                    <br></br>
+                    c. Sharon Zhang, Co-founder of Personal AI, AI Teams for Enterprise
                     </ModalBody>
                     <ModalFooter>
                       <Button color="secondary" onClick={this.toggle11}>
