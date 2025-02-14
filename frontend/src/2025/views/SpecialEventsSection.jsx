@@ -684,6 +684,9 @@ Lunch served for event participants.
                     A fun event where students and postdocs,{' '}
                       meet potential internship mentors, postdoc advisors, and
                       employers.
+                      <br></br>
+                      <br></br>
+                      Po Ling Loh
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Thu Noon
@@ -748,7 +751,7 @@ Lunch served for event participants.
                     <br></br>
                     <br></br>
                     <p>
-                    Salman Avestimehr and Alex Dimakis
+                    Salman Avestimehr, Alex Dimakis, and Sharon Zhang
                     </p>
                   </CardBody>
                   <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>

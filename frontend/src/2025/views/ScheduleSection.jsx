@@ -719,7 +719,8 @@ export default class ScheduleSection extends React.Component {
                   mentors, postdoc supervisors, and companies. Each will present
                   one slide for at most a minute, and fun matching will follow.
                   Microsoft, Qualcomm, Samsung, and others have expressed
-                  interest in participating.<br></br>
+                  interest in participating.
+                  <br></br>
                   Please fill your slide and upload your resume below. During
                   the event you will use your slide to introduce yourself in a
                   minute or less. Please upload your information below.
@@ -766,6 +767,7 @@ export default class ScheduleSection extends React.Component {
                     Mentors/Employers slides 2024
                   </a>
                   <br></br>
+                  Moderated by Po Ling Loh
                 </ModalBody>
                 <ModalFooter>
                   <Button color="secondary" onClick={this.toggleBossModal}>
@@ -819,9 +821,10 @@ export default class ScheduleSection extends React.Component {
                     Idea and question slides
                   </a>
                   <br></br>
+                  Moderated by Salman Avestimehr, Alex Dimakis, and Sharon Zhang
                 </ModalBody>
                 <ModalFooter>
-                  <Button color="secondary" onClick={this.toggleNeighborModal}>
+                  <Button color="secondary" onClick={this.toggleStartupModal}>
                     Close
                   </Button>
                 </ModalFooter>
