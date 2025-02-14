@@ -258,7 +258,7 @@
         "roughTopic":"ML",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-3"
+        "metadata":"F-1-2-2"
     },
     {
         "lastName":"Bernstein",
@@ -287,7 +287,7 @@
         "roughTopic":"",
         "Invited":"",
         "scheduled":"Machine Learning",
-        "metadata":"F-1-2-2"
+        "metadata":"F-1-2-3"
     },
     {
         "lastName":"Srebro",
@@ -522,35 +522,6 @@
         "metadata":"F-2-2-4"
     },
     {
-        "lastName":"Ghazi",
-        "firstName":"Badih",
-        "title":"",
-        "student":"False",
-        "Affiliation":"",
-        "Email":"badihghazi@google.com",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":66,
-        "days":"RF",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"How Private are DP-SGD Implementations?",
-        "abstract":"We demonstrate a substantial gap between the privacy guarantees of the Adaptive Batch Linear Queries (ABLQ) mechanism under different types of batch sampling: (i) Shuffling, and (ii) Poisson subsampling; the typical analysis of Differentially Private Stochastic Gradient Descent (DP-SGD) follows by interpreting it as a post-processing of ABLQ. While shuffling-based DP-SGD is more commonly used in practical implementations, it has not been amenable to easy privacy analysis, either analytically or even numerically. On the other hand, Poisson subsampling-based DP-SGD is challenging to scalably implement, but has a well-understood privacy analysis, with multiple open-source numerically tight privacy accountants available. This has led to a common practice of using shuffling-based DP-SGD in practice, but using the privacy analysis for the corresponding Poisson subsampling version. Our result shows that there can be a substantial gap between the privacy analysis when using the two types of batch sampling, and thus advises caution in reporting privacy parameters for DP-SGD.",
-        "schedulingComments":"I would prefer Friday for the talk if possible. If not, Thursday would be the second best (and only other feasible) option.",
-        "topicComments":"Differential privacy",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"P, ml",
-        "Invited":"",
-        "scheduled":"Privacy ",
-        "metadata":"F-3-1-1"
-    },
-    {
         "lastName":"Razaviyayn",
         "firstName":"Meisam",
         "title":"MISTER",
@@ -577,7 +548,7 @@
         "roughTopic":"DP, O",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-2"
+        "metadata":"F-3-1-1"
     },
     {
         "lastName":"Mondelli",
@@ -606,7 +577,7 @@
         "roughTopic":"P, ML",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-3"
+        "metadata":"F-3-1-2"
     },
     {
         "lastName":"Zakynthinou",
@@ -635,7 +606,7 @@
         "roughTopic":"DP,P",
         "Invited":"",
         "scheduled":"Privacy ",
-        "metadata":"F-3-1-4"
+        "metadata":"F-3-1-3"
     },
     {
         "lastName":"Wibisono",
@@ -926,35 +897,6 @@
         "Invited":"",
         "scheduled":"Startup Stories (INV)",
         "metadata":"F-4-2-3"
-    },
-    {
-        "lastName":"Dimakis",
-        "firstName":"Alex",
-        "title":"PROFESSOR",
-        "student":"False",
-        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/4\/",
-        "Email":"dimakis@austin.utexas.edu",
-        "Inviter":"",
-        "inviteType":"SELF_REGISTERED",
-        "status":"ALMOST_CERTAINLY",
-        "registration":305,
-        "days":"RF",
-        "Sunday reception":"NOT_ATTENDING",
-        "Monday lunch":"",
-        "Banquet":"NOT_ATTENDING",
-        "PTY":true,
-        "PBD":false,
-        "paperTitle":"Reasoning and Data Curation for Post-Training LLMs",
-        "abstract":"",
-        "schedulingComments":"Friday as we have discussed in startup session.",
-        "topicComments":"",
-        "Fee type override":"",
-        "Paid?":"FALSE",
-        "Paid amount":0,
-        "roughTopic":"",
-        "Invited":"",
-        "scheduled":"",
-        "metadata":""
     },
     {
         "lastName":"Rajam\u00e4ki",
@@ -4899,6 +4841,35 @@
         "Invited":"",
         "scheduled":"Graduation Day Talks 3",
         "metadata":"W-3-2-4"
+    },
+    {
+        "lastName":"Dimakis",
+        "firstName":"Alex",
+        "title":"PROFESSOR",
+        "student":"False",
+        "Affiliation":"https:\/\/itaws.ucsd.edu\/api\/v0\/affiliations\/4\/",
+        "Email":"dimakis@austin.utexas.edu",
+        "Inviter":"",
+        "inviteType":"SELF_REGISTERED",
+        "status":"ALMOST_CERTAINLY",
+        "registration":305,
+        "days":"RF",
+        "Sunday reception":"NOT_ATTENDING",
+        "Monday lunch":"",
+        "Banquet":"NOT_ATTENDING",
+        "PTY":true,
+        "PBD":false,
+        "paperTitle":"Reasoning and Data Curation for Post-Training LLMs",
+        "abstract":"",
+        "schedulingComments":"Friday as we have discussed in startup session.",
+        "topicComments":"",
+        "Fee type override":"",
+        "Paid?":"FALSE",
+        "Paid amount":0,
+        "roughTopic":"",
+        "Invited":"",
+        "scheduled":"",
+        "metadata":""
     },
     {
         "lastName":"Orlitsky",

@@ -32,6 +32,8 @@ import AhmadImg from '../img2025/plenary-profile-pics/ahmad.jpg';
 import AdamImg from '../img2025/plenary-profile-pics/adam.jpg';
 import TatsImg from '../img2025/plenary-profile-pics/tats.jpg';
 import HamedImg from '../img2025/plenary-profile-pics/hamed.jpg';
+import MahdiCImg from '../img2025/plenary-profile-pics/mahdiC.jpg';
+import NathanImg from '../img2025/plenary-profile-pics/nathan.jpg';
 
 const mondayTalks = [
   {
@@ -531,11 +533,11 @@ export const plenarySessions = [
     dayName: 'Wednesday',
     topic: 'Foundations of Machine Learning & Artificial Intelligence',
     moderator: {
-      name: '',
-      picUrl: '',
-      websiteUrl: '',
+      name: 'Mahdi Cheraghchi',
+      picUrl: MahdiCImg,
+      websiteUrl: 'https://mahdi.ch/',
       bio: ``,
-      affiliation: '',
+      affiliation: 'UMich',
     },
     moderatorTalk: {
       title: '',
@@ -571,10 +573,10 @@ export const plenarySessions = [
     dayName: 'Friday',
     topic: 'Large Language Models',
     moderator: {
-      name: '',
-      picUrl: '',
-      websiteUrl: '',
-      affiliation: '',
+      name: 'Nathan Srebro',
+      picUrl: NathanImg,
+      websiteUrl: 'https://nati.ttic.edu/',
+      affiliation: 'TTIC',
       bio: ``,
     },
     moderatorTalk: {
