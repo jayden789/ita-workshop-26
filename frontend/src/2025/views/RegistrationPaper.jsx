@@ -614,8 +614,10 @@ export default class RegistrationPaper extends React.Component {
             <Col>
               <div className="text-center">
                 <Button
-                  disabled={isFormInvalid || this.props.loading}
+                  // disable since workshop is closed
+                  // disabled={isFormInvalid || this.props.loading}
                   onClick={this.props.saveChanges}
+                  disabled
                 >
                   {this.props.loading ? (
                     <Spinner size="sm mr-2">Saving...</Spinner>

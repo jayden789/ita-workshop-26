@@ -607,7 +607,9 @@ export default class RegistrationProfile extends React.Component {
             <Col>
               <div className="text-center">
                 <Button
-                  disabled={this.state.formError || this.props.loading}
+                  // disable since workshop is closed
+                  // disabled={this.state.formError || this.props.loading}
+                  disabled
                   onClick={this.props.saveChanges}
                   id="SaveChangesButton"
                 >

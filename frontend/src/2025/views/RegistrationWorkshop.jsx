@@ -754,10 +754,12 @@ export default class RegistrationWorkshop extends React.Component {
             <div className="text-center">
               <Button
                 onClick={this.props.saveChanges}
-                disabled={!requiredFieldsOk ||
-                          (!this.props.nonConsecutiveDays && !daysOk) ||
-                          this.props.loading
-                }
+                // disable since workshop is closed
+                // disabled={!requiredFieldsOk ||
+                //           (!this.props.nonConsecutiveDays && !daysOk) ||
+                //           this.props.loading
+                // }
+                disabled
                 className="mr-3"
               >
                 {this.props.loading ? (
