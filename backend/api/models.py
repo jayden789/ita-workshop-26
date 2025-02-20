@@ -854,6 +854,9 @@ class Registration(BaseModel):
         options_fee = sum(
             option.get_fee(fee_type) for option in self.options.all()
         )
+        # For test, remove afterwards
+        if self.user.is_superuser:
+            return 0.12
         return base_fee + days_fee + options_fee
 
     @property
