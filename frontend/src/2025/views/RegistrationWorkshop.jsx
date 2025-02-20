@@ -744,7 +744,7 @@ export default class RegistrationWorkshop extends React.Component {
                     wedPrice +
                     satdayPrice +
                     italtPrice
-                  : 0}
+                  : 0.01}
               </strong>
             </h3>
           </Label>
@@ -780,9 +780,9 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              {/*<Button disabled={!paymentAllowed} onClick={toggle}>
+              <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
-              </Button>*/}
+              </Button>
               {/* {paymentAllowed || this.props.paid ? null : (
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
