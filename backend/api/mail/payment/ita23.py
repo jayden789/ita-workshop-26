@@ -37,11 +37,11 @@ def _render_attendance(regn):
 def _render_sunday_reception(regn):
     options = regn.selected_option_slugs()
     choice = None
-    if "ita24_sundayReception_selfOnly" in options:
+    if "ita25_sundayReception_selfOnly" in options:
         choice = "one guest"
-    if "ita24_sundayReception_selfPlus1" in options:
+    if "ita25_sundayReception_selfPlus1" in options:
         choice = "two guests"
-    if "ita24_sundayReception_selfPlus2" in options:
+    if "ita25_sundayReception_selfPlus2" in options:
         choice = "three guests"
     if choice is None:
         return []
@@ -62,11 +62,11 @@ def _render_monday_lunch(regn):
 def _render_wednesday_banquet(regn):
     options = regn.selected_option_slugs()
     choice = None
-    if "ita24_banquetSelf_selfOnly" in options:
+    if "ita25_banquetSelf_selfOnly" in options:
         choice = "one guest"
-    if "ita24_banquetSelf_selfPlus1" in options:
+    if "ita25_banquetSelf_selfPlus1" in options:
         choice = "two guests"
-    if "ita24_banquetSelf_selfPlus2" in options:
+    if "ita25_banquetSelf_selfPlus2" in options:
         choice = "three guests"
     if choice is None:
         return []
@@ -99,35 +99,35 @@ def getReciept(registration_payment):
     options = regn.selected_option_slugs()
     receptionCnt = None
     banquetCnt = None 
-    attendingItalt = None 
-    if "ita24_sundayReception_selfOnly" in options:
+    # attendingItalt = None 
+    if "ita25_sundayReception_selfOnly" in options:
         receptionCnt = "1"
-    if "ita24_sundayReception_selfPlus1" in options:
+    if "ita25_sundayReception_selfPlus1" in options:
         receptionCnt = "2"
-    if "ita24_sundayReception_selfPlus2" in options:
+    if "ita25_sundayReception_selfPlus2" in options:
         receptionCnt = "3"
     if receptionCnt is None:
         receptionCnt = "N/A"
     
-    if "ita24_banquetSelf_selfOnly" in options:
+    if "ita25_banquetSelf_selfOnly" in options:
         banquetCnt = "1"
-    if "ita24_banquetSelf_selfPlus1" in options:
+    if "ita25_banquetSelf_selfPlus1" in options:
         banquetCnt = "2"
-    if "ita24_banquetSelf_selfPlus2" in options:
+    if "ita25_banquetSelf_selfPlus2" in options:
         banquetCnt = "3"
     if banquetCnt is None:
         banquetCnt = "N/A"
 
-    if "ita24_italt_attending" in options:
-        attendingItalt = "1"
-    if "ita24_italt_notAttending" in options:
-        attendingItalt = "N/A"
+    # if "ita24_italt_attending" in options:
+    #     attendingItalt = "1"
+    # if "ita24_italt_notAttending" in options:
+    #     attendingItalt = "N/A"
 
     banquetFees = "-"
     receptionFees = "-"
     noOfdaysFees = "-"
     register_fees ="-"
-    italtFees = "-"
+    # italtFees = "-"
     isStudent = False
     isAffiliate = False
     if (regn.fee_type == "Student" or regn.fee_type == "STUDENT"):
@@ -139,13 +139,13 @@ def getReciept(registration_payment):
     
     recep_cnt = 0 
     ban_cnt = 0
-    italt_cnt = 0
+    # italt_cnt = 0
     if receptionCnt!= "N/A":
         recep_cnt = int(receptionCnt)
     if banquetCnt != "N/A":
         ban_cnt = int(banquetCnt)
-    if attendingItalt != "N/A":
-        italt_cnt = 1
+    # if attendingItalt != "N/A":
+    #     italt_cnt = 1
     
     base_cost_student = 200
     daily_cost = 45
@@ -154,8 +154,8 @@ def getReciept(registration_payment):
     reception_cost_normal = 40
     banq = 60
     banq_normal = 95
-    italt = 45
-    italt_normal = 75
+    # italt = 45
+    # italt_normal = 75
 
     # if base_cost_student  + len(regn.attending_dates.all())*daily_cost + reception_cost*recep_cnt + banq*ban_cnt + italt_cnt * italt == int(registration_payment.amount):
     #     isStudent = True
@@ -170,8 +170,8 @@ def getReciept(registration_payment):
             receptionFees = str(reception_cost*int(receptionCnt))
         if banquetCnt != "N/A":
             banquetFees = str(banq*int(banquetCnt))
-        if attendingItalt != "N/A":
-            italtFees = str(italt)
+        # if attendingItalt != "N/A":
+        #     italtFees = str(italt)
     elif isAffiliate:
         register_fees = "200"
         noOfdaysFees = str(len(regn.attending_dates.all())*daily_cost_normal)
@@ -179,8 +179,8 @@ def getReciept(registration_payment):
             receptionFees = str(reception_cost_normal*int(receptionCnt))
         if banquetCnt != "N/A":
             banquetFees = str(banq_normal*int(banquetCnt))
-        if attendingItalt != "N/A":
-            italtFees = str(italt_normal) 
+        # if attendingItalt != "N/A":
+        #     italtFees = str(italt_normal) 
     else:
         register_fees = "300"
         noOfdaysFees = str(len(regn.attending_dates.all())*70)
@@ -188,8 +188,8 @@ def getReciept(registration_payment):
             receptionFees = str(40*int(receptionCnt))
         if banquetCnt != "N/A":
             banquetFees = str(95*int(banquetCnt))
-        if attendingItalt != "N/A":
-            italtFees = str(italt_normal) 
+        # if attendingItalt != "N/A":
+        #     italtFees = str(italt_normal) 
 
     formal_name = regn.user_profile.formal_last_name
     if formal_name is None:
@@ -204,15 +204,26 @@ def getReciept(registration_payment):
         "receptionFees" : receptionFees ,
         "banquetCnt" : banquetCnt ,
         "banquetFees" : banquetFees,
-        "italtCnt": attendingItalt,
-        "italtFees": italtFees 
+        # "italtCnt": attendingItalt,
+        # "italtFees": italtFees 
     }
 
     return convertIntoPDF(info)
 
 
 def convertIntoPDF(options):
-    options_val = ["noOfDaysFees","totalFees","formalName","registerFees","noOfDays","receptionCnt","receptionFees","banquetCnt","banquetFees", "italtCnt", "italtFees"]
+    options_val = ["noOfDaysFees",
+                   "totalFees",
+                   "formalName",
+                   "registerFees",
+                   "noOfDays",
+                   "receptionCnt",
+                   "receptionFees",
+                   "banquetCnt",
+                   "banquetFees", 
+                #    "italtCnt", 
+                #    "italtFees"
+                   ]
 
     with open("./main.tex",mode="r") as f:
         data = f.read()
@@ -238,7 +249,7 @@ def _render_email_body(registration_payment):
         formal_name_ = regn.user_profile.formal_name
     return """Dear {formal_name},
 
-Thank you very much for registering for the 2024 ITA Workshop.
+Thank you very much for registering for the 2025 ITA Workshop.
 We have received your ${amount:.2f} payment.
 
 Your registration included the following options:
@@ -265,7 +276,7 @@ def create_receipt_email(registration_payment):
         registration_payment.status == RegistrationPaymentStatus.APPROVED.name
     )
 
-    subject = "Your 2024 ITA Workshop registration payment receipt"
+    subject = "Your 2025 ITA Workshop registration payment receipt"
     body = _render_email_body(registration_payment)
     attach = [getReciept(registration_payment)]
     sender = django_settings.DEFAULT_FROM_EMAIL
