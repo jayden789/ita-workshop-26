@@ -1,6 +1,6 @@
 from . import ita23
 
-POST_PAYMENT_HOOKS = {"ita24": ita23.send_receipt_email}
+POST_PAYMENT_HOOKS = {"ita25": ita23.send_receipt_email}
 
 
 def call_post_payment_hooks(registration_payment):
