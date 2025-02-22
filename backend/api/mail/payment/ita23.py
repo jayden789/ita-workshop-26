@@ -271,7 +271,7 @@ def create_receipt_email(registration_payment):
     """
     Create a registration payment receipt email.
     """
-    assert registration_payment.registration.workshop.slug == "ita24"
+    assert registration_payment.registration.workshop.slug == "ita25"
     assert (
         registration_payment.status == RegistrationPaymentStatus.APPROVED.name
     )
