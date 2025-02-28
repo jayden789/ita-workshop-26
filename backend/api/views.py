@@ -1583,6 +1583,13 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
             )
             .get("total")
         )
+        aggregates["total_amount_unpaid"] = (
+            models.Registration.objects.filter(workshop=workshop)
+            .aggregate(
+                total=django_models.Sum("total_fee_amount")
+            )
+            .get("total") - aggregates["total_amount_paid"]
+        )
         aggregates["banquet_options"] = banquet_options
         serializer = serializers.RegistrationAggregateStatsIta23Serializer(
             aggregates

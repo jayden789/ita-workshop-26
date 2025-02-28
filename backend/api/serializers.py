@@ -1144,6 +1144,7 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             "valentines_event_counts": valentines_event_counts,
             "italt_counts": italt_counts,
             "total_amount_paid": instance.get("total_amount_paid"),
+            "total_amount_unpaid": instance.get("total_amount_unpaid"),
             "banquet_options": instance.get("banquet_options")
         }
 
