@@ -6,6 +6,7 @@ export default class AggregateStats extends React.Component {
     const { participating, participating_and_paid, participating_and_unpaid } =
       this.props.stats.participation_counts;
     const { total_amount_paid } = this.props.stats;
+    const { total_amount_unpaid } = this.props.stats;
 
     return (
       <React.Fragment>
@@ -14,6 +15,7 @@ export default class AggregateStats extends React.Component {
           {participating_and_unpaid} unpaid)
         </li>
         <li>Total amount paid: ${total_amount_paid}</li>
+        <li>Total amount owed: ${total_amount_unpaid}</li>
       </React.Fragment>
     );
   };
