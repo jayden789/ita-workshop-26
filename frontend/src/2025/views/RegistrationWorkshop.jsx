@@ -350,6 +350,18 @@ export default class RegistrationWorkshop extends React.Component {
       });
     };
 
+    const totalPrice =  this.props.basePrice +
+                        dayPrice +
+                        sunPrice +
+                        wedPrice +
+                        satdayPrice +
+                        italtPrice;
+    var registerType = this.props.studentOption ? "S" : "R";
+    if (totalPrice == 780 || totalPrice == 295 || totalPrice == 935 || totalPrice == 630 || totalPrice == 795) {
+      registerType = 'X';
+    }
+    const paymentUrl = 'https://commerce.cashnet.com/UCSD_ITA' + registerType + "_Pay$" + totalPrice;
+
     return (
       <Card body className="notranslate">
         {this.props.paymentAlert}
@@ -744,7 +756,7 @@ export default class RegistrationWorkshop extends React.Component {
                     wedPrice +
                     satdayPrice +
                     italtPrice
-                  : 0.01}
+                  : 0.00}
               </strong>
             </h3>
           </Label>
@@ -780,9 +792,13 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              <Button hidden disabled={!paymentAllowed} onClick={toggle}>
+              <br></br>
+              <br></br>
+              <a disabled={!paymentAllowed} href={ paymentUrl} className="btn btn-primary">Register (aka Pay)</a>
+
+              {/* <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
-              </Button>
+              </Button> */}
               {/* {paymentAllowed || this.props.paid ? null : (
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
