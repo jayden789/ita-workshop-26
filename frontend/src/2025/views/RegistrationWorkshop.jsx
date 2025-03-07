@@ -792,27 +792,34 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              <br></br>
-              <br></br>
-              <a disabled={!paymentAllowed} href={ paymentUrl} className="btn btn-primary">Register (aka Pay)</a>
+              <a  hidden={ !paymentAllowed || this.props.paid }
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  href={ paymentUrl} 
+                  className="btn btn-secondary"
+              >
+                Register (aka Pay)
+              </a>
 
               {/* <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
               </Button> */}
-              {/* {paymentAllowed || this.props.paid ? null : (
+              {paymentAllowed || this.props.paid ? null : (
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
                     color="danger"
                     className="mt-2 p-2"
-                    style={{ width: '400px' }}
+                    style={{ width: '600px' }}
                   >
-                    To pay, please save changes.
+                    Please do not change your registration options since the workshop is closed.
+                    <br></br>
+                    If there is anything wrong, please contact us through ita@ucsd.edu.
                   </Alert>
                 </div>
-              )} */}
+              )}
             </div>
           </Col>
-          <div className="text-center">
+          {/* <div className="text-center">
             <Button
               className="text-center mt-4"
               disabled={true}
@@ -821,7 +828,7 @@ export default class RegistrationWorkshop extends React.Component {
               We are updating the payment gateway, we will let you know when you
               can pay.
             </Button>
-          </div>
+          </div> */}
         </FormGroup>
 
         {/* <p className="text-center mt-4 mb-0">
