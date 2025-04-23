@@ -14,7 +14,7 @@ $ docker-compose exec backend ./manage.py load_mock_data    # load mock data
 
 docker-compose exec backend ./manage.py load_ita25_registration_form_response_to_db
 
-Now the API explorer will be available at <https://localhost:8080/api/v0>. Note
+Now the API explorer will be available at <http://localhost:8080/api/v0>. Note
 that since the local TLS certificate is self-signed, you will probably get
 a security warning in your browser indicating that this is so. It is safe to
 dismiss this warning.
@@ -58,6 +58,9 @@ you should also run:
 ```bash
 $ docker-compose exec backend pipenv install --system
 ```
+
+### API Documentation
+For the ease of development and maintenance, the full API Documentation for this project is available at <http://localhost:8080/docs/> locally.
 
 ## Production deployment
 

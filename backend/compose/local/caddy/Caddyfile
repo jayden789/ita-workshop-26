@@ -1,13 +1,16 @@
 http://localhost:8080 {
-  root /app
 
-  proxy / backend:8000 {
-    transparent
-    except /static
-  }
+root * /app
 
-  log stdout
-  errors stdout
-  gzip
-  
+handle_path /static/* {
+  file_server
+}
+
+reverse_proxy / backend:8000
+
+log {
+  output stdout
+}
+
+encode gzip
 }

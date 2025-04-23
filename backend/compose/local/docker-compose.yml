@@ -11,6 +11,7 @@ services:
       - '8080:8080'
     volumes:
       - backend_static:/app/static
+      - ./caddy/resolv.conf:/etc/resolv.conf
     depends_on:
       - backend
   backend:
