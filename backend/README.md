@@ -59,6 +59,11 @@ you should also run:
 $ docker-compose exec backend pipenv install --system
 ```
 
+### Connect to Local Database
+```bash
+psql -h 127.0.0.1 -U postgres
+```
+
 ### API Documentation
 For the ease of development and maintenance, the full API Documentation for this project is available at <http://localhost:8080/docs/> locally.
 
