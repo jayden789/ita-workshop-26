@@ -1,16 +1,18 @@
 http://localhost:8080 {
+  root /app
 
-root * /app
+  rewrite /static {
+    r ^/static/(.*)
+    to /static/{1}
+  }
+  browse /static
 
-handle_path /static/* {
-  file_server
-}
+  proxy / backend:8000 {
+    transparent
+    except /static
+  }
 
-reverse_proxy / backend:8000
-
-log {
-  output stdout
-}
-
-encode gzip
+  log stdout
+  errors stdout
+  gzip
 }
