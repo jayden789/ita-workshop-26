@@ -1,0 +1,34 @@
+.plenaryJumbo {
+  background: white;
+  background-size: cover;
+  background-position: center center;
+  outline-style: groove;
+  outline-color: white;
+  overflow-x: auto;
+}
+
+.cardsContainer {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: max-content;
+}
+
+.plenarySessionCard {
+  flex: 0 0 auto;
+  width: 250px;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
+.plenarySessionCardHeader {
+  min-height: 10em;
+  height: 150px;
+}
+
+.speakerLabel,
+.moderatorLabel {
+  color: #777;
+  font-weight: 400;
+}

@@ -1,0 +1,21 @@
+.grayText {
+  color: #999;
+}
+
+.dangerText {
+  padding: 2px;
+  border-radius: 4px;
+  color: #b71c1c;
+  font-weight: bold;
+}
+
+.blueText {
+  padding: 2px;
+  border-radius: 4px;
+  background-color: #337ab7;
+  color: #fff;
+}
+.select {
+  margin-left: 16px;
+  min-width: 160px;
+}
