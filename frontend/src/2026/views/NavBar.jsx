@@ -14,7 +14,7 @@ import {
 } from 'reactstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 
-export default class NavBar2025 extends React.Component {
+export default class NavBar2026 extends React.Component {
   constructor(props) {
     super(props);
 
@@ -39,7 +39,7 @@ export default class NavBar2025 extends React.Component {
           style={{ position: 'fixed', zIndex: '100', top: '0' }} // changing to 100 in order to keep it above everything
         >
           <NavbarBrand tag={Link} to="/">
-            2025 ITA Workshop
+            2026 ITA Workshop
           </NavbarBrand>
 
           <NavbarToggler onClick={this.toggle} />
@@ -75,11 +75,11 @@ export default class NavBar2025 extends React.Component {
                   Location
                 </NavLink>
               </NavItem>
-              <NavItem>
+              {/* <NavItem>
                 <NavLink tag={Link} to="/#specialevents" onClick={this.toggle}>
                   Special Events
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
               {/*<NavItem>
                 <NavLink tag={Link} to="#socialevents" onClick={this.toggle}>
                   Social Events
@@ -91,12 +91,12 @@ export default class NavBar2025 extends React.Component {
                 </NavLink>
               </NavItem>*/}
 
-              <NavItem>
+              {/* <NavItem>
                 <NavLink tag={Link} to="/#participants" onClick={this.toggle}>
                   Participants
                 </NavLink>
-              </NavItem>
-              <UncontrolledDropdown nav inNavbar>
+              </NavItem> */}
+              {/* <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
                   Other Years
                 </DropdownToggle>
@@ -116,7 +116,7 @@ export default class NavBar2025 extends React.Component {
                   <DropdownItem href="https://ita.ucsd.edu/workshop/2019/">
                     2019
                   </DropdownItem>
-                  {/* <DropdownItem href="https://ita.ucsd.edu/workshop/18/"> */}
+                  <DropdownItem href="https://ita.ucsd.edu/workshop/18/">
                   <DropdownItem>2018</DropdownItem>
                   <DropdownItem href="https://ita.ucsd.edu/workshop/17/">
                     2017
@@ -158,7 +158,7 @@ export default class NavBar2025 extends React.Component {
                   <DropdownItem divider />
                   <DropdownItem>Close</DropdownItem>
                 </DropdownMenu>
-              </UncontrolledDropdown>
+              </UncontrolledDropdown> */}
               {this.props.loggedIn ? (
                 <NavItem>
                   <NavLink className="clicky" onClick={this.props.logout}>

@@ -18,39 +18,39 @@ import AwardSessions from './AwardSessions';
 
 const ParticipantsSection = React.lazy(() => import('./ParticipantsSection'));
 
-export default class Home2025 extends React.Component {
+export default class Home2026 extends React.Component {
   render() {
     return (
       <div>
         <NavBar {...this.props.navbarProps} />
         <HeroSection />
-        <GeneralInfoSection />
         <RegistrationSection
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
         />
-        <PlenariesSection />
+        {/* <PlenariesSection /> */}
         {/* <AwardSessions /> */}
         {/*<InvitedSessionsSection />*/}
-        <ScheduleSection
+        {/* <ScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />
-        <DailyScheduleSection
+        /> */}
+        {/* <DailyScheduleSection
           schedule={this.props.schedule}
           loadSchedule={this.props.loadSchedule}
-        />
+        /> */}
         <LocationSection />
-        <SpecialEventsSection />
+        {/* <SpecialEventsSection /> */}
         {/*<TutorialSection />*/}
-        <EataSection />
-        <Suspense
+        {/* <EataSection /> */}
+        {/* <Suspense
           fallback={<p className="text-center m-1">Loading Participants...</p>}
         >
           <ParticipantsSection
             participantsUrl25={this.props.participantsUrl25}
           />
-        </Suspense>
+        </Suspense> */}
+        <GeneralInfoSection />
         <SponsorsSection />
         <CodeOfConductSection />
       </div>

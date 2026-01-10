@@ -12,6 +12,7 @@ import CreateAccountConfirm from './views/auth/CreateAccountConfirm';
 import TestProfilePicUpload from './views/TestProfilePicUpload';
 import SchedulePage2025 from './2025/views/SchedulePage/SchedulePage';
 import SchedulePage2023 from './2023/views/SchedulePage/SchedulePage';
+import SchedulePage2026 from './2026/views/SchedulePage/SchedulePage';
 import TestCreateCharge from './views/oneTimeCharge/TestCreateCharge';
 import PayCharge from './views/oneTimeCharge/PayCharge';
 import AdminHome from './views/admin/admin_home/AdminHome';
@@ -22,16 +23,19 @@ import NavBar2022 from './2022/views/NavBar';
 import NavBar2023 from './2023/views/NavBar';
 import NavBar2024 from './2024/views/NavBar';
 import NavBar2025 from './2025/views/NavBar';
+import NavBar2026 from './2026/views/NavBar';
 import Home2020 from './2020/views/Home';
 import Home2022 from './2022/views/Home';
 import Home2023 from './2023/views/Home';
 import Home2024 from './2024/views/Home';
 import Home2025 from './2025/views/Home';
+import Home2026 from './2026/views/Home';
 import Login2024 from './2024/views/Login';
 import Login2025 from './2025/views/Login';
+import Login2026 from './2026/views/Login';
 import Registration2024 from './2024/views/Registration';
 import Registration2025 from './2025/views/Registration';
-
+import Registration2026 from './2026/views/Registration';
 // this is a joke.
 import WorldRecord from './views/WorldRecord';
 
@@ -46,6 +50,7 @@ class App extends Component {
     participantsUrl23: '',
     participantsUrl24: '',
     participantsUrl25: '',
+    participantsUrl26: '',
     registrationFees: [],
     schedule: [],
     loadSchedule: true,
@@ -59,6 +64,7 @@ class App extends Component {
     // this.loadWorkshop2022();
     this.loadWorkshop2023();
     this.loadWorkshop2025();
+    this.loadWorkshop2026();
     this.loadRegistrationFees();
     this.loadSchedule();
     this.onLogin();
@@ -110,6 +116,14 @@ class App extends Component {
       this.setState({
         participantsUrl25: workshop['participants_url'],
         workshop,
+      })
+    );
+  };
+
+  loadWorkshop2026 = () => {
+    api('api/v0/workshops/ita26/').then((workshop) =>
+      this.setState({
+        participantsUrl26: workshop['participants_url'],
       })
     );
   };
@@ -166,6 +180,7 @@ class App extends Component {
     const navbar23 = <NavBar2023 {...navbarProps} />;
     const navbar24 = <NavBar2024 {...navbarProps} />;
     const navbar25 = <NavBar2025 {...navbarProps} />;
+    const navbar26 = <NavBar2026 {...navbarProps} />;
 
     const addProfilePicUrl = (this.state.user.user_profile || {})
       .add_profile_pic_url;
@@ -178,12 +193,12 @@ class App extends Component {
             path="/"
             render={() => (
               <div className="App maxheight">
-                <Home2025
+                <Home2026
                   showAdmin={this.state.user.admin}
                   navbarProps={navbarProps}
                   registrationFees={this.state.registrationFees}
                   loadFees={this.state.loadFees}
-                  participantsUrl25={this.state.participantsUrl25}
+                  participantsUrl26={this.state.participantsUrl26}
                   schedule={this.state.schedule}
                   loadSchedule={this.state.loadSchedule}
                 />
@@ -195,10 +210,10 @@ class App extends Component {
             path="/login"
             render={({ location }) => (
               <div className="App maxheight">
-                <Login2025
+                <Login2026
                   onLogin={this.onLogin}
                   location={location}
-                  navbar={navbar25}
+                  navbar={navbar26}
                 />
               </div>
             )}
@@ -209,9 +224,9 @@ class App extends Component {
             render={({ location }) => (
               <div className="App maxheight">
                 {this.state.workshop ? (
-                  <Registration2025
+                  <Registration2026
                     location={location}
-                    navbar={navbar25}
+                    navbar={navbar26}
                     create={true}
                     workshop={this.state.workshop}
                     loggedInUser={this.state.user}
@@ -226,6 +241,23 @@ class App extends Component {
                     <Spinner>Loading....</Spinner>
                   </div>
                 )}
+              </div>
+            )}
+          />
+          <Route
+            exact={true}
+            path="/2025"
+            render={() => (
+              <div className="App maxheight">
+                <Home2025
+                  showAdmin={this.state.user.admin}
+                  navbar={navbar25}
+                  registrationFees={this.state.registrationFees}
+                  loadFees={this.state.loadFees}
+                  participantsUrl25={this.state.participantsUrl25}
+                  schedule={this.state.schedule}
+                  loadSchedule={this.state.loadSchedule}
+                />
               </div>
             )}
           />
@@ -305,10 +337,26 @@ class App extends Component {
               </div>
             )}
           />
+          <Route
+          exact={true}
+          path="/2026"
+          render={() => (
+            <div className="App maxheight">
+              <Home2026
+                navbar={navbar26}
+                registrationFees={this.state.registrationFees}
+                loadFees={this.state.loadFees}
+                participantsUrl26={this.state.participantsUrl26}
+                schedule={this.state.schedule}
+                loadSchedule={this.state.loadSchedule}
+              />
+            </div>
+          )}
+        />
           <PrivateRoute
             exact={true}
             path="/admin"
-            render={() => <AdminHome navbar={navbar25} />}
+            render={() => <AdminHome navbar={navbar26} />}
           />
           {/* <PrivateRoute
             exact={true}
@@ -368,7 +416,7 @@ class App extends Component {
             path="/create_account"
             render={() => (
               <div className="App maxheight">
-                <CreateAccount navbar={navbar25} />
+                <CreateAccount navbar={navbar26} />
               </div>
             )}
           />
@@ -378,7 +426,7 @@ class App extends Component {
               <div className="App maxheight">
                 <CreateAccountConfirm
                   confirmKey={match.params.confirmKey}
-                  navbar={navbar25}
+                  navbar={navbar26}
                 />
               </div>
             )}
@@ -394,14 +442,14 @@ class App extends Component {
             render={() => (
               <TestProfilePicUpload
                 addProfilePicUrl={addProfilePicUrl}
-                navbar={navbar25}
+                navbar={navbar26}
               />
             )}
           />
           <Route
             exact={true}
             path="/schedule"
-            render={() => <SchedulePage2025 navbar={navbar25} />}
+            render={() => <SchedulePage2026 navbar={navbar26} />}
           />
           <Route
             exact={true}
@@ -417,7 +465,7 @@ class App extends Component {
           <Route
             exact={true}
             path="/world-record"
-            render={() => <WorldRecord navbar={navbar25} />}
+            render={() => <WorldRecord navbar={navbar26} />}
           />
           {/* TODO remove this */}
           <PrivateRoute
@@ -430,7 +478,7 @@ class App extends Component {
             path="/pay-one-time-charge/:chargeId"
             render={({ match }) => (
               <div className="App maxheight">
-                <PayCharge chargeId={match.params.chargeId} navbar={navbar25} />
+                <PayCharge chargeId={match.params.chargeId} navbar={navbar26} />
               </div>
             )}
           />
@@ -439,7 +487,7 @@ class App extends Component {
             path="/admin/one-time-charges"
             render={() => (
               <div className="App maxheight">
-                <OneTimeChargesPage navbar={navbar25} />
+                <OneTimeChargesPage navbar={navbar26} />
               </div>
             )}
           />

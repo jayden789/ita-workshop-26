@@ -32,7 +32,7 @@ export default class SponsorsSection extends React.Component {
             />
             <img
               src={
-                'https://ita.ucsd.edu/workshop/23/images/SpecialEvents_IEEE_ITS_2_23.jpg'
+                require('./img2025/itsoc.jpg')
               }
               className={styles.img}
               alt="IEEE ITS"

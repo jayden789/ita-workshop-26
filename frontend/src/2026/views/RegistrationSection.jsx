@@ -34,6 +34,39 @@ export default class RegistrationSection extends React.Component {
             <div className={classNames('text-center', styles.title)}>
               <h1 className="display-4 text-light">Registration</h1>
             </div>
+            {/* Hardcoded mock data for 2026 */}
+            <div className="text-center">
+              <Table dark hover bordered style={{ marginBottom: '0px' }}>
+                <tbody>
+                  <tr>
+                    <th style={{ width: '33.3%' }} />
+                    <th style={{ width: '33.3%' }}>Standard</th>
+                    <th style={{ width: '33.3%' }}>Student</th>
+                  </tr>
+                  <tr>
+                    <td>Base</td>
+                    <td>$330</td>
+                    <td>$220</td>
+                  </tr>
+                  <tr>
+                    <td>Daily</td>
+                    <td>$75</td>
+                    <td>$50</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday reception</td>
+                    <td>$50</td>
+                    <td>$30</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday banquet</td>
+                    <td>$100</td>
+                    <td>$70</td>
+                  </tr>
+                </tbody>
+              </Table>
+            </div>
+            {/* Original dynamic table - commented out until backend is configured
             {this.props.loadFees ? undefined : (
               <div className="text-center">
                 <Table dark hover bordered style={{ marginBottom: '0px' }}>
@@ -87,6 +120,7 @@ export default class RegistrationSection extends React.Component {
                 </Table>
               </div>
             )}
+            */}
             <div className="text-center">
               {/*<Button
                   href="https://forms.gle/SiefKRum2kFYJmHd9"
@@ -99,8 +133,10 @@ export default class RegistrationSection extends React.Component {
                 </Button>*/}
 
               <Button
-                tag={Link}
-                to="/register"
+                tag="a"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfoZaU2uRviCRW1g4YKXTAw-ZRmXwXHdhbNZKmO6qC8OlBU6Q/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
                 color="primary"
                 style={{ marginTop: '32px', marginBottom: '0px' }}
               >

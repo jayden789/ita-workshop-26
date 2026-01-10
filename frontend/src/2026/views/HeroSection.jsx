@@ -47,25 +47,25 @@ export default class ITAJumboMain extends React.Component {
           <div className={styles.overlay} />
           <div className={classNames('text-center', styles.titleSection)}>
             <h1 className={classNames('display-4', styles.titleText)}>
-              2025 Information Theory and Applications
+              2026 Information Theory and Applications
               <span className={styles.breakSpaceWhenSmall} />
               Workshop
             </h1>
             <h1 className={styles.dateText}>
-              Sunday&ndash;Friday, February 9&ndash;14
+              Sunday&ndash;Friday, February 8&ndash;13
             </h1>
-            <h1 className={styles.locationText}>Bahia Resort, San Diego</h1>
+            <h1 className={styles.locationText}>Bahia Resort Hotel, San Diego</h1>
             <h3 className={styles.taglineText}>
               A casual gathering of researchers applying theory to diverse areas
               in science and engineering
             </h3>
-            <Button
+            {/* <Button
               onClick={this.toggleGuideModal}
               color="primary"
               className={styles.registerButton}
             >
               ITA SURVIVAL GUIDE
-            </Button>
+            </Button> */}
             <div style={{ flex: 1 }}></div>
             <Modal
               isOpen={this.state.showGuideModal}
@@ -187,22 +187,22 @@ export default class ITAJumboMain extends React.Component {
               >
                 Register Now
               </Button>*/}
-              <a
+              {/* <a
                 href="https://ita-workshop-app.web.app/"
                 className="text-xl mb-4 hover:underline text-blue-600"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Workshop Web App (please open on your phone)
-              </a>
-              <Button
+              </a> */}
+              {/* <Button
                 tag={Link}
                 to="/register"
                 color="primary"
                 className={styles.registerButton}
               >
                 Register
-              </Button>
+              </Button> */}
               <div className={styles.registerGuidance}>
                 We are still accepting new registrations and presentations. If
                 you like to join the workshop please{' '}

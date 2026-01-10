@@ -10,46 +10,48 @@ export default class GeneralInfoSection extends React.Component {
             <h1 className="display-4 mb-4"> A bit ab't ITA</h1>
             <Container>
               <p>
-                <strong>The Information Theory and Applications (ITA)</strong>{' '}
-                workshop is a multidisciplinary meeting of academic and
-                industrial researchers applying theory to diverse scientific and
-                technological disciplines. Unlike most workshops and
-                conferences, ITA presentations are by invitation only. Speakers
-                are encouraged to present their most significant and accessible
-                work of the year, regardless of whether it appeared elsewhere.
-                Instead of plenary talks, ITA features plenary sessions, where
-                prominent researchers present complementary views of timely
-                topics. Students present at poster sessions with catered
-                lunches, and outstanding graduating students and postdocs
-                selected by their home institutions present at Graduation Day,
-                with several jury-awarded “Sun, Sea, and Sand” Prizes for the
-                most outstanding presentations.
+                The Information Theory and Applications (ITA){' '}
+                Workshop is an annual interdisciplinary meeting celebrating its
+                twenty first anniversary. It brings together leading academic and 
+                industrial researchers who share recent advances and explore emerging 
+                directions in the theory and broad applications of information, 
+                ranging from artificial intelligence to data science, machine learning, 
+                information theory, theoretical computer science, communication, 
+                signal processing, statistics, and related areas at the confluence 
+                of theory and practice. 
               </p>
               <p>
-                Beyond research promotion and dissemination, ITA strives to
-                foster a cohesive and supportive research community that brings
-                together students, postdocs, faculty, industrial researchers,
-                and potential employers. It does so via multiple ice-breaking,
-                networking, and social activities that initiate and stimulate
-                discussions, interactions, and ongoing collaborations.
+                TA is designed with several purposeful twists on the traditional conference format. 
+                Instead of plenary talks, it holds plenary sessions where several prominent researchers
+                present diverse views of an important and timely topic. Contributed talks are not limited
+                to previously-unpublished results, rather speakers are encouraged to present their most 
+                significant and insightful work of the year, whether already published or not yet. 
+                Graduate students and postdoctoral researchers may present accessible high-level overviews
+                of their work and its future impact potential. 
               </p>
 
               <p>
-                Yet truth be told, a small few of ITA's participants join us for
-                the ubiquitous EATA feasts, including breakfasts, lunches,
-                refreshment breaks, and receptions, for the captivating sessions
-                on the beach and sea, and above all, San Diego's summer in the
-                winter weather.
-              </p>
+                A defining feature of ITA is its strong emphasis on community building and 
+                participants' career advancement. Many friendships, collaborations, 
+                research-directions, individual and joint grants, postdocs, industrial and 
+                academic positions, and even startups, originated at the workshop. 
+                They were facilitated by multiple events designed to help participants, mingle,
+                meet, converse, learn, advance, and grow. A few examples: many food-centered events,
+                the workshop's  know-thy-neighbor session where participants introduce themselves, 
+                graduation-day talks where students and postdocs present their research 
+                and receive the sand-sea-sun awards judged by external referees, hello-boss session
+                where futue employees meet current employers, entrepreneurship sessions, entertainment
+                session, NSF-funding presentation, sports activities, tutorials, and more.
 
+              </p>
+              <h1 className="display-4 mb-4 mt-5"> Join Us!</h1>
               <p>
-                We cordially invite you to join ITA 2025. <br />
-                If you would like to present a talk or organize a technical
-                session or social event, please write to us at{' '}
+                We cordially invite you to join ITA 2026. <br />
+                There is still time to join and contribute to this year's workshop. If you like to 
+                present a talk, organize a session, or contribute in any other way, please{' '}
                 <a href="mailto:ita@ucsd.edu">
-                  <strong>ita@ucsd.edu</strong>
+                  <strong>drop us a line and tell us a bit ab't it.</strong>
                 </a>
-                . A bientot!
               </p>
             </Container>
           </div>
