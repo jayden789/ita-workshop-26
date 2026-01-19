@@ -1,4 +1,4 @@
-#!/bin/sh
+CRLF #!/bin/sh
 
 set -o errexit
 set -o nounset
