@@ -1,12 +1,6 @@
 http://localhost:8080 {
   root /app
 
-  rewrite /static {
-    r ^/static/(.*)
-    to /static/{1}
-  }
-  browse /static
-
   proxy / backend:8000 {
     transparent
     except /static
@@ -15,4 +9,5 @@ http://localhost:8080 {
   log stdout
   errors stdout
   gzip
+  
 }

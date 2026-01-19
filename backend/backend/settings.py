@@ -59,8 +59,6 @@ INSTALLED_APPS = [
     "api",
     "corsheaders",
     "pandas",
-    # For api documentation
-    'drf_yasg',
 ]
 
 # adapted from <https://lincolnloop.com/blog/django-logging-right-way/>

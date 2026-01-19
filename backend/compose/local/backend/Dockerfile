@@ -21,7 +21,6 @@ RUN pip install pipenv
 RUN pip install pandas
 RUN pip install psycogreen
 RUN pip install shortuuid
-RUN pip install drf-yasg
 RUN pipenv lock
 RUN pipenv install --system --dev
 RUN pipenv lock -r

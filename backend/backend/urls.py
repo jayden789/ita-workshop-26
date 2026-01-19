@@ -3,15 +3,12 @@ URL configuration.
 """
 
 from django.contrib import admin
-from django.urls import path, re_path
+from django.urls import path
 from django.conf.urls import include
-from rest_framework import routers, permissions
+from rest_framework import routers
 
 from api import views
 from api.mail import views as mail_views
-
-from drf_yasg.views import get_schema_view
-from drf_yasg import openapi
 
 router = routers.DefaultRouter()  # pylint: disable=invalid-name
 router.register(r"users", views.UserViewSet, basename="user")
@@ -73,21 +70,9 @@ router.register(
 #     views.notifications,
 #     basename="mobilenotifications"
 # )
-
-schema_view = get_schema_view(
-    openapi.Info(
-        title="API Docs",
-        default_version='v1',
-    ),
-    public=True,
-    permission_classes=(permissions.IsAdminUser,),  # optional: restrict to admin users
-)
-
 urlpatterns = [  # pylint: disable=invalid-name
     path("django-admin/", admin.site.urls),
     path("api/v0/", include(router.urls)),
-    # API documentation
-    re_path(r'^docs/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path(
         "api/v0/users_with_registration_data/",
         views.UsersWithRegnDataView.as_view(),
