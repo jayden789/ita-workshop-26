@@ -1,5 +1,10 @@
 {
-    "files.watcherExclude": {
-        "**/backend/**": true
+  "files.watcherExclude": {
+    "**/backend/**": true
+  },
+  "sshfs.configs": [
+    {
+      "name": "ita-backend"
     }
+  ]
 }

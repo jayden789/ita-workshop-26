@@ -71,7 +71,7 @@ export default class NavBar2026 extends React.Component {
                 <NavLink tag={Link} to="/#invited" onClick={this.toggle}>Invited Sessions</NavLink>
               </NavItem> */}
               <NavItem>
-                <NavLink tag={Link} to="/#location" onClick={this.toggle}>
+                <NavLink tag={Link} to="#location" onClick={this.toggle}>
                   Location
                 </NavLink>
               </NavItem>
