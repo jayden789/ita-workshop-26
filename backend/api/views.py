@@ -59,7 +59,7 @@ logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name
 
-year = 2025
+year = 2026
 
 
 class UserViewSet(
@@ -1591,7 +1591,7 @@ class RegistrationAggregateStatsViewSet(viewsets.GenericViewSet):
             .get("total") - aggregates["total_amount_paid"]
         )
         aggregates["banquet_options"] = banquet_options
-        serializer = serializers.RegistrationAggregateStatsIta23Serializer(
+        serializer = serializers.RegistrationAggregateStatsIta26Serializer(
             aggregates
         )
 

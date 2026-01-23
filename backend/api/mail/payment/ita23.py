@@ -249,7 +249,7 @@ def _render_email_body(registration_payment):
         formal_name_ = regn.user_profile.formal_name
     return """Dear {formal_name},
 
-Thank you very much for registering for the 2025 ITA Workshop.
+Thank you very much for registering for the 2026 ITA Workshop.
 We have received your ${amount:.2f} payment.
 
 Your registration included the following options:
@@ -271,12 +271,12 @@ def create_receipt_email(registration_payment):
     """
     Create a registration payment receipt email.
     """
-    assert registration_payment.registration.workshop.slug == "ita25"
+    assert registration_payment.registration.workshop.slug == "ita26"
     assert (
         registration_payment.status == RegistrationPaymentStatus.APPROVED.name
     )
 
-    subject = "Your 2025 ITA Workshop registration payment receipt"
+    subject = "Your 2026 ITA Workshop registration payment receipt"
     body = _render_email_body(registration_payment)
     attach = [getReciept(registration_payment)]
     sender = django_settings.DEFAULT_FROM_EMAIL

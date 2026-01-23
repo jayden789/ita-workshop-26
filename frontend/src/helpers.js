@@ -135,14 +135,34 @@ export const isInvalidApiKeyError = (error) => {
   );
 };
 
-export const api = (endpoint, method = 'GET', body) => {
-  return apiRaw(endpoint, method, body).then((response) => {
-    if (response.status === 401) {
-      throw new Error(INVALID_API_KEY_ERROR_MESSAGE);
-    }
-    return response.json();
-  });
+// export const api = (endpoint, method = 'GET', body) => {
+//   return apiRaw(endpoint, method, body).then((response) => {
+//     if (response.status === 401) {
+//       throw new Error(INVALID_API_KEY_ERROR_MESSAGE);
+//     }
+//     return response.json();
+//   });
+// };
+
+export const api = async (endpoint, method = 'GET', body, opts = {}) => {
+  const { includeApiKey = true } = opts;
+  const response = await apiRaw(endpoint, method, body, includeApiKey);
+
+  const contentType = response.headers.get('content-type') || '';
+  const isJson = contentType.includes('application/json');
+  const payload = isJson ? await response.json() : await response.text();
+
+  if (!response.ok) {
+    const err = new Error(
+      `API ${method} ${endpoint} failed: ${response.status} ${response.statusText}`
+    );
+    err.status = response.status;
+    err.payload = payload;
+    throw err;
+  }
+  return payload;
 };
+
 
 const API_KEY_STORAGE_KEY = 'apiKey';
 
@@ -232,7 +252,7 @@ export const generateRegnOptionConversions = (regnOptions) => {
 };
 
 export const fetchRegnOptions = () => {
-  return api('api/v0/registration_options/?workshop_slug=ita25');
+  return api('api/v0/registration_options/?workshop_slug=ita26');
 };
 
 export const fetchPaginatedRegistrations = (
@@ -241,7 +261,7 @@ export const fetchPaginatedRegistrations = (
   probablyParticipating = true
 ) => {
   const queryParams = {
-    workshop_slug: 'ita25',
+    workshop_slug: 'ita26',
     page,
     page_size: pageSize,
     probably_participating: probablyParticipating,

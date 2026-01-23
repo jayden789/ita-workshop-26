@@ -609,7 +609,7 @@ export default class RegistrationProfile extends React.Component {
                 <Button
                   // disable since workshop is closed
                   // disabled={this.state.formError || this.props.loading}
-                  disabled
+                  // disabled
                   onClick={this.props.saveChanges}
                   id="SaveChangesButton"
                 >

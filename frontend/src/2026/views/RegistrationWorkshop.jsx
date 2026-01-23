@@ -31,7 +31,7 @@ import {
   LUNCH_OPTIONS,
   BANQUET_GUEST_OPTIONS,
 } from '../../const';
-import PaymentPageController from './PaymentPageController';
+// import PaymentPageController from './PaymentPageController';
 import RegistrationInfo from './RegistrationInfo';
 
 import styles from './RegistrationWorkshop.module.css';
@@ -168,30 +168,30 @@ function calculatePrice(Price, Count) {
 }
 
 function calculateSum(option) {
-  if (option === 'Please Select') {
-    return 0;
-  } else if (option === 'ita25_sundayReception_notAttending') {
-    return 0;
-  } else if (option === 'ita25_sundayReception_selfOnly') {
-    return 1;
-  } else if (option === 'ita25_sundayReception_selfPlus1') {
-    return 2;
-  } else if (option === 'ita25_sundayReception_selfPlus2') {
-    return 3;
-  }
+  return {
+    '': 0,
+    'Please Select': 0,
+    ita26_sundayReception_notAttending: 0,
+    ita26_sundayReception_selfOnly: 1,
+    ita26_sundayReception_selfPlus1: 2,
+    ita26_sundayReception_selfPlus2: 3,
+  }[option] ?? 0;
 }
+
 
 function calculateWed(option) {
   return {
+    '': 0,
     'Please Select': 0,
-    ita25_banquetSelf_notAttending: 0,
-    ita25_banquetSelf_selfOnly: 1,
-    ita25_banquetSelf_selfPlus1: 2,
-    ita25_banquetSelf_selfPlus2: 3,
-  }[option];
+    ita26_banquetSelf_notAttending: 0,
+    ita26_banquetSelf_selfOnly: 1,
+    ita26_banquetSelf_selfPlus1: 2,
+    ita26_banquetSelf_selfPlus2: 3,
+  }[option] ?? 0; // safe fallback
 }
 function calculateSat(option) {
   return {
+    '': 0,
     'Please Select': 0,
     ita25_saturdayWorkshop_notAttending: 0,
     ita25_saturdayWorkshop_attending: 1,
@@ -238,11 +238,11 @@ function checkRequired({
   fri,
   sundayRecep,
   wedBanq,
-  dinnerOptions,
-  valentinesEvent,
-  shirtType,
-  shirtSize,
-  banquetOption,
+  // dinnerOptions,
+  // valentinesEvent,
+  // shirtType,
+  // shirtSize,
+  // banquetOption,
 }) {
   const mustNotBeBlank = [
     firstName,
@@ -250,23 +250,23 @@ function checkRequired({
     affiliation,
     sundayRecep,
     wedBanq,
-    dinnerOptions,
-    valentinesEvent,
-    shirtType,
-    shirtSize,
-    banquetOption,
+    // dinnerOptions,
+    // valentinesEvent,
+    // shirtType,
+    // shirtSize,
+    // banquetOption,
   ];
   const nonBlankOk = !mustNotBeBlank.includes('');
   const consecOk = nonconsecDays || ![firstDay, lastDay].includes('');
   const nonconsecOk =
     !nonconsecDays || [mon, tues, wed, thurs, fri].includes(true);
 
-  const numWedGuests = calculateWed(wedBanq);
-  const banquetOptionOk =
-    numWedGuests === 0 ||
-    (banquetOption && banquetOption.length === numWedGuests);
+  // const numWedGuests = calculateWed(wedBanq);
+  // const banquetOptionOk =
+  //   numWedGuests === 0 ||
+  //   (banquetOption && banquetOption.length === numWedGuests);
 
-  return nonBlankOk && consecOk && nonconsecOk && banquetOptionOk;
+   return nonBlankOk && consecOk && nonconsecOk ;//&& banquetOptionOk
 }
 
 // this is hacky. TODO replace with something more robust
@@ -299,8 +299,8 @@ export default class RegistrationWorkshop extends React.Component {
       fri: this.props.nonConsecFri,
       sundayRecep: this.props.SundayReceptionOption,
       wedBanq: this.props.WednesdayBanquetOption,
-      dinnerOptions: this.props.DinnerOptions,
-      banquetOption: this.props.banquetOption,
+      // dinnerOptions: this.props.DinnerOptions,
+      // banquetOption: this.props.banquetOption,
     });
     const numDays = calculateNumDays(
       this.props.nonConsecutiveDays,
@@ -334,13 +334,13 @@ export default class RegistrationWorkshop extends React.Component {
       ? hackyTitleCaseWord(this.props.effectiveFeeType)
       : '';
 
-    const paymentAllowed =
-      this.props.paymentRequired &&
-      !this.props.isChanged &&
-      requiredFieldsOk &&
-      daysOk &&
-      !this.props.paid &&
-      this.props.formReady;
+    const paymentAllowed = false;
+      // this.props.paymentRequired &&
+      // !this.props.isChanged &&
+      // requiredFieldsOk &&
+      // daysOk &&
+      // !this.props.paid &&
+      // this.props.formReady;
 
     const payRelatedFieldsDisabled = this.props.paid;
 
@@ -350,18 +350,17 @@ export default class RegistrationWorkshop extends React.Component {
       });
     };
 
-    const totalPrice =  this.props.basePrice +
-                        dayPrice +
-                        sunPrice +
-                        wedPrice +
-                        satdayPrice +
-                        italtPrice;
-    var registerType = this.props.studentOption ? "S" : "R";
-    if (totalPrice == 780 || totalPrice == 295 || totalPrice == 935 || totalPrice == 630 || totalPrice == 795) {
-      registerType = 'X';
-    }
-    const paymentUrl = 'https://commerce.cashnet.com/UCSD_ITA' + registerType + "_Pay$" + totalPrice;
-
+    // const totalPrice =  this.props.basePrice +
+    //                     dayPrice +
+    //                     sunPrice +
+    //                     wedPrice +
+    //                     satdayPrice +
+    //                     italtPrice;
+    // var registerType = this.props.studentOption ? "S" : "R";
+    // if (totalPrice == 780 || totalPrice == 295 || totalPrice == 935 || totalPrice == 630 || totalPrice == 795) {
+    //   registerType = 'X';
+    // }
+    // const paymentUrl = 'https://commerce.cashnet.com/UCSD_ITA' + registerType + "_Pay$" + totalPrice;
     return (
       <Card body className="notranslate">
         {this.props.paymentAlert}
@@ -406,13 +405,13 @@ export default class RegistrationWorkshop extends React.Component {
                     </Label>
                   </FormGroup>
                 </Col>
-                <Col lg={7}>
+                {/* <Col lg={7}>
                   <FormText color="muted" className="mt-0 mb-0">
                     This selection determines your registration fees and
                     presentation type. Once you pay, you will not be able to
                     change this field.
                   </FormText>
-                </Col>
+                </Col> */}
               </Row>
               {/* <FormText color="muted" className="mt-0 mb-0">
                 Students can present at a poster session. If you are a
@@ -453,7 +452,7 @@ export default class RegistrationWorkshop extends React.Component {
               </Col>
             </Row>
           </Col>
-          <Label
+          {/* <Label
             className={classNames('ml-auto', 'mt-2', 'mr-2', {
               [styles.grayText]: !likelyToParticipate,
             })}
@@ -462,7 +461,7 @@ export default class RegistrationWorkshop extends React.Component {
               <span>({effectiveFeeTypeText}) </span>
             )}
             <strong>${this.props.basePrice}</strong>
-          </Label>
+          </Label> */}
         </FormGroup>
 
         <FormGroup row className="mb-2 mt-4">
@@ -519,6 +518,7 @@ export default class RegistrationWorkshop extends React.Component {
                 disabled={payRelatedFieldsDisabled}
               >
                 <option value={''}>Please Select</option>
+                <option value={'Sunday'}>Sunday</option>
                 <option value={'Monday'}>Monday</option>
                 <option value={'Tuesday'}>Tuesday</option>
                 <option value={'Wednesday'}>Wednesday</option>
@@ -540,6 +540,7 @@ export default class RegistrationWorkshop extends React.Component {
                 disabled={payRelatedFieldsDisabled}
               >
                 <option value={''}>Please Select</option>
+                <option value={'Sunday'}>Sunday</option>
                 <option value={'Monday'}>Monday</option>
                 <option value={'Tuesday'}>Tuesday</option>
                 <option value={'Wednesday'}>Wednesday</option>
@@ -547,13 +548,13 @@ export default class RegistrationWorkshop extends React.Component {
                 <option value={'Friday'}>Friday</option>
               </Input>
             </Col>
-            <Label
+            {/* <Label
               className={classNames('ml-auto', 'mt-2', 'mr-2', {
                 [styles.grayText]: !likelyToParticipate,
               })}
             >
               (${this.props.dayPrice}/day) <strong>${dayPrice}</strong>
-            </Label>
+            </Label> */}
           </FormGroup>
         ) : (
           <FormGroup row className="mb-1 mt-2">
@@ -619,13 +620,13 @@ export default class RegistrationWorkshop extends React.Component {
                 </Label>
               </FormGroup>
             </Col>
-            <Label
+            {/* <Label
               className={classNames('ml-auto', 'mt-2', 'mr-2', {
                 [styles.grayText]: !likelyToParticipate,
               })}
             >
               (${this.props.dayPrice}/day) <strong>${dayPrice}</strong>
-            </Label>
+            </Label> */}
           </FormGroup>
         )}
 
@@ -651,14 +652,14 @@ export default class RegistrationWorkshop extends React.Component {
                   disabled={payRelatedFieldsDisabled}
                 >
                   <option value={''}>Please Select</option>
-                  <option value={'ita25_sundayReception_notAttending'}>
+                  <option value={'ita26_sundayReception_notAttending'}>
                     Not attending
                   </option>
-                  <option value={'ita25_sundayReception_selfOnly'}>You</option>
-                  <option value={'ita25_sundayReception_selfPlus1'}>
+                  <option value={'ita26_sundayReception_selfOnly'}>You</option>
+                  <option value={'ita26_sundayReception_selfPlus1'}>
                     You + 1
                   </option>
-                  <option value={'ita25_sundayReception_selfPlus2'}>
+                  <option value={'ita26_sundayReception_selfPlus2'}>
                     You + 2
                   </option>
                 </Input>
@@ -671,13 +672,13 @@ export default class RegistrationWorkshop extends React.Component {
               </Col>
             </Row>
           </Col>
-          <Label
+          {/* <Label
             className={classNames('ml-auto', 'mt-2', 'mr-2', {
               [styles.grayText]: !likelyToParticipate,
             })}
           >
             (${this.props.sunReceptionPrice}/guest) <strong>${sunPrice}</strong>
-          </Label>
+          </Label> */}
         </FormGroup>
 
         <FormGroup row className="mb-1 mt-2">
@@ -695,27 +696,27 @@ export default class RegistrationWorkshop extends React.Component {
                   disabled={payRelatedFieldsDisabled}
                 >
                   <option value={''}>Please Select</option>
-                  <option value={'ita25_banquetSelf_notAttending'}>
+                  <option value={'ita26_banquetSelf_notAttending'}>
                     Not attending
                   </option>
-                  <option value={'ita25_banquetSelf_selfOnly'}>You</option>
-                  <option value={'ita25_banquetSelf_selfPlus1'}>You + 1</option>
-                  <option value={'ita25_banquetSelf_selfPlus2'}>You + 2</option>
+                  <option value={'ita26_banquetSelf_selfOnly'}>You</option>
+                  <option value={'ita26_banquetSelf_selfPlus1'}>You + 1</option>
+                  <option value={'ita26_banquetSelf_selfPlus2'}>You + 2</option>
                 </Input>
               </Col>
             </Row>
           </Col>
 
-          <Label
+          {/* <Label
             className={classNames('ml-auto', 'mt-2', 'mr-2', {
               [styles.grayText]: !likelyToParticipate,
             })}
           >
             (${this.props.wedBanquetPrice}/guest) <strong>${wedPrice}</strong>
-          </Label>
+          </Label> */}
         </FormGroup>
 
-        {numWedGuests > 0 ? (
+        {/* {numWedGuests > 0 ? (
           <FormGroup row className="mb-1 mt-2">
             <Col lg={2}>
               <Label className="text-danger mt-2">Choose your entrée*</Label>
@@ -738,9 +739,9 @@ export default class RegistrationWorkshop extends React.Component {
               </Row>
             </Col>
           </FormGroup>
-        ) : null}
+        ) : null} */}
 
-        <FormGroup row>
+        {/* <FormGroup row>
           <Label
             className={classNames('ml-auto mt-0 mr-2 mb-0', {
               [styles.grayText]: !likelyToParticipate,
@@ -760,7 +761,7 @@ export default class RegistrationWorkshop extends React.Component {
               </strong>
             </h3>
           </Label>
-        </FormGroup>
+        </FormGroup> */}
         <FormGroup check row>
           <Col>
             <div className="text-center">
@@ -771,7 +772,7 @@ export default class RegistrationWorkshop extends React.Component {
                 //           (!this.props.nonConsecutiveDays && !daysOk) ||
                 //           this.props.loading
                 // }
-                disabled
+                // disabled
                 className="mr-3"
               >
                 {this.props.loading ? (
@@ -792,19 +793,19 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              <a  hidden={ !paymentAllowed || this.props.paid }
+              {/* <a  hidden={ !paymentAllowed || this.props.paid }
                   target="_blank" 
                   rel="noopener noreferrer" 
                   href={ paymentUrl} 
                   className="btn btn-secondary"
               >
                 Register (aka Pay)
-              </a>
+              </a> */}
 
               {/* <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
               </Button> */}
-              {paymentAllowed || this.props.paid ? null : (
+              {/* {paymentAllowed || this.props.paid ? null : (
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
                     color="danger"
@@ -816,7 +817,7 @@ export default class RegistrationWorkshop extends React.Component {
                     If there is anything wrong, please contact us through ita@ucsd.edu.
                   </Alert>
                 </div>
-              )}
+              )} */}
             </div>
           </Col>
           {/* <div className="text-center">
@@ -845,14 +846,14 @@ export default class RegistrationWorkshop extends React.Component {
             committed to our vendors.
           </p> */}
 
-        <PaymentPageController
+        {/* <PaymentPageController
           token={this.props.token}
           formUrl={this.props.formUrl}
           triggerOpen={this.props.triggerOpen}
           onComplete={this.props.onPaymentComplete}
           onCanceled={this.props.onPaymentCanceled}
-        />
-        <Modal isOpen={this.state.modal} toggle={toggle}>
+        /> */}
+        {/* <Modal isOpen={this.state.modal} toggle={toggle}>
           <ModalHeader toggle={toggle} className="text-danger">
             IMPORTANT MESSAGE
           </ModalHeader>
@@ -889,7 +890,7 @@ export default class RegistrationWorkshop extends React.Component {
               </Button>{' '}
             </form>
           </ModalFooter>
-        </Modal>
+        </Modal> */}
       </Card>
     );
   }

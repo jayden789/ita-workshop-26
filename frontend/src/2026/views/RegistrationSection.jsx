@@ -134,9 +134,7 @@ export default class RegistrationSection extends React.Component {
 
               <Button
                 tag="a"
-                href="https://docs.google.com/forms/d/e/1FAIpQLSfoZaU2uRviCRW1g4YKXTAw-ZRmXwXHdhbNZKmO6qC8OlBU6Q/viewform"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/register"
                 color="primary"
                 style={{ marginTop: '32px', marginBottom: '0px' }}
               >
