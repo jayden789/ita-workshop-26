@@ -3,6 +3,8 @@ API views for the mail system.
 """
 
 import logging
+import ssl
+import smtplib
 
 from django.contrib.auth import get_user_model
 from django.core import mail as django_mail
@@ -23,6 +25,15 @@ from api.mail import (
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name
+
+SMTP_HOST = "smtp.ucsd.edu"
+SMTP_PORT = 587
+SENDER = "ita@ucsd.edu"
+
+EMAIL_HOST_USER = "ita@ucsd.edu"
+EMAIL_HOST_PASSWORD = "enter_your_password_here"
+EMAIL_HOST = SMTP_HOST
+EMAIL_PORT = SMTP_PORT
 
 
 def generate_messages_for_mailing_list(
@@ -83,15 +94,26 @@ def generate_contexts_and_messages(
 
 def send_messages(messages):
     """
-    Sends the given messages, and returns the number of messages successfully
-    sent.
+    Sends Django EmailMessages using custom SMTP with DH key fix.
     """
-    with django_mail.get_connection(fail_silently=False) as conn:
+    num_sent = 0
+    context = ssl.create_default_context()
+    context.set_ciphers('HIGH:!DH:!aNULL')
+    
+    for msg in messages:
         try:
-            num_sent = conn.send_messages(messages)
-            logger.info(f"Successfully sent emails. Number of emails: {num_sent}")
+            raw_msg = msg.message()
+            
+            with smtplib.SMTP(EMAIL_HOST, EMAIL_PORT, timeout=60) as server:
+                server.starttls(context=context)
+                server.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
+                server.send_message(raw_msg)
+            num_sent += 1
+            
         except Exception as e:
-            logger.error(f"Error sending emails. Messages: {type(e)}, {str(e)}")
+            logger.error(f"Failed to send to {msg.to()}: {type(e).__name__}: {str(e)}")
+    
+    logger.info(f"Successfully sent {num_sent}/{len(messages)} emails")
     return num_sent
 
 
