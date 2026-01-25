@@ -31,6 +31,7 @@ export default class Registration2026 extends React.Component {
         {/* <NavBar {...this.props.navbarProps} /> */}
         {this.props.loading ? null : (
           <RegistrationTabs
+            key={`${this.props.workshop.url}::${effectiveUserUrl}`} 
             workshopUrl={this.props.workshop.url}
             userUrl={effectiveUserUrl}
             create={this.props.create}

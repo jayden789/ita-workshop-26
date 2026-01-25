@@ -283,7 +283,6 @@ export default class RegistrationWorkshop extends React.Component {
   }
 
   render() {
-    console.log(this.props.email);
     const daysOk = dayCheck(this.props.firstDay, this.props.lastDay);
     const requiredFieldsOk = checkRequired({
       firstName: this.props.firstName,
@@ -518,7 +517,6 @@ export default class RegistrationWorkshop extends React.Component {
                 disabled={payRelatedFieldsDisabled}
               >
                 <option value={''}>Please Select</option>
-                <option value={'Sunday'}>Sunday</option>
                 <option value={'Monday'}>Monday</option>
                 <option value={'Tuesday'}>Tuesday</option>
                 <option value={'Wednesday'}>Wednesday</option>
@@ -540,7 +538,6 @@ export default class RegistrationWorkshop extends React.Component {
                 disabled={payRelatedFieldsDisabled}
               >
                 <option value={''}>Please Select</option>
-                <option value={'Sunday'}>Sunday</option>
                 <option value={'Monday'}>Monday</option>
                 <option value={'Tuesday'}>Tuesday</option>
                 <option value={'Wednesday'}>Wednesday</option>
@@ -782,6 +779,7 @@ export default class RegistrationWorkshop extends React.Component {
               </Button>
               <Button
                 onClick={() => {
+                  this.props.saveChanges();
                   this.props.toggle('3');
                 }}
                 disabled={

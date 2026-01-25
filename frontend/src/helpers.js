@@ -3,11 +3,11 @@ import queryString from 'query-string';
 export const getAttendingDates = (start, end, nonConsecutiveDays, days) => {
   const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const dateStrings = [
-    '2025-02-10',
-    '2025-02-11',
-    '2025-02-12',
-    '2025-02-13',
-    '2025-02-14',
+    '2026-02-09',
+    '2026-02-10',
+    '2026-02-11',
+    '2026-02-12',
+    '2026-02-13',
   ];
 
   let attendingDates = [];
@@ -26,11 +26,11 @@ export const getAttendingDates = (start, end, nonConsecutiveDays, days) => {
 
 export const reverseAttendingDates = (dayArray) => {
   const dateStrings = [
-    '2025-02-10',
-    '2025-02-11',
-    '2025-02-12',
-    '2025-02-13',
-    '2025-02-14',
+    '2026-02-09',
+    '2026-02-10',
+    '2026-02-11',
+    '2026-02-12',
+    '2026-02-13',
   ];
 
   let attendingDays = [false, false, false, false, false];

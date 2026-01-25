@@ -1172,11 +1172,10 @@ class RegistrationAggregateStatsIta26Serializer(serializers.BaseSerializer):
             ["participating", "paid"],
         ):
             sunday_reception_counts[choice][condition] = instance.get(
-                "ita25_sundayReception_{}_{}".format(choice, condition)
+                "ita26_sundayReception_{}_{}".format(choice, condition)
             )
 
         date_strs = [
-            "2026-02-08",
             "2026-02-09",
             "2026-02-10",
             "2026-02-11",

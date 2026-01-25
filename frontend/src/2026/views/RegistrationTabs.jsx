@@ -220,6 +220,59 @@ export default class RegistrationTabs extends React.Component {
     this.enablePresentation = this.enablePresentation.bind(this);
   }
 
+  resetForNewUser = () => {
+    this.setState({
+      // safest: clear everything that is user-specific
+      registrationUrl: '',
+      workshopUrl: '',
+      userProfileUrl: '',
+      talkUrl: '',
+
+      // clear ALL option-related fields (these are the ones you notice)
+      SundayReceptionOption: '',
+      WednesdayBanquetOption: '',
+      ValentinesEventOption: '',
+      monReceptionOption: '',
+      saturdayWorkshopOption: '',
+      attendingITALT: '',
+      banquetOption: '',
+
+      // workshop selection state
+      firstDay: '',
+      lastDay: '',
+      nonConsecutiveDays: false,
+      nonConsecMon: false,
+      nonConsecTue: false,
+      nonConsecWed: false,
+      nonConsecThu: false,
+      nonConsecFri: false,
+      likelihood: '',
+      presentingThisYear: false,
+
+      // paper
+      paperTitle: '',
+      paperAuthorsComment: '',
+      paperAbstract: '',
+      paperTopicComment: '',
+      paperComment: '',
+      paperUrl: '',
+      videoUrl: '',
+      adminComments: '',
+
+      // payment UI state
+      token: '',
+      formUrl: '',
+      checkStatusUrl: '',
+      formReady: false,
+      paid: false,
+
+      isChanged: false,
+      saveModal: false,
+      lastSaveTime: '',
+    });
+  };
+
+
   componentDidMount() {
     this.pullAffiliation();
     this.loadRegistration();
@@ -235,6 +288,7 @@ export default class RegistrationTabs extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.userUrl !== this.props.userUrl) {
+      this.resetForNewUser();
       this.loadRegistration().then(() => this.toggle('1'));
     }
   }
@@ -581,6 +635,14 @@ export default class RegistrationTabs extends React.Component {
   populateOptions(data, urlSlugMap) {
     const options = data?.options || [];
     let slugArray = [];
+    this.setState({
+      SundayReceptionOption: '',
+      WednesdayBanquetOption: '',
+      ValentinesEventOption: '',
+      monReceptionOption: '',
+      saturdayWorkshopOption: '',
+      attendingITALT: '',
+    });
 
     for (let i = 0; i < options.length; i++) {
       slugArray.push(urlSlugMap.get(options[i]));

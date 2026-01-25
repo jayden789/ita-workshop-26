@@ -621,6 +621,7 @@ export default class RegistrationProfile extends React.Component {
                 &nbsp;&nbsp; {/* TODO this is crappy, remove this */}
                 <Button
                   onClick={() => {
+                    this.props.saveChanges();
                     this.props.toggle('2');
                   }}
                   disabled={this.state.formError || this.props.loading}
