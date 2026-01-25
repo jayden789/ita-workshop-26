@@ -1,32 +1,18 @@
 version: "3"
 
 services:
-  caddy:
-    build: ../prod/caddy
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - backend_static:/app/static
-      - $HOME/caddycerts:/etc/caddycerts
-    environment:
-      - ACME_AGREE=true
-      - CADDYPATH=/etc/caddycerts
-    depends_on:
-      - backend
-
   backend:
     build:
       context: ../..
       dockerfile: ./compose/prod/backend/Dockerfile
-    volumes:
-      - backend_static:/app/static
-      - ./logs:/app/logs
-    expose:
-      - "8000"
-    command: /start
     env_file:
-      - ../../envs/stage/django.env
+      - ../../envs/test/django.env
+    volumes:
+      - ./logs:/app/logs
+      - backend_static:/app/static
+    ports:
+      - "8001:8000"
+    command: /start
 
 volumes:
   backend_static:
