@@ -37,54 +37,54 @@ def _render_attendance(regn):
 def _render_sunday_reception(regn):
     options = regn.selected_option_slugs()
     choice = None
-    if "ita25_sundayReception_selfOnly" in options:
+    if "ita26_sundayReception_selfOnly" in options:
         choice = "one guest"
-    if "ita25_sundayReception_selfPlus1" in options:
+    if "ita26_sundayReception_selfPlus1" in options:
         choice = "two guests"
-    if "ita25_sundayReception_selfPlus2" in options:
+    if "ita26_sundayReception_selfPlus2" in options:
         choice = "three guests"
     if choice is None:
         return []
     return ["Sunday reception: {}".format(choice)]
 
 
-def _render_monday_lunch(regn):
-    # Same code format as others, for consistency
-    options = regn.selected_option_slugs()
-    choice = None
-    if "ita24_mondayLunch_attending" in options:
-        choice = "one guest"
-    if choice is None:
-        return []
-    return ["Monday lunch: {}".format(choice)]
+# def _render_monday_lunch(regn):
+#     # Same code format as others, for consistency
+#     options = regn.selected_option_slugs()
+#     choice = None
+#     if "ita24_mondayLunch_attending" in options:
+#         choice = "one guest"
+#     if choice is None:
+#         return []
+#     return ["Monday lunch: {}".format(choice)]
 
 
 def _render_wednesday_banquet(regn):
     options = regn.selected_option_slugs()
     choice = None
-    if "ita25_banquetSelf_selfOnly" in options:
+    if "ita26_banquetSelf_selfOnly" in options:
         choice = "one guest"
-    if "ita25_banquetSelf_selfPlus1" in options:
+    if "ita26_banquetSelf_selfPlus1" in options:
         choice = "two guests"
-    if "ita25_banquetSelf_selfPlus2" in options:
+    if "ita26_banquetSelf_selfPlus2" in options:
         choice = "three guests"
     if choice is None:
         return []
     return ["Wednesday banquet: {}".format(choice)]
 
 
-def _render_valentines_event(regn):
-    options = regn.selected_option_slugs()
-    choice = None
-    if "ita24_valentinesEvent_selfOnly" in options:
-        choice = "one guest"
-    if "ita24_valentinesEvent_selfPlus1" in options:
-        choice = "two guests"
-    if "ita24_valentinesEvent_selfPlus2" in options:
-        choice = "three guests"
-    if choice is None:
-        return []
-    return ["Thursday dinner: {}".format(choice)]
+# def _render_valentines_event(regn):
+#     options = regn.selected_option_slugs()
+#     choice = None
+#     if "ita24_valentinesEvent_selfOnly" in options:
+#         choice = "one guest"
+#     if "ita24_valentinesEvent_selfPlus1" in options:
+#         choice = "two guests"
+#     if "ita24_valentinesEvent_selfPlus2" in options:
+#         choice = "three guests"
+#     if choice is None:
+#         return []
+#     return ["Thursday dinner: {}".format(choice)]
 
 
 def _render_registration_options(regn):
@@ -100,20 +100,20 @@ def getReciept(registration_payment):
     receptionCnt = None
     banquetCnt = None 
     # attendingItalt = None 
-    if "ita25_sundayReception_selfOnly" in options:
+    if "ita26_sundayReception_selfOnly" in options:
         receptionCnt = "1"
-    if "ita25_sundayReception_selfPlus1" in options:
+    if "ita26_sundayReception_selfPlus1" in options:
         receptionCnt = "2"
-    if "ita25_sundayReception_selfPlus2" in options:
+    if "ita26_sundayReception_selfPlus2" in options:
         receptionCnt = "3"
     if receptionCnt is None:
         receptionCnt = "N/A"
     
-    if "ita25_banquetSelf_selfOnly" in options:
+    if "ita26_banquetSelf_selfOnly" in options:
         banquetCnt = "1"
-    if "ita25_banquetSelf_selfPlus1" in options:
+    if "ita26_banquetSelf_selfPlus1" in options:
         banquetCnt = "2"
-    if "ita25_banquetSelf_selfPlus2" in options:
+    if "ita26_banquetSelf_selfPlus2" in options:
         banquetCnt = "3"
     if banquetCnt is None:
         banquetCnt = "N/A"
@@ -249,7 +249,7 @@ def _render_email_body(registration_payment):
         formal_name_ = regn.user_profile.formal_name
     return """Dear {formal_name},
 
-Thank you very much for registering for the 2025 ITA Workshop.
+Thank you very much for registering for the 2026 ITA Workshop.
 We have received your ${amount:.2f} payment.
 
 Your registration included the following options:
@@ -271,12 +271,12 @@ def create_receipt_email(registration_payment):
     """
     Create a registration payment receipt email.
     """
-    assert registration_payment.registration.workshop.slug == "ita25"
+    assert registration_payment.registration.workshop.slug == "ita26"
     assert (
         registration_payment.status == RegistrationPaymentStatus.APPROVED.name
     )
 
-    subject = "Your 2025 ITA Workshop registration payment receipt"
+    subject = "Your 2026 ITA Workshop registration payment receipt"
     body = _render_email_body(registration_payment)
     attach = [getReciept(registration_payment)]
     sender = django_settings.DEFAULT_FROM_EMAIL

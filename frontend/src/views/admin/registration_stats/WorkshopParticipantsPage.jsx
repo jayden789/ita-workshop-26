@@ -16,7 +16,7 @@ export default class WorkshopParticipantsPage extends React.Component {
   }
   componentDidMount() {
     this.setState({ loadingAggregateStats: true });
-    api('api/v0/registration_aggregate_stats/ita24/').then((data) => {
+    api('api/v0/registration_aggregate_stats/ita26/').then((data) => {
       this.setState({ aggregateStats: data, loadingAggregateStats: false });
     });
   }

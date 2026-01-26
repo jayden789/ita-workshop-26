@@ -617,12 +617,20 @@ export default class RegistrationPaper extends React.Component {
                   // disable since workshop is closed
                   // disabled={isFormInvalid || this.props.loading}
                   onClick={this.props.saveChanges}
-                  disabled
+                  // disabled
                 >
                   {this.props.loading ? (
                     <Spinner size="sm mr-2">Saving...</Spinner>
                   ) : null}
                   Save all tabs
+                </Button>
+                &nbsp;&nbsp;
+                <Button
+                  tag="a"
+                  href="/"
+                  onClick={this.props.saveChanges}
+                >
+                  finish Registration
                 </Button>
               </div>
             </Col>

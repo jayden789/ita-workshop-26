@@ -88,11 +88,16 @@ export default class CreateAccount extends React.Component {
         )
       )
       .then(({ success, data }) => {
-        if (success) {
-          this.setState({ submitStatus: 'success', feedback: [] });
-          this.fetchRegnData();
-          return;
-        }
+      if (success) {
+        this.setState({ submitStatus: 'success', feedback: [] });
+
+        setTimeout(() => {
+          window.location = `/login`;
+        }, 5000);
+
+        return;
+      }
+
 
         const feedback = [
           ...(data.firstName || []),
@@ -143,21 +148,19 @@ export default class CreateAccount extends React.Component {
     if (isNaN(year)) {
       year = '20';
     }
-    const queryStr = queryString.stringify({
-      workshop_slug: 'ita' + year,
-      page: page + 1,
-      page_size: pageSize,
-      ...formatFilters(filtered),
-    });
+    const queryStr = `workshop_slug=ita26&email=${encodeURIComponent(this.state.email)}`;
 
     new Promise((resolve) => this.setState({ loadingUserData: true }, resolve))
       // need to add 1 to page, since API is 1-indexed and react-table is
       // 0-indexed
-      .then(() => api(`api/v0/users_with_registration_data/?${queryStr}`))
+      .then(() => api(`api/v0/users_with_registration_data/?${queryStr}`, 'GET', null, { includeApiKey: false }))
       .then(({ results: userData, count: numTotalResults }) => {
         const numTotalPages = intDivRoundUp(numTotalResults, pageSize);
         console.log(userData[0]['user_url']);
         window.location = 'register?userUrl=' + userData[0]['user_url'];
+      }).catch((err) => {
+        console.error("API ERROR", err.status, err.payload);
+        throw err;
       });
   };
 
@@ -177,7 +180,7 @@ export default class CreateAccount extends React.Component {
     var successAlert = () => (
       <Alert color="success">
         Your user account has been created. You may now log in with the email
-        and password you have just entered.
+        and password you have just entered. you will be redirected to the Login page shortly
       </Alert>
     );
 

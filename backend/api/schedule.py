@@ -469,7 +469,7 @@ class Schedule:
                         "time": t,
                         "title": "Entertainment Session",
                         "paper": "https://itaws.ucsd.edu/api/v0/mobile/page_not_available",
-                        "mail": "https://itaws.ucsd.edu/api/v0/mobile/page_not_available",
+                        "mail": "https://itaws.ucsd.edu/api/v0//page_not_available",
                         "authors": "Anand Sarwate and Mary Wootters",
                         "abstract": "Lightning introductions to fellow participants.",
                     }

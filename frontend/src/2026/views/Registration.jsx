@@ -3,7 +3,7 @@ import queryString from 'query-string';
 
 import RegistrationTabs from './RegistrationTabs';
 
-export default class Registration2025 extends React.Component {
+export default class Registration2026 extends React.Component {
   getEffectiveUserUrl = () => {
     const { location, loggedInUser } = this.props;
     if (location === undefined) {
@@ -31,6 +31,7 @@ export default class Registration2025 extends React.Component {
         {/* <NavBar {...this.props.navbarProps} /> */}
         {this.props.loading ? null : (
           <RegistrationTabs
+            key={`${this.props.workshop.url}::${effectiveUserUrl}`} 
             workshopUrl={this.props.workshop.url}
             userUrl={effectiveUserUrl}
             create={this.props.create}

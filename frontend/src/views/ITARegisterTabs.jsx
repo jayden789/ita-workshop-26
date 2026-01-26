@@ -316,7 +316,7 @@ export default class ITARegisterTabs extends React.Component {
   populateData(data) {
     let slugUrlMap = new Map();
     let urlSlugMap = new Map();
-    api('api/v0/registration_options', 'GET').then(json => {
+    api('api/v0/registration_options/', 'GET').then(json => {
       for (let i = 0; i < json.length; i++) {
         slugUrlMap.set(json[i]['slug'], json[i]['url']);
         urlSlugMap.set(json[i]['url'], json[i]['slug']);
@@ -625,7 +625,7 @@ export default class ITARegisterTabs extends React.Component {
         }
       : {};
 
-    return api('api/v0/registration_options', 'GET')
+    return api('api/v0/registration_options/', 'GET')
       .then(json => {
         const slugUrlMap = new Map();
         for (let i = 0; i < json.length; i++) {
@@ -859,7 +859,8 @@ export default class ITARegisterTabs extends React.Component {
             className="text-center"
           >
             Your registration information was saved successfully at{' '}
-            {this.state.lastSaveTime}. Please reload the page to enable the Payment Button. 
+            {this.state.lastSaveTime}. 
+            {/* Please reload the page to enable the Payment Button.  */}
           </Alert>
         </div>
         <Container>

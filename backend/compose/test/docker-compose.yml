@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  backend:
+    build:
+      context: ../..
+      dockerfile: ./compose/prod/backend/Dockerfile
+    env_file:
+      - ../../envs/test/django.env
+    volumes:
+      - ./logs:/app/logs
+      - backend_static:/app/static
+    ports:
+      - "8001:8000"
+    command: /start
+
+volumes:
+  backend_static:

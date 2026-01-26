@@ -1147,4 +1147,100 @@ class RegistrationAggregateStatsIta23Serializer(serializers.BaseSerializer):
             "total_amount_unpaid": instance.get("total_amount_unpaid"),
             "banquet_options": instance.get("banquet_options")
         }
+        
+class RegistrationAggregateStatsIta26Serializer(serializers.BaseSerializer):
+    """Serializer for ita26 regn aggregate stats."""
+
+    def to_representation(self, instance):
+        participation_counts = dict(
+            (
+                status.name,
+                instance.get("participation_status_{}".format(status.name)),
+            )
+            for status in models.ParticipationStatus
+        )
+        for key in [
+            "participating",
+            "participating_and_paid",
+            "participating_and_unpaid",
+        ]:
+            participation_counts[key] = instance.get(key)
+
+        sunday_reception_counts = collections.defaultdict(dict)
+        for choice, condition in itertools.product(
+            ["notAttending", "selfOnly", "selfPlus1", "selfPlus2", "total"],
+            ["participating", "paid"],
+        ):
+            sunday_reception_counts[choice][condition] = instance.get(
+                "ita26_sundayReception_{}_{}".format(choice, condition)
+            )
+
+        date_strs = [
+            "2026-02-09",
+            "2026-02-10",
+            "2026-02-11",
+            "2026-02-12",
+            "2026-02-13",
+        ]
+        attending_date_counts = dict(
+            (
+                date_str,
+                {
+                    "participating": instance.get(
+                        "attending_date_{}_participating".format(date_str)
+                    ),
+                    "paid": instance.get(
+                        "attending_date_{}_paid".format(date_str)
+                    ),
+                },
+            )
+            for date_str in date_strs
+        )
+
+        monday_lunch_counts = collections.defaultdict(dict)
+        for choice, condition in itertools.product(
+            ["notAttending", "attending"], ["participating", "paid"]
+        ):
+            monday_lunch_counts[choice][condition] = instance.get(
+                "ita26_mondayLunch_{}_{}".format(choice, condition)
+            )
+
+        italt_counts = collections.defaultdict(dict)
+        for choice, condition in itertools.product(
+            ["notAttending", "attending"], ["participating", "paid"]
+        ):
+            italt_counts[choice][condition] = instance.get(
+                "ita26_italt_{}_{}".format(choice, condition)
+            )
+
+        wednesday_banquet_counts = collections.defaultdict(dict)
+        for choice, condition in itertools.product(
+            ["notAttending", "selfOnly", "selfPlus1", "selfPlus2", "total"],
+            ["participating", "paid"],
+        ):
+            wednesday_banquet_counts[choice][condition] = instance.get(
+                "ita26_banquetSelf_{}_{}".format(choice, condition)
+            )
+
+        valentines_event_counts = collections.defaultdict(dict)
+        for choice, condition in itertools.product(
+            ["notAttending", "selfOnly", "selfPlus1", "selfPlus2", "total"],
+            ["participating", "paid"],
+        ):
+            valentines_event_counts[choice][condition] = instance.get(
+                "ita26_valentinesEvent_{}_{}".format(choice, condition)
+            )
+
+        return {
+            "participation_counts": participation_counts,
+            "attending_date_counts": attending_date_counts,
+            "sunday_reception_counts": sunday_reception_counts,
+            "monday_lunch_counts": monday_lunch_counts,
+            "wednesday_banquet_counts": wednesday_banquet_counts,
+            "valentines_event_counts": valentines_event_counts,
+            "italt_counts": italt_counts,
+            "total_amount_paid": instance.get("total_amount_paid"),
+            "total_amount_unpaid": instance.get("total_amount_unpaid"),
+            "banquet_options": instance.get("banquet_options")
+        }
 

@@ -220,6 +220,59 @@ export default class RegistrationTabs extends React.Component {
     this.enablePresentation = this.enablePresentation.bind(this);
   }
 
+  resetForNewUser = () => {
+    this.setState({
+      // safest: clear everything that is user-specific
+      registrationUrl: '',
+      workshopUrl: '',
+      userProfileUrl: '',
+      talkUrl: '',
+
+      // clear ALL option-related fields (these are the ones you notice)
+      SundayReceptionOption: '',
+      WednesdayBanquetOption: '',
+      ValentinesEventOption: '',
+      monReceptionOption: '',
+      saturdayWorkshopOption: '',
+      attendingITALT: '',
+      banquetOption: '',
+
+      // workshop selection state
+      firstDay: '',
+      lastDay: '',
+      nonConsecutiveDays: false,
+      nonConsecMon: false,
+      nonConsecTue: false,
+      nonConsecWed: false,
+      nonConsecThu: false,
+      nonConsecFri: false,
+      likelihood: '',
+      presentingThisYear: false,
+
+      // paper
+      paperTitle: '',
+      paperAuthorsComment: '',
+      paperAbstract: '',
+      paperTopicComment: '',
+      paperComment: '',
+      paperUrl: '',
+      videoUrl: '',
+      adminComments: '',
+
+      // payment UI state
+      token: '',
+      formUrl: '',
+      checkStatusUrl: '',
+      formReady: false,
+      paid: false,
+
+      isChanged: false,
+      saveModal: false,
+      lastSaveTime: '',
+    });
+  };
+
+
   componentDidMount() {
     this.pullAffiliation();
     this.loadRegistration();
@@ -235,6 +288,7 @@ export default class RegistrationTabs extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.userUrl !== this.props.userUrl) {
+      this.resetForNewUser();
       this.loadRegistration().then(() => this.toggle('1'));
     }
   }
@@ -426,7 +480,7 @@ export default class RegistrationTabs extends React.Component {
     console.log('inside populate data:', data);
     let slugUrlMap = new Map();
     let urlSlugMap = new Map();
-    api('api/v0/registration_options', 'GET').then((json) => {
+    api('api/v0/registration_options/', 'GET').then((json) => {
       for (let i = 0; i < json.length; i++) {
         slugUrlMap.set(json[i]['slug'], json[i]['url']);
         urlSlugMap.set(json[i]['url'], json[i]['slug']);
@@ -456,50 +510,51 @@ export default class RegistrationTabs extends React.Component {
       banquetOption: data['banquet_options'],
       isChanged: false,
     });
-    this.loadPayment(data);
+    // this.loadPayment(data);
+    this.setState({ dataLoading: false, formReady: false }); 
     this.populateProfile(data);
     this.populateWorkshop(data);
     this.populatePaper(data);
   }
 
-  loadPayment(data) {
-    // this.setState({
-    //   paid: true,
-    // });//tawwnnyyyy
-    return api(data['url'], 'GET').then((registration) => {
-      if (registration.has_approved_payment) {
-        this.setState({
-          paid: true,
-          dataLoading: false,
-        });
-      } else {
-        api(
-          registration.initiate_payment_url,
-          'POST',
-          localStorage.getItem('invoice_number') !== 'undefined' &&
-            localStorage.getItem('invoice_number')
-            ? {
-                invoice_number: localStorage.getItem('invoice_number'),
-              }
-            : {}
-        ).then((data) => {
-          this.setState({
-            token: data.token,
-            formUrl: data.form_url,
-            checkStatusUrl: data.check_status_url,
-            formReady: true,
-            dataLoading: false,
-          });
-          localStorage.setItem('invoice_number', data.invoice_number);
-          var urlParams = new URLSearchParams(window.location.search);
-          if (urlParams.get('confirmationToken') != null) {
-            this.triggerPaymentCheckStatus(urlParams.get('confirmationToken'));
-            localStorage.removeItem('invoice_number');
-          }
-        });
-      }
-    });
-  }
+  // loadPayment(data) {
+  //   // this.setState({
+  //   //   paid: true,
+  //   // });//tawwnnyyyy
+  //   return api(data['url'], 'GET').then((registration) => {
+  //     if (registration.has_approved_payment) {
+  //       this.setState({
+  //         paid: true,
+  //         dataLoading: false,
+  //       });
+  //     } else {
+  //       api(
+  //         registration.initiate_payment_url,
+  //         'POST',
+  //         localStorage.getItem('invoice_number') !== 'undefined' &&
+  //           localStorage.getItem('invoice_number')
+  //           ? {
+  //               invoice_number: localStorage.getItem('invoice_number'),
+  //             }
+  //           : {}
+  //       ).then((data) => {
+  //         this.setState({
+  //           token: data.token,
+  //           formUrl: data.form_url,
+  //           checkStatusUrl: data.check_status_url,
+  //           formReady: true,
+  //           dataLoading: false,
+  //         });
+  //         localStorage.setItem('invoice_number', data.invoice_number);
+  //         var urlParams = new URLSearchParams(window.location.search);
+  //         if (urlParams.get('confirmationToken') != null) {
+  //           this.triggerPaymentCheckStatus(urlParams.get('confirmationToken'));
+  //           localStorage.removeItem('invoice_number');
+  //         }
+  //       });
+  //     }
+  //   });
+  // }
 
   triggerPaymentCheckStatus = (transId) => {
     api(this.state.checkStatusUrl, 'POST', {
@@ -550,7 +605,11 @@ export default class RegistrationTabs extends React.Component {
   };
 
   populateProfile(data) {
-    const profile = data['user_profile'];
+    const profile = data?.user_profile;
+    if (!profile?.url) {
+      console.warn("Registration data missing user_profile:", data);
+      return;
+    }
     this.setState({
       userProfileUrl: profile['url'],
       addProfilePicUrl: profile['add_profile_pic_url'],
@@ -574,45 +633,55 @@ export default class RegistrationTabs extends React.Component {
   }
 
   populateOptions(data, urlSlugMap) {
+    const options = data?.options || [];
     let slugArray = [];
-    for (let i = 0; i < data['options'].length; i++) {
-      slugArray.push(urlSlugMap.get(data['options'][i]));
+    this.setState({
+      SundayReceptionOption: '',
+      WednesdayBanquetOption: '',
+      ValentinesEventOption: '',
+      monReceptionOption: '',
+      saturdayWorkshopOption: '',
+      attendingITALT: '',
+    });
+
+    for (let i = 0; i < options.length; i++) {
+      slugArray.push(urlSlugMap.get(options[i]));
     }
 
-    if (slugArray.includes('ita25_sundayReception_selfOnly')) {
+    if (slugArray.includes('ita26_sundayReception_selfOnly')) {
       this.setState({
-        SundayReceptionOption: 'ita25_sundayReception_selfOnly',
+        SundayReceptionOption: 'ita26_sundayReception_selfOnly',
       });
     }
-    if (slugArray.includes('ita25_sundayReception_notAttending')) {
+    if (slugArray.includes('ita26_sundayReception_notAttending')) {
       this.setState({
-        SundayReceptionOption: 'ita25_sundayReception_notAttending',
+        SundayReceptionOption: 'ita26_sundayReception_notAttending',
       });
     }
-    if (slugArray.includes('ita25_sundayReception_selfPlus1')) {
+    if (slugArray.includes('ita26_sundayReception_selfPlus1')) {
       this.setState({
-        SundayReceptionOption: 'ita25_sundayReception_selfPlus1',
+        SundayReceptionOption: 'ita26_sundayReception_selfPlus1',
       });
     }
-    if (slugArray.includes('ita25_sundayReception_selfPlus2')) {
+    if (slugArray.includes('ita26_sundayReception_selfPlus2')) {
       this.setState({
-        SundayReceptionOption: 'ita25_sundayReception_selfPlus2',
+        SundayReceptionOption: 'ita26_sundayReception_selfPlus2',
       });
     }
 
-    if (slugArray.includes('ita25_banquetSelf_notAttending')) {
+    if (slugArray.includes('ita26_banquetSelf_notAttending')) {
       this.setState({
-        WednesdayBanquetOption: 'ita25_banquetSelf_notAttending',
+        WednesdayBanquetOption: 'ita26_banquetSelf_notAttending',
       });
     }
-    if (slugArray.includes('ita25_banquetSelf_selfOnly')) {
-      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfOnly' });
+    if (slugArray.includes('ita26_banquetSelf_selfOnly')) {
+      this.setState({ WednesdayBanquetOption: 'ita26_banquetSelf_selfOnly' });
     }
-    if (slugArray.includes('ita25_banquetSelf_selfPlus1')) {
-      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfPlus1' });
+    if (slugArray.includes('ita26_banquetSelf_selfPlus1')) {
+      this.setState({ WednesdayBanquetOption: 'ita26_banquetSelf_selfPlus1' });
     }
-    if (slugArray.includes('ita25_banquetSelf_selfPlus2')) {
-      this.setState({ WednesdayBanquetOption: 'ita25_banquetSelf_selfPlus2' });
+    if (slugArray.includes('ita26_banquetSelf_selfPlus2')) {
+      this.setState({ WednesdayBanquetOption: 'ita26_banquetSelf_selfPlus2' });
     }
 
     // if (slugArray.includes('ita25_banquetGuest_chicken')) {
@@ -627,58 +696,58 @@ export default class RegistrationTabs extends React.Component {
     //   this.setState({ banquetOption: 'ita25_banquetGuest_vegetarian' });
     // }
 
-    if (slugArray.includes('ita25_italt_notAttending')) {
+    if (slugArray.includes('ita26_italt_notAttending')) {
       this.setState({
-        attendingITALT: 'ita25_italt_notAttending',
+        attendingITALT: 'ita26_italt_notAttending',
       });
     }
 
-    if (slugArray.includes('ita25_italt_attending')) {
+    if (slugArray.includes('ita26_italt_attending')) {
       this.setState({
-        attendingITALT: 'ita25_italt_attending',
+        attendingITALT: 'ita26_italt_attending',
       });
     }
 
-    if (slugArray.includes('ita25_valentinesEvent_notAttending')) {
+    if (slugArray.includes('ita26_valentinesEvent_notAttending')) {
       this.setState({
-        ValentinesEventOption: 'ita25_valentinesEvent_notAttending',
+        ValentinesEventOption: 'ita26_valentinesEvent_notAttending',
       });
     }
-    if (slugArray.includes('ita25_valentinesEvent_selfOnly')) {
+    if (slugArray.includes('ita26_valentinesEvent_selfOnly')) {
       this.setState({
-        ValentinesEventOption: 'ita25_valentinesEvent_selfOnly',
+        ValentinesEventOption: 'ita26_valentinesEvent_selfOnly',
       });
     }
-    if (slugArray.includes('ita25_valentinesEvent_selfPlus1')) {
+    if (slugArray.includes('ita26_valentinesEvent_selfPlus1')) {
       this.setState({
-        ValentinesEventOption: 'ita25_valentinesEvent_selfPlus1',
+        ValentinesEventOption: 'ita26_valentinesEvent_selfPlus1',
       });
     }
-    if (slugArray.includes('ita25_valentinesEvent_selfPlus2')) {
+    if (slugArray.includes('ita26_valentinesEvent_selfPlus2')) {
       this.setState({
-        ValentinesEventOption: 'ita25_valentinesEvent_selfPlus2',
-      });
-    }
-
-    if (slugArray.includes('ita25_mondayLunch_attending')) {
-      this.setState({
-        monReceptionOption: 'ita25_mondayLunch_attending',
-      });
-    }
-    if (slugArray.includes('ita25_mondayLunch_notAttending')) {
-      this.setState({
-        monReceptionOption: 'ita25_mondayLunch_notAttending',
+        ValentinesEventOption: 'ita26_valentinesEvent_selfPlus2',
       });
     }
 
-    if (slugArray.includes('ita25_saturdayWorkshop_attending')) {
+    if (slugArray.includes('ita26_mondayLunch_attending')) {
       this.setState({
-        saturdayWorkshopOption: 'ita25_saturdayWorkshop_attending',
+        monReceptionOption: 'ita26_mondayLunch_attending',
       });
     }
-    if (slugArray.includes('ita25_saturdayWorkshop_notAttending')) {
+    if (slugArray.includes('ita26_mondayLunch_notAttending')) {
       this.setState({
-        saturdayWorkshopOption: 'ita25_saturdayWorkshop_notAttending',
+        monReceptionOption: 'ita26_mondayLunch_notAttending',
+      });
+    }
+
+    if (slugArray.includes('ita26_saturdayWorkshop_attending')) {
+      this.setState({
+        saturdayWorkshopOption: 'ita26_saturdayWorkshop_attending',
+      });
+    }
+    if (slugArray.includes('ita26_saturdayWorkshop_notAttending')) {
+      this.setState({
+        saturdayWorkshopOption: 'ita26_saturdayWorkshop_notAttending',
       });
     }
   }
@@ -825,7 +894,7 @@ export default class RegistrationTabs extends React.Component {
         }
       : {};
 
-    return api('api/v0/registration_options', 'GET')
+    return api('api/v0/registration_options/', 'GET')
       .then((json) => {
         const slugUrlMap = new Map();
         for (let i = 0; i < json.length; i++) {
@@ -948,11 +1017,11 @@ export default class RegistrationTabs extends React.Component {
     return {
       basePrice: regnFees['base'],
       dayPrice: regnFees['daily'],
-      sunReceptionPrice: optionFees.get('ita25_sundayReception_selfOnly'),
-      wedBanquetPrice: optionFees.get('ita25_banquetSelf_selfOnly'),
-      valentinesEventPrice: optionFees.get('ita25_valentinesEvent_selfOnly'),
-      satWorkshopPrice: optionFees.get('ita25_saturdaySelf_attending'),
-      italtPrice: optionFees.get('ita25_italt_attending'),
+      sunReceptionPrice: optionFees.get('ita26_sundayReception_selfOnly'),
+      wedBanquetPrice: optionFees.get('ita26_banquetSelf_selfOnly'),
+      valentinesEventPrice: optionFees.get('ita26_valentinesEvent_selfOnly'),
+      satWorkshopPrice: optionFees.get('ita26_saturdaySelf_attending'),
+      italtPrice: optionFees.get('ita26_italt_attending'),
     };
   };
 
@@ -1304,8 +1373,9 @@ export default class RegistrationTabs extends React.Component {
             className="text-center"
           >
             Your registration information was saved successfully at{' '}
-            {this.state.lastSaveTime}. Please reload the page to enable the
-            Payment Button.
+            {this.state.lastSaveTime}.
+             {/* Please reload the page to enable the
+            Payment Button. */}
           </Alert>
         </div>
         <Container>

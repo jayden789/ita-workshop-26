@@ -59,11 +59,10 @@ class App extends Component {
   };
 
   componentDidMount = () => {
-    this.loadWorkshop();
-    this.loadWorkshop2020();
-    // this.loadWorkshop2022();
-    this.loadWorkshop2023();
-    this.loadWorkshop2025();
+    // this.loadWorkshop();
+    // this.loadWorkshop2020();
+    // // this.loadWorkshop2022();
+    // this.loadWorkshop2023();
     this.loadWorkshop2026();
     this.loadRegistrationFees();
     this.loadSchedule();
@@ -124,27 +123,58 @@ class App extends Component {
     api('api/v0/workshops/ita26/').then((workshop) =>
       this.setState({
         participantsUrl26: workshop['participants_url'],
+        workshop, 
       })
     );
   };
 
+  // loadRegistrationFees = () => {
+  //   api('api/v0/registration_fees/')
+  //     .then((json) => {
+  //       this.setState({ registrationFees: json[0]['fees_by_fee_type'] }, () =>
+  //         this.setState({ loadFees: false })
+  //       );
+  //     })
+  //     .catch((error) => console.log(error));
+  // };
   loadRegistrationFees = () => {
     api('api/v0/registration_fees/')
       .then((json) => {
-        this.setState({ registrationFees: json[0]['fees_by_fee_type'] }, () =>
-          this.setState({ loadFees: false })
-        );
+        const feesByType = json?.[0]?.fees_by_fee_type;
+
+        if (!feesByType) {
+          console.warn('No registration fees returned from /registration_fees/.');
+          this.setState({ registrationFees: {}, loadFees: false });
+          return;
+        }
+
+        this.setState({ registrationFees: feesByType, loadFees: false });
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.error(error);
+        this.setState({ registrationFees: {}, loadFees: false });
+      });
   };
 
-  loadSchedule = () => {
-    api('api/v0/mobile/schedule').then((json) => {
-      this.setState({ schedule: json }, () =>
-        this.setState({ loadSchedule: false })
-      );
+
+loadSchedule = () => {
+  api('api/v0/mobile/schedule/', 'GET')
+    .then((json) => {
+      this.setState({ schedule: json, loadSchedule: false });
+    })
+    .catch((err) => {
+      // ignore missing endpoint
+      if (err.status === 404) {
+        console.warn('Schedule endpoint missing, skipping.');
+        this.setState({ schedule: null, loadSchedule: false });
+        return;
+      }
+      // real error -> still surface
+      console.error(err);
+      this.setState({ loadSchedule: false });
     });
-  };
+};
+
 
   onLogin = () => {
     api('rest-auth/user/', 'GET')

@@ -609,7 +609,7 @@ export default class RegistrationProfile extends React.Component {
                 <Button
                   // disable since workshop is closed
                   // disabled={this.state.formError || this.props.loading}
-                  disabled
+                  // disabled
                   onClick={this.props.saveChanges}
                   id="SaveChangesButton"
                 >
@@ -621,6 +621,7 @@ export default class RegistrationProfile extends React.Component {
                 &nbsp;&nbsp; {/* TODO this is crappy, remove this */}
                 <Button
                   onClick={() => {
+                    this.props.saveChanges();
                     this.props.toggle('2');
                   }}
                   disabled={this.state.formError || this.props.loading}
