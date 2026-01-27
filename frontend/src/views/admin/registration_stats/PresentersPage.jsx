@@ -8,7 +8,7 @@ import {
   fetchRegnOptions,
   generateRegnOptionConversions,
 } from '../../../helpers';
-import * as ita24Regn from '../../../models/ita24/Registration';
+import * as ita26Regn from '../../../models/ita26/Registration';
 import RegistrationTable from './RegistrationTable';
 
 const intDivRoundUp = (a, b) => {
@@ -41,12 +41,12 @@ function flatten(data) {
 
 const dayToCompact = day =>
   ({
-    '2025-02-09': 'S',
-    '2025-02-10': 'M',
-    '2025-02-11': 'T',
-    '2025-02-12': 'W',
-    '2025-02-13': 'R',
-    '2025-02-14': 'F',
+    '2026-02-08': 'S',
+    '2026-02-09': 'M',
+    '2026-02-10': 'T',
+    '2026-02-11': 'W',
+    '2026-02-12': 'R',
+    '2026-02-13': 'F',
   }[day]);
   
 const compactDaysAttending = days =>
@@ -57,17 +57,9 @@ const compactDaysAttending = days =>
     .join('');
 
 function flatten1(reg) {
-  var temp_reg = {... reg}
+  const temp_reg = { ...reg };
   temp_reg.attendingDates = compactDaysAttending(temp_reg.attendingDates);
-  var temp = flatten(temp_reg);
-  if (!temp instanceof Array) {
-    console.log('Inside temp');
-    var temp_array = [];
-    temp_array.push(temp);
-    console.log('temp:' + JSON.stringify(temp_array));
-    return temp_array;
-  }
-  return temp;
+  return flatten(temp_reg); // ALWAYS an object
 }
 
 export default class PresentersPage extends React.Component {
@@ -113,7 +105,7 @@ export default class PresentersPage extends React.Component {
       .then(() => fetchPaginatedRegistrations(page + 1, pageSize))
       .then(({ results, count: numTotalResults }) => {
         const registrations = results.map((result) =>
-          ita24Regn.fromApiFormat(result, this.state.regnOptionUrlToSlugMap)
+          ita26Regn.fromApiFormat(result, this.state.regnOptionUrlToSlugMap)
         );
         const presenters = [];
         for (var registration of registrations) {
@@ -121,12 +113,9 @@ export default class PresentersPage extends React.Component {
             presenters.push(registration);
           }
         }
-        var csvoutput = [];
-        for (var registration of registrations) {
-          if (registration.presenting) {
-            csvoutput.push(flatten1(registration));
-          }
-        }
+        const csvoutput = registrations
+          .filter(r => r.presenting)
+          .map(flatten1);
         console.log('presenters:' + presenters);
         const numTotalPages = intDivRoundUp(numTotalResults, pageSize);
         this.setState({
@@ -183,8 +172,8 @@ export default class PresentersPage extends React.Component {
                 <div style={{ float: 'right', padding: 5 + 'px' }}>
                   <CsvDownloader
                     filename="Presenter statistics"
-                    separator="*"
-                    wrapColumnChar=""
+                    separator=","
+                    wrapColumnChar='"'
                     columns={headers}
                     datas={this.state.csvoutput}
                     text="Download Data"

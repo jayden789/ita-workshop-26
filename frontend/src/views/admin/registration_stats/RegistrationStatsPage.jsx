@@ -8,7 +8,7 @@ import {
   fetchRegnOptions,
   generateRegnOptionConversions,
 } from '../../../helpers';
-import * as ita24Regn from '../../../models/ita24/Registration';
+import * as ita26Regn from '../../../models/ita26/Registration';
 import RegistrationTable from './RegistrationTable';
 
 const intDivRoundUp = (a, b) => {
@@ -100,7 +100,7 @@ export default class RegistrationStatsPage extends React.Component {
       .then(() => fetchPaginatedRegistrations(page + 1, pageSize))
       .then(({ results, count: numTotalResults }) => {
         const registrations = results.map((result) =>
-          ita24Regn.fromApiFormat(result, this.state.regnOptionUrlToSlugMap)
+          ita26Regn.fromApiFormat(result, this.state.regnOptionUrlToSlugMap)
         );
         var csvoutput = [];
         for (var registration of registrations) {

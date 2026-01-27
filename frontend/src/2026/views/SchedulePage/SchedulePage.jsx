@@ -108,7 +108,7 @@ const rowTimeValues = [
   ],
 ];
 
-export default class SchedulePage2025 extends React.Component {
+export default class SchedulePage2026 extends React.Component {
   constructor(props) {
     super(props);
 
@@ -297,12 +297,11 @@ export default class SchedulePage2025 extends React.Component {
 
     return (
       <div>
-        {this.props.navbar}
+        COMING SOON
+        {/* {this.props.navbar}
         {this.state.loading ? null : (
           <div>
-            {/*
             <Nav tabs>{daysTabs}</Nav>
-            */}
             <TabContent activeTab={this.state.activeTab}>
               <div style={{ marginTop: '60px' }} />
               <div className="pl-4 pr-4 pt-2">
@@ -323,7 +322,7 @@ export default class SchedulePage2025 extends React.Component {
               onToggleModal={this.onToggleTalkModal}
             />
           </div>
-        )}
+        )} */}
       </div>
     );
   }
