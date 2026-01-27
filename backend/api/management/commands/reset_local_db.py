@@ -19,4 +19,4 @@ class Command(BaseCommand):
             call_command('setup_workshop_ita24')
             call_command('setup_workshop_ita25')
             call_command('setup_workshop_ita26')
-            call_command('load_mock_data')
+            # call_command('load_mock_data_2026')

@@ -22,12 +22,12 @@ export default class AggregateStats extends React.Component {
 
   renderAttendingDatesSection = () => {
     const {
-      '2025-02-09': sun,
-      '2025-02-10': mon,
-      '2025-02-11': tue,
-      '2025-02-12': wed,
-      '2025-02-13': thu,
-      '2025-02-14': fri,
+      '2026-02-08': sun,
+      '2026-02-09': mon,
+      '2026-02-10': tue,
+      '2026-02-11': wed,
+      '2026-02-12': thu,
+      '2026-02-13': fri,
     } = this.props.stats.attending_date_counts;
 
     return (

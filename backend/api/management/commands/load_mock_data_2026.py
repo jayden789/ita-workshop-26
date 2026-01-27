@@ -345,41 +345,41 @@ def _random_attending_dates(dates_list, participation_status):
 PLACEHOLDER_TALK_PAPER_PATH = "placeholder_talk_papers/placeholder{}.pdf"
 
 
-def _set_random_talk(
-    talk,
-    add_title=True,
-    add_abstract=True,
-    add_comment=True,
-    add_paper=True,
-    add_authors=True,
-):
-    fake = Faker()
-    if add_title:
-        talk.title = fake.sentences(nb=1)[0]
-    if add_abstract:
-        talk.abstract = fake.paragraph(
-            nb_sentences=6, variable_nb_sentences=False
-        )
-    if add_comment:
-        talk.scheduling_comment = fake.paragraph(
-            nb_sentences=2, variable_nb_sentences=False
-        )
-        talk.topic_comment = fake.paragraph(
-            nb_sentences=2, variable_nb_sentences=False
-        )
-    if add_paper:
-        letter = talk.registration.user_profile.first_name[0].upper()
-        talk_paper = TalkPaper()
-        talk_paper.file = PLACEHOLDER_TALK_PAPER_PATH.format(letter)
-        talk_paper.save()
-        talk.paper = talk_paper
-    if add_authors:
-        num_authors = random.randrange(2, 8)
-        author_names = [
-            " ".join([fake.first_name(), fake.last_name()])
-            for _ in range(num_authors)
-        ]
-        talk.authors_comment = ', '.join(author_names)
+# def _set_random_talk(
+#     talk,
+#     add_title=True,
+#     add_abstract=True,
+#     add_comment=True,
+#     add_paper=True,
+#     add_authors=True,
+# ):
+#     fake = Faker()
+#     if add_title:
+#         talk.title = fake.sentences(nb=1)[0]
+#     if add_abstract:
+#         talk.abstract = fake.paragraph(
+#             nb_sentences=6, variable_nb_sentences=False
+#         )
+#     if add_comment:
+#         talk.scheduling_comment = fake.paragraph(
+#             nb_sentences=2, variable_nb_sentences=False
+#         )
+#         talk.topic_comment = fake.paragraph(
+#             nb_sentences=2, variable_nb_sentences=False
+#         )
+#     if add_paper:
+#         letter = talk.registration.user_profile.first_name[0].upper()
+#         talk_paper = TalkPaper()
+#         talk_paper.file = PLACEHOLDER_TALK_PAPER_PATH.format(letter)
+#         talk_paper.save()
+#         talk.paper = talk_paper
+#     if add_authors:
+#         num_authors = random.randrange(2, 8)
+#         author_names = [
+#             " ".join([fake.first_name(), fake.last_name()])
+#             for _ in range(num_authors)
+#         ]
+#         talk.authors_comment = ', '.join(author_names)
 
 
 def _create_approved_payment(regn):
@@ -507,14 +507,14 @@ def setup_random_registrants(
         if random.randrange(3) > 0:
             regn.presenting = True
             talk = regn.talks.first()
-            _set_random_talk(
-                talk,
-                add_title=(random.randrange(4) > 0),
-                add_abstract=(random.randrange(2) > 0),
-                add_comment=(random.randrange(3) == 0),
-                add_paper=(random.randrange(3) > 0),
-                add_authors=(random.randrange(4) > 0),
-            )
+            # _set_random_talk(
+            #     talk,
+            #     add_title=(random.randrange(4) > 0),
+            #     add_abstract=(random.randrange(2) > 0),
+            #     add_comment=(random.randrange(3) == 0),
+            #     add_paper=(random.randrange(3) > 0),
+            #     add_authors=(random.randrange(4) > 0),
+            # )
             talk.save()
 
         regn.save()
