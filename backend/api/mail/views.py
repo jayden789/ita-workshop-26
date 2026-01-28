@@ -22,18 +22,10 @@ from api.mail import (
     templating,
 )
 from django.conf import settings
+from django.conf.settings import EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name
-
-SMTP_HOST = "smtp.ucsd.edu"
-SMTP_PORT = 587
-SENDER = "ita@ucsd.edu"
-
-EMAIL_HOST_USER = "ita@ucsd.edu"
-EMAIL_HOST_PASSWORD = "enter_your_password_here"
-EMAIL_HOST = SMTP_HOST
-EMAIL_PORT = SMTP_PORT
 
 
 def generate_messages_for_mailing_list(

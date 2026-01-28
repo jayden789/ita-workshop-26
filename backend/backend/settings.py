@@ -237,6 +237,14 @@ EMAIL_CONFIG = env.email_url(
 
 vars().update(EMAIL_CONFIG)
 EMAIL_BACKEND = 'api.email_backends.CustomSMTPBackend'
+SMTP_HOST = "smtp.ucsd.edu"
+SMTP_PORT = 587
+SENDER = "ita@ucsd.edu"
+
+EMAIL_HOST_USER = "ita@ucsd.edu"
+EMAIL_HOST_PASSWORD = "enter_your_password_here"
+EMAIL_HOST = SMTP_HOST
+EMAIL_PORT = SMTP_PORT
 
 # Non-Django settings
 
