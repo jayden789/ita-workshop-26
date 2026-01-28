@@ -21,7 +21,7 @@ from api.mail import (
     serializers as mail_serializers,
     templating,
 )
-
+from django.conf import settings
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name
@@ -107,6 +107,7 @@ def send_messages(messages):
             with smtplib.SMTP(EMAIL_HOST, EMAIL_PORT, timeout=60) as server:
                 server.starttls(context=context)
                 server.login(EMAIL_HOST_USER, EMAIL_HOST_PASSWORD)
+                raw_msg.add_header('Bcc', settings.DEFAULT_BCC_EMAIL)
                 server.send_message(raw_msg)
             num_sent += 1
             
