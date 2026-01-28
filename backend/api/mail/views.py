@@ -22,7 +22,12 @@ from api.mail import (
     templating,
 )
 from django.conf import settings
-from django.conf.settings import EMAIL_HOST, EMAIL_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+
+EMAIL_HOST = settings.EMAIL_HOST
+EMAIL_PORT = settings.EMAIL_PORT
+EMAIL_HOST_USER = settings.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = settings.EMAIL_HOST_PASSWORD
+
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
 
 User = get_user_model()  # pylint: disable=invalid-name

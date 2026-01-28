@@ -5,7 +5,13 @@ import logging
 from django.core.mail.backends.base import BaseEmailBackend
 from django.core.mail import EmailMessage
 from django.conf import settings
-from django.conf.settings import EMAIL_HOST, SMTP_PORT, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+
+EMAIL_HOST = settings.EMAIL_HOST
+EMAIL_PORT = settings.EMAIL_PORT
+EMAIL_HOST_USER = settings.EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = settings.EMAIL_HOST_PASSWORD
+SMTP_PORT = EMAIL_PORT
+
 
 logger = logging.getLogger(__name__)
 
