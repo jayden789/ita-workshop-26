@@ -16,11 +16,34 @@ import rest_auth.serializers as rest_auth_serializers
 from rest_auth.registration.serializers import (
     RegisterSerializer as RestAuthRegisterSerializer,
 )
-
+from django.contrib.auth.forms import PasswordResetForm
+from django.core.mail import get_connection
 from api import models
 User = get_user_model()  # pylint: disable=invalid-name
 
 logger = logging.getLogger(__name__)  # pylint: disable=invalid-name
+
+
+class CustomPasswordResetForm(PasswordResetForm):
+    def send_mail(self, subject_template_name, email_template_name, 
+                  context, from_email, to_email, html_email_template_name=None):
+        # Force custom backend
+        connection = get_connection(backend='api.email_backends.CustomSMTPBackend')
+        email_message = self.construct_email(
+            subject_template_name, email_template_name, context, from_email, to_email,
+            html_email_template_name
+        )
+        connection.send_messages([email_message])
+
+class PasswordResetSerializer(rest_auth_serializers.PasswordResetSerializer):
+    password_reset_form = CustomPasswordResetForm
+    
+    def get_email_options(self):
+        return {
+            "domain_override": settings.FRONTEND_ROOT_DOMAIN,
+            "email_template_name": "password_reset_email_custom_url.html",
+        }
+
 
 class MoneySerializerField(serializers.DecimalField):
     """Serializer field corresponding to models.MoneyField."""
@@ -799,17 +822,17 @@ class TalkScheduleSerializer(serializers.HyperlinkedModelSerializer):
         fields = ("url", "title", "owner", "talk_structure")
 
 
-class PasswordResetSerializer(rest_auth_serializers.PasswordResetSerializer):
-    """
-    Extends rest_auth's password reset serializer in order to override the URL
-    in the password-reset email.
-    """
+# class PasswordResetSerializer(rest_auth_serializers.PasswordResetSerializer):
+#     """
+#     Extends rest_auth's password reset serializer in order to override the URL
+#     in the password-reset email.
+#     """
 
-    def get_email_options(self):
-        return {
-            "domain_override": settings.FRONTEND_ROOT_DOMAIN,
-            "email_template_name": "password_reset_email_custom_url.html",
-        }
+#     def get_email_options(self):
+#         return {
+#             "domain_override": settings.FRONTEND_ROOT_DOMAIN,
+#             "email_template_name": "password_reset_email_custom_url.html",
+#         }
 
 
 class CustomRegisterSerializer(RestAuthRegisterSerializer):

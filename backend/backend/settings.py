@@ -236,6 +236,7 @@ EMAIL_CONFIG = env.email_url(
 )
 
 vars().update(EMAIL_CONFIG)
+EMAIL_BACKEND = 'api.email_backends.CustomSMTPBackend'
 
 # Non-Django settings
 
