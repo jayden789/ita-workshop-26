@@ -225,7 +225,10 @@ export default class SpecialEventsSection extends React.Component {
               </h1>
             </div>
             <Row className="mb-2" style={rowStyle}>
-              <Col>
+
+              {/* TODO: May Uuncomment later */}
+              {/* Award Sessions */}
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -276,8 +279,10 @@ export default class SpecialEventsSection extends React.Component {
                     Mon, Thu 9AM
                   </CardFooter>
                 </Card>
-              </Col>
-              <Col>
+              </Col> */}
+
+              {/* {How to thrive as a researcher */}
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -327,7 +332,8 @@ export default class SpecialEventsSection extends React.Component {
                     Mon noon
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
+
               <Col>
                 <Card
                   className="text-center"
@@ -534,7 +540,7 @@ Lunch served for event participants.
                     Parinaz Naghizadeh
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
-                    Wed 10:40AM
+                    Wed Noon
                   </CardFooter>
                 </Card>
               </Col>
@@ -686,7 +692,7 @@ Lunch served for event participants.
                       employers.
                       <br></br>
                       <br></br>
-                      Po Ling Loh
+                      Coming soon
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Thu Noon
@@ -771,7 +777,9 @@ Lunch served for event participants.
             <br></br>
             <br></br>
 
-            <div
+            {/* ####### TODO: Uncomment this social events after finalizing the content ######## */}
+
+            {/* <div
               className="text-center"
               id="socialevents"
               style={{ marginTop: '20px' }}
@@ -785,8 +793,8 @@ Lunch served for event participants.
                 collaborations, and facilitate employment and mentorship
                 opportunities.
               </h4>
-            </div>
-            <Row style={rowStyle}>
+            </div> */}
+            {/* <Row style={rowStyle}>
               <Col>
                 <Card
                   className="text-center"
@@ -829,7 +837,8 @@ Lunch served for event participants.
                   </CardFooter>
                 </Card>
               </Col>
-              {/* <Col>
+              [TODO: May comment this part back after finalizing the content]
+              <Col>
                 <Card className="text-center" style={{ height: '100%', cursor: 'pointer' }} onClick={this.toggle9}>
                   <CardImg
                     top
@@ -863,7 +872,7 @@ Lunch served for event participants.
                   <CardBody>Bonfire by the beach</CardBody>
                   <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>Thu 6 PM</CardFooter>
                 </Card>
-              </Col> */}
+              </Col>
 
               <Col>
                 <Card
@@ -1183,7 +1192,10 @@ Lunch served for event participants.
                   </CardFooter>
                 </Card>
               </Col>
-            </Row>
+            </Row> */}
+
+            {/* Up until this part is for social events */}
+
           </Container>
         </Jumbotron>
       </div>

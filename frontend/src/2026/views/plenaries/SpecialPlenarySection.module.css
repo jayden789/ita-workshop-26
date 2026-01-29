@@ -1,0 +1,44 @@
+.section {
+  background-color: #f8f9fa;
+  margin-bottom: 0;
+  padding: 2rem 1rem;
+}
+
+.sectionTitle {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.cardHeader {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.topicHeader {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.speakerNames {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.speakerNames a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.speakerNames a:hover {
+  text-decoration: underline;
+}
