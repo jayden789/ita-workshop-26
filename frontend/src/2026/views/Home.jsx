@@ -42,7 +42,7 @@ export default class Home2026 extends React.Component {
         <LocationSection />
         <SpecialEventsSection />
         {/*<TutorialSection />*/}
-        {/* <EataSection /> */}
+        <EataSection />
         {/* <Suspense
           fallback={<p className="text-center m-1">Loading Participants...</p>}
         >

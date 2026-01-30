@@ -5,32 +5,15 @@
 // MISSING ITEMS TO ADD:
 //
 // IMAGES NEEDED (save to ../img2026/plenary-profile-pics/):
-//   - abbasElGamal.jpg (Abbas El Gamal)
-//   - benRecht.jpg (Ben Recht)
-//   - nisheethVishnoi.jpg (Nisheeth Vishnoi)
 //   - moderator images as needed
 //
-// WEBSITE URLs NEEDED:
-//   - Adam Kalai
-//   - Muriel Medard
-//   - Mingyan Liu
-//   - Bane Vasic
-//   - Ilias Diakonikolas
-//   - David Woodruff
-//   - Prabhakar Raghavan
-//   - Sergei Gukov
-//   - Abbas El Gamal
-//   - Ben Recht
-//   - Nisheeth Vishnoi
+
 //
 // BIOS NEEDED:
 //   - Ilias Diakonikolas
 //   - Jerry Li
 //   - David Woodruff
 //   - Prabhakar Raghavan
-//   - Abbas El Gamal
-//   - Ben Recht
-//   - Nisheeth Vishnoi
 //
 // TITLES/ABSTRACTS NEEDED:
 //   - Flavio Calmon (for 2026)
@@ -38,8 +21,6 @@
 //   - Jerry Li
 //   - Dimitry Drusvyatskiy
 //   - Prabhakar Raghavan
-//   - Abbas El Gamal
-//   - Ben Recht
 //   - Nisheeth Vishnoi
 //
 // MODERATOR INFO NEEDED:
@@ -49,7 +30,6 @@
 
 // TODO: Uncomment and update paths once images are added
 import AdamKalaiImg from '../img2026/plenary-profile-pics/adamKalai.jpg';
-import MurielMedardImg from '../img2026/plenary-profile-pics/murielMedard.jpg';
 import KrishnaNarayananImg from '../img2026/plenary-profile-pics/krishnaNarayanan.jpg';
 import MingyanLiuImg from '../img2026/plenary-profile-pics/mingyanLiu.jpg';
 import BaneVasicImg from '../img2026/plenary-profile-pics/baneVasic.jpg';
@@ -59,21 +39,34 @@ import DimaDrusvyatskiyImg from '../img2026/plenary-profile-pics/dimaDrusvyatski
 import DavidWoodruffImg from '../img2026/plenary-profile-pics/davidWoodruff.jpg';
 import PrabhakarRaghavanImg from '../img2026/plenary-profile-pics/prabhakarRaghavan.jpg';
 import SergeiGukovImg from '../img2026/plenary-profile-pics/sergeiGukov.jpg';
-// import AbbasElGamalImg from '../img2026/plenary-profile-pics/abbasElGamal.jpg';
-// import BenRechtImg from '../img2026/plenary-profile-pics/benRecht.jpg';
-// import NisheethVishnoiImg from '../img2026/plenary-profile-pics/nisheethVishnoi.jpg';
+import AbbasElGamalImg from '../img2026/plenary-profile-pics/abbasElGamal.jpg';
+import BenRechtImg from '../img2026/plenary-profile-pics/benRecht.jpg';
+import NisheethVishnoiImg from '../img2026/plenary-profile-pics/nisheethVishnoi.jpg';
 
 import FlavioImg from '../img2025/plenary-profile-pics/flavio.jpg';
 
 // Placeholder for missing images - replace with actual imports
 const PlaceholderImg = null;
 
+// Helper function to extract last name from full name
+const getLastName = (fullName) => {
+  const parts = fullName.trim().split(' ');
+  return parts[parts.length - 1].toLowerCase();
+};
+
+// Helper function to sort talks by presenter's last name
+const sortByLastName = (talks) => {
+  return [...talks].sort((a, b) =>
+    getLastName(a.presenter.name).localeCompare(getLastName(b.presenter.name))
+  );
+};
+
 const mondayTalks = [
   {
     presenter: {
       name: 'Adam Kalai',
       picUrl: AdamKalaiImg,
-      websiteUrl: '', // TODO: Add website URL
+      websiteUrl: 'https://kal.ai/',
       affiliation: 'OpenAI',
       bio: `Adam Tauman Kalai is a Research Scientist at OpenAI, specializing in AI Safety and Ethics. His research interests also include algorithms, fairness, AI theory, game theory, and crowdsourcing. He has served as an Assistant Professor at TTIC and Georgia Tech and a Senior Principal Researcher at Microsoft Research New England. He is also a member of Project CETI's science team. He is the inaugural recipient of the Majulook Prize.`,
     },
@@ -85,18 +78,14 @@ Joint work with: Yael Tauman Kalai (MIT) and Or Zamir (Tel Aviv University)`,
   },
   {
     presenter: {
-      name: 'Muriel Médard',
-      picUrl: MurielMedardImg,
-      websiteUrl: '', // TODO: Add website URL
-      affiliation: 'MIT',
-      bio: `Muriel Médard is the co-founder of Optimum, and holds the NEC Chair of Software Science and Engineering for the School of Engineering at MIT, and is a Professor in EECS. She obtained three Bachelors degrees, her M.S. and Sc.D, all from MIT. Muriel is a Member of the US National Academy of Engineering (elected 2020), a Member of the German National Academy of Sciences Leopoldina (elected 2022), a Fellow of the US National Academy of Inventors (elected 2018), American Academy of Arts and Sciences (elected 2021), and a Fellow of the Institute of Electrical and Electronics Engineers (elected 2008). She holds Honorary Doctorates from the Technical University of Munich (2020), the University of Aalborg (2022) and the Budapest University of Technology and Economics (2023). Muriel was awarded the 2022 IEEE Kobayashi Computers and Communications Award and the 2026 Hamming Medal. She received the 2019 Best Paper award for IEEE Transactions on Network Science and Engineering, the 2018 ACM SIGCOMM Test of Time Paper Award, as well as nine conference paper awards. Muriel served as the Editor-in-Chief (EIC) of IEEE Transactions on Information Theory, and was EiC of IEEE JSAC. She was president of the IEEE Information Theory Society. Muriel received the inaugural MIT Postdoctoral Association Mentoring Award in 2022, the inaugural MIT EECS Graduate Student Association Mentor Award, voted by the students, in 2013. She set up the Women in the Information Theory Society (WithITS) and Information Theory Society Mentoring Program. She was recognized with the 2017 IEEE Aaron Wyner Distinguished Service Award. Muriel has over seventy US and international patents awarded, the vast majority of which have been licensed or acquired. Muriel has supervised over 40 master students, over 20 doctoral students and over 25 postdoctoral fellows.`,
+      name: 'Mingyan Liu',
+      picUrl: MingyanLiuImg,
+      websiteUrl: 'https://experts.umich.edu/1536-mingyan-liu',
+      affiliation: 'University of Michigan',
+      bio: `Mingyan Liu is the T. C. Chang Professor of Engineering, a professor of Electrical Engineering & Computer Science, and the Associate Dean for Academic Affairs of the College of Engineering at the University of Michigan, Ann Arbor. She received her Ph.D. Degree in electrical engineering from the University of Maryland, College Park, in 2000 and has been with the University of Michigan ever since. Her research interests are in resource allocation, sequential decision and learning theory, game theory and incentive mechanisms, with applications to large-scale networked systems, cybersecurity and cyber risk quantification. Some of her research in this space has been successfully commercialized. She is a Fellow of the IEEE and a member of the ACM.`,
     },
-    title: 'Coding for Decentralized Data in Web3',
-    abstract: `Traditional computing follows the von Neumann architecture that has underpinned decades of innovation. In this paradigm a compute/control unit interacts with read/write memory via a bus and therefore crucially relies on memory and access to it.
-
-Web3 has developed technologies such as virtual machines (VMs), that map onto von Neumann's compute/control framework. Data propagation (bus) and access (read/write memory), however present critical constraints in decentralized environments.
-
-We introduce a decentralized high-performance memory infrastructure that utilizes randomized network coding to derive the fastest and most efficient Web3 protocol to date.`,
+    title: 'Transforming Cybersecurity Research with AI-Assisted Data Curation',
+    abstract: `Annotating security, privacy, and related regulatory documents, often written in an unstructured manner, has long been a prohibitively difficult and labor-intensive effort that has prevented the research community from extracting and obtaining valuable information that could enable critical analysis and inform policy making. A prime example is the analysis of corporate privacy policies: prior to the modern AI era, the largest such study consisted of a few hundred policies annotated by legal scholars. The emergence of LLMs has completely transformed our ability to automate document annotation (or producing structured data) scalably. In this talk, I present two AI pipelines for the large-scale acquisition and curation of such data, generating highly accurate and consistent annotations. The first, using a corpus of public/news reports, resulted in a unique large-scale dataset of ransomware incidents with fine-grained features, the largest of this nature to the best of our knowledge. The second, using over 10,000 corporate privacy policies obtained through web crawls, resulted in a first-ever large-scale dataset on what user data is being collected, its purpose, how data is handled and protected, and user rights. Furthermore, I will showcase interesting analysis such structured data has enabled, such as, in the former, testing the hypothesis that a large ransom payment (or a high-profile refusal to pay) has an encouraging (or deterring) downstream effect, the impact and evolution of double extortion, and the difference in payment attitude across different industries; and in the latter, quantifying the inherent tension between corporate interests, consumer protection, and compliance requirement, and why some do better than others. All our datasets are publicly available and we welcome more researchers to use them.`,
     award: '',
   },
   {
@@ -116,21 +105,9 @@ We introduce a decentralized high-performance memory infrastructure that utilize
 const tuesdayTalks = [
   {
     presenter: {
-      name: 'Mingyan Liu',
-      picUrl: MingyanLiuImg,
-      websiteUrl: '', // TODO: Add website URL
-      affiliation: 'University of Michigan',
-      bio: `Mingyan Liu is the T. C. Chang Professor of Engineering, a professor of Electrical Engineering & Computer Science, and the Associate Dean for Academic Affairs of the College of Engineering at the University of Michigan, Ann Arbor. She received her Ph.D. Degree in electrical engineering from the University of Maryland, College Park, in 2000 and has been with the University of Michigan ever since. Her research interests are in resource allocation, sequential decision and learning theory, game theory and incentive mechanisms, with applications to large-scale networked systems, cybersecurity and cyber risk quantification. Some of her research in this space has been successfully commercialized. She is a Fellow of the IEEE and a member of the ACM.`,
-    },
-    title: 'Transforming Cybersecurity Research with AI-Assisted Data Curation',
-    abstract: `Annotating security, privacy, and related regulatory documents, often written in an unstructured manner, has long been a prohibitively difficult and labor-intensive effort that has prevented the research community from extracting and obtaining valuable information that could enable critical analysis and inform policy making. A prime example is the analysis of corporate privacy policies: prior to the modern AI era, the largest such study consisted of a few hundred policies annotated by legal scholars. The emergence of LLMs has completely transformed our ability to automate document annotation (or producing structured data) scalably. In this talk, I present two AI pipelines for the large-scale acquisition and curation of such data, generating highly accurate and consistent annotations. The first, using a corpus of public/news reports, resulted in a unique large-scale dataset of ransomware incidents with fine-grained features, the largest of this nature to the best of our knowledge. The second, using over 10,000 corporate privacy policies obtained through web crawls, resulted in a first-ever large-scale dataset on what user data is being collected, its purpose, how data is handled and protected, and user rights. Furthermore, I will showcase interesting analysis such structured data has enabled, such as, in the former, testing the hypothesis that a large ransom payment (or a high-profile refusal to pay) has an encouraging (or deterring) downstream effect, the impact and evolution of double extortion, and the difference in payment attitude across different industries; and in the latter, quantifying the inherent tension between corporate interests, consumer protection, and compliance requirement, and why some do better than others. All our datasets are publicly available and we welcome more researchers to use them.`,
-    award: '',
-  },
-  {
-    presenter: {
       name: 'Bane Vasic',
       picUrl: BaneVasicImg,
-      websiteUrl: '', // TODO: Add website URL
+      websiteUrl: 'https://ece.engineering.arizona.edu/faculty-staff/faculty/bane-vasic',
       affiliation: 'University of Arizona',
       bio: `Dr. Bane Vasić is a Professor of Electrical and Computer Engineering and Mathematics at the University of Arizona and Director of the Error Correction Laboratory. At Bell Labs and the University of Arizona, he has made key contributions to the design of data storage read channels and structured low-density parity-check (LDPC) codes, as well as their decoding algorithms. Dr. Vasić leads the Quantum Error Correction Group within a U.S. Department of Energy multi-institutional research center led by Fermi National Accelerator Laboratory. His research on quantum codes has been supported by NASA's Jet Propulsion Laboratory and the National Science Foundation. He is an IEEE Fellow, a Fulbright Scholar, and a past Chair of the IEEE Data Storage Technical Committee. He is a co-founder of Codelucida, a company providing advanced error correction solutions for flash memories worldwide since 2012, and a co-founder of QEC Labs, a startup developing QLDPC codes for quantum computers.`,
     },
@@ -158,12 +135,12 @@ const wednesdayTalks = [
     presenter: {
       name: 'Ilias Diakonikolas',
       picUrl: IliasDiakonikolasImg,
-      websiteUrl: '', // TODO: Add website URL
+      websiteUrl: 'http://www.iliasdiakonikolas.org/',
       affiliation: 'University of Wisconsin',
-      bio: '', // TODO: Add bio
+      bio: 'Ilias Diakonikolas is the Lubar Professor in the Department of Computer Sciences at UW Madison. He obtained a Diploma in electrical and computer engineering from the National Technical University of Athens and a Ph.D. in computer science from Columbia University where he was advised by Mihalis Yannakakis. Before moving to UW, he was an Andrew and Erna Viterbi Early Career Chair at USC and a faculty member at the University of Edinburgh. Prior to that, he was the Simons postdoctoral fellow in theoretical computer science at the University of California, Berkeley. His research is on the algorithmic foundations of massive data sets, in particular on designing efficient algorithms for fundamental problems in machine learning. He is a recipient of the ACM Grace Murray Hopper award, a Sloan Fellowship, an NSF CAREER Award, a Romnes Faculty Fellowship, a Google Faculty Research Award, a Marie Curie Fellowship, best paper awards at NeurIPS and COLT, the IBM Research Pat Goldberg Best Paper Award, and an honorable mention in the George Nicholson competition from the INFORMS society. Ilias wrote with Daniel Kane the textbook "Algorithmic High-dimensional Robust Statistics" published by Cambridge University Press.',
     },
-    title: '', // TODO: Add title
-    abstract: '', // TODO: Add abstract
+    title: 'Learning Multi-Index Models',
+    abstract: 'Multi-index models (MIMs) are functions that depend on the projection onto a low-dimensional subspace. These models provide a useful framework for analyzing a wide range of machine learning problems. In this talk, we will survey recent algorithmic work on learning MIMs. In particular, we will present a robust noise-tolerant learning algorithm that works for a broad class of MIMs, under standard distributional assumptions. As applications, we will demonstrate how this framework leads to faster noise-tolerant learning algorithms for multiclass linear classifiers, intersections of halfspaces, and constant depth ReLU networks.',
     award: '',
   },
   {
@@ -172,10 +149,10 @@ const wednesdayTalks = [
       picUrl: JerryLiImg,
       websiteUrl: 'https://jerryzli.github.io',
       affiliation: 'University of Washington',
-      bio: 'Jerry Li is an associate professor at the University of Washington. Previously, Li was a principal research scientist at Microsoft Research Redmond. In Fall 2018 Li was the VMware Research Fellow at the Simons Institute. He did his Ph.D. at MIT, where he was fortunate to work with Ankur Moitra. He also did his masters at MIT under the wonderful supervision of Nir Shavit.Li’s primary research interests are in learning theory, (very) broadly defined, including quantum information theory, the science of large foundation models, and high-dimensional statistics. He particularly likes applications of analysis and analytic techniques to TCS problems. As an undergrad at the University of Washington, Li worked on complexity of branching programs, and how we could prove hardness of techniques used for naturally arising learning problems in database theory and AI.',
+      bio :'Jerry Li is an associate professor (without tenure) in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Previously, he was a principal research scientist at Microsoft Research Redmond. He received his PhD from Massachusetts Institute of Technology, where he was advised by Ankur Moitra. He was subsequently a postdoctoral researcher at the Simons Institute for the Theory of Computing as a VMware Research Fellowship recipient. His research lies at the intersection of theoretical computer science, machine learning, and quantum information, focusing on the computational and statistical limits of learning (broadly defined), robust ML, and high-dimensional data analysis.',
     },
-    title: '', // TODO: Add title
-    abstract: '', // TODO: Add abstract
+    title: 'Optimal Inference Schedules for Masked Diffusion Models',
+    abstract: 'A major bottleneck of standard auto-regressive large language models is that their inference process is inherently sequential, resulting in very long and costly inference times. To circumvent this, practitioners proposed a class of language models called diffusion language models, of which the masked diffusion model (MDM) is one of the most promising and successful. The MDM is able to sample out-of-order and, ostensibly, many tokens at once and in parallel. However, there is very limited rigorous understanding of how much parallel sampling these models can perform without noticeable degradation in their sampling performance. In this work, we give a new, exact characterization of the expected divergence between the true distribution and the sampled distribution, for any distribution and any unmasking schedule for the sampler, showing an elegant connection between MDM sampling and the classical theory of univariate function approximation.',
     award: '',
   },
   {
@@ -184,10 +161,10 @@ const wednesdayTalks = [
       picUrl: DimaDrusvyatskiyImg,
       websiteUrl: 'https://datascience.ucsd.edu/people/dima-drusvyatskiy/',
       affiliation: 'UCSD',
-      bio: 'Dmitriy Drusvyatskiy received his PhD from the Operations Research and Information Engineering department at Cornell University in 2013, followed by a post doctoral appointment in the Combinatorics and Optimization department at University of Waterloo, 2013-2014. He joined the Mathematics department at University of Washington as an Assistant Professor in 2014 and was promoted to Full Professor in 2022. Since 2025, Dmitriy is a Professor at the Halıcıoğlu Data Science Institute (HDSI) at UC San Diego. Dmitriy’s research broadly focuses on designing and analyzing algorithms for large-scale optimization problems, primarily motivated by applications in data science. Dmitriy has received a number of awards, including the Air Force Office of Scientific Research (AFOSR) Young Investigator Program (YIP) Award, NSF CAREER, SIAG/OPT Best Paper Prize 2023, Paul Tseng Faculty fellowship 2022-2026, INFORMS Optimization Society Young Researcher Prize 2019, and finalist citations for the Tucker Prize 2015 and the Young Researcher Best Paper Prize at ICCOPT 2019.'
+      bio: 'Dmitriy Drusvyatskiy received his PhD from Cornell University in 2013, followed by a post-doctoral appointment at University of Waterloo, 2013-2014. He joined the Mathematics department at University of Washington as an Assistant Professor in 2014 and was promoted to Full Professor in 2022. Since 2025, Dmitriy is a Professor at the Halıcıoğlu Data Science Institute (HDSI) at UC San Diego. Dmitriy\'s research broadly focuses on designing and analyzing algorithms for large-scale optimization problems, primarily motivated by applications in data science. Dmitriy has received a number of awards, including the Air Force Office of Scientific Research (AFOSR) Young Investigator Program (YIP) Award, NSF CAREER, SIAG/OPT Best Paper Prize 2023, Paul Tseng Faculty fellowship 2022-2026, INFORMS Optimization Society Young Researcher Prize 2019, and finalist citations for the Tucker Prize 2015 and the Young Researcher Best Paper Prize at ICCOPT 2019.',
     },
-    title: '', // TODO: Add title
-    abstract: '', // TODO: Add abstract
+    title: 'When do spectral gradient updates help in deep learning?',
+    abstract: 'Spectral gradient methods, such as the recently proposed Muon optimizer, are a promising alternative to standard gradient descent for training deep neural networks and transformers. Yet, it remains unclear in which regimes these spectral methods are expected to perform better. In this talk, I will present a simple condition that predicts when a spectral update yields a larger decrease in the loss than a standard gradient step. Informally, this criterion holds when, on the one hand, the gradient of the loss with respect to each parameter block has a nearly uniform spectrum while, on the other hand, the incoming activation matrix has low stable rank. It is this mismatch in the spectral behavior of the gradient and the propagated data that underlies the advantage of spectral updates. Reassuringly, this condition naturally arises in a variety of settings, including random feature models, neural networks, and transformer architectures. I will conclude by showing that these predictions align with empirical results in synthetic regression problems and in small-scale language model training.',
     award: '',
   },
 ];
@@ -197,7 +174,7 @@ const thursdayTalks = [
     presenter: {
       name: 'David Woodruff',
       picUrl: DavidWoodruffImg,
-      websiteUrl: '', // TODO: Add website URL
+      websiteUrl: 'https://www.cs.cmu.edu/~dwoodruf/',
       affiliation: 'CMU', // TODO: Add affiliation
       bio: '', // TODO: Add bio
     },
@@ -213,15 +190,15 @@ const thursdayTalks = [
       affiliation: 'Google',
       bio: 'Prabhakar Raghavan is the Chief Technologist at Google. He was previously Senior Vice President for Google’s Knowledge & Information products, including Google Search, Geo, and Ads & Commerce. Prabhakar’s research interests span algorithms, web search, and databases. He is the co-author of two widely-used graduate texts, Randomized Algorithms and Introduction to Information Retrieval. He is a Fellow of the IEEE, a Fellow of the ACM, a member of the US National Academy of Engineering, and a recipient of a Laurea Honoris Causa from the University of Bologna.',
     },
-    title: '', // TODO: Add title
-    abstract: 'In this talk we share our experience using LLMs to prove new results in mathematics and computer science. While it is too soon to derive definitive conclusions about the power of AI in Math/CS research, these results show promise. Specifically, we describe our experience with AlphaEvolve, an evolutionary language model from Google Deepmind, and suggest that our results in the theory of inapproximability and Ramsey theory could not have been discovered by hand. ',
+    title: 'Can AI help with mathematics and computer science research?',
+    abstract: 'In this talk we share our experience using LLMs to prove new results in mathematics and computer science. While it is too soon to derive definitive conclusions about the power of AI in Math/CS research, these results show promise. Specifically, we describe our experience with AlphaEvolve, an evolutionary language model from Google Deepmind, and suggest that our results in the theory of inapproximability and Ramsey theory could not have been discovered by hand.',
     award: '',
   },
   {
     presenter: {
       name: 'Sergei Gukov',
       picUrl: SergeiGukovImg,
-      websiteUrl: '', // TODO: Add website URL
+      websiteUrl: 'https://gukov.caltech.edu/',
       affiliation: 'Caltech',
       bio: `After receiving his PhD from Princeton University, Sergei Gukov spent five years at Harvard University as a research fellow of the Clay Mathematics Institute and two years at the school of mathematics at the Institute for Advanced Studies, Princeton. His passion is building new bridges between different areas of mathematical physics and pure mathematics, such as quantum topology, mirror symmetry, and gauge theory. His more recent interests involve new connections between mathematics and machine learning.`,
     },
@@ -236,36 +213,42 @@ const thursdaySpecialTalks = [
   {
     presenter: {
       name: 'Abbas El Gamal',
-      picUrl: PlaceholderImg, // TODO: Replace with AbbasElGamalImg
-      websiteUrl: '', // TODO: Add website URL
-      affiliation: '', // TODO: Add affiliation
-      bio: '', // TODO: Add bio
+      picUrl: AbbasElGamalImg,
+      websiteUrl: 'https://profiles.stanford.edu/abbas-el-gamal',
+      affiliation: 'Stanford University',
+      bio: `Abbas El Gamal is the Hitachi America Professor in the School of Engineering and Senior Fellow at the Precourt Institute for Energy at Stanford University. He received his M.S. in Statistics and Ph.D. in Electrical Engineering both from Stanford University in 1977 and 1978, respectively. From 1978 to 1980, he was an Assistant Professor of Electrical Engineering at USC. He has been on the faculty of the Department of Electrical Engineering at Stanford University since 1981. From 2003 to 2012, he was Director of the Information Systems Laboratory at Stanford. From 2012-2017 he was Chair of the Department of Electrical Engineering at Stanford. His research contributions have been in network information theory, FPGAs, digital imaging devices and systems, and smart grid modeling and control. He has authored or coauthored over 230 papers and holds over 35 patents in these areas. He is coauthor of the book Network Information Theory (Cambridge Press 2011). He is a member of the US National Academy of Engineering and a Life Fellow of the IEEE. He received several honors and awards for his research contributions, including the 2016 IEEE Richard Hamming Medal and the 2012 Claude E. Shannon Award. He served on the Board of Governors of the Information Theory Society from 2009 to 2016 and was President in 2014.`,
     },
-    title: '', // TODO: Add title
-    abstract: '', // TODO: Add abstract
+    title: `A Preview of Cover and Thomas's Elements of Information Theory, Third Edition`,
+    abstract: `Since its first publication in 1991, Elements of Information Theory has been the most widely used textbook for courses on information theory and a standard reference for students and researchers in statistics, AI, computer science, and the natural and physical sciences. In January 2022, Wiley reached out to me with a proposal to honor the legacy of Cover and Thomas by producing a third edition of their book. After two years of consultation with many colleagues and reflection on the daunting task of revising a classic, I concluded that there are compelling reasons to undertake it.
+
+The third edition, titled Cover and Thomas's Elements of Information Theory, seeks to preserve the purpose, scope and distinctive exposition of the first two editions—guided by the ethos of the Einstein quote: "Everything should be made as simple as possible, but not simpler." Consistent with the central thesis of the original book—that information theory is a field in its own right, with applications far beyond communication theory—the treatment of its intersections with other disciplines is substantially expanded.
+
+The new edition will feature new chapters on channel codes, statistical learning, limits on estimation and learning, communication complexity, secrecy, and privacy. In addition, existing chapters will be revised and updated to varying degrees. Taken together, these additions and revisions aim to remain faithful to the original while reflecting the rapid evolution of the field and its applications over the past three decades.`,
     award: '',
   },
   {
     presenter: {
       name: 'Ben Recht',
-      picUrl: PlaceholderImg, // TODO: Replace with BenRechtImg
-      websiteUrl: '', // TODO: Add website URL
-      affiliation: '', // TODO: Add affiliation
-      bio: '', // TODO: Add bio
+      picUrl: BenRechtImg,
+      websiteUrl: 'https://vcresearch.berkeley.edu/faculty/benjamin-recht',
+      affiliation: 'UC Berkeley',
+      bio: `Benjamin Recht is a Professor in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. He was previously an Assistant Professor in the Department of Computer Sciences at the University of Wisconsin-Madison. Ben received his B.S. in Mathematics from the University of Chicago, and received a M.S. and PhD from the MIT Media Laboratory. After completing his doctoral work, he was a postdoctoral fellow in the Center for the Mathematics of Information at Caltech. Ben is the recipient of a Presidential Early Career Award for Scientists and Engineers, an Alfred P. Sloan Research Fellowship, the 2012 SIAM/MOS Lagrange Prize in Continuous Optimization, the 2014 Jamon Prize, the 2015 William O. Baker Award for Initiatives in Research, and the 2017 and 2020 NeurIPS Test of Time Awards. He has served on the Editorial Boards of the Journal for Machine Learning Research and Mathematical Programming. He also cofounded the Conference on Learning for Decision and Control.`,
     },
-    title: '', // TODO: Add title
-    abstract: '', // TODO: Add abstract
+    title: 'The Irrational Decision: How We Gave Computers the Power to Choose for Us',
+    abstract: `Mathematicians and engineers of the 1940s set out to design machines that could act as ideal rational agents in the face of uncertainty. In this pursuit, a cluster of foundational mathematical technologies—including information theory, linear programming, game theory, and neural networks—emerged as a foundation for a mathematical formalization of rationality, reshaping how we think about human decision-making itself. Recht's forthcoming book, The Irrational Decision: How We Gave Computers the Power to Choose for Us, traces the intellectual history of automated decision-making into the present, highlighting both the power and limitations of mathematical rationality and how we must temper machine judgment with human intuition and morality.
+
+The Irrational Decision will be published by Princeton University Press in March, 2026.`,
     award: '',
   },
   {
     presenter: {
       name: 'Nisheeth Vishnoi',
-      picUrl: PlaceholderImg, // TODO: Replace with NisheethVishnoiImg
-      websiteUrl: '', // TODO: Add website URL
-      affiliation: '', // TODO: Add affiliation
-      bio: '', // TODO: Add bio
+      picUrl: NisheethVishnoiImg,
+      websiteUrl: 'https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi',
+      affiliation: 'Yale University',
+      bio: 'Vishnoi\'s research spans several areas of theoretical computer science, optimization, and machine learning. He is particularly interested in understanding and addressing key questions that arise in nature and society from a computational viewpoint, including the emergence of intelligence and the interface of artificial intelligence, ethics, and society. His recent work extends these ideas to understand and design computational frameworks that support responsible and effective human–AI interaction, with a particular interest in how AI systems shape human work, learning, and agency, and how they can be designed to complement human decision-making and serve broader societal needs. Vishnoi earned a B. Tech. in computer science and engineering at the Indian Institute of Technology Bombay and a Ph.D. in algorithms, combinatorics, and optimization from the Georgia Institute of Technology. He worked in both industrial research labs and academia before joining Yale, most recently at Microsoft Research in India from 2009 to 2014, and then as an associate professor with tenure at École Polytechnique Fédérale de Lausanne in Switzerland. He joined the Yale faculty as a full professor in the Department of Computer Science in 2019.',
     },
-    title: '', // TODO: Add title
+    title: 'The Information Loop',
     abstract: '', // TODO: Add abstract
     award: '',
   },
@@ -277,7 +260,7 @@ const fridayTalks = [];
 export const plenarySessions = [
   {
     dayName: 'Monday',
-    topic: 'Algorithms and codes',
+    topic: 'AI Applications',
     moderator: {
       name: '', // TODO: Add moderator name
       picUrl: PlaceholderImg,
@@ -289,7 +272,7 @@ export const plenarySessions = [
       title: '',
       abstract: '',
     },
-    talks: mondayTalks,
+    talks: sortByLastName(mondayTalks),
   },
   {
     dayName: 'Tuesday',
@@ -305,7 +288,7 @@ export const plenarySessions = [
       title: '',
       abstract: '',
     },
-    talks: tuesdayTalks,
+    talks: sortByLastName(tuesdayTalks),
   },
   {
     dayName: 'Wednesday',
@@ -321,14 +304,14 @@ export const plenarySessions = [
       title: '',
       abstract: '',
     },
-    talks: wednesdayTalks,
+    talks: sortByLastName(wednesdayTalks),
   },
   {
     dayName: 'Thursday',
     topic: 'AI for Research',
     moderator: {
       name: '', // TODO: Add moderator name
-      picUrl: MingyanLiuImg,
+      picUrl: PlaceholderImg,
       websiteUrl: '',
       affiliation: '',
       bio: '',
@@ -337,7 +320,7 @@ export const plenarySessions = [
       title: '',
       abstract: '',
     },
-    talks: thursdayTalks,
+    talks: sortByLastName(thursdayTalks),
   },
   {
     dayName: 'Friday',
@@ -353,7 +336,7 @@ export const plenarySessions = [
       title: '',
       abstract: '',
     },
-    talks: fridayTalks,
+    talks: sortByLastName(fridayTalks),
   },
 ];
 
@@ -361,5 +344,6 @@ export const plenarySessions = [
 export const specialPlenarySession = {
   dayName: 'Thursday',
   topic: 'Information without borders',
-  talks: thursdaySpecialTalks,
+  description: `Three distinguished researchers and authors will examine how the expanding horizons of information, intelligence, and rationality are shaping technology, science, and society. Abbas El Gamal will introduce his forthcoming new edition of Elements of Information Theory, focusing on the field's emerging applications. Ben Recht will discuss his upcoming book The Irrational Decision, exploring the limits of mathematical rationality in real-world decision making. Nisheeth Vishnoi, author of The Intelligence Loop, will describe the evolving relationship between human and artificial intelligence. The three out-of-the box presentations, along with accompanying in-the-box alimentations, promise ample food for thought.`,
+  talks: sortByLastName(thursdaySpecialTalks),
 };
