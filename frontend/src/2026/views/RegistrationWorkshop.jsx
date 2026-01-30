@@ -662,7 +662,8 @@ export default class RegistrationWorkshop extends React.Component {
                   <option value={'ita26_sundayReception_notAttending'}>
                     Not attending
                   </option>
-                  <option value={'ita26_sundayReception_selfOnly'}>You</option>
+                  <option value={'ita26_sundayReception_selfOnly'}>Attending</option>
+                  {/* <option value={'ita26_sundayReception_selfOnly'}>You</option> */}
                   {/* <option value={'ita26_sundayReception_selfPlus1'}>
                     You + 1
                   </option>
@@ -706,7 +707,8 @@ export default class RegistrationWorkshop extends React.Component {
                   <option value={'ita26_banquetSelf_notAttending'}>
                     Not attending
                   </option>
-                  <option value={'ita26_banquetSelf_selfOnly'}>You</option>
+                  <option value={'ita26_banquetSelf_selfOnly'}>Attending</option>
+                  {/* <option value={'ita26_banquetSelf_selfOnly'}>You</option> */}
                   {/* <option value={'ita26_banquetSelf_selfPlus1'}>You + 1</option>
                   <option value={'ita26_banquetSelf_selfPlus2'}>You + 2</option> */}
                 </Input>
@@ -801,11 +803,12 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              <Button  disabled={ !paymentAllowed }
+              <Button
                   target="_blank" 
                   rel="noopener noreferrer" 
                   href={ paymentUrl} 
                   className="btn btn-secondary"
+                  onClick={this.props.saveChanges}
               >
                 Register (aka Pay)
               </Button>
@@ -813,19 +816,17 @@ export default class RegistrationWorkshop extends React.Component {
               {/* <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
               </Button> */}
-              {paymentAllowed || this.props.paid ? null : (
+              {/* {paymentAllowed || this.props.paid ? null : ( */}
                 <div style={{ display: 'grid', placeItems: 'center' }}>
                   <Alert
                     color="danger"
                     className="mt-2 p-2"
                     style={{ width: '600px' }}
                   >
-                    Please Save your options for the pay button to be enabled.
-                    <br></br>
-                    If there is anything wrong, please contact us through ita@ucsd.edu.
+                    Should you need assistance, please email us at ita@ucsd.edu.
                   </Alert>
                 </div>
-              )}
+              {/* )} */}
             </div>
           </Col>
           {/* <div className="text-center">
