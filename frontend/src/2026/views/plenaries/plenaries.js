@@ -1,223 +1,131 @@
-import BesmaaImg from '../img2024/plenary-profile-pics/Besma Smida.png';
-import BertandImg from '../img2024/plenary-profile-pics/Bertrand Hochwald.jpeg';
-import SundeepImg from '../img2024/plenary-profile-pics/Sundeep Rangan.jpeg';
-import RobertImg from '../img2024/plenary-profile-pics/Robert Heath.jpeg';
-import SaikatImg from '../img2024/plenary-profile-pics/Saikat Guha.jpeg';
-import UrbashiImg from '../img2024/plenary-profile-pics/Urbashi Mitra.jpeg';
-import AylinImg from '../img2024/plenary-profile-pics/Aylin Yener.jpeg';
-import StarkImg from '../img2024/plenary-profile-pics/Stark Draper.jpeg';
-import AshishImg from '../img2024/plenary-profile-pics/Ashish Goel.jpeg';
-import NicoleImg from '../img2024/plenary-profile-pics/Nicole Immorlica.jpeg';
-import OmerImg from '../img2024/plenary-profile-pics/Omer Tamuz.jpeg';
-import VijayImg from '../img2024/plenary-profile-pics/Vijay Vazirani.jpeg';
-import EmmanuelImg from '../img2024/plenary-profile-pics/Emmanuel Abbe.jpeg';
-import SamyImg from '../img2024/plenary-profile-pics/Samy Bengio.jpeg';
-import MikhailImg from '../img2024/plenary-profile-pics/Mikhail Belkin.jpeg';
-import TomImg from '../img2024/plenary-profile-pics/Tom Goldstein.jpeg';
-import AnkurImg from '../img2024/plenary-profile-pics/Ankur Moitra.jpeg';
-import StefanoImg from '../img2024/plenary-profile-pics/Stefano Soatto.jpeg';
-import YuImg from '../img2025/plenary-profile-pics/WeiYu.jpg';
+// ============================================================
+// ITA 2026 Plenary Sessions
+// ============================================================
+//
+// MISSING ITEMS TO ADD:
+//
+// IMAGES NEEDED (save to ../img2026/plenary-profile-pics/):
+//   - moderator images as needed
+//
+
+//
+// BIOS NEEDED:
+//   - Ilias Diakonikolas
+//   - Jerry Li
+//   - David Woodruff
+//   - Prabhakar Raghavan
+//
+// TITLES/ABSTRACTS NEEDED:
+//   - Flavio Calmon (for 2026)
+//   - Ilias Diakonikolas
+//   - Jerry Li
+//   - Dimitry Drusvyatskiy
+//   - Prabhakar Raghavan
+//   - Nisheeth Vishnoi
+//
+// MODERATOR INFO NEEDED:
+//   - All days need moderator info (name, pic, bio, affiliation)
+//
+// ============================================================
+
+// TODO: Uncomment and update paths once images are added
+import AdamKalaiImg from '../img2026/plenary-profile-pics/adamKalai.jpg';
+import KrishnaNarayananImg from '../img2026/plenary-profile-pics/krishnaNarayanan.jpg';
+import MingyanLiuImg from '../img2026/plenary-profile-pics/mingyanLiu.jpg';
+import BaneVasicImg from '../img2026/plenary-profile-pics/baneVasic.jpg';
+import IliasDiakonikolasImg from '../img2026/plenary-profile-pics/iliasDiakonikolas.jpg';
+import JerryLiImg from '../img2026/plenary-profile-pics/jerryLi.jpg';
+import DimaDrusvyatskiyImg from '../img2026/plenary-profile-pics/dimaDrusvyatskiy.jpg';
+import DavidWoodruffImg from '../img2026/plenary-profile-pics/davidWoodruff.jpg';
+import PrabhakarRaghavanImg from '../img2026/plenary-profile-pics/prabhakarRaghavan.jpg';
+import SergeiGukovImg from '../img2026/plenary-profile-pics/sergeiGukov.jpg';
+import AbbasElGamalImg from '../img2026/plenary-profile-pics/abbasElGamal.jpg';
+import BenRechtImg from '../img2026/plenary-profile-pics/benRecht.jpg';
+import NisheethVishnoiImg from '../img2026/plenary-profile-pics/nisheethVishnoi.jpg';
+
 import FlavioImg from '../img2025/plenary-profile-pics/flavio.jpg';
-import ChaoImg from '../img2025/plenary-profile-pics/chao.jpg';
-import HyejiImg from '../img2025/plenary-profile-pics/hyeji.jpg';
-import JonaImg from '../img2025/plenary-profile-pics/jona.jpg';
-import AaronImg from '../img2025/plenary-profile-pics/aaron.jpg';
-import ZaidImg from '../img2025/plenary-profile-pics/zaid.jpg';
-import MahdiImg from '../img2025/plenary-profile-pics/mahdi.jpg';
-import RobImg from '../img2025/plenary-profile-pics/rob.jpg';
-import PiyaImg from '../img2025/plenary-profile-pics/piya.jpg';
-import MichaelImg from '../img2025/plenary-profile-pics/michael.jpg';
-import ChiragImg from '../img2025/plenary-profile-pics/chirag.jpg';
-import AhmadImg from '../img2025/plenary-profile-pics/ahmad.jpg';
-import AdamImg from '../img2025/plenary-profile-pics/adam.jpg';
-import TatsImg from '../img2025/plenary-profile-pics/tats.jpg';
-import HamedImg from '../img2025/plenary-profile-pics/hamed.jpg';
-import MahdiCImg from '../img2025/plenary-profile-pics/mahdiC.jpg';
-import NathanImg from '../img2025/plenary-profile-pics/nathan.jpg';
+
+// Placeholder for missing images - replace with actual imports
+const PlaceholderImg = null;
+
+// Helper function to extract last name from full name
+const getLastName = (fullName) => {
+  const parts = fullName.trim().split(' ');
+  return parts[parts.length - 1].toLowerCase();
+};
+
+// Helper function to sort talks by presenter's last name
+const sortByLastName = (talks) => {
+  return [...talks].sort((a, b) =>
+    getLastName(a.presenter.name).localeCompare(getLastName(b.presenter.name))
+  );
+};
 
 const mondayTalks = [
   {
     presenter: {
-      name: 'Flavio Calmon',
-      picUrl: FlavioImg,
-      websiteUrl: 'https://people.seas.harvard.edu/~flavio/#',
-      affiliation: 'Harvard University',
-      bio: `Flavio P. Calmon is the Thomas D. Cabot Associate Professor of 
-      Electrical Engineering at the Harvard John A. Paulson School of Engineering 
-      and Applied Sciences. Before joining Harvard, he was the inaugural Data 
-      Science for Social Good Post-Doctoral Fellow at IBM Research in Yorktown 
-      Heights, New York. He received his Ph.D. in Electrical Engineering and 
-      Computer Science at MIT. His research develops the information-theoretic 
-      foundations of trustworthy and reliable machine learning. Prof. Calmon 
-      received the 2024 James L. Massey Award from the IEEE Information Theory Society, 
-      the NSF CAREER award, faculty awards from Google, IBM, and Amazon, and the Harvard 
-      Dean of Undergraduate Studies Commendation for “Extraordinary Teaching during 
-      Extraordinary Times.” He also received the inaugural "Título de Honra ao Mérito" 
-      (Honor to the Merit Title) given to alumni from the Universidade de Brasília 
-      (Brazil).
-      `,
+      name: 'Adam Kalai',
+      picUrl: AdamKalaiImg,
+      websiteUrl: 'https://kal.ai/',
+      affiliation: 'OpenAI',
+      bio: `Adam Tauman Kalai is a Research Scientist at OpenAI, specializing in AI Safety and Ethics. His research interests also include algorithms, fairness, AI theory, game theory, and crowdsourcing. He has served as an Assistant Professor at TTIC and Georgia Tech and a Senior Principal Researcher at Microsoft Research New England. He is also a member of Project CETI's science team. He is the inaugural recipient of the Majulook Prize.`,
     },
-    title:
-      'Multigroup Fairness and Representation',
-    abstract: `This talk overviews information-theoretic results on trustworthy 
-    machine learning and artificial intelligence. We first briefly discuss 
-    achievability and converse results for group fairness in prediction and 
-    classification tasks. We then overview recent methods for measuring and 
-    promoting multi-group proportional representation in image retrieval and 
-    generation tasks.`,
-    award: '2024 James L. Massey Research and Teaching Award',
+    title: 'Consensus Sampling for Safer Generative AI',
+    abstract: `I will briefly overview AI alignment as an information theoretic challenge and then illustrate with a specific sampling algorithm. A generative AI model is simply a probability distribution over outputs, conditional on a given prompt. Building on this view, I'll present consensus sampling: given k distributions and a prompt, we sample only when the distributions sufficiently agree, and otherwise abstain. We show the resulting system attains risk competitive with the average risk of the safest s models (for a chosen s), without knowing which models are safe, and we bound the abstention probability when enough safe models have adequate "overlap." The approach is model-agnostic and inspired by provable copyright-protection techniques, offering a clean risk–coverage tradeoff for safer generation.
+
+Joint work with: Yael Tauman Kalai (MIT) and Or Zamir (Tel Aviv University)`,
+    award: '',
   },
   {
     presenter: {
-      name: 'Wei Yu',
-      picUrl: YuImg,
-      affiliation: 'University of Toronto',
-      bio: `Wei Yu received the B.A.Sc. degree in computer engineering
-            and mathematics from the University of Waterloo, Canada, and the M.S.
-            and Ph.D. degrees in electrical engineering from Stanford University. He
-            is currently a Professor and Canada Research Chair in Information Theory
-            and Wireless Communications in the Electrical and Computer Engineering
-            Department at the University of Toronto. Dr. Yu is a Fellow of IEEE and
-            a Fellow of the Canadian Academy of Engineering. He was the recipient of
-            the IEEE Marconi Prize Paper Award in Wireless Communications in 2019,
-            the IEEE Communications Society Award for Advances in Communication in
-            2019, the IEEE Signal Processing Society Best Paper Award in 2008, 2017,
-            and 2021, and the IEEE Communications Society and Information Theory
-            Society Joint Paper Award in 2024. He served as the President of the
-            IEEE Information Theory Society in 2021.`,
-      websiteUrl: 'https://www.itsoc.org/profile/8735',
+      name: 'Mingyan Liu',
+      picUrl: MingyanLiuImg,
+      websiteUrl: 'https://experts.umich.edu/1536-mingyan-liu',
+      affiliation: 'University of Michigan',
+      bio: `Mingyan Liu is the T. C. Chang Professor of Engineering, a professor of Electrical Engineering & Computer Science, and the Associate Dean for Academic Affairs of the College of Engineering at the University of Michigan, Ann Arbor. She received her Ph.D. Degree in electrical engineering from the University of Maryland, College Park, in 2000 and has been with the University of Michigan ever since. Her research interests are in resource allocation, sequential decision and learning theory, game theory and incentive mechanisms, with applications to large-scale networked systems, cybersecurity and cyber risk quantification. Some of her research in this space has been successfully commercialized. She is a Fellow of the IEEE and a member of the ACM.`,
     },
-    title:
-      'Minimum Feedback for Collision-Free Scheduling in Massive Random Access',
-    abstract: `Consider a massive random access scenario in which a random
-              subset of k active users, out of a large number of n users, need to
-              be scheduled into k transmission slots.  What is the minimum number of
-              bits that need to be sent to the users to ensure collision-free
-              scheduling? Instead of a naive scheme of listing the indices of k
-              active users in the order in which they should transmit -- at a cost of
-              klog(n) bits, we show that a fixed-length coded transmission strategy
-              can be designed using only klog(e) bits, plus an additive term that
-              scales as Theta(log log(n)) bits. Further, if variable-length
-              coding is used, the dependence on n can be completely removed. This
-              coding strategy can be generalized to the problem of coded downlink
-              transmission of exchangeable sources in massive random access.
-    `,
-    award: '2024 IEEE Communication Society and Information Theory Society Joint Paper Award',
+    title: 'Transforming Cybersecurity Research with AI-Assisted Data Curation',
+    abstract: `Annotating security, privacy, and related regulatory documents, often written in an unstructured manner, has long been a prohibitively difficult and labor-intensive effort that has prevented the research community from extracting and obtaining valuable information that could enable critical analysis and inform policy making. A prime example is the analysis of corporate privacy policies: prior to the modern AI era, the largest such study consisted of a few hundred policies annotated by legal scholars. The emergence of LLMs has completely transformed our ability to automate document annotation (or producing structured data) scalably. In this talk, I present two AI pipelines for the large-scale acquisition and curation of such data, generating highly accurate and consistent annotations. The first, using a corpus of public/news reports, resulted in a unique large-scale dataset of ransomware incidents with fine-grained features, the largest of this nature to the best of our knowledge. The second, using over 10,000 corporate privacy policies obtained through web crawls, resulted in a first-ever large-scale dataset on what user data is being collected, its purpose, how data is handled and protected, and user rights. Furthermore, I will showcase interesting analysis such structured data has enabled, such as, in the former, testing the hypothesis that a large ransom payment (or a high-profile refusal to pay) has an encouraging (or deterring) downstream effect, the impact and evolution of double extortion, and the difference in payment attitude across different industries; and in the latter, quantifying the inherent tension between corporate interests, consumer protection, and compliance requirement, and why some do better than others. All our datasets are publicly available and we welcome more researchers to use them.`,
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Krishna Narayanan',
+      picUrl: KrishnaNarayananImg,
+      websiteUrl: 'https://engineering.tamu.edu/electrical/profiles/knarayanan.html',
+      affiliation: 'Texas A&M',
+      bio: `Krishna Narayanan is the Sanchez chair professor in the Dept. of Electrical and Computer Engineering at Texas A&M University. He recently held visiting positions at Qualcomm research and at the Simons Institute for Theory of Computing. His research interests are broadly in coding theory, information theory, signal processing, and machine learning with applications to wireless communications. He received the 2025 SPAWC best paper award, the 2022 joint communications society and information theory best paper award, the 2020 best paper award in data storage from the IEEE communications society and a university-level distinguished teaching award in 2018.`,
+    },
+    title: 'Compression and Estimation: Transformers and Classical Problems in Information Theory',
+    abstract: `Transformer models achieve strong empirical performance through accurate next-token prediction and in-context adaptation from limited context. This talk explores how these capabilities can be leveraged and interpreted in canonical problems in information theory, with an emphasis on lossless compression and estimation. We first revisit lossless compression via the well-known predict-then-code paradigm, showing that modern language models, when coupled with arithmetic coding, can yield exceptional compression. We then consider channel estimation in communication systems, casting channel estimation as an in-context estimation problem in which observations depend on unknown latent parameters. Recent results suggest that attention-based transformers can act as adaptive estimators that implicitly perform Bayesian inference. Together, these examples illustrate how transformer models and, more broadly, generative models can help us revisit classical problems in information theory and communication theory when common simplifying assumptions break down.`,
+    award: '',
   },
 ];
 
 const tuesdayTalks = [
   {
     presenter: {
-      name: 'Chao Tian',
-      picUrl: ChaoImg,
-      websiteUrl: 'https://tiangroup.engr.tamu.edu/',
-      affiliation: 'Texas A&M University',
-      bio: `Dr. Tian obtained his B.E degree from Tsinghua University, Beijing China, and his M.S. and
-        Ph.D. degrees from Cornell University, Ithaca NY. He was a postdoctoral researcher at EPFL
-        2005-2007, then worked at AT&T Labs-Research (previously known as the Shannon Labs) for seven
-        years before returning to academia. Dr. Tian was with the University of Tennessee Knoxville for
-        a few years before joining Texas A&M University. His coauthored papers received several awards
-        including the 2014 IEEE Data Storage Best Paper Award. He was an IEEE Information Theory
-        Society Distinguished Lecturer 2023-2024.
-        `,
+      name: 'Bane Vasic',
+      picUrl: BaneVasicImg,
+      websiteUrl: 'https://ece.engineering.arizona.edu/faculty-staff/faculty/bane-vasic',
+      affiliation: 'University of Arizona',
+      bio: `Dr. Bane Vasić is a Professor of Electrical and Computer Engineering and Mathematics at the University of Arizona and Director of the Error Correction Laboratory. At Bell Labs and the University of Arizona, he has made key contributions to the design of data storage read channels and structured low-density parity-check (LDPC) codes, as well as their decoding algorithms. Dr. Vasić leads the Quantum Error Correction Group within a U.S. Department of Energy multi-institutional research center led by Fermi National Accelerator Laboratory. His research on quantum codes has been supported by NASA's Jet Propulsion Laboratory and the National Science Foundation. He is an IEEE Fellow, a Fulbright Scholar, and a past Chair of the IEEE Data Storage Technical Committee. He is a co-founder of Codelucida, a company providing advanced error correction solutions for flash memories worldwide since 2012, and a co-founder of QEC Labs, a startup developing QLDPC codes for quantum computers.`,
     },
-    title: 'Transformers Learn Variable-order Markov Chains in-Context',
-    abstract: `We study in-context learning of variable-length Markov chains by viewing language
-      modeling as a form of data compression and focusing on variable-order Markov chain (VOMC)
-      sources, also known as context tree sources. This perspective allows us to leverage mature
-      compression algorithms, such as the context-tree weighting (CTW) algorithm as a baseline, which
-      is Bayesian optimal for a general class of priors.  The underlying structural learning
-      component makes it a considerably more difficult learning task than the fixed-order
-      counterpart. We empirically observe that the performance of transformers is not very sensitive
-      to the number of layers, and even a two-layer transformer (but not a one-layer transformer) can
-      learn in context well, tracking closely the performance of CTW. To explain this observation, we
-      construct a transformer with D+2 layers that can mimic the CTW algorithm accurately for VOMCs
-      of maximum order D. A reduced two-layer transformer is further studied with carefully
-      controlled counting information, which explains why 2-layer transformers can also perform well.
-      `,
+    title: 'Coding Theory for Fault Tolerance of Quantum Algorithms',
+    abstract: `While much of the early research in quantum error correction (QEC) focused on stabilizing quantum memories, recent efforts have increasingly shifted toward understanding how QEC can be deployed within fault-tolerant quantum algorithms. Although reliable quantum memory remains a fundamental requirement, the long-term promise of quantum computing lies not merely in preserving quantum information, but in executing nontrivial quantum computations in the presence of noise. This shift in perspective raises deeper questions about how errors propagate during quantum algorithms and how QEC must be integrated dynamically with computation. In this talk, we discuss the principles of fault-tolerant quantum computation, the role of logical operations compatible with error-correcting codes, and the necessity of incorporating QEC throughout the computational process.
+In particular, we show how sparse stabilizer codes—commonly referred to as quantum low-density parity-check (QLDPC) codes—which have risen to the forefront of QEC research in recent years, can be naturally embedded within Pauli measurement-based quantum computation, itself a leading candidate architecture for fault-tolerant quantum computing. We discuss how this framework provides leads to new and challenging coding-theory problems, and why progress on these problems and new ideas are essential for realization of practical, large-scale quantum computing systems.`,
     award: '',
   },
   {
     presenter: {
-      name: 'Hyeji Kim',
-      picUrl: HyejiImg,
-      websiteUrl: 'https://www.ece.utexas.edu/people/faculty/hyeji-kim',
-      affiliation: 'UT Austin',
-      bio: `Hyeji Kim is an Assistant Professor in the Department of Electrical and Computer
-        Engineering at The University of Texas at Austin and a recipient of the NSF CAREER award.
-        Before joining UT Austin, she held research positions as a postdoctoral scholar at the
-        University of Illinois at Urbana-Champaign and as a researcher at Samsung AI Research Cambridge
-        in the UK. She earned her PhD in Electrical Engineering from Stanford University in 2016. Dr.
-        Kim’s research lies at the intersection of information theory and machine learning. Her work
-        leverages machine learning to tackle complex problems in information theory, focusing on
-        developing advanced codes for communication and compression in challenging scenarios, such as
-        high-dimensional channels and distributed data systems. Conversely, she applies principles of
-        information theory to machine learning by constructing theoretical frameworks that uncover
-        fundamental limits and provide insights into learning processes
-        `,
+      name: 'Flavio Calmon',
+      picUrl: FlavioImg,
+      websiteUrl: 'https://people.seas.harvard.edu/~flavio/#',
+      affiliation: 'Harvard University',
+      bio: `Flavio P. Calmon is the Thomas D. Cabot Associate Professor of Electrical Engineering at the Harvard John A. Paulson School of Engineering and Applied Sciences. Before joining Harvard, he was the inaugural Data Science for Social Good Post-Doctoral Fellow at IBM Research in Yorktown Heights, New York. He received his Ph.D. in Electrical Engineering and Computer Science at MIT. His research develops the information-theoretic foundations of trustworthy and reliable machine learning. Prof. Calmon received the 2024 James L. Massey Award from the IEEE Information Theory Society, the NSF CAREER award, faculty awards from Google, IBM, and Amazon, and the Harvard Dean of Undergraduate Studies Commendation for "Extraordinary Teaching during Extraordinary Times." He also received the inaugural "Título de Honra ao Mérito" (Honor to the Merit Title) given to alumni from the Universidade de Brasília (Brazil).`,
     },
-    title: `Modern Compression via Information Theory, Learning, and Generative models, 
-      and its Application to Wireless Channel Compression`,
-    abstract:
-      `In this talk, I will present our work on Channel State Information (CSI) compression,
-      leveraging tools from information theory, learning, and generative models. I will cover two
-      main topics.
-
-      First, we will discuss the estimation of the rate-distortion function for function computing
-      with decoder-only side information and how it can shed light on the value of side information
-      for CSI compression.
-
-      Next, we will shift our focus to importance sampling in the context of score-based generative
-      models. We will present a novel approach that represents the time-dependent score function of
-      the target importance sampling distribution in terms of the score function of the original
-      distribution and a desired weight function. This method enables principled importance sampling
-      in a variety of applications, including neural CSI compression. By leveraging this framework,
-      we provide new insights into the interpretability of learning-based CSI compression models.`,
-    award: '',
-  },
-  {
-    presenter: {
-      name: 'Jona Ballé',
-      picUrl: JonaImg,
-      websiteUrl: 'https://balle.io/',
-      affiliation: 'Google',
-      bio: `Jona Ballé is an Associate Professor at New York University, studying lossy
-        image compression, information theory and models of visual perception. They
-        defended their master's and doctoral theses on signal processing and image
-        compression under the supervision of Jens-Rainer Ohm at RWTH Aachen
-        University in 2007 and 2012, respectively. This was followed by a brief
-        collaboration with Javier Portilla at CSIC in Madrid, Spain, and a
-        postdoctoral fellowship at New York University’s Center for Neural Science
-        with Eero P. Simoncelli, where Jona studied the relationship between
-        perception and image statistics. While there, they pioneered the use of
-        variational Bayesian models and deep learning techniques for end-to-end
-        optimized image compression. From 2017 to 2024, Jona deepened their ties to
-        industry as a Research Scientist at Google. Jona has served as a reviewer
-        for top-tier publications in both machine learning and image processing,
-        such as NeurIPS, ICLR, ICML, Picture Coding Symposium, and several IEEE
-        Transactions journals. They have co-organized the annual Challenge on
-        Learned Image Compression (CLIC) since 2018, and on the program committee
-        of the Data Compression Conference (DCC) since 2022.`,
-    },
-    title: 'Good, Cheap, and Fast: Overfitted Image Compression with Wasserstein',
-    abstract: `Inspired by the success of generative image models, recent work on learned
-      image compression increasingly focuses on better probabilistic modeling of
-      the natural image distribution, leading to excellent realism. This,
-      however, comes at the expense of a computational complexity that is several
-      orders of magnitude higher than today's commercial codecs, and thus
-      prohibitive for most practical applications. In this talk, I'll demonstrate
-      that by focusing on models of visual perception, we can achieve a very good
-      trade-off between visual quality and bit rate similar to "generative"
-      compression models, while simultaneously requiring less than 1% of the
-      multiply-accumulate operations (MACs) for decompression. We achieve this by
-      optimizing C3, an overfitted image codec, for Wasserstein Distortion (WD),
-      a measure of spatial (texture) realism grounded in models of visual
-      perception, and evaluating the image reconstructions with a human rating
-      study. Our study also reveals that WD outperforms other perceptual quality
-      metrics such as LPIPS, DISTS, and MS-SSIM, both as an optimization
-      objective and as a predictor of human ratings, achieving over 94% Pearson
-      correlation with Elo scores.`,
+    title: '', // TODO: Add title for 2026
+    abstract: '', // TODO: Add abstract for 2026
     award: '',
   },
 ];
@@ -225,106 +133,38 @@ const tuesdayTalks = [
 const wednesdayTalks = [
   {
     presenter: {
-      name: 'Zaid Harchaoui',
-      picUrl: ZaidImg,
-      websiteUrl: 'https://sites.google.com/uw.edu/zaid-harchaoui/main',
+      name: 'Ilias Diakonikolas',
+      picUrl: IliasDiakonikolasImg,
+      websiteUrl: 'http://www.iliasdiakonikolas.org/',
+      affiliation: 'University of Wisconsin',
+      bio: 'Ilias Diakonikolas is the Lubar Professor in the Department of Computer Sciences at UW Madison. He obtained a Diploma in electrical and computer engineering from the National Technical University of Athens and a Ph.D. in computer science from Columbia University where he was advised by Mihalis Yannakakis. Before moving to UW, he was an Andrew and Erna Viterbi Early Career Chair at USC and a faculty member at the University of Edinburgh. Prior to that, he was the Simons postdoctoral fellow in theoretical computer science at the University of California, Berkeley. His research is on the algorithmic foundations of massive data sets, in particular on designing efficient algorithms for fundamental problems in machine learning. He is a recipient of the ACM Grace Murray Hopper award, a Sloan Fellowship, an NSF CAREER Award, a Romnes Faculty Fellowship, a Google Faculty Research Award, a Marie Curie Fellowship, best paper awards at NeurIPS and COLT, the IBM Research Pat Goldberg Best Paper Award, and an honorable mention in the George Nicholson competition from the INFORMS society. Ilias wrote with Daniel Kane the textbook "Algorithmic High-dimensional Robust Statistics" published by Cambridge University Press.',
+    },
+    title: 'Learning Multi-Index Models',
+    abstract: 'Multi-index models (MIMs) are functions that depend on the projection onto a low-dimensional subspace. These models provide a useful framework for analyzing a wide range of machine learning problems. In this talk, we will survey recent algorithmic work on learning MIMs. In particular, we will present a robust noise-tolerant learning algorithm that works for a broad class of MIMs, under standard distributional assumptions. As applications, we will demonstrate how this framework leads to faster noise-tolerant learning algorithms for multiclass linear classifiers, intersections of halfspaces, and constant depth ReLU networks.',
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Jerry Li',
+      picUrl: JerryLiImg,
+      websiteUrl: 'https://jerryzli.github.io',
       affiliation: 'University of Washington',
-      bio: `Zaid Harchaoui is a Professor at the University of Washington in Seattle, in the Department 
-        of Statistics and in the Paul G. Allen School of Computer Science and Engineering, and a Senior 
-        Data Science Fellow in the eScience Institute. He is an action editor at the Journal of Machine 
-        Learning Research, and an associate editor at the Journal of the Royal Statistical Society - 
-        Statistical Methodology. He is a principal investigator and a cofounder of IFML, the NSF-AI 
-        Institute on Foundations of Machine Learning, and of IFDS, the NSF-TRIPODS institute on foundations 
-        of data science. He obtained the doctoral degree from Telecom Paris - Institut Polytechnique de 
-        Paris, for his research performed at CNRS - the French National Institute for Fundamental Research. 
-        He previously held appointments at the Courant Institute of Mathematical Sciences at New York 
-        University, and at INRIA - the French National Institute for Research in Digital Science and Technology.`,
+      bio :'Jerry Li is an associate professor (without tenure) in the Paul G. Allen School of Computer Science & Engineering at the University of Washington. Previously, he was a principal research scientist at Microsoft Research Redmond. He received his PhD from Massachusetts Institute of Technology, where he was advised by Ankur Moitra. He was subsequently a postdoctoral researcher at the Simons Institute for the Theory of Computing as a VMware Research Fellowship recipient. His research lies at the intersection of theoretical computer science, machine learning, and quantum information, focusing on the computational and statistical limits of learning (broadly defined), robust ML, and high-dimensional data analysis.',
     },
-    title: 'Alternating Information Projections Apparitions in AI Foundation Models',
-    abstract: `Foundation models such as e.g. CLIP or DINO have established new standards for visual features based on 
-      contrastive learning and self-supervised learning, respectively. The learning recipes behind these models 
-      share a common ingredient, originally motivated by the need to avoid representation collapse. We describe 
-      this ingredient as an alternating information projection algorithm, going back to (Deming and Stephan, 1940)
-      and (Ireland and Kullback, 1968). This viewpoint leads us to show that this powerful ingredient has an 
-      unexpected benefit: reducing variance when estimating statistical functionals across different data sources. 
-      This variance reduction effect can be quantified using non-asymptotic statistical bounds involving the 
-      singular value decays of appropriate Markov operators. The effect is tangible not only during training 
-      but also at prediction in downstream tasks.`,
+    title: 'Optimal Inference Schedules for Masked Diffusion Models',
+    abstract: 'A major bottleneck of standard auto-regressive large language models is that their inference process is inherently sequential, resulting in very long and costly inference times. To circumvent this, practitioners proposed a class of language models called diffusion language models, of which the masked diffusion model (MDM) is one of the most promising and successful. The MDM is able to sample out-of-order and, ostensibly, many tokens at once and in parallel. However, there is very limited rigorous understanding of how much parallel sampling these models can perform without noticeable degradation in their sampling performance. In this work, we give a new, exact characterization of the expected divergence between the true distribution and the sampled distribution, for any distribution and any unmasking schedule for the sampler, showing an elegant connection between MDM sampling and the classical theory of univariate function approximation.',
     award: '',
   },
   {
     presenter: {
-      name: 'Adam Klivans',
-      picUrl: AdamImg,
-      websiteUrl: 'https://www.cs.utexas.edu/~klivans/',
-      affiliation: 'UT-Austin',
-      bio: `
-Adam Klivans is a recipient of the NSF Career Award. His research interests lie in machine learning 
-nd theoretical computer science, in particular, Learning Theory, Computational Complexity, 
-Pseudorandomness, Limit Theorems, and Gaussian Space. He also serves on the editorial board for 
-the Theory of Computing and Machine Learning Journal.
-`,
+      name: 'Dimitry Drusvyatskiy',
+      picUrl: DimaDrusvyatskiyImg,
+      websiteUrl: 'https://datascience.ucsd.edu/people/dima-drusvyatskiy/',
+      affiliation: 'UCSD',
+      bio: 'Dmitriy Drusvyatskiy received his PhD from Cornell University in 2013, followed by a post-doctoral appointment at University of Waterloo, 2013-2014. He joined the Mathematics department at University of Washington as an Assistant Professor in 2014 and was promoted to Full Professor in 2022. Since 2025, Dmitriy is a Professor at the Halıcıoğlu Data Science Institute (HDSI) at UC San Diego. Dmitriy\'s research broadly focuses on designing and analyzing algorithms for large-scale optimization problems, primarily motivated by applications in data science. Dmitriy has received a number of awards, including the Air Force Office of Scientific Research (AFOSR) Young Investigator Program (YIP) Award, NSF CAREER, SIAG/OPT Best Paper Prize 2023, Paul Tseng Faculty fellowship 2022-2026, INFORMS Optimization Society Young Researcher Prize 2019, and finalist citations for the Tucker Prize 2015 and the Young Researcher Best Paper Prize at ICCOPT 2019.',
     },
-    title: 'A New Paradigm for Learning with Distribution Shift',
-    abstract: `We revisit the fundamental problem of learning with distribution shift, where a learner 
-      is given labeled samples from training distribution D, unlabeled samples from test distribution D′ 
-      and is asked to output a classifier with low test error. The standard approach in this setting is 
-      to prove a generalization bound in terms of some notion of distance between D and D′. These 
-      distances, however, are difficult to compute, and this has been the main stumbling block for 
-      efficient algorithm design. We sidestep this issue and define a new model called TDS learning, 
-      where a learner runs a test on the training set and is allowed to reject if this test detects 
-      distribution shift relative to a fixed output classifier.  Moreover, when the test accepts, 
-      the output classifier is guaranteed to have low test error.  We describe how this approach 
-      leads to the first set of efficient algorithms for learning with distribution shift that do 
-      not take any assumptions on the test distribution.  Our techniques touch on a wide array of 
-      topics including pseudorandomness, property testing, and sum of squares proofs. Joint work 
-      with Konstantinos Stavropoulos and Arsen Vasilyan`,
-    award: '',
-  },
-  {
-    presenter: {
-      name: 'Mahdi Soltanolkotabi',
-      picUrl: MahdiImg,
-      websiteUrl: 'https://viterbi-web.usc.edu/~soltanol/',
-      affiliation: 'USC',
-      bio: `Mahdi Soltanolkotabi is the director of the center on AI Foundations for the Sciences 
-        (AIF4S) at the University of Southern California. He is also a professor in the 
-        Departments of Electrical and Computer Engineering, Computer Science, and 
-        Industrial and Systems engineering. Prior to joining USC, he completed his 
-        PhD in electrical engineering at Stanford in 2014. He was a postdoctoral 
-        researcher in the EECS department at UC Berkeley during the 2014-2015 academic year. 
-        Mahdi is the recipient of the Information Theory Society Best Paper Award, 
-        Packard Fellowship in Science and Engineering, an NIH Director’s new innovator 
-        award, a Sloan Research Fellowship, an NSF Career award, an Airforce Office of 
-        Research Young Investigator award (AFOSR-YIP), and faculty awards from Google 
-        and Amazon. His research focuses on developing the mathematical foundations of 
-        modern data science via characterizing the behavior and pitfalls of contemporary 
-        nonconvex learning and optimization algorithms with applications in AI, deep 
-        learning, large scale distributed training, federated learning, computational 
-        imaging, and AI for scientific and medical applications. Most recently his 
-        applied research focuses on developing and deploying reliable and trustworthy 
-        AI in healthcare.
-      `,
-    },
-    title: 'Towards More Reliable Generative AI: Probing Failure Modes and Harnessing Test-Time Inference',
-    abstract: `Generative AI systems—especially Multimodal Large Language Models (MLLMs)—offer 
-      promising avenues across a wide range of tasks, from medical imaging to enhanced 
-      reasoning. In this talk, we explore strategies for making generative AI more 
-      dependable by examining its vulnerabilities and leveraging adaptive learning. 
-      First, we introduce MediConfusion, a benchmark that exposes systemic failure 
-      modes of state-of-the-art medical multimodal models in Visual Question 
-      Answering—a setting where reliability is paramount. Our findings reveal 
-      that even top models fail to distinguish visually dissimilar medical images, 
-      underscoring the challenges of deploying AI in clinical contexts. Next, 
-      we turn to test-time training (TTT), a gradient-based technique that updates 
-      model parameters using information from individual test instances. We provide 
-      a theoretical framework that explains how TTT can mitigate distribution shifts 
-      and significantly reduce the sample size needed for in-context learning. By 
-      bridging these two threads, we demonstrate how identifying and addressing 
-      vulnerabilities—through challenges like MediConfusion and adaptive strategies 
-      like TTT—can enhance the reliability and impact of generative AI in healthcare 
-      and beyond.
-    `,
+    title: 'When do spectral gradient updates help in deep learning?',
+    abstract: 'Spectral gradient methods, such as the recently proposed Muon optimizer, are a promising alternative to standard gradient descent for training deep neural networks and transformers. Yet, it remains unclear in which regimes these spectral methods are expected to perform better. In this talk, I will present a simple condition that predicts when a spectral update yields a larger decrease in the loss than a standard gradient step. Informally, this criterion holds when, on the one hand, the gradient of the loss with respect to each parameter block has a nearly uniform spectrum while, on the other hand, the incoming activation matrix has low stable rank. It is this mismatch in the spectral behavior of the gradient and the propagated data that underlies the advantage of spectral updates. Reassuringly, this condition naturally arises in a variety of settings, including random feature models, neural networks, and transformer architectures. I will conclude by showing that these predictions align with empirical results in synthetic regression problems and in small-scale language model training.',
     award: '',
   },
 ];
@@ -332,257 +172,178 @@ the Theory of Computing and Machine Learning Journal.
 const thursdayTalks = [
   {
     presenter: {
-      name: 'Rob Brekelmans',
-      picUrl: RobImg,
-      websiteUrl: 'https://brekelma.github.io/',
-      affiliation: 'Vector Institute',
-      bio: `I am a Postdoctoral Fellow at the Vector Institute in Toronto, working with Alireza Makhzani and Roger 
-      Grosse. I graduated with my PhD from University of Southern California in 2022, working with Greg Ver Steeg 
-      and Aram Galstyan. I also interned with the AI Safety Analysis team at DeepMind (Blog), working with Pedro 
-      Ortega and Tim Genewein.`,
+      name: 'David Woodruff',
+      picUrl: DavidWoodruffImg,
+      websiteUrl: 'https://www.cs.cmu.edu/~dwoodruf/',
+      affiliation: 'CMU', // TODO: Add affiliation
+      bio: '', // TODO: Add bio
     },
-    title: 'Probabilistic Inference in Language Models via Twisted Sequential Monte Carlo',
-    abstract:`Numerous capability and safety techniques of Large Language Models (LLMs), including RLHF, automated 
-    red-teaming, prompt engineering, and infilling, can be cast as sampling from an unnormalized target distribution 
-    defined by a given reward or potential function over the full sequence. In this work, we leverage the rich 
-    toolkit of Sequential Monte Carlo (SMC) for these probabilistic inference problems. In particular, we use 
-    learned twist functions to estimate the expected future value of the potential at each timestep, which 
-    enables us to focus inference-time computation on promising partial sequences. We propose a novel contrastive 
-    method for learning the twist functions, and establish connections with the rich literature of soft 
-    reinforcement learning. As a complementary application of our twisted SMC framework, we present methods for 
-    evaluating the accuracy of language model inference techniques using novel bidirectional SMC bounds on the 
-    log partition function. These bounds can be used to estimate the KL divergence between the inference and 
-    target distributions in both directions. We apply our inference evaluation techniques to show that twisted 
-    SMC is effective for sampling undesirable outputs from a pretrained model (a useful component of harmlessness 
-    training and automated red-teaming), generating reviews with varied sentiment, and performing infilling tasks.
-    `,
-    award: 'ICML 2024 Best Paper Award',
+    title: 'AI-Aided Research',
+    abstract: `In this talk, I will present results on how AI can enhance and accelerate the research process. I will also describe an experiment we conducted for STOC 2026 in which AI improved many of the submitted manuscripts.`,
+    award: '',
   },
   {
     presenter: {
-      name: 'Michael Hahn',
-      picUrl: MichaelImg,
-      websiteUrl: 'https://www.mhahn.info/',
-      affiliation: 'Saarland University',
-      bio: `Michael Hahn received his PhD from Stanford University in 2022, advised by Dan 
-      Jurafsky and Judith Degen. He is now an Assistant Professor at Saarland University, 
-      Germany. His research focuses on the theoretical foundations and inner workings of LLMs.
-      `,
+      name: 'Prabhakar Raghavan',
+      picUrl: PrabhakarRaghavanImg,
+      websiteUrl: 'https://research.google/people/prabhakarraghavan/?&',
+      affiliation: 'Google',
+      bio: 'Prabhakar Raghavan is the Chief Technologist at Google. He was previously Senior Vice President for Google’s Knowledge & Information products, including Google Search, Geo, and Ads & Commerce. Prabhakar’s research interests span algorithms, web search, and databases. He is the co-author of two widely-used graduate texts, Randomized Algorithms and Introduction to Information Retrieval. He is a Fellow of the IEEE, a Fellow of the ACM, a member of the US National Academy of Engineering, and a recipient of a Laurea Honoris Causa from the University of Bologna.',
     },
-    title: 'Why are Sensitive Functions Hard for Transformers?',
-    abstract:`The reasoning capabilities of LLMs have seen enormous progress in the past years, 
-      but certain reasoning tasks still are surprisingly challenging. I will argue that some of 
-      these difficulties relate to the learnability biases of the underlying Transformer 
-      architecture. Empirical studies have identified a range of such biases and limitations, 
-      such as a persistent difficulty in learning to compute simple formal languages such as 
-      PARITY, and a bias towards low-degree functions. We show that, under the transformer 
-      architecture, the loss landscape is constrained by the input-space sensitivity: 
-      Transformers whose output is sensitive to many parts of the input string inhabit isolated 
-       points in parameter space, leading to a low-sensitivity bias in generalization. We show 
-       theoretically and empirically that this theory unifies a broad array of empirical 
-       observations about the learning abilities and biases of transformers, such as their 
-       generalization bias towards low sensitivity and low degree, and difficulty in length 
-       generalization for PARITY. This shows that understanding transformers’ inductive biases 
-       requires studying not just their in-principle expressivity, but also their loss 
-       landscape. More broadly, these results provide understanding of the sources of 
-       persistent reasoning difficulties in LLMs.
-    `,
-    award: 'ACL 2024 Best Paper Award',
+    title: 'Can AI help with mathematics and computer science research?',
+    abstract: 'In this talk we share our experience using LLMs to prove new results in mathematics and computer science. While it is too soon to derive definitive conclusions about the power of AI in Math/CS research, these results show promise. Specifically, we describe our experience with AlphaEvolve, an evolutionary language model from Google Deepmind, and suggest that our results in the theory of inapproximability and Ramsey theory could not have been discovered by hand.',
+    award: '',
   },
   {
     presenter: {
-      name: 'Chirag Pabbaraju',
-      picUrl: ChiragImg,
-      websiteUrl: 'https://web.stanford.edu/~cpabbara/',
-      affiliation: 'Stanford University',
-      bio: `Chirag Pabbaraju is a PhD student in the Computer Science department at Stanford University. 
-      He is advised by Moses Charikar and Gregory Valiant. His primary research interests are in 
-      algorithmic and statistical learning theory, and more recently, in language generation 
-      and weak-to-strong generalization`,
+      name: 'Sergei Gukov',
+      picUrl: SergeiGukovImg,
+      websiteUrl: 'https://gukov.caltech.edu/',
+      affiliation: 'Caltech',
+      bio: `After receiving his PhD from Princeton University, Sergei Gukov spent five years at Harvard University as a research fellow of the Clay Mathematics Institute and two years at the school of mathematics at the Institute for Advanced Studies, Princeton. His passion is building new bridges between different areas of mathematical physics and pure mathematics, such as quantum topology, mirror symmetry, and gauge theory. His more recent interests involve new connections between mathematics and machine learning.`,
     },
-    title: 'Multiclass Learnability Does Not Imply Sample Compression',
-    abstract:`A hypothesis class admits a sample compression scheme, if for every sample labeled by a hypothesis 
-    from the class, it is possible to retain only a small subsample, using which the labels on the entire sample 
-    can be inferred. The size of the compression scheme is an upper bound on the size of the subsample produced. 
-    Every learnable binary hypothesis class (which must necessarily have finite VC dimension) admits a sample 
-    compression scheme of size only a finite function of its VC dimension, independent of the sample size. For 
-    multiclass hypothesis classes, the analog of VC dimension is the DS dimension. We show that the analogous 
-    statement pertaining to sample compression is not true for multiclass hypothesis classes: every learnable 
-    multiclass hypothesis class, which must necessarily have finite DS dimension, does not admit a sample 
-    compression scheme of size only a finite function of its DS dimension.
-    `,
-    award: 'ALT 2024 Outstanding Paper Award',
+    title: 'The role of AI in mathematical (re)search',
+    abstract: `At its core, scientific research is a search — a search for new ideas, new patterns, and new ways to explain or prove things. In this talk, I invite you to explore how AI is reshaping different stages of this process. We will see that while AI excels at many tasks, it still hesitates on others, such as long-horizon reasoning or far-out-of-distribution generalization. I view this as good news: it highlights how much meaningful AI research remains to be done. In fact, the goal of expanding AI's role in mathematical research has become a motivation for advancing AI itself. I am genuinely excited that these two fields have come into such close contact over the past few years.`,
+    award: '',
   },
 ];
 
-const fridayTalks = [
+// Thursday Special Plenary - "Information without borders"
+const thursdaySpecialTalks = [
   {
     presenter: {
-      name: 'Tatsunori Hashimoto',
-      picUrl: TatsImg,
-      websiteUrl: 'https://thashim.github.io/',
+      name: 'Abbas El Gamal',
+      picUrl: AbbasElGamalImg,
+      websiteUrl: 'https://profiles.stanford.edu/abbas-el-gamal',
       affiliation: 'Stanford University',
-      bio: `Tatsunori Hashimoto is an Assistant Professor in the Computer Science Department 
-      at Stanford University. Work from his group spans many areas within statistical 
-      machine learning and language models including, language model post-training, 
-      uncertainty quantification, and data selection. He received his Ph.D. at MIT 
-      under the supervision of Tommi Jaakkola and David Gifford and is the recipient 
-      of the NSF CAREER, Samsung AI researcher of the year award, a Kavli fellowship 
-      as well as best paper awards at ICML, ICLR, and CHI.`,
+      bio: `Abbas El Gamal is the Hitachi America Professor in the School of Engineering and Senior Fellow at the Precourt Institute for Energy at Stanford University. He received his M.S. in Statistics and Ph.D. in Electrical Engineering both from Stanford University in 1977 and 1978, respectively. From 1978 to 1980, he was an Assistant Professor of Electrical Engineering at USC. He has been on the faculty of the Department of Electrical Engineering at Stanford University since 1981. From 2003 to 2012, he was Director of the Information Systems Laboratory at Stanford. From 2012-2017 he was Chair of the Department of Electrical Engineering at Stanford. His research contributions have been in network information theory, FPGAs, digital imaging devices and systems, and smart grid modeling and control. He has authored or coauthored over 230 papers and holds over 35 patents in these areas. He is coauthor of the book Network Information Theory (Cambridge Press 2011). He is a member of the US National Academy of Engineering and a Life Fellow of the IEEE. He received several honors and awards for his research contributions, including the 2016 IEEE Richard Hamming Medal and the 2012 Claude E. Shannon Award. He served on the Board of Governors of the Information Theory Society from 2009 to 2016 and was President in 2014.`,
     },
-    title: 'On identifying and updating knowledge in language models',
-    abstract:`Language models are remarkable systems - capable of encoding and synthesizing 
-      vast amounts of information into its parameters. However, the black-box nature of 
-      this encoding process makes it difficult to answer even basic questions about how 
-      to evaluate and improve these LLMs — how do we know whether a good benchmark score 
-      is due to robust storage of knowledge and not train-test contamination? and how can 
-      we robustly incorporate new pieces of knowledge without pretraining? In this talk, 
-      we show that simple classic statistical techniques allow us to make progress on each 
-      question, including the first guarantees for identifying benchmark contamination and 
-      one of the first demonstrations of scalable, post-training parametric knowledge 
-      acquisition for language models.
-    `,
+    title: `A Preview of Cover and Thomas's Elements of Information Theory, Third Edition`,
+    abstract: `Since its first publication in 1991, Elements of Information Theory has been the most widely used textbook for courses on information theory and a standard reference for students and researchers in statistics, AI, computer science, and the natural and physical sciences. In January 2022, Wiley reached out to me with a proposal to honor the legacy of Cover and Thomas by producing a third edition of their book. After two years of consultation with many colleagues and reflection on the daunting task of revising a classic, I concluded that there are compelling reasons to undertake it.
+
+The third edition, titled Cover and Thomas's Elements of Information Theory, seeks to preserve the purpose, scope and distinctive exposition of the first two editions—guided by the ethos of the Einstein quote: "Everything should be made as simple as possible, but not simpler." Consistent with the central thesis of the original book—that information theory is a field in its own right, with applications far beyond communication theory—the treatment of its intersections with other disciplines is substantially expanded.
+
+The new edition will feature new chapters on channel codes, statistical learning, limits on estimation and learning, communication complexity, secrecy, and privacy. In addition, existing chapters will be revised and updated to varying degrees. Taken together, these additions and revisions aim to remain faithful to the original while reflecting the rapid evolution of the field and its applications over the past three decades.`,
     award: '',
   },
   {
     presenter: {
-      name: 'Hamed Hassani',
-      picUrl: HamedImg,
-      websiteUrl: 'https://www.seas.upenn.edu/~hassani/',
-      affiliation: 'UPenn',
-      bio: `I am an associate professor in the Department of Electrical and Systems 
-        Engineering (primary) as well as the Department of Computer and Information 
-        Systems and Department of Statistics and Data Science at the Wharton Business 
-        School. I am the Penn site-lead at EnCORE: Institute for Emerging CORE Methods 
-        of Data Science. Before joining Penn, I was a research fellow at the Simons 
-        Institute, UC Berkeley (program: Foundations of Machine Learning). Prior to 
-        that, I was a post-doctoral scholar and lecturer in the Institute for Machine 
-        Learning at ETH Zürich. I received my Ph.D. degree in Computer and Communication 
-        Sciences from EPFL.`,
+      name: 'Ben Recht',
+      picUrl: BenRechtImg,
+      websiteUrl: 'https://vcresearch.berkeley.edu/faculty/benjamin-recht',
+      affiliation: 'UC Berkeley',
+      bio: `Benjamin Recht is a Professor in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. He was previously an Assistant Professor in the Department of Computer Sciences at the University of Wisconsin-Madison. Ben received his B.S. in Mathematics from the University of Chicago, and received a M.S. and PhD from the MIT Media Laboratory. After completing his doctoral work, he was a postdoctoral fellow in the Center for the Mathematics of Information at Caltech. Ben is the recipient of a Presidential Early Career Award for Scientists and Engineers, an Alfred P. Sloan Research Fellowship, the 2012 SIAM/MOS Lagrange Prize in Continuous Optimization, the 2014 Jamon Prize, the 2015 William O. Baker Award for Initiatives in Research, and the 2017 and 2020 NeurIPS Test of Time Awards. He has served on the Editorial Boards of the Journal for Machine Learning Research and Mathematical Programming. He also cofounded the Conference on Learning for Decision and Control.`,
     },
-    title: 'Adversarial Reasoning: How Safe Are the Frontier LLMs? ',
-    abstract:`Despite efforts to align large language models (LLMs) with human intentions, 
-    frontier LLMs such as chatGPT, Claude, and Gemini are susceptible to jailbreaking attacks, 
-     wherein an adversary fools a targeted LLM into generating objectionable content. For 
-     this reason, interest has grown in improving the robustness of LLMs against such 
-     attacks. In this talk, I will review the current state of the jailbreaking literature, 
-     including discussions of (new) attacks on LLMs, defenses against jailbreaking attacks, 
-     and if time permits, applications within agentic systems. I will also introduce the 
-     concept of adversarial reasoning, a framework that has proven effective in bypassing 
-     safety mechanisms in frontier LLMs, and discuss its implications for future advancements 
-     in AI safety.
-    `,
+    title: 'The Irrational Decision: How We Gave Computers the Power to Choose for Us',
+    abstract: `Mathematicians and engineers of the 1940s set out to design machines that could act as ideal rational agents in the face of uncertainty. In this pursuit, a cluster of foundational mathematical technologies—including information theory, linear programming, game theory, and neural networks—emerged as a foundation for a mathematical formalization of rationality, reshaping how we think about human decision-making itself. Recht's forthcoming book, The Irrational Decision: How We Gave Computers the Power to Choose for Us, traces the intellectual history of automated decision-making into the present, highlighting both the power and limitations of mathematical rationality and how we must temper machine judgment with human intuition and morality.
+
+The Irrational Decision will be published by Princeton University Press in March, 2026.`,
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Nisheeth Vishnoi',
+      picUrl: NisheethVishnoiImg,
+      websiteUrl: 'https://engineering.yale.edu/research-and-faculty/faculty-directory/nisheeth-vishnoi',
+      affiliation: 'Yale University',
+      bio: 'Vishnoi\'s research spans several areas of theoretical computer science, optimization, and machine learning. He is particularly interested in understanding and addressing key questions that arise in nature and society from a computational viewpoint, including the emergence of intelligence and the interface of artificial intelligence, ethics, and society. His recent work extends these ideas to understand and design computational frameworks that support responsible and effective human–AI interaction, with a particular interest in how AI systems shape human work, learning, and agency, and how they can be designed to complement human decision-making and serve broader societal needs. Vishnoi earned a B. Tech. in computer science and engineering at the Indian Institute of Technology Bombay and a Ph.D. in algorithms, combinatorics, and optimization from the Georgia Institute of Technology. He worked in both industrial research labs and academia before joining Yale, most recently at Microsoft Research in India from 2009 to 2014, and then as an associate professor with tenure at École Polytechnique Fédérale de Lausanne in Switzerland. He joined the Yale faculty as a full professor in the Department of Computer Science in 2019.',
+    },
+    title: 'The Information Loop',
+    abstract: '', // TODO: Add abstract
     award: '',
   },
 ];
+
+// Friday - Coming soon (no speakers yet)
+const fridayTalks = [];
 
 export const plenarySessions = [
   {
     dayName: 'Monday',
-    topic: 'Information Theory & Signal Processing Paper Awards',
+    topic: 'AI Applications',
     moderator: {
-      name: 'Piya Pal',
-      picUrl: PiyaImg,
-      websiteUrl: 'https://jacobsschool.ucsd.edu/people/profile/piya-pal',
-      affiliation: 'UCSD',
-      bio: `Piya Pal received her Ph.D. in Electrical Engineering from California Institute of Technology 
-      in 2013.  Prior to her appointment at UC San Diego, she was an Assistant Professor of Electrical and 
-      Computer Engineering at the University of Maryland, College Park where she was also affiliated with 
-      the Institute for Systems Research. Her doctoral thesis titled “New directions in sparse sampling 
-      and estimation for underdetermined systems” was awarded the 2014 Charles and Ellen Wilts Prize for 
-      Outstanding Thesis in Electrical Engineering at Caltech. She received an NSF CAREER Award in 2016 
-      to pursue her research in “Smart Sampling and Correlation-Driven Inference for High Dimensional Signals."
-`,
-    },
-    moderatorTalk: {
-      title: ``,
-      abstract: ``,
-    },
-    talks: mondayTalks,
-  },
-  {
-    dayName: 'Tuesday',
-    topic: 'Information Theory for Machine Learning',
-    moderator: {
-      name: 'Aaron Wagner',
-      picUrl: AaronImg,
-      websiteUrl: 'https://www.ece.cornell.edu/faculty-directory/aaron-b-wagner',
-      bio: `Aaron Wagner is Professor and Stephen H. Weiss Presidential Fellow in
-        the School of Electrical and Computer Engineering at Cornell University.
-        He received the B.S. degree from the University of Michigan, Ann Arbor,
-        and the M.S. and Ph.D. degrees from the University of California,
-        Berkeley, after which he was a Postdoctoral Research Associate in the
-        Coordinated Science Laboratory at the University of Illinois at
-        Urbana-Champaign. He has received the NSF CAREER award, the U.C.
-        Berkeley EECS David J. Sakrison Memorial Prize, the U.C. Berkeley
-        Bernard Friedman Memorial Prize in Applied Mathematics, the IEEE
-        Information Theory Society James L. Massey Research and Teaching Award
-        for Young Scholars, the IEEE Information Theory Society Paper Award, and
-        teaching awards at the Department, College, and University level at
-        Cornell. He is serving as President of the IEEE Information Theory
-        Society for 2025.`,
-      affiliation: 'Cornell',
-    },
-    moderatorTalk: {
-      title: '',
-      abstract: ``,
-    },
-    talks: tuesdayTalks,
-  },
-  {
-    dayName: 'Wednesday',
-    topic: 'Foundations of Machine Learning & Artificial Intelligence',
-    moderator: {
-      name: 'Mahdi Cheraghchi',
-      picUrl: MahdiCImg,
-      websiteUrl: 'https://mahdi.ch/',
-      bio: ``,
-      affiliation: 'UMich',
-    },
-    moderatorTalk: {
-      title: '',
-      abstract: ``,
-    },
-    talks: wednesdayTalks,
-  },
-  {
-    dayName: 'Thursday',
-    topic: 'Machine Learning Paper Awards',
-    moderator: {
-      name: 'Ahmad Beirami ',
-      picUrl: AhmadImg,
-      websiteUrl: 'https://sites.google.com/view/beirami',
-      bio: `Ahmad Beirami is a research scientist at Google DeepMind, leading new 
-        research initiatives on language model post-training within Generative AI Unit. 
-        Prior to Google, he worked on the next generation of virtual digital assistants 
-        using large language models at Meta, and automated playtesting of video games 
-        using reinforcement learning at Electronic Arts. Before moving to industry, 
-        he held a joint postdoctoral fellow position at Harvard & MIT, focused on 
-        problems in the intersection of core machine learning and information theory. 
-        He is the recipient of the 2015 Sigma Xi Best PhD Thesis Award from Georgia Tech.
-      `,
-      affiliation: 'Google DeepMind',
+      name: '', // TODO: Add moderator name
+      picUrl: PlaceholderImg,
+      websiteUrl: '',
+      affiliation: '',
+      bio: '',
     },
     moderatorTalk: {
       title: '',
       abstract: '',
     },
-    talks: thursdayTalks,
+    talks: sortByLastName(mondayTalks),
   },
   {
-    dayName: 'Friday',
-    topic: 'Large Language Models',
+    dayName: 'Tuesday',
+    topic: 'Trends in Information Theory',
     moderator: {
-      name: 'Nathan Srebro',
-      picUrl: NathanImg,
-      websiteUrl: 'https://nati.ttic.edu/',
-      affiliation: 'TTIC',
-      bio: ``,
+      name: '', // TODO: Add moderator name
+      picUrl: PlaceholderImg,
+      websiteUrl: '',
+      affiliation: '',
+      bio: '',
     },
     moderatorTalk: {
       title: '',
-      abstract: ``,
+      abstract: '',
     },
-    talks: fridayTalks,
+    talks: sortByLastName(tuesdayTalks),
+  },
+  {
+    dayName: 'Wednesday',
+    topic: 'AI Theory',
+    moderator: {
+      name: '', // TODO: Add moderator name
+      picUrl: PlaceholderImg,
+      websiteUrl: '',
+      affiliation: '',
+      bio: '',
+    },
+    moderatorTalk: {
+      title: '',
+      abstract: '',
+    },
+    talks: sortByLastName(wednesdayTalks),
+  },
+  {
+    dayName: 'Thursday',
+    topic: 'AI for Research',
+    moderator: {
+      name: '', // TODO: Add moderator name
+      picUrl: PlaceholderImg,
+      websiteUrl: '',
+      affiliation: '',
+      bio: '',
+    },
+    moderatorTalk: {
+      title: '',
+      abstract: '',
+    },
+    talks: sortByLastName(thursdayTalks),
+  },
+  {
+    dayName: 'Friday',
+    topic: 'Coming soon',
+    moderator: {
+      name: '',
+      picUrl: PlaceholderImg,
+      websiteUrl: '',
+      affiliation: '',
+      bio: '',
+    },
+    moderatorTalk: {
+      title: '',
+      abstract: '',
+    },
+    talks: sortByLastName(fridayTalks),
   },
 ];
+
+// Special Plenary Session - Thursday "Information without borders"
+export const specialPlenarySession = {
+  dayName: 'Thursday',
+  topic: 'Information without borders',
+  description: `Three distinguished researchers and authors will examine how the expanding horizons of information, intelligence, and rationality are shaping technology, science, and society. Abbas El Gamal will introduce his forthcoming new edition of Elements of Information Theory, focusing on the field's emerging applications. Ben Recht will discuss his upcoming book The Irrational Decision, exploring the limits of mathematical rationality in real-world decision making. Nisheeth Vishnoi, author of The Intelligence Loop, will describe the evolving relationship between human and artificial intelligence. The three out-of-the box presentations, along with accompanying in-the-box alimentations, promise ample food for thought.`,
+  talks: sortByLastName(thursdaySpecialTalks),
+};

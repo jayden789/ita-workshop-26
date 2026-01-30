@@ -25,11 +25,11 @@ export default class SponsorsSection extends React.Component {
             }}
           >
             <h1 className="display-8 mb-2">Sponsors</h1>
-            <img
+            {/* <img
               src={require('./img2025/ctgt-logo.png')}
               className={styles.img}
               alt="CTGT"
-            />
+            /> */}
             <img
               src={
                 require('./img2025/itsoc.jpg')

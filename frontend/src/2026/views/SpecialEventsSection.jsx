@@ -225,7 +225,10 @@ export default class SpecialEventsSection extends React.Component {
               </h1>
             </div>
             <Row className="mb-2" style={rowStyle}>
-              <Col>
+
+              {/* TODO: May Uuncomment later */}
+              {/* Award Sessions */}
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -276,8 +279,10 @@ export default class SpecialEventsSection extends React.Component {
                     Mon, Thu 9AM
                   </CardFooter>
                 </Card>
-              </Col>
-              <Col>
+              </Col> */}
+
+              {/* {How to thrive as a researcher */}
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -327,7 +332,8 @@ export default class SpecialEventsSection extends React.Component {
                     Mon noon
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
+
               <Col>
                 <Card
                   className="text-center"
@@ -374,7 +380,7 @@ export default class SpecialEventsSection extends React.Component {
                     <br />
                     <br />
                     <br />
-                    Aaron Wagner
+                    Meir Feder
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
                     Tue noon
@@ -534,7 +540,7 @@ Lunch served for event participants.
                     Parinaz Naghizadeh
                   </CardBody>
                   <CardFooter className="mt-auto" style={cardFooterStyle}>
-                    Wed 10:40AM
+                    Wed Noon
                   </CardFooter>
                 </Card>
               </Col>
@@ -597,106 +603,6 @@ Lunch served for event participants.
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
-                  onClick={this.toggle3}
-                >
-                  <CardImg
-                    top
-                    width="100%"
-                    height={imgHeight}
-                    src={bossImg}
-                    alt="Hello Boss"
-                  />
-                  <Modal
-                    isOpen={this.state.modal3}
-                    toggle={this.toggle3}
-                    centered
-                  >
-                    <ModalHeader toggle={this.toggle3}>Hello Boss</ModalHeader>
-                    <ModalBody className="text-center">
-                      The event will match students and postdocs to internship
-                      mentors, postdoc supervisors, and companies. Each will
-                      present one slide for at most a minute, and fun matching
-                      will follow. Qualcomm, Samsung, and others have
-                      expressed interest in participating.<br></br>
-                      Please fill your slide and upload your resume below.
-                      During the event you will use your slide to introduce
-                      yourself in a minute or less. Please upload your
-                      information below.
-                      <br></br>
-                      For workshop participants only.
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1F02syUTPL2bNVaAGZB-sqbsv5VVyO2sYLq2RqP60g4Y/edit?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Students/ Postdoc slides 2025 - Add Your Own
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1JI5PMcW6bb1LaHdJsLtQmuwHFiZi2jVT7SxbLqvPiuY/edit#slide=id.p"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Students/ Postdoc slides 2024
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/forms/d/1NGJDS-eO01Mz1znDkQ3H3VW2XbQGn508hiRZXA93EIw/edit#settings"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Resumes
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1Z0RBMWGhBMJSY0IAPP806LH0XZrmFOMsF8WVDXXIE9s/edit?usp=sharing"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Mentors/Employers slides 2025 - Add Your Own
-                      </a>
-                      <br></br>
-                      <a
-                        href="https://docs.google.com/presentation/d/1XKTscFbLNfHPMfNs-Ma6nHDzg9XeUzAvIzQhCkqkh3o/edit#slide=id.g7d38376bc7_385_75"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        Mentors/Employers slides 2024
-                      </a>
-                      <br></br>
-                    </ModalBody>
-                    <ModalFooter>
-                      <Button color="secondary" onClick={this.toggle3}>
-                        Close
-                      </Button>
-                    </ModalFooter>
-                  </Modal>
-                  <CardTitle className="mt-4">
-                    <span
-                      onClick={this.toggle3}
-                      style={{ cursor: 'pointer', fontSize: '17px' }}
-                    >
-                      Hello Boss
-                    </span>
-                  </CardTitle>
-                  <CardBody>
-                    A fun event where students and postdocs,{' '}
-                      meet potential internship mentors, postdoc advisors, and
-                      employers.
-                      <br></br>
-                      <br></br>
-                      Po Ling Loh
-                  </CardBody>
-                  <CardFooter className="mt-auto" style={cardFooterStyle}>
-                    Thu Noon
-                  </CardFooter>
-                </Card>
-              </Col>
-              <Col>
-                <Card
-                  className="text-center"
-                  style={{ height: '100%', cursor: 'pointer' }}
                   onClick={this.toggle11}
                 >
                   <CardImg
@@ -722,7 +628,7 @@ Lunch served for event participants.
                     in seed funding.
                     <br></br>
                     <a
-                      href="https://docs.google.com/presentation/d/19bXfDuhd43gRSsKNFfMUkTaFAQYPHJ0B6z8FvL3IMxg/edit#slide=id.p"
+                      href='https://docs.google.com/presentation/d/1qiMEl-6seMQiFtif36EpqjsBWL9CnmnTOUAyjIrisWY/edit?usp=sharing'
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -759,17 +665,118 @@ Lunch served for event participants.
                     <br></br>
                     <br></br>
                     <p>
-                    Salman Avestimehr, Alex Dimakis, and Sharon Zhang
+                    Sriram Vishwanath
                     </p>
                   </CardBody>
                   <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>
-                    Fri Noon
+                    Wed
+                  </CardFooter>
+                </Card>
+              </Col>
+                            <Col>
+                <Card
+                  className="text-center"
+                  style={{ height: '100%', cursor: 'pointer' }}
+                  onClick={this.toggle3}
+                >
+                  <CardImg
+                    top
+                    width="100%"
+                    height={imgHeight}
+                    src={bossImg}
+                    alt="Hello Boss"
+                  />
+                  <Modal
+                    isOpen={this.state.modal3}
+                    toggle={this.toggle3}
+                    centered
+                  >
+                    <ModalHeader toggle={this.toggle3}>Hello Boss</ModalHeader>
+                    <ModalBody className="text-center">
+                      The event will match students and postdocs to internship
+                      mentors, postdoc supervisors, and companies. Each will
+                      present one slide for at most a minute, and fun matching
+                      will follow. Qualcomm, Samsung, and others have
+                      expressed interest in participating.<br></br>
+                      Please fill your slide and upload your resume below.
+                      During the event you will use your slide to introduce
+                      yourself in a minute or less. Please upload your
+                      information below.
+                      <br></br>
+                      For workshop participants only.
+                      <br></br>
+                      <a
+                        href='https://docs.google.com/presentation/d/1MOf6N544BxUiHlma3GJd25fV1ZD55Djd6WwTnZmdxao/edit?usp=sharing'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Students/ Postdoc slides 2026 - Add Your Own
+                      </a>
+                      <br></br>
+                      <a
+                        href='https://docs.google.com/presentation/d/1F02syUTPL2bNVaAGZB-sqbsv5VVyO2sYLq2RqP60g4Y/edit?usp=sharing'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Students/ Postdoc slides 2025
+                      </a>
+                      <br></br>
+                      <a
+                        href=' https://forms.gle/JuH1qfDA94mv763r5'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Resumes 2026 - Add Your Own
+                      </a>
+                      <br></br>
+                      <a
+                        href="https://docs.google.com/presentation/d/1at0dtm55jF1cI8f6LOFnOw0TQD4poumhOa2UdiSxcDk/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Mentors/Employers slides 2026 - Add Your Own
+                      </a>
+                      {/* <br></br>
+                      <a
+                        href='https://docs.google.com/presentation/d/1Z0RBMWGhBMJSY0IAPP806LH0XZrmFOMsF8WVDXXIE9s/edit?usp=sharing'
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Mentors/Employers slides 2025
+                      </a> */}
+                      <br></br>
+                    </ModalBody>
+                    <ModalFooter>
+                      <Button color="secondary" onClick={this.toggle3}>
+                        Close
+                      </Button>
+                    </ModalFooter>
+                  </Modal>
+                  <CardTitle className="mt-4">
+                    <span
+                      onClick={this.toggle3}
+                      style={{ cursor: 'pointer', fontSize: '17px' }}
+                    >
+                      Hello Boss
+                    </span>
+                  </CardTitle>
+                  <CardBody>
+                    A fun event where students and postdocs,{' '}
+                      meet potential internship mentors, postdoc advisors, and
+                      employers.
+                      <br></br>
+                      <br></br>
+                  </CardBody>
+                  <CardFooter className="mt-auto" style={cardFooterStyle}>
+                    Thu
                   </CardFooter>
                 </Card>
               </Col>
             </Row>
             <br></br>
             <br></br>
+
+            {/* ####### TODO: Uncomment this social events after finalizing the content ######## */}
 
             <div
               className="text-center"
@@ -829,7 +836,8 @@ Lunch served for event participants.
                   </CardFooter>
                 </Card>
               </Col>
-              {/* <Col>
+              {/* [TODO: May comment this part back after finalizing the content]
+              <Col>
                 <Card className="text-center" style={{ height: '100%', cursor: 'pointer' }} onClick={this.toggle9}>
                   <CardImg
                     top
@@ -892,11 +900,19 @@ Lunch served for event participants.
                       Create your ITA business card here:
                       <br></br>
                       <a
+                        href="https://docs.google.com/presentation/d/1APzbsw4W4Lr0Z9L3r-9bzMQcGnu4xYfr4RLqcwXmCqE/edit?usp=sharing"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Intro slides 2026 - add your own
+                      </a>
+                      <br></br>
+                      <a
                         href="https://docs.google.com/presentation/d/1oRA3UA0hGI8KHgCdd5Yc37Sub-2ik5ae3Azu2i2QELc/edit#slide=id.p"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Intro slides 2025 - add your own
+                        Intro slides 2025
                       </a>
                       <br></br>
                       <a
@@ -961,6 +977,7 @@ Lunch served for event participants.
                 </Card>
               </Col>
 
+              {/* TODO: Morning run card */}
               <Col>
                 <Card
                   className="text-center"
@@ -1010,7 +1027,7 @@ Lunch served for event participants.
                 </Card>
               </Col>
 
-              <Col>
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -1071,9 +1088,9 @@ Lunch served for event participants.
                     Wed 4:10pm
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
 
-              <Col>
+              {/* <Col>
                 <Card
                   className="text-center"
                   style={{ height: '100%', cursor: 'pointer' }}
@@ -1135,7 +1152,7 @@ Lunch served for event participants.
                     Thu 5:10PM
                   </CardFooter>
                 </Card>
-              </Col>
+              </Col> */}
 
               <Col>
                 <Card
@@ -1179,11 +1196,14 @@ Lunch served for event participants.
                   </CardTitle>
                   <CardBody>Fun, food, and farewell friends</CardBody>
                   <CardFooter className="mt-auto" style={{ fontSize: '12px' }}>
-                    Fri 4:30PM
+                    Fri
                   </CardFooter>
                 </Card>
               </Col>
             </Row>
+
+            {/* Up until this part is for social events */}
+
           </Container>
         </Jumbotron>
       </div>

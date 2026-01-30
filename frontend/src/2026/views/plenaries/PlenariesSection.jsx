@@ -17,6 +17,7 @@ import {
 } from './PlenaryPresenterDetailModal';
 import { plenarySessions } from './plenaries';
 import styles from './PlenariesSection.module.css';
+import SpecialPlenarySection from './SpecialPlenarySection';
 
 export default class PlenariesSection extends React.Component {
   constructor(props) {
@@ -148,6 +149,7 @@ export default class PlenariesSection extends React.Component {
             <div className={styles.cardsContainer}>{plenarySessionCards}</div>
           </Container>
         }
+        <SpecialPlenarySection />
         <PlenaryPresenterDetailModal
           talk={this.state.presenterDetailModalTalk}
           isOpen={this.state.presenterDetailModalOpen}

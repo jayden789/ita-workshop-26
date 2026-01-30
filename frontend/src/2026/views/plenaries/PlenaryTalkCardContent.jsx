@@ -43,14 +43,14 @@ export default class PlenaryTalkCardContent extends React.Component {
         <CardBody className="text-center">
           <CardTitle style={{fontSize:1+'rem'}}>
             {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            { ((talk.title === '' || !talk.title) && !presenter.websiteUrl) ?
-            (<span>{presenter.name}</span>):
+            { presenter.websiteUrl ?
             (<a href="#" onClick={onClickPresenterNameWrapper}>
               {presenter.name}
-            </a>)
-            } 
+            </a>):
+            (<span>{presenter.name}</span>)
+            }
           </CardTitle>
-          <CardSubtitle className={styles.speakerLabel}>{presenter.affiliation}</CardSubtitle>
+          <CardSubtitle className={styles.speakerLabel}>{presenter.affiliation || '\u00A0'}</CardSubtitle>
         </CardBody>
       </React.Fragment>
     );

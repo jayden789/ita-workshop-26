@@ -9,6 +9,7 @@
 
 .cardsContainer {
   display: flex;
+  align-items: flex-start;
   gap: 10px;
   padding: 0 10px;
   margin: 0 auto;

@@ -28,7 +28,7 @@ export default class Home2026 extends React.Component {
           registrationFees={this.props.registrationFees}
           loadFees={this.props.loadFees}
         />
-        {/* <PlenariesSection /> */}
+        <PlenariesSection />
         {/* <AwardSessions /> */}
         {/*<InvitedSessionsSection />*/}
         {/* <ScheduleSection
@@ -40,9 +40,9 @@ export default class Home2026 extends React.Component {
           loadSchedule={this.props.loadSchedule}
         /> */}
         <LocationSection />
-        {/* <SpecialEventsSection /> */}
+        <SpecialEventsSection />
         {/*<TutorialSection />*/}
-        {/* <EataSection /> */}
+        <EataSection />
         {/* <Suspense
           fallback={<p className="text-center m-1">Loading Participants...</p>}
         >
