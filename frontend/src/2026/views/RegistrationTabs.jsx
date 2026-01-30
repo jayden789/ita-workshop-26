@@ -556,6 +556,7 @@ export default class RegistrationTabs extends React.Component {
   //   });
   // }
 
+
   triggerPaymentCheckStatus = (transId) => {
     api(this.state.checkStatusUrl, 'POST', {
       transaction_id: transId,
@@ -875,7 +876,7 @@ export default class RegistrationTabs extends React.Component {
       presenting: this.state.presentingThisYear,
     };
     if (
-      this.state.WednesdayBanquetOption !== 'ita25_banquetSelf_notAttending'
+      this.state.WednesdayBanquetOption !== 'ita26_banquetSelf_notAttending'
     ) {
       nonAdminFields.banquet_options = this.state.banquetOption;
     }
@@ -1013,6 +1014,11 @@ export default class RegistrationTabs extends React.Component {
         option.slug,
         option.fee,
       ])
+    );
+    console.log(
+      'feeType:', effectiveFeeType,
+      'available option slugs:',
+      regnFees?.registration_options?.map(o => o.slug)
     );
     return {
       basePrice: regnFees['base'],

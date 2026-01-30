@@ -715,9 +715,9 @@ export default class ITARegisterTabs extends React.Component {
     return {
       basePrice: regnFees['base'],
       dayPrice: regnFees['daily'],
-      sunReceptionPrice: optionFees.get('ita19_sundayReception_selfOnly'),
-      wedBanquetPrice: optionFees.get('ita19_banquetSelf_selfOnly'),
-      valentinesEventPrice: optionFees.get('ita19_valentinesEvent_selfOnly'),
+      sunReceptionPrice: optionFees.get('ita26_sundayReception_selfOnly'),
+      wedBanquetPrice: optionFees.get('ita26_banquetSelf_selfOnly'),
+      valentinesEventPrice: optionFees.get('ita26_valentinesEvent_selfOnly'),
     };
   };
 

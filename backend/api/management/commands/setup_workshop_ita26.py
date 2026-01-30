@@ -57,13 +57,13 @@ class Command(BaseCommand):
             "base_fee_affiliate": Decimal(
                 "200.0"
             ),  # TODO: Check with Alon for correct price
-            "base_fee_full": Decimal("300.0"),
-            "base_fee_student": Decimal("200.0"),
+            "base_fee_full": Decimal("330.0"),
+            "base_fee_student": Decimal("220.0"),
             "daily_fee_affiliate": Decimal(
-                "70.0"
+                "75.0"
             ),  # TODO: Check with Alon for correct price
-            "daily_fee_full": Decimal("70.0"),
-            "daily_fee_student": Decimal("45.0"),
+            "daily_fee_full": Decimal("75.0"),
+            "daily_fee_student": Decimal("50.0"),
         }
         workshop, _ = models.Workshop.objects.update_or_create(
             slug="ita26", defaults=update_values
@@ -80,8 +80,8 @@ class Command(BaseCommand):
         def full_slug(slug):
             return "{}_sundayReception_{}".format(workshop.slug, slug)
 
-        fee = Decimal("40.00")
-        fee_student = Decimal("25.00")
+        fee = Decimal("50.00")
+        fee_student = Decimal("30.00")
 
         not_attending, _ = models.RegistrationOption.objects.update_or_create(
             workshop=workshop,
@@ -133,8 +133,8 @@ class Command(BaseCommand):
         def full_slug(slug):
             return "{}_banquetSelf_{}".format(workshop.slug, slug)
 
-        fee = Decimal("95.00")
-        fee_student = Decimal("60.00")
+        fee = Decimal("100.00")
+        fee_student = Decimal("70.00")
 
         not_attending, _ = models.RegistrationOption.objects.update_or_create(
             workshop=workshop,

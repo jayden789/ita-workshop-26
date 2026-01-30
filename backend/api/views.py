@@ -537,7 +537,7 @@ class RegistrationViewSet(
 
 
 class RegistrationFeesViewSet(viewsets.ReadOnlyModelViewSet):
-    queryset = models.Workshop.objects.filter(slug="ita25")
+    queryset = models.Workshop.objects.filter(slug="ita26")
     serializer_class = serializers.RegistrationFeesSerializer
     permission_classes = (permissions.AllowAny,)
 
