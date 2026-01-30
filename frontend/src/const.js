@@ -14,42 +14,42 @@ export const DAY_OPTIONS = [
 ];
 
 export const RECEPTION_OPTIONS = [
-  { value: 'ita25_sundayReception_notAttending', displayText: 'Not attending' },
-  { value: 'ita25_sundayReception_selfOnly', displayText: 'You' },
-  { value: 'ita25_sundayReception_selfPlus1', displayText: 'You + 1' },
-  { value: 'ita25_sundayReception_selfPlus2', displayText: 'You + 2' },
+  { value: 'ita26_sundayReception_notAttending', displayText: 'Not attending' },
+  { value: 'ita26_sundayReception_selfOnly', displayText: 'You' },
+  { value: 'ita26_sundayReception_selfPlus1', displayText: 'You + 1' },
+  { value: 'ita26_sundayReception_selfPlus2', displayText: 'You + 2' },
 ];
 
 export const LUNCH_OPTIONS = [
-  { value: 'ita25_mondayLunch_notAttending', displayText: 'Not attending' },
-  { value: 'ita25_mondayLunch_attending', displayText: 'Attending' },
+  { value: 'ita26_mondayLunch_notAttending', displayText: 'Not attending' },
+  { value: 'ita26_mondayLunch_attending', displayText: 'Attending' },
 ];
 
 export const BANQUET_SELF_OPTIONS = [
-  { value: 'ita25_banquetSelf_notAttending', displayText: 'Not attending' },
-  { value: 'ita25_banquetSelf_selfOnly', displayText: 'You' },
-  { value: 'ita25_banquetSelf_selfPlus1', displayText: 'You + 1' },
-  { value: 'ita25_banquetSelf_selfPlus2', displayText: 'You + 2' },
+  { value: 'ita26_banquetSelf_notAttending', displayText: 'Not attending' },
+  { value: 'ita26_banquetSelf_selfOnly', displayText: 'You' },
+  { value: 'ita26_banquetSelf_selfPlus1', displayText: 'You + 1' },
+  { value: 'ita26_banquetSelf_selfPlus2', displayText: 'You + 2' },
 ];
 
 export const ITALT_OPTIONS = [
-  { value: 'ita25_italt_attending', displayText: 'Attending' },
-  { value: 'ita25_italt_notAttending', displayText: 'Not attending' },
+  { value: 'ita26_italt_attending', displayText: 'Attending' },
+  { value: 'ita26_italt_notAttending', displayText: 'Not attending' },
 ];
 
 export const SATURDAY_SELF_OPTIONS = [
   {
-    value: 'ita25_saturdayWorkshop_notAttending',
+    value: 'ita26_saturdayWorkshop_notAttending',
     displayText: 'Not attending',
   },
-  { value: 'ita25_saturdayWorkshop_attending', displayText: 'Attending' },
+  { value: 'ita26_saturdayWorkshop_attending', displayText: 'Attending' },
 ];
 
 export const VALENTINES_EVENT_OPTIONS = [
-  { value: 'ita25_valentinesEvent_notAttending', displayText: 'Not attending' },
-  { value: 'ita25_valentinesEvent_selfOnly', displayText: 'You' },
-  { value: 'ita25_valentinesEvent_selfPlus1', displayText: 'You + 1' },
-  { value: 'ita25_valentinesEvent_selfPlus2', displayText: 'You + 2' },
+  { value: 'ita26_valentinesEvent_notAttending', displayText: 'Not attending' },
+  { value: 'ita26_valentinesEvent_selfOnly', displayText: 'You' },
+  { value: 'ita26_valentinesEvent_selfPlus1', displayText: 'You + 1' },
+  { value: 'ita26_valentinesEvent_selfPlus2', displayText: 'You + 2' },
 ];
 
 export const FEETYPE_OPTIONS = [

@@ -20,6 +20,8 @@ python manage.py setup_workshop_ita20
 python manage.py setup_workshop_ita22
 python manage.py setup_workshop_ita23
 python manage.py setup_workshop_ita24
+python manage.py setup_workshop_ita25
+python manage.py setup_workshop_ita26
 
 # Run server
 # shellcheck disable=SC2086
