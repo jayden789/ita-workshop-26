@@ -801,14 +801,14 @@ export default class RegistrationWorkshop extends React.Component {
               >
                 Next tab
               </Button>
-              <a  hidden={ !paymentAllowed || this.props.paid }
+              <Button  disabled={ !paymentAllowed }
                   target="_blank" 
                   rel="noopener noreferrer" 
                   href={ paymentUrl} 
                   className="btn btn-secondary"
               >
                 Register (aka Pay)
-              </a>
+              </Button>
 
               {/* <Button hidden disabled={!paymentAllowed} onClick={toggle}>
                 Register (aka Pay)
