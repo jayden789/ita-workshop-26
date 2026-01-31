@@ -34,7 +34,7 @@ export default class SpecialPlenarySection extends React.Component {
   };
 
   render() {
-    const { dayName, topic, talks, description } = specialPlenarySession;
+    const { dayName, topic, talks, description, moderator } = specialPlenarySession;
     const { modalOpen, selectedTalk } = this.state;
 
     return (
@@ -52,45 +52,87 @@ export default class SpecialPlenarySection extends React.Component {
                 </CardTitle>
                 <div className={styles.description}>{description}</div>
 
-                <div className={styles.speakerCardsContainer}>
-                  {talks.map((talk, index) => (
-                    <Card
-                      key={index}
-                      className={styles.speakerCard}
-                      onClick={() => this.handleCardClick(talk)}
-                    >
-                      {talk.presenter.picUrl && (
-                        <CardImg
-                          top
-                          src={talk.presenter.picUrl}
-                          alt={talk.presenter.name}
-                          className={styles.speakerImage}
-                        />
-                      )}
-                      {!talk.presenter.picUrl && (
-                        <div className={styles.speakerImagePlaceholder}>
-                          <span>{talk.presenter.name.split(' ').map(n => n[0]).join('')}</span>
-                        </div>
-                      )}
-                      <CardBody className="text-center">
-                        <CardTitle className={styles.speakerName}>
-                          {talk.presenter.websiteUrl ? (
-                            <a
-                              href={talk.presenter.websiteUrl}
-                              onClick={(e) => this.handleNameClick(e, talk.presenter)}
-                            >
-                              {talk.presenter.name}
-                            </a>
-                          ) : (
-                            <span>{talk.presenter.name}</span>
-                          )}
-                        </CardTitle>
-                        <CardSubtitle className={styles.speakerAffiliation}>
-                          {talk.presenter.affiliation || '\u00A0'}
-                        </CardSubtitle>
-                      </CardBody>
-                    </Card>
-                  ))}
+                <div className={styles.speakerAndModeratorContainer}>
+                  {/* Speakers on the left */}
+                  <div className={styles.speakersGroup}>
+                    {talks.map((talk, index) => (
+                      <Card
+                        key={index}
+                        className={styles.speakerCard}
+                        onClick={() => this.handleCardClick(talk)}
+                      >
+                        {talk.presenter.picUrl && (
+                          <CardImg
+                            top
+                            src={talk.presenter.picUrl}
+                            alt={talk.presenter.name}
+                            className={styles.speakerImage}
+                          />
+                        )}
+                        {!talk.presenter.picUrl && (
+                          <div className={styles.speakerImagePlaceholder}>
+                            <span>{talk.presenter.name.split(' ').map(n => n[0]).join('')}</span>
+                          </div>
+                        )}
+                        <CardBody className="text-center">
+                          <CardTitle className={styles.speakerName}>
+                            {talk.presenter.websiteUrl ? (
+                              <a
+                                href={talk.presenter.websiteUrl}
+                                onClick={(e) => this.handleNameClick(e, talk.presenter)}
+                              >
+                                {talk.presenter.name}
+                              </a>
+                            ) : (
+                              <span>{talk.presenter.name}</span>
+                            )}
+                          </CardTitle>
+                          <CardSubtitle className={styles.speakerAffiliation}>
+                            {talk.presenter.affiliation || '\u00A0'}
+                          </CardSubtitle>
+                        </CardBody>
+                      </Card>
+                    ))}
+                  </div>
+
+                  {/* Moderator on the right */}
+                  {moderator && (
+                    <div className={styles.moderatorGroup}>
+                      <Card className={styles.moderatorCard}>
+                        {moderator.picUrl && (
+                          <CardImg
+                            top
+                            src={moderator.picUrl}
+                            alt={moderator.name}
+                            className={styles.speakerImage}
+                          />
+                        )}
+                        {!moderator.picUrl && (
+                          <div className={styles.speakerImagePlaceholder}>
+                            <span>{moderator.name.split(' ').map(n => n[0]).join('')}</span>
+                          </div>
+                        )}
+                        <CardBody className="text-center">
+                          <CardTitle className={styles.speakerName}>
+                            {moderator.websiteUrl ? (
+                              <a
+                                href={moderator.websiteUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                {moderator.name}
+                              </a>
+                            ) : (
+                              <span>{moderator.name}</span>
+                            )}
+                          </CardTitle>
+                          <CardSubtitle className={styles.speakerAffiliation}>
+                            {moderator.affiliation || '\u00A0'}
+                          </CardSubtitle>
+                        </CardBody>
+                      </Card>
+                    </div>
+                  )}
                 </div>
               </CardBody>
             </Card>
