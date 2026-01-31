@@ -46,10 +46,10 @@ export default class SpecialPlenarySection extends React.Component {
           <Col xs={12} sm={10} md={12} lg={10}>
             <Card className={styles.card}>
               <CardBody className="text-center">
+                <div className={styles.topicHeader}>{topic}</div>
                 <CardTitle tag="h5" className={styles.cardHeader}>
                   {dayName}
                 </CardTitle>
-                <div className={styles.topicHeader}>{topic}</div>
                 <div className={styles.description}>{description}</div>
 
                 <div className={styles.speakerCardsContainer}>

@@ -29,7 +29,7 @@ export default class Home2026 extends React.Component {
           loadFees={this.props.loadFees}
         />
         <PlenariesSection />
-        {/* <AwardSessions /> */}
+        <AwardSessions />
         {/*<InvitedSessionsSection />*/}
         {/* <ScheduleSection
           schedule={this.props.schedule}
