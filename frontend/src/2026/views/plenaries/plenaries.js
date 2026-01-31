@@ -42,6 +42,7 @@ import SergeiGukovImg from '../img2026/plenary-profile-pics/sergeiGukov.jpg';
 import AbbasElGamalImg from '../img2026/plenary-profile-pics/abbasElGamal.jpg';
 import BenRechtImg from '../img2026/plenary-profile-pics/benRecht.jpg';
 import NisheethVishnoiImg from '../img2026/plenary-profile-pics/nisheethVishnoi.jpg';
+import BaBakHassibiImg from '../img2026/plenary-profile-pics/babak.jpg';
 
 import FlavioImg from '../img2025/plenary-profile-pics/flavio.jpg';
 
@@ -122,10 +123,23 @@ In particular, we show how sparse stabilizer codes—commonly referred to as qua
       picUrl: FlavioImg,
       websiteUrl: 'https://people.seas.harvard.edu/~flavio/#',
       affiliation: 'Harvard University',
-      bio: `Flavio P. Calmon is the Thomas D. Cabot Associate Professor of Electrical Engineering at the Harvard John A. Paulson School of Engineering and Applied Sciences. Before joining Harvard, he was the inaugural Data Science for Social Good Post-Doctoral Fellow at IBM Research in Yorktown Heights, New York. He received his Ph.D. in Electrical Engineering and Computer Science at MIT. His research develops the information-theoretic foundations of trustworthy and reliable machine learning. Prof. Calmon received the 2024 James L. Massey Award from the IEEE Information Theory Society, the NSF CAREER award, faculty awards from Google, IBM, and Amazon, and the Harvard Dean of Undergraduate Studies Commendation for "Extraordinary Teaching during Extraordinary Times." He also received the inaugural "Título de Honra ao Mérito" (Honor to the Merit Title) given to alumni from the Universidade de Brasília (Brazil).`,
+      bio: `Flavio P. Calmon is the Thomas D. Cabot Associate Professor of Electrical Engineering at the Harvard John A. Paulson School of Engineering and Applied Sciences. Before joining Harvard, he was the inaugural Data Science for Social Good Post-Doctoral Fellow at IBM Research in Yorktown Heights, New York. He received his Ph.D. in Electrical Engineering and Computer Science from MIT. His research develops the information-theoretic foundations of trustworthy and reliable machine learning and artificial intelligence. In February 2026, he will join Google as a Visiting Faculty Researcher.
+            Prof. Calmon received the 2024 James L. Massey Award from the IEEE Information Theory Society, the NSF CAREER award, faculty awards from Google, IBM, JPMorganChase, and Amazon, and the Harvard Dean of Undergraduate Studies Commendation for "Extraordinary Teaching during Extraordinary Times." He also received the inaugural "Título de Honra ao Mérito" (Honor to the Merit Title) given to alumni from the Universidade de Brasília (Brazil).`,
     },
-    title: '', // TODO: Add title for 2026
-    abstract: '', // TODO: Add abstract for 2026
+    title: 'Inference-Time Information Theory',
+    abstract: 'Large language models (LLMs) have rapidly evolved into systems capable of mathematical reasoning, code generation, and complex question-answering. How can we control these models without re-training them? \n In this talk, we argue that "inference-time" LLM operation, where we interact with these models post-training without modifying their weights, is fertile ground for information-theoretic methods. We focus on one challenge in particular: watermarking LLM-generated text. Watermarks enable authentication of text provenance and help curb misuse of machine-generated content. We present recent results establishing a close connection between LLM watermarking and coding theory, showing that classical tools such as the Plotkin bound yield fundamental limits on watermark performance. This perspective also informs the design of two practical watermarks: SimplexWater and HeavyWater. We show that these watermarks achieve high detection accuracy with minimal impact on text quality, even in low-entropy tasks such as code generation. We also briefly survey other inference-time challenges that can be addressed with information theory, such as inference-time alignment. These results illustrate a broader opportunity: as LLMs increasingly serve as black-box components of more complex systems, information and coding theory offer a principled toolkit for shaping, verifying, and controlling their outputs.',
+    award: '',
+  },
+  {
+    presenter: {
+      name: 'Babak Hassibi',
+      picUrl: BaBakHassibiImg,
+      websiteUrl: 'https://www.ee.caltech.edu/people/hassibi',
+      affiliation: 'Caltech',
+      bio: 'Hassibi\'s research spans various aspects of information theory, signal processing, control theory, and machine learning. He has made contributions to the theory and practice of wireless communications and wireless networks, as well as to robust control, adaptive filtering and neural networks, network information theory, coding for control, phase retrieval, structured signal recovery, high dimensional statistics, epidemic spread in complex networks, and DNA micro-arrays. On the mathematical side, he is interested in linear algebra, with an emphasis on fast algorithms, random matrices, and group representation theory.',
+    },
+    title: '', // TODO: Add title
+    abstract: '', // TODO: Add abstract
     award: '',
   },
 ];
@@ -232,7 +246,7 @@ The new edition will feature new chapters on channel codes, statistical learning
       picUrl: BenRechtImg,
       websiteUrl: 'https://vcresearch.berkeley.edu/faculty/benjamin-recht',
       affiliation: 'UC Berkeley',
-      bio: `Benjamin Recht is a Professor in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. He was previously an Assistant Professor in the Department of Computer Sciences at the University of Wisconsin-Madison. Ben received his B.S. in Mathematics from the University of Chicago, and received a M.S. and PhD from the MIT Media Laboratory. After completing his doctoral work, he was a postdoctoral fellow in the Center for the Mathematics of Information at Caltech. Ben is the recipient of a Presidential Early Career Award for Scientists and Engineers, an Alfred P. Sloan Research Fellowship, the 2012 SIAM/MOS Lagrange Prize in Continuous Optimization, the 2014 Jamon Prize, the 2015 William O. Baker Award for Initiatives in Research, and the 2017 and 2020 NeurIPS Test of Time Awards. He has served on the Editorial Boards of the Journal for Machine Learning Research and Mathematical Programming. He also cofounded the Conference on Learning for Decision and Control.`,
+      bio: 'Benjamin Recht is a Professor in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley. Ben studies the foundations of machine learning, be they mathematical, statistical, and computational, or philosophical, sociological, and historical.',
     },
     title: 'The Irrational Decision: How We Gave Computers the Power to Choose for Us',
     abstract: `Mathematicians and engineers of the 1940s set out to design machines that could act as ideal rational agents in the face of uncertainty. In this pursuit, a cluster of foundational mathematical technologies—including information theory, linear programming, game theory, and neural networks—emerged as a foundation for a mathematical formalization of rationality, reshaping how we think about human decision-making itself. Recht's forthcoming book, The Irrational Decision: How We Gave Computers the Power to Choose for Us, traces the intellectual history of automated decision-making into the present, highlighting both the power and limitations of mathematical rationality and how we must temper machine judgment with human intuition and morality.
@@ -278,7 +292,7 @@ export const plenarySessions = [
     dayName: 'Tuesday',
     topic: 'Trends in Information Theory',
     moderator: {
-      name: '', // TODO: Add moderator name
+      name: '',
       picUrl: PlaceholderImg,
       websiteUrl: '',
       affiliation: '',
@@ -340,10 +354,10 @@ export const plenarySessions = [
   },
 ];
 
-// Special Plenary Session - Thursday "Information without borders"
+// Special Plenary Session - Thursday "Information without Borders"
 export const specialPlenarySession = {
   dayName: 'Thursday',
-  topic: 'Information without borders',
+  topic: 'Information without Borders',
   description: `Three distinguished researchers and authors will examine how the expanding horizons of information, intelligence, and rationality are shaping technology, science, and society. Abbas El Gamal will introduce his forthcoming new edition of Elements of Information Theory, focusing on the field's emerging applications. Ben Recht will discuss his upcoming book The Irrational Decision, exploring the limits of mathematical rationality in real-world decision making. Nisheeth Vishnoi, author of The Intelligence Loop, will describe the evolving relationship between human and artificial intelligence. The three out-of-the box presentations, along with accompanying in-the-box alimentations, promise ample food for thought.`,
   talks: sortByLastName(thursdaySpecialTalks),
 };
