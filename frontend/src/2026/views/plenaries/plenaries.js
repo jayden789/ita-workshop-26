@@ -43,6 +43,7 @@ import AbbasElGamalImg from '../img2026/plenary-profile-pics/abbasElGamal.jpg';
 import BenRechtImg from '../img2026/plenary-profile-pics/benRecht.jpg';
 import NisheethVishnoiImg from '../img2026/plenary-profile-pics/nisheethVishnoi.jpg';
 import BaBakHassibiImg from '../img2026/plenary-profile-pics/babak.jpg';
+import AryaImg from '../img2026/plenary-profile-pics/aryaMazumdar.jpg';
 
 import FlavioImg from '../img2025/plenary-profile-pics/flavio.jpg';
 
@@ -359,5 +360,11 @@ export const specialPlenarySession = {
   dayName: 'Thursday',
   topic: 'Information without Borders',
   description: `Three distinguished researchers and authors will examine how the expanding horizons of information, intelligence, and rationality are shaping technology, science, and society. Abbas El Gamal will introduce his forthcoming new edition of Elements of Information Theory, focusing on the field's emerging applications. Ben Recht will discuss his upcoming book The Irrational Decision, exploring the limits of mathematical rationality in real-world decision making. Nisheeth Vishnoi, author of The Intelligence Loop, will describe the evolving relationship between human and artificial intelligence. The three out-of-the box presentations, along with accompanying in-the-box alimentations, promise ample food for thought.`,
+  moderator: {
+    name: 'Arya Mazumdar',
+    picUrl: AryaImg,
+    websiteUrl: '',
+    affiliation: 'UCSD, Moderator',
+  },
   talks: sortByLastName(thursdaySpecialTalks),
 };

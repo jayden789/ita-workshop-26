@@ -126,7 +126,7 @@ export default class ITAJumboLocation extends React.Component {
               color="primary"
               style={{ marginTop: '32px', marginBottom: '32px' }}
             >
-              Book Here
+              Book Hotel
             </Button>
             {/* <img
               src={bahiaMap25}

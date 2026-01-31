@@ -132,14 +132,23 @@ export default class RegistrationSection extends React.Component {
                   Register Now
                 </Button>*/}
 
-              <Button
-                tag="a"
-                href="/register"
-                color="primary"
-                style={{ marginTop: '32px', marginBottom: '0px' }}
-              >
-                Register
-              </Button>
+              <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', marginTop: '32px', marginBottom: '32px' }}>
+                <Button
+                  tag="a"
+                  href="/register"
+                  color="primary"
+                >
+                  Register
+                </Button>
+                <Button
+                  href="https://be.synxis.com/?adult=1&arrive=2026-02-06&chain=17551&child=0&clearcache=all&config=GP2024&currency=USD&depart=2026-02-15&group=ITA26&hotel=64070&level=hotel&locale=en-US&productcurrency=USD&rooms=1&theme=Group2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  color="primary"
+                >
+                  Book Hotel
+                </Button>
+              </div>
               <div className={classNames('text-light', styles.regnInfoText)}>
                 <RegistrationInfo />
                 <p>

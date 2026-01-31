@@ -35,7 +35,37 @@
   text-align: center;
 }
 
-/* Horizontal speaker cards container */
+/* Container for speakers and moderator */
+.speakerAndModeratorContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1.5rem 0 0 0;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+/* Speakers group - aligned left */
+.speakersGroup {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Moderator group - aligned right */
+.moderatorGroup {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moderatorCard {
+  flex: 0 0 auto;
+  width: 180px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal speaker cards container (legacy, kept for compatibility) */
 .speakerCardsContainer {
   display: flex;
   justify-content: center;
@@ -114,11 +144,26 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .speakerAndModeratorContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speakersGroup {
+    justify-content: center;
+  }
+
+  .moderatorGroup {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
   .speakerCardsContainer {
     gap: 0.75rem;
   }
 
-  .speakerCard {
+  .speakerCard,
+  .moderatorCard {
     width: 150px;
   }
 
